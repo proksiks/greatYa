@@ -6,7 +6,7 @@
     <Quality />
   </div>
   <!--<Peoples />-->
-  <Projects />
+  <!--<Projects />-->
 </template>
 
 <script setup></script>
