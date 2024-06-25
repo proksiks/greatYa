@@ -1,5 +1,5 @@
 <template>
-  <div class="grid sm:grid-cols-8 grid-cols-2 xl:my-[260px] md:my-[180px] my-[100px] xl:px-15 px-5">
+  <div class="grid sm:grid-cols-8 grid-cols-2 xl:my-26 md:my-[180px] my-25 xl:px-15 px-5">
     <p
       class="sm:col-start-3 col-end-9 xl:leading-[117px] leading-[100%] tracking-tighter xl:text-[130px] md:text-[52px] text-[35px] uppercase"
     >

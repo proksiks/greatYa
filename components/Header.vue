@@ -15,19 +15,19 @@
         <ul class="md:flex gap-5 uppercase">
           <li class="md:mb-0 mb-10">
             <span class="block text-[10px] mb-2.5 md:hidden"> { 1 } </span>
-            <nuxt-link class="hover:text-orange transition text-color font-medium text-nowrap" to="#">о нас</nuxt-link>
+            <nuxt-link class="hover:text-orange transition text-color text-nowrap" to="#">о нас</nuxt-link>
           </li>
           <li class="md:mb-0 mb-10">
             <span class="block text-[10px] mb-2.5 md:hidden"> { 2 } </span>
-            <nuxt-link class="hover:text-orange transition text-color font-medium" to="#">ценности</nuxt-link>
+            <nuxt-link class="hover:text-orange transition text-color" to="#">ценности</nuxt-link>
           </li>
           <li class="md:mb-0 mb-10">
             <span class="block text-[10px] mb-2.5 md:hidden"> { 3 } </span>
-            <nuxt-link class="hover:text-orange transition text-color font-medium" to="#">основатели</nuxt-link>
+            <nuxt-link class="hover:text-orange transition text-color" to="#">основатели</nuxt-link>
           </li>
           <li>
             <span class="block text-[10px] mb-2.5 md:hidden"> { 4 } </span>
-            <nuxt-link class="hover:text-orange transition text-color font-medium" to="#">проекты</nuxt-link>
+            <nuxt-link class="hover:text-orange transition text-color" to="#">проекты</nuxt-link>
           </li>
         </ul>
       </nav>
