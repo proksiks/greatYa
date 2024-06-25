@@ -41,6 +41,7 @@ export default <Partial<Config>>{
                 15: '3.75rem',
                 18: '4.5rem',
                 25: '6.25rem',
+                26: '16.25rem',
                 30: '7.5rem',
             },
             fontSize: {
