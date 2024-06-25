@@ -1,22 +1,26 @@
 <template>
-  <p class="flex justify-between text-white px-10 pt-10 pb-5 text-[14px] tracking-[-0.03em] uppercase">
+  <p class="flex justify-between text-white md:px-10 px-2.5 pt-2.5 md:pt-10 pb-5 text-[14px] tracking-[-0.03em] uppercase">
     <span>результат</span>
     <span>{</span>
     <span>{ баланс }</span>
     <span>эстетика</span>
     <span>}</span>
   </p>
-  <div class="grid grid-cols-8 text-white px-10">
-    <p class="col-start-1 col-end-7 uppercase text-[130px] tracking-[-0.07em] xl:leading-[117px] leading-[100%] pb-20">
+  <div class="md:grid md:grid-cols-8 text-white px-2.5 md:px-10">
+    <p
+      class="md:col-start-1 md:col-end-7 uppercase xl:text-2xl md:text-[72px] text-[35px] tracking-[-0.07em] xl:leading-[117px] leading-[100%] md:pb-20 pb-10"
+    >
       <span class="block">качественная</span>
-      <span class="block ml-[232px]">работа –</span>
-      <span class="block ml-[232px] text-orange">это наш</span>
+      <span class="block ml-7 md:ml-[232px] text-nowrap">работа –</span>
+      <span class="block ml-7 md:ml-[232px] text-orange text-nowrap">это наш</span>
       <span class="block text-orange">успех</span>
     </p>
-    <p class="col-start-3 col-end-5 font-petrov">
+    <p class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov max-w-[283px] md:max-w-none">
       В основе нашей деятельности лежат инновации. Мы используем только лучшие материалы для строительства домов
     </p>
-    <p class="col-start-4 col-end-9 text-[44px] mt-[160px] pr-10">
+    <p
+      class="md:col-start-4 md:col-end-9 xl:text-[44px] md:text-28 text-[1rem] mt-[60px] md:mt-[160px] pr-10 md:max-w-none max-w-[323px] md:ml-0 ml-auto"
+    >
       Благодаря сочетанию современного дизайна и традиционной эстетики, мы строим дома, которые воплощают в себе баланс
       стиля, комфорта
     </p>
