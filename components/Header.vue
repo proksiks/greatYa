@@ -1,51 +1,75 @@
 <template>
-  <header ref="header"
+  <header
+    ref="header"
     class="flex items-center justify-between fixed left-0 top-0 w-full text-center lg:px-10 p-2.5 lg:py-5 duration-500 bg-white transition translate"
-    :class="{ '-translate-y-full': translateHeader }">
-    <nuxt-link to="/">
+    :class="{ '-translate-y-full': translateHeader }"
+  >
+    <nuxt-link class="relative z-10" to="/">
       <img class="md:w-[79px] w-[63px]" src="/images/logo.svg" alt="Логотип" width="79" height="49" loading="lazy" />
     </nuxt-link>
-    <div class="flex-1 md:flex hidden justify-between">
-      <nav class="mx-auto">
-        <ul class="flex gap-5 uppercase">
-          <li>
+    <div
+      class="flex-1 flex md:flex-row flex-col items-center overflow-auto md:overflow-visible justify-between absolute md:static transition-all h-svh md:h-auto w-full md:w-auto -translate-y-full md:translate-y-0 duration-500 left-0 top-0 md:py-0 py-10"
+      :class="{ 'block translate-y-0 bg-white': isOpenMenu }"
+    >
+      <nav class="mx-auto md:mt-0 mt-10">
+        <ul class="md:flex gap-5 uppercase">
+          <li class="md:mb-0 mb-10">
+            <span class="block text-[10px] mb-2.5 md:hidden"> { 1 } </span>
             <nuxt-link class="hover:text-orange transition text-color font-medium text-nowrap" to="#">о нас</nuxt-link>
           </li>
-          <li>
+          <li class="md:mb-0 mb-10">
+            <span class="block text-[10px] mb-2.5 md:hidden"> { 2 } </span>
             <nuxt-link class="hover:text-orange transition text-color font-medium" to="#">ценности</nuxt-link>
           </li>
-          <li>
+          <li class="md:mb-0 mb-10">
+            <span class="block text-[10px] mb-2.5 md:hidden"> { 3 } </span>
             <nuxt-link class="hover:text-orange transition text-color font-medium" to="#">основатели</nuxt-link>
           </li>
           <li>
+            <span class="block text-[10px] mb-2.5 md:hidden"> { 4 } </span>
             <nuxt-link class="hover:text-orange transition text-color font-medium" to="#">проекты</nuxt-link>
           </li>
         </ul>
       </nav>
-      <button class="relative uppercase group ml-5" @click="showModal">
+      <button class="relative uppercase group ml-5 md:mt-0 mt-5" @click="showModal">
         связаться
         <span
-          class="absolute -bottom-1 left-0 w-full h-0.5 bg-black transition duration-300 origin-right scale-x-100 group-hover:scale-x-0"></span>
+          class="absolute -bottom-1 left-0 w-full h-0.5 bg-black transition duration-300 origin-right scale-x-100 group-hover:scale-x-0"
+        ></span>
         <span
-          class="absolute -bottom-1 left-0 w-full h-0.5 bg-black transition delay-300 duration-300 origin-left scale-x-0 group-hover:scale-x-100"></span>
-      </button>
-      <button class="relative ">
-        <span class="w-full absolute h-0.5 left-50"></span>
+          class="absolute -bottom-1 left-0 w-full h-0.5 bg-black transition delay-300 duration-300 origin-left scale-x-0 group-hover:scale-x-100"
+        ></span>
       </button>
     </div>
+    <button class="relative w-10 h-10 cursor-pointer ml-5 md:hidden" @click="openMenu">
+      <span
+        class="w-full absolute h-0.5 left-1/2 top-4 bg-black -translate-x-1/2 transition-all"
+        :class="{ '-rotate-45 !top-1/2 -translate-y-1/2': isOpenMenu }"
+      ></span>
+      <span
+        class="w-full absolute h-0.5 left-1/2 top-6 bg-black -translate-x-1/2 transition-all"
+        :class="{ 'rotate-45 !top-1/2 -translate-y-1/2': isOpenMenu }"
+      ></span>
+    </button>
   </header>
 </template>
 
 <script setup>
   const header = ref(null);
   const translateHeader = ref(false);
+  const isOpenMenu = ref(false);
+
+  function openMenu() {
+    isOpenMenu.value = !isOpenMenu.value;
+    document.body.classList.toggle("overflow-hidden");
+  }
 
   onMounted(() => {
-    let prevScrollpos = window.pageYOffset;
+    let prevScrollpos = window.scrollY;
     let headerBottom = header.offsetTop + header.offsetHeight;
 
     window.addEventListener("scroll", function (e) {
-      let currentScrollPos = window.pageYOffset;
+      let currentScrollPos = window.scrollY;
       if (prevScrollpos > currentScrollPos || currentScrollPos < headerBottom) {
         translateHeader.value = false;
       } else {
