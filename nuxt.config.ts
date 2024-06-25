@@ -6,17 +6,24 @@ export default defineNuxtConfig({
       link: [{ rel: 'shortcut icon', href: 'favicon.ico' }]
     }
   },
-  ssr: false,
-  css: ['normalize.css'],
-  //devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss"],
-
+  css: ['normalize.css', 'vue-final-modal/style.css'],
+  modules: [
+    '@nuxt/eslint',
+    '@hypernym/nuxt-gsap',
+    '@nuxtjs/tailwindcss',
+    '@nuxt/image',
+    'nuxt-swiper'
+  ],
+  swiper: {
+    modules: ['effect-fade'],
+  },
   tailwindcss: {
     exposeConfig: true,
     viewer: true,
   },
-
+  ssr: false,
   typescript: {
     typeCheck: true
   },
+  //devtools: { enabled: true }
 })

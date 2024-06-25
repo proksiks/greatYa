@@ -10,13 +10,24 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/image": "^1.7.0",
     "@nuxtjs/tailwindcss": "^6.12.0",
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
+    "maska": "^2.1.11",
     "normalize.css": "^8.0.1",
     "nuxt": "^3.12.1",
+    "nuxt-swiper": "^1.2.2",
+    "pinia": "^2.1.7",
+    "split-type": "^0.3.4",
     "vue": "^3.4.27",
+    "vue-final-modal": "^4.5.4",
     "vue-router": "^4.3.3"
   },
   "devDependencies": {
+    "@hypernym/nuxt-gsap": "^2.4.2",
+    "@nuxt/eslint": "^0.3.13",
+    "eslint": "^8.57.0",
     "typescript": "^5.4.5",
     "vue-tsc": "^1.8.27"
   }
