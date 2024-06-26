@@ -77,7 +77,7 @@
             </button>
           </div>
         </form>
-        <div class="col-start-2 col-end-6 w-full hidden md:block">
+        <div class="col-start-2 col-end-6 w-full hidden md:flex items-end">
           <div class="flex items-center justify-between w-full">
             <nuxt-link class="hover:no-underline underline" to="#">Политика конфиденциальности</nuxt-link>
             <span>© {{ year }} отличны</span>
