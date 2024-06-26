@@ -1,10 +1,9 @@
 <template>
   <div class="md:mt-26 mt-25">
-    <div class="grid grid-cols-8">
+    <div class="md:grid md:grid-cols-8">
       <div class="row-start-1">
-        <a class="block" href="https://t.me/">telegram web</a>
-        <a class="block mt-5" href="tg://t.me/USERNAME">telegram app</a>
-        <a class="block mt-5" href="youtube:/" target="_blank">youtube</a>
+        <a class="block mt-5" :href="`tg://t.me/${userNameId}`">telegram app</a>
+        <a class="block mt-5" href="https://www.youtube.com/?app=desktop&hl=ru" target="_blank">youtube</a>
         <a class="block mt-5" href="vk" target="_blank">вконтакте</a>
       </div>
       <!--<div class="row-start-1">
@@ -13,3 +12,7 @@
     </div>
   </div>
 </template>
+
+<script>
+  const userNameId = "USERNAME";
+</script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-[11.25rem]">
+  <div class="md:px-10 px-2.5 pb-[11.25rem]">
     <p
       class="flex justify-between text-white md:px-10 px-2.5 pt-2.5 md:pt-10 pb-5 text-[0.875rem] tracking-[-0.03em] uppercase"
     >
@@ -20,7 +20,7 @@
       </p>
     </div>
 
-    <div class="grid grid-cols-8">
+    <div class="md:grid md:grid-cols-8">
       <div class="col-start-4 col-end-6 text-white">
         <form>
           <div class="relative group">
