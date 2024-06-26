@@ -5,7 +5,7 @@
     :class="{ '-translate-y-full': translateHeader }"
   >
     <nuxt-link class="relative z-10" to="/">
-      <img class="md:w-[79px] w-[63px]" src="/images/logo.svg" alt="Логотип" width="79" height="49" loading="lazy" />
+      <img class="md:w-[4.9375rem] w-[3.9375rem]" src="/images/logo.svg" alt="Логотип" width="79" height="49" loading="lazy" />
     </nuxt-link>
     <div
       class="flex-1 flex md:flex-row flex-col items-center overflow-auto md:overflow-visible justify-between absolute md:static transition-all h-svh md:h-auto w-full md:w-auto -translate-y-full md:translate-y-0 duration-500 left-0 top-0 md:py-0 py-10"
@@ -14,19 +14,19 @@
       <nav class="mx-auto md:mt-0 mt-10">
         <ul class="md:flex gap-5 uppercase">
           <li class="md:mb-0 mb-10">
-            <span class="block text-[10px] mb-2.5 md:hidden"> { 1 } </span>
+            <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 1 } </span>
             <nuxt-link class="hover:text-orange transition text-color text-nowrap" to="#">о нас</nuxt-link>
           </li>
           <li class="md:mb-0 mb-10">
-            <span class="block text-[10px] mb-2.5 md:hidden"> { 2 } </span>
+            <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 2 } </span>
             <nuxt-link class="hover:text-orange transition text-color" to="#">ценности</nuxt-link>
           </li>
           <li class="md:mb-0 mb-10">
-            <span class="block text-[10px] mb-2.5 md:hidden"> { 3 } </span>
+            <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 3 } </span>
             <nuxt-link class="hover:text-orange transition text-color" to="#">основатели</nuxt-link>
           </li>
           <li>
-            <span class="block text-[10px] mb-2.5 md:hidden"> { 4 } </span>
+            <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 4 } </span>
             <nuxt-link class="hover:text-orange transition text-color" to="#">проекты</nuxt-link>
           </li>
         </ul>
