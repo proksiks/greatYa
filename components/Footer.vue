@@ -88,11 +88,11 @@
   </div>
 </template>
 
-<script>
+<script setup>
   const openAndroidApp = "tg://t.me/USERNAME";
   const date = new Date();
-
   const year = computed(() => {
-    d.getFullYear();
+    return date.getFullYear();
   });
+  console.log(year);
 </script>
