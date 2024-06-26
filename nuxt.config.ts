@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   app: {
     baseURL: "/greatYa.github.io/",
     head: {
+      //script: [{ src: 'https://telegram.org/js/telegram-web-app.js' }],
       link: [{ rel: 'shortcut icon', href: 'favicon.ico' }]
     }
   },
