@@ -7,6 +7,9 @@
   </div>
   <Peoples />
   <Projects />
+  <div class="bg-black">
+    <Form />
+  </div>
 </template>
 
 <script setup></script>

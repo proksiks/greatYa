@@ -15,7 +15,7 @@
           <div>
             <span class="block md:hidden mb-3 text-[0.625rem]"> { 1 } </span>
             <img
-              class="object-cover xl:max-w-none min-w-[15.5625rem] 2xl:w-[34.875rem] xl:w-[23.75rem] w-auto"
+              class="object-cover xl:max-w-none min-w-[15.5625rem] 2xl:w-[27.8125rem] xl:w-[21.75rem] w-auto"
               src="/images/peoples/people-1.png"
               alt="Ильяс Койносов"
               width="445"
