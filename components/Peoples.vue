@@ -9,7 +9,7 @@
 
     <div class="xl:grid xl:grid-cols-8 gap-5">
       <div
-        class="xl:col-start-1 xl:col-end-5 max-w-[15.625rem] sm:max-w-[46.5625rem] xl:ml-0 ml-auto xl:mb-0 mb-[3.75rem]"
+        class="xl:col-start-1 xl:col-end-5 max-w-[15.625rem] md:max-w-[46.5625rem] xl:ml-0 ml-auto sm:ml-0 xl:mb-0 mb-[3.75rem]"
       >
         <div class="flex md:flex-row flex-col gap-5 pr-5">
           <div>
@@ -39,7 +39,7 @@
         </div>
       </div>
       <div
-        class="xl:row-start-2 xl:row-end-3 xl:col-start-5 xl:col-end-9 items-start xl:-mt-[10.25rem] row-span max-w-[16.0625rem] sm:max-w-[43.75rem] xl:max-w-none mb-[3.75rem] lx:mb-0"
+        class="xl:row-start-2 xl:row-end-3 xl:col-start-5 xl:col-end-9 items-start xl:-mt-[10.25rem] row-span max-w-[16.0625rem] sm:ml-auto md:ml-0 md:max-w-[43.75rem] xl:max-w-none mb-[3.75rem] lx:mb-0"
       >
         <div class="flex md:flex-row flex-col gap-5 pr-5">
           <div>
