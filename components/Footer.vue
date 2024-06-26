@@ -2,7 +2,7 @@
   <div class="md:mt-26 mt-25">
     <div class="grid grid-cols-8">
       <div class="row-start-1">
-        <a href="web.telegram" target="_blank">telegram</a>
+        <a href="https://web.telegram.org/a/" target="_blank">telegram</a>
         <a href="youtube:/" target="_blank">youtube</a>
         <a href="vk" target="_blank">вконтакте</a>
       </div>
