@@ -43,7 +43,7 @@
     </div>
     <div class="col-start-3 col-end-5 md:mt-[10rem] mt-[3.75rem]">
       <img
-        class="max-w-[9.625rem] md:max-w-none mx-auto"
+        class="xs:max-w-[9.625rem] md:max-w-[15.625rem] xl:max-w-none mx-auto"
         src="/images/quality/quality-3.png"
         alt="Жилой комплекс"
         width="443"
