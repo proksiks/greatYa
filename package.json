@@ -10,8 +10,10 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "gsap": "^3.12.5",
     "normalize.css": "^8.0.1",
     "nuxt": "^3.12.2",
+    "split-type": "^0.3.4",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3"
   },

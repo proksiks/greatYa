@@ -2,7 +2,7 @@
   <div class="md:mt-26 mt-25 md:mx-10 mx-2.5">
     <div class="md:grid md:grid-cols-8 md:mb-[8rem] mb-[1.8125rem]">
       <div class="col-start-1 col-end-4 hidden md:block">
-        <a class="block" href="https://telegram.org/">telegram app</a>
+        <a class="block" href="https://t.me/senior_frontender">telegram app</a>
         <a class="block mt-5" href="https://www.youtube.com/?app=desktop&hl=ru" target="_blank">youtube</a>
         <a class="block mt-5" href="https://vk.com/login?u=2&to=L3dlYi5hcHBz" target="_blank">вконтакте</a>
       </div>
@@ -15,9 +15,8 @@
     <div class="flex flex-col-reverse pb-10 md:grid md:grid-cols-8">
       <div class="md:col-start-1 md:col-end-4">
         <div class="md:mt-0 mt-[4.75rem]">
-          <!-- md:hidden -->
           <div class="flex justify-center w-full text-[0.75rem] md:hidden">
-            <a class="block" href="https://telegram.org/">telegram app</a>
+            <a class="block" href="tg://t.me/USERNAME">telegram app</a>
             <a class="block mx-[2.9375rem]" href="https://www.youtube.com/?app=desktop&hl=ru" target="_blank">
               youtube
             </a>
@@ -94,5 +93,4 @@
   const year = computed(() => {
     return date.getFullYear();
   });
-  console.log(year);
 </script>

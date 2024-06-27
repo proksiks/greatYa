@@ -1,5 +1,6 @@
 <template>
-  <div class="pt-20">
+  <div>
+    <Loader />
     <Header />
     <slot />
     <Footer />

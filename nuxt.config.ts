@@ -7,16 +7,18 @@ export default defineNuxtConfig({
       link: [{ rel: 'shortcut icon', href: 'favicon.ico' }]
     }
   },
-  ssr: false,
   css: ['normalize.css'],
   //devtools: { enabled: true },
   modules: ["@nuxtjs/tailwindcss"],
-
+  build: {
+    transpile: ['gsap'],
+  },
   tailwindcss: {
     exposeConfig: true,
     viewer: true,
   },
 
+  ssr: false,
   //typescript: {
   //  typeCheck: true
   //},
