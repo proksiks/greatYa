@@ -52,5 +52,10 @@
       />
     </div>
   </div>
-  <img class="cols-start-3 col-end-5 block" src="/images/quality/quality-bg.svg" alt="Декоративная картинка" />
+  <img
+    class="cols-start-3 col-end-5 block"
+    src="/images/quality/quality-bg.svg"
+    alt="Декоративная картинка"
+    loading="lazy"
+  />
 </template>

@@ -23,7 +23,7 @@
             <a class="block" href="https://vk.com/login?u=2&to=L3dlYi5hcHBz" target="_blank">вконтакте</a>
           </div>
           <div class="flex justify-center md:justify-start my-2.5 md:my-0">
-            <img src="/images/big-logo.svg" alt="" />
+            <img src="/images/big-logo.svg" alt="Логотип" loading="lazy" />
           </div>
           <div class="flex items-end w-full col-span-5 md:hidden">
             <div class="flex items-center justify-between font-petrov w-full text-[0.75rem]">

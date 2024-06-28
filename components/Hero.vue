@@ -1,5 +1,8 @@
 <template>
-  <video class="w-full h-svh" src="/images/hero/screen.mp4" muted loop ref="video"></video>
+  <video class="w-full h-svh" muted loop ref="video">
+    <source src="/images/hero/screen.mp4" type="video/mp4" />
+    <source src="/images/hero/screen.mp4" type="video/webm" />
+  </video>
 </template>
 
 <script setup>

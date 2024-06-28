@@ -13,7 +13,7 @@
           <div class="flex-shrink-0 max-w-[253px] xl:max-w-[42.25rem] mr-[1.5625rem] sm:mr-[3.75rem] xl:mr-[15.875rem]">
             <div class="text-[0.625rem] md:text-[1rem]">{ 1 }</div>
             <div class="my-2.5 md:my-5">
-              <img src="/images/projects/project-1.png" alt="Проект" />
+              <img src="/images/projects/project-1.png" alt="Проект" loading="lazy" />
             </div>
             <div>
               <div class="flex items-start justify-between mb-2.5">
@@ -45,7 +45,7 @@
           >
             <div class="text-[0.625rem] md:text-[1rem]">{ 2 }</div>
             <div class="my-2.5 md:my-5">
-              <img src="/images/projects/project-2.png" alt="Проект" />
+              <img src="/images/projects/project-2.png" alt="Проект" loading="lazy" />
             </div>
             <div>
               <div class="flex items-start justify-between mb-2.5">
@@ -77,7 +77,7 @@
           >
             <div class="text-[0.625rem] md:text-[1rem]">{ 3 }</div>
             <div class="my-2.5 md:my-5">
-              <img src="/images/projects/project-3.png" alt="Проект" />
+              <img src="/images/projects/project-3.png" alt="Проект" loading="lazy" />
             </div>
             <div>
               <div class="flex items-start justify-between mb-2.5">

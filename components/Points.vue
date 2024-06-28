@@ -22,6 +22,7 @@
           class="block xl:mb-[10.25rem] md:mb-[5.625rem] mb-[3.5625rem] min-w-[13.4375rem]"
           src="/images/points/point-1.png"
           alt="Здание"
+          loading="lazy"
         />
         <div class="max-w-[26.875rem] min-w-[14rem] xl:ml-[7.5625rem] md:ml-[2.5rem] ml-[1.25rem] mb-5">
           <p class="md:mb-5 mb-2.5 md:text-[0.875rem] text-[0.625rem]">{ 2 }</p>
@@ -45,6 +46,7 @@
           class="block md:mt-[8.4375rem] mt-[5rem] xl:ml-[12.0625rem] md:ml-[5.625rem] ml-[1.875rem] min-w-[13.4375rem]"
           src="/images/points/point-2.png"
           alt="Здание"
+          loading="lazy"
         />
       </div>
       <div
