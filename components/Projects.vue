@@ -21,7 +21,7 @@
                   new <br />
                   white house
                 </span>
-                <nuxt-link to="#">
+                <button @click="() => open()">
                   <svg
                     class="md:max-w-none max-w-2 max-h-2 md:max-h-none"
                     width="51"
@@ -32,7 +32,7 @@
                   >
                     <path d="M0 3C17.8418 3 48 3 48 3M48 3V51M48 3L2.31325 48.6867" stroke="#F2490A" stroke-width="6" />
                   </svg>
-                </nuxt-link>
+                </button>
               </div>
               <div class="max-w-[17.125rem] font-manrope md:text-[1rem] text-[0.75rem]">
                 от 3,7 млн ₽ <br />
@@ -53,7 +53,7 @@
                   Норден. <br />
                   это комфорт
                 </span>
-                <nuxt-link to="#">
+                <button @click="() => open()">
                   <svg
                     class="md:max-w-none max-w-2 max-h-2 md:max-h-none"
                     width="51"
@@ -64,7 +64,7 @@
                   >
                     <path d="M0 3C17.8418 3 48 3 48 3M48 3V51M48 3L2.31325 48.6867" stroke="#F2490A" stroke-width="6" />
                   </svg>
-                </nuxt-link>
+                </button>
               </div>
               <div class="max-w-[17.125rem] font-manrope md:text-[1rem] text-[0.75rem]">
                 от 12,7 млн ₽ <br />
@@ -85,7 +85,7 @@
                   малоэтажный <br />
                   мини город 2024
                 </span>
-                <nuxt-link to="#">
+                <button @click="() => open()">
                   <svg
                     class="md:max-w-none max-w-2 max-h-2 md:max-h-none"
                     width="51"
@@ -96,7 +96,7 @@
                   >
                     <path d="M0 3C17.8418 3 48 3 48 3M48 3V51M48 3L2.31325 48.6867" stroke="#F2490A" stroke-width="6" />
                   </svg>
-                </nuxt-link>
+                </button>
               </div>
               <div class="max-w-[17.125rem] font-manrope md:text-[1rem] text-[0.75rem]">
                 от 12,7 млн ₽ <br />
@@ -109,3 +109,22 @@
     </div>
   </div>
 </template>
+
+<script setup>
+  import { ModalsContainer, useModal } from "vue-final-modal";
+  import ModalForm from "~/components/ModalForm.vue";
+
+  const { open, close } = useModal({
+    component: ModalForm,
+    attrs: {
+      title: "Этот проект находится на стадии планирования, чтобы узнать подробнее, напишите нам.",
+      teleportTo: "body",
+      onClose() {
+        close();
+      },
+      onConfirm() {
+        close();
+      },
+    },
+  });
+</script>

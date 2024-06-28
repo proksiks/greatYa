@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       link: [{ rel: 'shortcut icon', href: 'favicon.ico' }]
     }
   },
-  css: ['normalize.css'],
+  css: ['normalize.css', 'vue-final-modal/style.css'],
   //devtools: { enabled: true },
   modules: ["@nuxtjs/tailwindcss"],
   build: {

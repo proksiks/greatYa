@@ -35,15 +35,20 @@
       </div>
       <div class="grid grid-cols-5 md:col-start-4 md:col-end-9">
         <form class="col-start-1 md:col-start-2 lg:col-end-5 col-end-6 md:mb-10">
-          <div class="relative group">
+          <label class="block relative group mt-[3.75rem]">
             <input
-              class="py-2.5 w-full md:text-lg text-[0.875rem] bg-transparent placeholder:text-black/40 group-hover:border-orange transition-all outline-none border-b-2 uppercase"
-              type="text"
-              placeholder="почта*"
+              class="peer py-2.5 w-full md:text-lg text-[0.875rem] bg-transparent placeholder:text-transparent group-hover:border-orange transition-all outline-none border-b-2"
+              type="tel"
+              placeholder="Подписаться*"
             />
-          </div>
+            <span
+              class="uppercase peer-[&:not(:placeholder-shown)]:text-[14px] peer-[&:not(:placeholder-shown)]:top-[-1.625rem] peer-[&:not(:placeholder-shown)]:text-orange transition-all absolute left-0 top-0 md:text-lg text-[0.875rem] pt-2.5 text-black/40 pointer-events-none"
+            >
+              Подписаться*
+            </span>
+          </label>
           <div class="md:mt-10 mt-5">
-            <label class="flex items-center font-petrov cursor-pointer">
+            <label class="flex items-center flex-wrap gap-y-2 font-petrov cursor-pointer">
               <span class="relative block w-[0.9375rem] md:w-5 h-[0.9375rem] md:h-5 border-2 mr-2.5">
                 <input
                   class="bg-transparent border-0 peer absolute opacity-0 pointer-events-none left-[-6250rem]"

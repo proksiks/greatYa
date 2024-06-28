@@ -5,7 +5,14 @@
     :class="{ '-translate-y-full': translateHeader }"
   >
     <nuxt-link class="relative z-10" to="/">
-      <img class="md:w-[4.9375rem] w-[3.9375rem]" src="/images/logo.svg" alt="Логотип" width="79" height="49" loading="lazy" />
+      <img
+        class="md:w-[4.9375rem] w-[3.9375rem]"
+        src="/images/logo.svg"
+        alt="Логотип"
+        width="79"
+        height="49"
+        loading="lazy"
+      />
     </nuxt-link>
     <div
       class="flex-1 flex md:flex-row flex-col items-center overflow-auto md:overflow-visible justify-between absolute md:static transition-all h-svh md:h-auto w-full md:w-auto -translate-y-full md:translate-y-0 duration-500 left-0 top-0 md:py-0 py-10"
@@ -15,23 +22,23 @@
         <ul class="md:flex gap-5 uppercase">
           <li class="md:mb-0 mb-10">
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 1 } </span>
-            <nuxt-link class="hover:text-orange transition text-color text-nowrap" to="#">о нас</nuxt-link>
+            <nuxt-link class="font-medium hover:text-orange transition text-color text-nowrap" to="#">о нас</nuxt-link>
           </li>
           <li class="md:mb-0 mb-10">
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 2 } </span>
-            <nuxt-link class="hover:text-orange transition text-color" to="#">ценности</nuxt-link>
+            <nuxt-link class="font-medium hover:text-orange transition text-color" to="#">ценности</nuxt-link>
           </li>
           <li class="md:mb-0 mb-10">
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 3 } </span>
-            <nuxt-link class="hover:text-orange transition text-color" to="#">основатели</nuxt-link>
+            <nuxt-link class="font-medium hover:text-orange transition text-color" to="#">основатели</nuxt-link>
           </li>
           <li>
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 4 } </span>
-            <nuxt-link class="hover:text-orange transition text-color" to="#">проекты</nuxt-link>
+            <nuxt-link class="font-medium hover:text-orange transition text-color" to="#">проекты</nuxt-link>
           </li>
         </ul>
       </nav>
-      <button class="relative uppercase group ml-5 md:mt-0 mt-5" @click="showModal">
+      <button class="relative uppercase font-medium group ml-5 md:mt-0 mt-5" @click="() => open()">
         связаться
         <span
           class="absolute -bottom-1 left-0 w-full h-0.5 bg-black transition duration-300 origin-right scale-x-100 group-hover:scale-x-0"
@@ -51,10 +58,27 @@
         :class="{ 'rotate-45 !top-1/2 -translate-y-1/2': isOpenMenu }"
       ></span>
     </button>
+    <ModalsContainer />
   </header>
 </template>
 
 <script setup>
+  import { ModalsContainer, useModal } from "vue-final-modal";
+  import ModalForm from "~/components/ModalForm.vue";
+
+  const { open, close } = useModal({
+    component: ModalForm,
+    attrs: {
+      teleportTo: "body",
+      onClose() {
+        close();
+      },
+      onConfirm() {
+        close();
+      },
+    },
+  });
+
   const header = ref(null);
   const translateHeader = ref(false);
   const isOpenMenu = ref(false);

@@ -5,7 +5,7 @@
         class="sm:col-start-3 col-end-9 xl:leading-[7.3125rem] leading-[100%] tracking-tighter xl:text-[8.125rem] md:text-[3.25rem] text-[2.1875rem] uppercase"
         char
       >
-        отличны
+        харизмы
       </p>
       <p
         class="sm:col-start-4 col-end-9 xl:leading-[7.3125rem] leading-[100%] tracking-tighter xl:text-[8.125rem] md:text-[3.25rem] text-[2.1875rem] uppercase text-orange sm:ml-0 ml-8"
@@ -20,8 +20,8 @@
         class="sm:col-start-4 col-end-9 xl:mt-24 mt-20 xl:text-[2.75rem] md:text-[1.5rem] xl:leading-[3rem] leading-[100%] sm:ml-0 ml-8"
         word
       >
-        Мы преданная своему делу и увлеченная команда, которая строит жилые дома. За нашими плечами 25 лет опыта и сотни
-        довольных клиентов. Мы вкладываем душу в то, что делаем.
+        Мы делаем все возможное, чтобы наша работа не только удивляла, но и захватывала дух, оставляя яркие следы в
+        сердцах клиентов. Каждый проект — это возможность дать каждому из них нечто большее, чем они ожидают.
       </p>
     </div>
   </div>
@@ -62,7 +62,7 @@
       opacity: 0,
       duration: 2,
       ease: "sine.out",
-      stagger: 0.05,
+      stagger: 0.075,
 
       scrollTrigger: {
         trigger: "[word]",

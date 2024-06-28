@@ -8,8 +8,6 @@
   <Peoples />
   <Projects />
   <div class="bg-black">
-    <Form />
+    <Welcome />
   </div>
 </template>
-
-<script setup></script>

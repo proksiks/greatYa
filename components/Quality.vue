@@ -12,19 +12,20 @@
     <p
       class="md:col-start-1 md:col-end-7 uppercase xl:text-2xl md:text-[4.5rem] text-[2.1875rem] tracking-[-0.07em] xl:leading-[7.3125rem] leading-[100%] md:pb-20 pb-10"
     >
-      <span class="block">качественная</span>
+      <span class="block">увлеченная</span>
       <span class="block ml-7 md:ml-[14.5rem] text-nowrap">работа –</span>
       <span class="block ml-7 md:ml-[14.5rem] text-orange text-nowrap">это наш</span>
       <span class="block text-orange">успех</span>
     </p>
-    <p class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov max-w-[17.6875rem] md:max-w-none">
-      В основе нашей деятельности лежат инновации. Мы используем только лучшие материалы для строительства домов
+    <p class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov max-w-[26.875rem] md:max-w-none">
+      Мы уверены, что великие компании строятся на страстных людях, увлеченных своим делом. Говорят, что наш энтузиазм
+      заражает всех вокруг, а наши идеи становятся искрами, зажигающими огонь инноваций.
     </p>
     <p
       class="md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] mt-[3.75rem] md:mt-[10rem] pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
     >
-      Благодаря сочетанию современного дизайна и традиционной эстетики, мы строим дома, которые воплощают в себе баланс
-      стиля, комфорта
+      Мы видим в работе не просто обязанность, а возможность воплощать смелые идеи, делая мир лучше, краше и интереснее
+      в каждом дне, в каждом проекте.
     </p>
   </div>
   <div class="sm:grid grid-cols-8 xl:my-26 my-25 px-2.5 md:px-10">
