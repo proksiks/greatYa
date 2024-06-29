@@ -14,7 +14,7 @@
     </div>
     <div class="flex flex-col-reverse pb-10 md:grid md:grid-cols-8">
       <div class="md:col-start-1 md:col-end-4">
-        <div class="md:mt-0 mt-[4.75rem]">
+        <div class="flex flex-col justify-end md:mt-0 mt-[4.75rem] h-full">
           <div class="flex justify-center w-full text-[0.75rem] md:hidden">
             <a class="block" href="tg://t.me/USERNAME">telegram app</a>
             <a class="block mx-[2.9375rem]" href="https://www.youtube.com/?app=desktop&hl=ru" target="_blank">
@@ -22,7 +22,7 @@
             </a>
             <a class="block" href="https://vk.com/login?u=2&to=L3dlYi5hcHBz" target="_blank">вконтакте</a>
           </div>
-          <div class="flex justify-center md:justify-start my-2.5 md:my-0">
+          <div class="justify-center md:justify-start my-2.5 md:my-0">
             <img src="/images/big-logo.svg" alt="Логотип" loading="lazy" />
           </div>
           <div class="flex items-end w-full col-span-5 md:hidden">
