@@ -2,27 +2,28 @@
   <p
     class="flex justify-between text-white md:px-10 px-2.5 pt-2.5 md:pt-10 pb-5 text-[0.875rem] tracking-[-0.03em] uppercase"
   >
-    <span>результат</span>
-    <span>{</span>
-    <span>{ баланс }</span>
-    <span>эстетика</span>
-    <span>}</span>
+    <span qualityChar>результат</span>
+    <span qualityChar>{</span>
+    <span qualityChar>{ баланс }</span>
+    <span qualityChar>эстетика</span>
+    <span qualityChar>}</span>
   </p>
   <div class="md:grid md:grid-cols-8 text-white px-2.5 md:px-10">
     <p
       class="md:col-start-1 md:col-end-7 uppercase xl:text-2xl md:text-[4.5rem] text-[2.1875rem] tracking-[-0.07em] xl:leading-[7.3125rem] leading-[100%] md:pb-20 pb-10"
     >
-      <span class="block">увлеченная</span>
-      <span class="block ml-7 md:ml-[14.5rem] text-nowrap">работа –</span>
-      <span class="block ml-7 md:ml-[14.5rem] text-orange text-nowrap">это наш</span>
-      <span class="block text-orange">успех</span>
+      <span qualityWord class="block">увлеченная</span>
+      <span qualityWord class="block ml-7 md:ml-[14.5rem] text-nowrap">работа –</span>
+      <span qualityWord class="block ml-7 md:ml-[14.5rem] text-orange text-nowrap">это наш</span>
+      <span qualityWord class="block text-orange">успех</span>
     </p>
-    <p class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov max-w-[26.875rem] md:max-w-none">
+    <p qualityDescr class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov max-w-[26.875rem] md:max-w-none">
       Мы уверены, что великие компании строятся на страстных людях, увлеченных своим делом. Говорят, что наш энтузиазм
       заражает всех вокруг, а наши идеи становятся искрами, зажигающими огонь инноваций.
     </p>
     <p
       class="md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] mt-[3.75rem] md:mt-[10rem] pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
+      qualityText
     >
       Мы видим в работе не просто обязанность, а возможность воплощать смелые идеи, делая мир лучше, краше и интереснее
       в каждом дне, в каждом проекте.
@@ -60,3 +61,91 @@
     loading="lazy"
   />
 </template>
+
+<script setup>
+  import SplitType from "split-type";
+
+  const { $gsap: gsap } = useNuxtApp();
+
+  onMounted(() => {
+    nextTick(() => {
+      new SplitType("[qualityChar]", {
+        types: "lines, words, chars",
+        tagName: "span",
+      });
+      new SplitType("[qualityDescr]", {
+        types: "lines, words, chars",
+        tagName: "span",
+      });
+      new SplitType("[qualityText]", {
+        types: "lines, words, chars",
+        tagName: "span",
+      });
+
+      gsap.from("[qualityChar] .char", {
+        y: 10,
+        opacity: 0,
+        duration: 2,
+        ease: "sine.out",
+        stagger: 0.05,
+
+        scrollTrigger: {
+          trigger: "[qualityChar]",
+          start: "top bottom",
+          end: "bottom top+=400px",
+          scrub: true,
+        },
+      });
+
+      new SplitType("[qualityWord]", {
+        types: "lines, words, chars",
+        tagName: "span",
+      });
+
+      gsap.from("[qualityWord] .word", {
+        y: 200,
+        opacity: 0,
+        duration: 2,
+        ease: "sine.out",
+        stagger: 0.4,
+
+        scrollTrigger: {
+          trigger: "[qualityWord]",
+          start: "top bottom",
+          end: "bottom top",
+          scrub: true,
+        },
+      });
+
+      gsap.from("[qualityDescr] .word", {
+        y: 100,
+        opacity: 0,
+        duration: 2,
+        ease: "sine.out",
+        stagger: 0.04,
+
+        scrollTrigger: {
+          trigger: "[qualityDescr]",
+          start: "top bottom",
+          end: "bottom top+=200px",
+          scrub: true,
+        },
+      });
+
+      gsap.from("[qualityText] .word", {
+        y: 100,
+        opacity: 0,
+        duration: 2,
+        ease: "sine.out",
+        stagger: 0.15,
+
+        scrollTrigger: {
+          trigger: "[qualityText]",
+          start: "top bottom",
+          end: "bottom top+=400px",
+          scrub: true,
+        },
+      });
+    });
+  });
+</script>

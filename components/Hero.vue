@@ -1,7 +1,7 @@
 <template>
   <video class="w-full h-svh" muted loop ref="video">
     <source src="/images/hero/screen.mp4" type="video/mp4" />
-    <source src="/images/hero/screen.mp4" type="video/webm" />
+    <source src="/images/hero/screen.webm" type="video/webm" />
   </video>
 </template>
 
@@ -18,7 +18,7 @@
         }
       };
 
-      setTimeout(startVideo, 800);
+      setTimeout(startVideo, 1000);
     });
   });
 </script>

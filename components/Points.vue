@@ -7,7 +7,7 @@
       <span class="block xl:mr-[18.8125rem] mr-[7.5rem]">лич</span>
       <span class="block mr-[3.125rem]">ны</span>
     </div>
-    <div class="flex flex-nowrap">
+    <div class="flex flex-nowrap min-h-[37.5rem]">
       <div
         class="md:shrink-0 relative z-10 max-w-[26.875rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]"
       >
@@ -20,6 +20,8 @@
       <div class="md:shrink-0 relative z-10 mt-20 xl:mr-[16.625rem] md:mr-[7.5rem] mr-[1.6875rem]">
         <img
           class="block xl:mb-[10.25rem] md:mb-[5.625rem] mb-[3.5625rem] min-w-[13.4375rem]"
+          width="445"
+          height="269"
           src="/images/points/point-1.png"
           alt="Здание"
           loading="lazy"
@@ -44,6 +46,8 @@
         </div>
         <img
           class="block md:mt-[8.4375rem] mt-[5rem] xl:ml-[12.0625rem] md:ml-[5.625rem] ml-[1.875rem] min-w-[13.4375rem]"
+          width="445"
+          height="269"
           src="/images/points/point-2.png"
           alt="Здание"
           loading="lazy"
