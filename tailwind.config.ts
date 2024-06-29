@@ -15,7 +15,10 @@ export default <Partial<Config>>{
                 DEFAULT: '#FFFFFF',
             },
             orange: {
-                DEFAULT: ' #f2490a',
+                DEFAULT: '#f2490a',
+            },
+            red: {
+                DEFAULT: '#ff0000',
             },
         },
         fontFamily: {
@@ -46,7 +49,7 @@ export default <Partial<Config>>{
                 'sm': '0.875rem',
                 'md': '1.3125rem',
                 'lg': '1.75rem',
-                'xl': '2.5rem',
+                'xl': '4.5rem',
                 '2xl': '8.125rem',
                 '3xl': '8.75rem',
             },

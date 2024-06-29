@@ -1,6 +1,6 @@
 <template>
   <p
-    class="flex justify-between text-white md:px-10 px-2.5 pt-2.5 md:pt-10 pb-5 text-[0.875rem] tracking-[-0.03em] uppercase"
+    class="flex justify-between text-white md:px-10 px-2.5 pt-2.5 md:pt-10 pb-5 text-sm tracking-[-0.03em] uppercase"
   >
     <span qualityChar>результат</span>
     <span qualityChar>{</span>
@@ -10,7 +10,7 @@
   </p>
   <div class="md:grid md:grid-cols-8 text-white px-2.5 md:px-10">
     <p
-      class="md:col-start-1 md:col-end-7 uppercase xl:text-2xl md:text-[4.5rem] text-[2.1875rem] tracking-[-0.07em] xl:leading-[7.3125rem] leading-[100%] md:pb-20 pb-10"
+      class="md:col-start-1 md:col-end-7 uppercase 2xl:text-2xl xl:text-xl text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] md:pb-20 pb-10"
     >
       <span qualityWord class="block">увлеченная</span>
       <span qualityWord class="block ml-7 md:ml-[14.5rem] text-nowrap">работа –</span>
@@ -93,7 +93,7 @@
       });
 
       gsap.from("[qualityChar] .char", {
-        y: 10,
+        y: 20,
         opacity: 0,
         duration: 2,
         ease: "sine.out",
@@ -108,7 +108,7 @@
       });
 
       gsap.from("[qualityWord] .word", {
-        y: 200,
+        y: 50,
         opacity: 0,
         duration: 2,
         ease: "sine.out",
@@ -138,7 +138,7 @@
       });
 
       gsap.from("[qualityText] .word", {
-        y: 100,
+        y: 50,
         opacity: 0,
         duration: 2,
         ease: "sine.out",

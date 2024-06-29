@@ -22,19 +22,39 @@
         <ul class="md:flex gap-5 uppercase">
           <li class="md:mb-0 mb-10">
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 1 } </span>
-            <nuxt-link class="font-medium hover:text-orange transition text-color text-nowrap" to="#">о нас</nuxt-link>
+            <nuxt-link
+              class="header-link relative font-medium hover:text-orange transition text-color text-nowrap overflow-hidden py-0.5"
+              to="#"
+            >
+              о нас
+            </nuxt-link>
           </li>
           <li class="md:mb-0 mb-10">
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 2 } </span>
-            <nuxt-link class="font-medium hover:text-orange transition text-color" to="#">ценности</nuxt-link>
+            <nuxt-link
+              class="header-link relative font-medium hover:text-orange transition text-color overflow-hidden py-0.5"
+              to="#"
+            >
+              ценности
+            </nuxt-link>
           </li>
           <li class="md:mb-0 mb-10">
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 3 } </span>
-            <nuxt-link class="font-medium hover:text-orange transition text-color" to="#">основатели</nuxt-link>
+            <nuxt-link
+              class="header-link relative font-medium hover:text-orange transition text-color overflow-hidden py-0.5"
+              to="#"
+            >
+              основатели
+            </nuxt-link>
           </li>
           <li>
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 4 } </span>
-            <nuxt-link class="font-medium hover:text-orange transition text-color" to="#">проекты</nuxt-link>
+            <nuxt-link
+              class="header-link relative font-medium hover:text-orange transition text-color overflow-hidden py-0.5"
+              to="#"
+            >
+              проекты
+            </nuxt-link>
           </li>
         </ul>
       </nav>
@@ -82,6 +102,8 @@
   const header = ref(null);
   const translateHeader = ref(false);
   const isOpenMenu = ref(false);
+  const showLine = ref(false);
+  const hideLine = ref(false);
 
   function openMenu() {
     isOpenMenu.value = !isOpenMenu.value;
@@ -103,3 +125,32 @@
     });
   });
 </script>
+
+<style scoped>
+  .header-link {
+    position: relative;
+    display: block;
+  }
+  .header-link::before {
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    pointer-events: none;
+    pointer-events: none;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.2s ease, fill 0.2s ease-out;
+    background: black;
+  }
+
+  @media (any-hover: hover) {
+    .header-link:hover::before,
+    .header-link:focus::before {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+</style>

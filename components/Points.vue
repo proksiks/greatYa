@@ -11,8 +11,8 @@
       <div
         class="md:shrink-0 relative z-10 max-w-[26.875rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]"
       >
-        <p class="md:mb-5 mb-2.5 md:text-[0.875rem] text-[0.625rem]">{ 1 }</p>
-        <p class="mb-2.5 md:text-lg text-[0.875rem] uppercase font-medium">Синергия</p>
+        <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 1 }</p>
+        <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">Синергия</p>
         <p class="font-petrov md:text-[1rem] text-[0.75rem]">
           Гармоничное объединение для движения к результату, когда 1+1=5
         </p>
@@ -27,8 +27,8 @@
           loading="lazy"
         />
         <div class="max-w-[26.875rem] min-w-[14rem] xl:ml-[7.5625rem] md:ml-[2.5rem] ml-[1.25rem] mb-5">
-          <p class="md:mb-5 mb-2.5 md:text-[0.875rem] text-[0.625rem]">{ 2 }</p>
-          <p class="mb-2.5 md:text-lg text-[0.875rem] uppercase font-medium">Любовь</p>
+          <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 2 }</p>
+          <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">Любовь</p>
           <p class="font-petrov md:text-[1rem] text-[0.75rem]">
             Искренняя заинтересованность в жизни и развитии дела, клиентов, жизни людей. Мы делаем все важное для
             результата сами, проактивно
@@ -37,8 +37,8 @@
       </div>
       <div class="md:shrink-0 relative z-10">
         <div class="max-w-[26.875rem] min-w-[14rem]">
-          <p class="md:mb-5 mb-2.5 md:text-[0.875rem] text-[0.625rem]">{ 3 }</p>
-          <p class="mb-2.5 md:text-lg text-[0.875rem] uppercase font-medium">Развитие</p>
+          <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 3 }</p>
+          <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">Развитие</p>
           <p class="font-petrov md:text-[1rem] text-[0.75rem]">
             Постоянные изменения себя через знания, опыт и обучение. Каждый день быть лучше, чем вчера. Обогатить города
             проектами
@@ -56,8 +56,8 @@
       <div
         class="md:shrink-0 relative z-10 max-w-[26.875rem] min-w-[14rem] xl:ml-[16.25rem] md:ml-[7.5rem] ml-[5rem] pr-5 mt-auto mb-5"
       >
-        <p class="md:mb-5 mb-2.5 md:text-[0.875rem] text-[0.625rem]">{ 4 }</p>
-        <p class="mb-2.5 md:text-lg text-[0.875rem] uppercase font-medium">Эффективность</p>
+        <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 4 }</p>
+        <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">Эффективность</p>
         <p class="font-petrov md:text-[1rem] text-[0.75rem]">
           С наименьшим вложением усилий и ресурсов получение максимального резльтата
         </p>

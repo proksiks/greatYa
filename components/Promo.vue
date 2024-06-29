@@ -1,28 +1,25 @@
 <template>
-  <div class="xl:my-26 md:my-[11.25rem] my-25 xl:px-15 px-5">
-    <div class="grid sm:grid-cols-8 grid-cols-2 text-nowrap">
-      <p
-        class="sm:col-start-3 col-end-9 xl:leading-[7.3125rem] leading-[100%] tracking-tighter xl:text-[8.125rem] md:text-[3.25rem] text-[2.1875rem] uppercase"
-        char
-      >
-        харизмы
-      </p>
-      <p
-        class="sm:col-start-4 col-end-9 xl:leading-[7.3125rem] leading-[100%] tracking-tighter xl:text-[8.125rem] md:text-[3.25rem] text-[2.1875rem] uppercase text-orange sm:ml-0 ml-8"
-        char
-      >
+  <div class="xl:my-26 md:my-[11.25rem] my-25 xl:px-10 px-2.5">
+    <div
+      class="grid sm:grid-cols-8 grid-cols-2 text-nowrap 2xl:leading-[7.3125rem] leading-[100%] tracking-tighter 2xl:text-[8.125rem] xl:text-xl md:text-[3.25rem] text-[2.1875rem] uppercase"
+    >
+      <p class="sm:col-start-3 col-end-9" char>харизмы</p>
+      <p class="sm:col-start-4 col-end-9 sm:ml-0 ml-8 text-orange" char>
         в том <br />
         что делаем
       </p>
     </div>
     <div class="grid sm:grid-cols-8 grid-cols-2">
-      <p
-        class="sm:col-start-4 col-end-9 xl:mt-24 mt-20 xl:text-[2.75rem] md:text-[1.5rem] xl:leading-[3rem] leading-[100%] sm:ml-0 ml-8"
-        word
+      <div
+        class="font-medium sm:col-start-4 col-end-9 xl:mt-24 mt-20 2xl:text-[2.75rem] md:text-[1.5rem] text-sm 2xl:leading-[3rem] leading-[100%] sm:ml-0"
       >
-        Мы делаем все возможное, чтобы наша работа не только удивляла, но и захватывала дух, оставляя яркие следы в
-        сердцах клиентов. Каждый проект — это возможность дать каждому из них нечто большее, чем они ожидают.
-      </p>
+        <p word>Мы делаем все возможное, чтобы</p>
+        <p word>наша работа не только удивляла, но и</p>
+        <p word>захватывала дух, оставляя яркие</p>
+        <p word>следы в сердцах клиентов. Каждый</p>
+        <p word>проект — это возможность дать</p>
+        <p word>каждому из них нечто большее, чем они ожидают.</p>
+      </div>
     </div>
   </div>
 </template>
@@ -58,7 +55,7 @@
     });
 
     gsap.from("[word] .word", {
-      y: 200,
+      y: 100,
       opacity: 0,
       duration: 2,
       ease: "sine.out",

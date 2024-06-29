@@ -1,7 +1,7 @@
 <template>
   <div class="md:px-10 px-2.5 xl:my-26 my-25">
     <div
-      class="md:grid grid-cols-8 md:mb-20 mb-10 xl:text-2xl md:text-[4.5rem] text-[2.1875rem] tracking-[-0.07em] xl:leading-[7.3125rem] leading-[100%] ml-5 md:ml-0"
+      class="md:grid grid-cols-8 md:mb-20 mb-10 2xl:text-2xl xl:text-xl md:text-[4.5rem] text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] ml-5 md:ml-0"
     >
       <div class="col-start-3 col-end-9">харизмы</div>
       <p class="ml-5 md:ml-0 col-start-4 col-end-9 text-orange">в людях</p>
@@ -30,11 +30,11 @@
               «Мы преданная своему делу и увлеченная команда, которая занимается строительством жилых домов. За нашими
               плечами 25 лет опыта и сотни довольных клиентов. Мы вкладываем душу в то, что делаем.»
             </p>
-            <p class="font-medium md:text-lg text-[0.875rem] mb-2 md:mb-2.5 mt-auto">
+            <p class="font-medium md:text-lg text-sm mb-2 md:mb-2.5 mt-auto">
               Ильяс <br />
               Койносов
             </p>
-            <p class="font-petrov text-[12px] md:text-[1rem]">Генеральный директор</p>
+            <p class="font-petrov text-[0.75rem] md:text-[1rem]">Генеральный директор</p>
           </div>
         </div>
       </div>
@@ -60,11 +60,11 @@
               «Благодаря сочетанию современного дизайна и традиционной эстетики, мы строим дома, которые воплощают в
               себе баланс стиля, комфорта »
             </p>
-            <p class="font-medium md:text-lg text-[0.875rem] mb-2 md:mb-2.5 mt-auto">
+            <p class="font-medium md:text-lg text-sm mb-2 md:mb-2.5 mt-auto">
               Максим <br />
               Долгушин
             </p>
-            <p class="font-petrov text-[12px] md:text-[1rem]">Генеральный директор</p>
+            <p class="font-petrov text-[0.75rem] md:text-[1rem]">Генеральный директор</p>
           </div>
         </div>
       </div>
@@ -90,11 +90,11 @@
               «Мы преданная своему делу и увлеченная команда, которая занимается строительством жилых домов. За нашими
               плечами 25 лет опыта и сотни довольных клиентов. Мы вкладываем душу в то, что делаем.»
             </p>
-            <p class="font-medium md:text-lg text-[0.875rem] mb-2 md:mb-2.5 mt-auto">
+            <p class="font-medium md:text-lg text-sm mb-2 md:mb-2.5 mt-auto">
               Олег <br />
               Кондрашин
             </p>
-            <p class="font-petrov text-[12px] md:text-[1rem]">Генеральный директор</p>
+            <p class="font-petrov text-[0.75rem] md:text-[1rem]">Генеральный директор</p>
           </div>
         </div>
       </div>

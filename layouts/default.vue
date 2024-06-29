@@ -14,7 +14,7 @@
 
   onMounted(() => {
     const scrollLenis = new Lenis({
-      duration: 3,
+      duration: 5,
       orientation: "vertical",
       gestureOrientation: "vertical",
       smoothWheel: true,

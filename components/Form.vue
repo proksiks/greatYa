@@ -1,63 +1,133 @@
 <template>
-  <form @submit.prevent>
-    <label class="block relative group">
-      <input
-        class="peer py-2.5 w-full md:text-lg text-[0.875rem] bg-transparent placeholder:text-transparent group-hover:border-orange transition-all outline-none border-b-2"
-        type="text"
-        placeholder="Имя*"
-      />
-      <span
-        class="peer-[&:not(:placeholder-shown)]:text-[14px] peer-[&:not(:placeholder-shown)]:top-[-1.625rem] peer-[&:not(:placeholder-shown)]:text-orange transition-all absolute left-0 top-0 md:text-lg text-[0.875rem] pt-2.5 text-white/40 pointer-events-none"
-      >
-        Имя*
-      </span>
-    </label>
-    <label class="block relative group mt-[3.75rem]">
-      <input
-        class="peer py-2.5 w-full md:text-lg text-[0.875rem] bg-transparent placeholder:text-transparent group-hover:border-orange transition-all outline-none border-b-2"
-        type="tel"
-        placeholder="Телефон*"
-      />
-      <span
-        class="peer-[&:not(:placeholder-shown)]:text-[14px] peer-[&:not(:placeholder-shown)]:top-[-1.625rem] peer-[&:not(:placeholder-shown)]:text-orange transition-all absolute left-0 top-0 md:text-lg text-[0.875rem] pt-2.5 text-white/40 pointer-events-none"
-      >
-        Телефон*
-      </span>
-    </label>
-    <div class="mt-10">
-      <label class="flex items-center flex-wrap gap-y-2 font-petrov cursor-pointer">
-        <span class="relative block w-5 h-5 border-2 mr-2.5">
-          <input
-            class="bg-transparent border-0 peer absolute opacity-0 pointer-events-none left-[-6250rem]"
-            type="checkbox"
-          />
-          <svg
-            class="absolute peer-checked:opacity-100 opacity-0 transition-all top-[0.125rem] left-[0.0625rem]"
-            width="14"
-            height="12"
-            viewBox="0 0 14 12"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M1 6L4.78571 10L12.5 1" stroke="white" stroke-width="2" />
-          </svg>
+  <div class="relative">
+    <div class="md:text-lg md:mb-[6.75rem] mb-10 pr-5">{{ title }}</div>
+    <div class="flex items-center bg-black absolute inset-0 z-20 text-lg" v-if="sucess">
+      <span> Спасибо, ваша заявка отправлена! Мы свяжемся с вами в ближайшее время. </span>
+    </div>
+    <form @submit.prevent="submitForm">
+      <label class="block relative group">
+        <input
+          v-model="form.name"
+          class="peer py-2.5 w-full md:text-lg text-sm bg-transparent placeholder:text-transparent group-hover:border-orange transition-all outline-none border-b-2"
+          type="text"
+          placeholder="Имя*"
+        />
+        <span
+          class="peer-[&:not(:placeholder-shown)]:text-sm peer-[&:not(:placeholder-shown)]:top-[-1.625rem] peer-[&:not(:placeholder-shown)]:text-orange transition-all absolute left-0 top-0 md:text-lg text-sm pt-2.5 text-white/40 pointer-events-none"
+        >
+          Имя*
         </span>
-        Согласен с&nbsp;
-        <nuxt-link class="hover:no-underline underline" to="#"> политикой конфиденциальности </nuxt-link>
       </label>
-    </div>
-    <div class="mt-[3.75rem]">
-      <button class="relative uppercase group text-lg" @click="$emit('confirm')">
-        отправить
+      <span v-if="!isFormCorrect && !v$.form.name.required.$response" class="text-sm text-red">
+        {{ v$.form.name.required.$message }}
+      </span>
+      <span v-else-if="!isFormCorrect && !v$.form.name.isValidString.$response" class="text-sm text-red">
+        {{ v$.form.name.isValidString.$message }}
+      </span>
+      <label class="block relative group md:mt-[3.75rem] mt-10">
+        <input
+          type="tel"
+          v-model="form.phone"
+          placeholder="Телефон*"
+          v-maska="'+7 ### ### ## ##'"
+          class="peer py-2.5 w-full md:text-lg text-sm bg-transparent placeholder:text-transparent group-hover:border-orange transition-all outline-none border-b-2"
+        />
         <span
-          class="absolute -bottom-1 left-0 w-full h-0.5 bg-white transition duration-300 origin-right scale-x-100 group-hover:scale-x-0"
-        ></span>
-        <span
-          class="absolute -bottom-1 left-0 w-full h-0.5 bg-white transition delay-300 duration-300 origin-left scale-x-0 group-hover:scale-x-100"
-        ></span>
-      </button>
-    </div>
-  </form>
+          class="peer-[&:not(:placeholder-shown)]:text-sm peer-[&:not(:placeholder-shown)]:top-[-1.625rem] peer-[&:not(:placeholder-shown)]:text-orange transition-all absolute left-0 top-0 md:text-lg text-sm pt-2.5 text-white/40 pointer-events-none"
+        >
+          Телефон*
+        </span>
+      </label>
+      <div v-if="!isFormCorrect && !v$.form.phone.required.$response" class="text-sm text-red">
+        {{ v$.form.phone.required.$message }}
+      </div>
+      <div v-else-if="!isFormCorrect && !v$.form.phone.minLength.$response" class="text-sm text-red">
+        {{ v$.form.phone.minLength.$message }}
+      </div>
+      <div class="md:mt-10 mt-5">
+        <label class="flex items-center flex-wrap gap-y-2 font-petrov cursor-pointer text-[0.75rem] md:text-[1rem]">
+          <span class="relative block md:w-5 w-[0.9375rem] md:h-5 h-[0.9375rem] border-2 mr-2.5">
+            <input
+              class="bg-transparent border-0 peer absolute opacity-0 pointer-events-none left-[-6250rem]"
+              type="checkbox"
+            />
+            <svg
+              class="absolute peer-checked:opacity-100 opacity-0 transition-all top-[0.125rem] left-[0.0625rem]"
+              width="14"
+              height="12"
+              viewBox="0 0 14 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M1 6L4.78571 10L12.5 1" stroke="white" stroke-width="2" />
+            </svg>
+          </span>
+          Согласен с&nbsp;
+          <nuxt-link class="hover:no-underline underline" to="#"> политикой конфиденциальности </nuxt-link>
+        </label>
+      </div>
+      <div class="md:mt-[3.75rem] mt-10">
+        <button class="relative uppercase group md:text-lg text-sm" @click="$emit('confirm')">
+          отправить
+          <span
+            class="absolute -bottom-1 left-0 w-full h-0.5 bg-white transition duration-300 origin-right scale-x-100 group-hover:scale-x-0"
+          ></span>
+          <span
+            class="absolute -bottom-1 left-0 w-full h-0.5 bg-white transition delay-300 duration-300 origin-left scale-x-0 group-hover:scale-x-100"
+          ></span>
+        </button>
+      </div>
+    </form>
+  </div>
 </template>
 
-<script setup></script>
+<script setup>
+  import { vMaska } from "maska/vue";
+  import useVuelidate from "@vuelidate/core";
+  import { required, minLength, helpers, maxLength } from "@vuelidate/validators";
+
+  const props = defineProps({
+    title: {
+      type: String,
+      default: "Хотите узнать о нас больше? Напишите нам!",
+    },
+  });
+
+  const sucess = ref(false);
+  const isFormCorrect = ref(true);
+
+  const form = ref({
+    name: "",
+    phone: "",
+  });
+
+  const isValidString = (string) => {
+    const reg = /^[а-яА-ЯёЁa-zA-Z/\s]+$/;
+    return reg.test(string);
+  };
+
+  const rules = computed(() => ({
+    form: {
+      name: {
+        required: helpers.withMessage("Поле обязательно к заполнению", required),
+        isValidString: helpers.withMessage("Недопустимо использование цифр", isValidString),
+        maxLength: helpers.withMessage("Максимальная длина поля 50 символов", maxLength(50)),
+      },
+      phone: {
+        required: helpers.withMessage("Поле обязательно к заполнению", required),
+        minLength: helpers.withMessage("Введите корректный номер телефона", minLength(18)),
+      },
+    },
+  }));
+
+  const v$ = useVuelidate(rules, { form });
+
+  const submitForm = async () => {
+    isFormCorrect.value = await v$.value.$validate();
+
+    if (!isFormCorrect.value) return;
+
+    console.log(form);
+    sucess.value = true;
+  };
+</script>

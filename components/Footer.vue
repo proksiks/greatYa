@@ -37,12 +37,12 @@
         <form class="col-start-1 md:col-start-2 lg:col-end-5 col-end-6 md:mb-10">
           <label class="block relative group mt-[3.75rem]">
             <input
-              class="peer py-2.5 w-full md:text-lg text-[0.875rem] bg-transparent placeholder:text-transparent group-hover:border-orange transition-all outline-none border-b-2"
+              class="peer py-2.5 w-full md:text-lg text-sm bg-transparent placeholder:text-transparent group-hover:border-orange transition-all outline-none border-b-2"
               type="tel"
               placeholder="Подписаться*"
             />
             <span
-              class="uppercase peer-[&:not(:placeholder-shown)]:text-[14px] peer-[&:not(:placeholder-shown)]:top-[-1.625rem] peer-[&:not(:placeholder-shown)]:text-orange transition-all absolute left-0 top-0 md:text-lg text-[0.875rem] pt-2.5 text-black/40 pointer-events-none"
+              class="uppercase peer-[&:not(:placeholder-shown)]:text-sm peer-[&:not(:placeholder-shown)]:top-[-1.625rem] peer-[&:not(:placeholder-shown)]:text-orange transition-all absolute left-0 top-0 md:text-lg text-sm pt-2.5 text-black/40 pointer-events-none"
             >
               Подписаться*
             </span>
@@ -55,7 +55,7 @@
                   type="checkbox"
                 />
                 <svg
-                  class="md:w-[0.875rem] md:h-[0.75rem] w-full h-full absolute peer-checked:opacity-100 opacity-0 transition-all md:top-[0.125rem] md:left-[0.0625rem]"
+                  class="md:w-sm md:h-[0.75rem] w-full h-full absolute peer-checked:opacity-100 opacity-0 transition-all md:top-[0.125rem] md:left-[0.0625rem]"
                   width="14"
                   height="12"
                   viewBox="0 0 14 12"
@@ -70,7 +70,7 @@
             </label>
           </div>
           <div class="md:mt-[3.75rem] mt-10">
-            <button class="relative uppercase group md:text-lg text-[14px]" @click="showModal">
+            <button class="relative uppercase group md:text-lg text-sm" @click="showModal">
               подписаться
               <span
                 class="absolute -bottom-1 left-0 w-full h-0.5 bg-black transition duration-300 origin-right scale-x-100 group-hover:scale-x-0"

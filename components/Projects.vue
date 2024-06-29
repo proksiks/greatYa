@@ -2,7 +2,7 @@
   <div>
     <div class="xl:my-26 my-25">
       <div
-        class="md:grid grid-cols-8 md:mb-20 mb-10 xl:text-2xl md:text-[4.5rem] text-[2.1875rem] tracking-[-0.07em] xl:leading-[7.3125rem] leading-[100%] ml-5 md:ml-0"
+        class="md:grid grid-cols-8 md:mb-20 mb-10 2xl:text-2xl xl:text-xl md:text-[4.5rem] text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] ml-5 md:ml-0"
       >
         <div class="col-start-3 col-end-9">отличны</div>
         <p class="ml-5 md:ml-0 col-start-4 col-end-9 text-orange">в проектах</p>
@@ -10,14 +10,14 @@
 
       <div class="overflow-x-auto overflow-y-hidden md:px-10 px-2.5">
         <div class="flex flex-nowrap">
-          <div class="flex-shrink-0 max-w-[253px] xl:max-w-[42.25rem] mr-[1.5625rem] sm:mr-[3.75rem] xl:mr-[15.875rem]">
+          <div class="flex-shrink-0 max-w-[15.8125rem] xl:max-w-[42.25rem] mr-[1.5625rem] sm:mr-[3.75rem] xl:mr-[15.875rem]">
             <div class="text-[0.625rem] md:text-[1rem]">{ 1 }</div>
             <div class="my-2.5 md:my-5">
               <img src="/images/projects/project-1.png" alt="Проект" loading="lazy" />
             </div>
             <div>
               <div class="flex items-start justify-between mb-2.5">
-                <span class="text-[0.875rem] md:text-lg mr-5 font-medium uppercase leading-none">
+                <span class="text-sm md:text-lg mr-5 font-medium uppercase leading-none">
                   new <br />
                   white house
                 </span>
@@ -49,7 +49,7 @@
             </div>
             <div>
               <div class="flex items-start justify-between mb-2.5">
-                <span class="text-[0.875rem] md:text-lg mr-5 font-medium uppercase leading-none">
+                <span class="text-sm md:text-lg mr-5 font-medium uppercase leading-none">
                   Норден. <br />
                   это комфорт
                 </span>
@@ -81,7 +81,7 @@
             </div>
             <div>
               <div class="flex items-start justify-between mb-2.5">
-                <span class="text-[0.875rem] md:text-lg mr-5 font-medium uppercase leading-none">
+                <span class="text-sm md:text-lg mr-5 font-medium uppercase leading-none">
                   малоэтажный <br />
                   мини город 2024
                 </span>
