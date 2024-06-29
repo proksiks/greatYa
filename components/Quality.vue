@@ -29,29 +29,35 @@
       в каждом дне, в каждом проекте.
     </p>
   </div>
-  <div class="sm:grid grid-cols-8 xl:my-26 my-25 px-2.5 md:px-10">
+  <div qualityImages class="sm:grid grid-cols-8 xl:my-26 my-25 px-2.5 md:px-10">
     <div class="col-start-1 col-end-3">
-      <img
-        class="xs:max-w-[9.625rem] md:max-w-[15.625rem] xl:max-w-none"
-        src="/images/quality/quality-1.png"
-        alt="Жилой комплекс"
-        width="443"
-        height="500"
-        loading="lazy"
-      />
+      <div class="quality-image overflow-hidden">
+        <img
+          class="xs:max-w-[9.625rem] md:max-w-[15.625rem] xl:max-w-none"
+          src="/images/quality/quality-1.png"
+          alt="Жилой комплекс"
+          width="443"
+          height="500"
+          loading="lazy"
+        />
+      </div>
     </div>
     <div class="col-start-4 col-end-8 ml-[2rem] md:ml-0 xl:mt-[17.25rem] md:mt-[7.75rem] mt-[1.5rem]">
-      <img src="/images/quality/quality-2.png" alt="Жилой комплекс" width="909" height="561" loading="lazy" />
+      <div class="quality-image overflow-hidden">
+        <img src="/images/quality/quality-2.png" alt="Жилой комплекс" width="909" height="561" loading="lazy" />
+      </div>
     </div>
     <div class="col-start-3 col-end-5 md:mt-[10rem] mt-[3.75rem]">
-      <img
-        class="xs:max-w-[9.625rem] md:max-w-[15.625rem] xl:max-w-none mx-auto"
-        src="/images/quality/quality-3.png"
-        alt="Жилой комплекс"
-        width="443"
-        height="500"
-        loading="lazy"
-      />
+      <div class="quality-image overflow-hidden">
+        <img
+          class="xs:max-w-[9.625rem] md:max-w-[15.625rem] xl:max-w-none mx-auto"
+          src="/images/quality/quality-3.png"
+          alt="Жилой комплекс"
+          width="443"
+          height="500"
+          loading="lazy"
+        />
+      </div>
     </div>
   </div>
   <img
@@ -81,6 +87,10 @@
         types: "lines, words, chars",
         tagName: "span",
       });
+      new SplitType("[qualityWord]", {
+        types: "lines, words, chars",
+        tagName: "span",
+      });
 
       gsap.from("[qualityChar] .char", {
         y: 10,
@@ -95,11 +105,6 @@
           end: "bottom top+=400px",
           scrub: true,
         },
-      });
-
-      new SplitType("[qualityWord]", {
-        types: "lines, words, chars",
-        tagName: "span",
       });
 
       gsap.from("[qualityWord] .word", {
@@ -145,6 +150,35 @@
           end: "bottom top+=400px",
           scrub: true,
         },
+      });
+
+      let revealContainers = document.querySelectorAll(".quality-image");
+
+      revealContainers.forEach((container) => {
+        let image = container.querySelector("img");
+        let tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: container,
+            scrub: true,
+            start: "top bottom",
+            end: "bottom 80%",
+          },
+        });
+
+        tl.set(container, { autoAlpha: 1 });
+        tl.from(container, 1.5, {
+          y: -100,
+          yPercent: 100,
+          ease: "power2.out",
+        });
+        tl.from(image, 1.5, {
+          duration: 2,
+          opacity: 0,
+          yPercent: -100,
+          scale: 1.3,
+          delay: -1.5,
+          ease: "power2.out",
+        });
       });
     });
   });
