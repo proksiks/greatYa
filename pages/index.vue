@@ -2,7 +2,7 @@
   <Hero />
   <Promo />
   <Points />
-  <div class="bg-black">
+  <div class="class quality-black bg-black">
     <Quality />
   </div>
   <Peoples />

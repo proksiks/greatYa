@@ -11,7 +11,7 @@
     </div>
     <div class="grid sm:grid-cols-8 grid-cols-2">
       <div
-        class="font-medium sm:col-start-4 col-end-9 xl:mt-24 mt-20 2xl:text-[2.75rem] md:text-[1.5rem] text-sm 2xl:leading-[3rem] leading-[100%] sm:ml-0"
+        class="font-medium sm:col-start-4 col-end-9 xl:mt-24 mt-20 2xl:text-[2.75rem] md:text-[1.5rem] text-sm leading-[100%] sm:ml-0"
       >
         <p word>Мы делаем все возможное, чтобы</p>
         <p word>наша работа не только удивляла, но и</p>
