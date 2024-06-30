@@ -76,33 +76,6 @@
   const app = useNuxtApp();
 
   onMounted(() => {
-    //let revealContainers = document.querySelectorAll(".point-1");
-
-    //revealContainers.forEach((container) => {
-    //  let tl = app.$gsap.timeline({
-    //    scrollTrigger: {
-    //      trigger: container,
-    //      scrub: true,
-    //      start: "top bottom",
-    //      end: "bottom 80%",
-    //    },
-    //  });
-
-    //  tl.set(container, { autoAlpha: 1 });
-    //  tl.from(container, 1.5, {
-    //    y: -100,
-    //    yPercent: 100,
-    //    ease: "power2.out",
-    //  });
-    //  tl.from(container, 1.5, {
-    //    duration: 2,
-    //    opacity: 0,
-    //    yPercent: -100,
-    //    scale: 1.3,
-    //    delay: -1.5,
-    //    ease: "power2.out",
-    //  });
-    //});
     var tl = app.$gsap.timeline({ repeat: 2, repeatDelay: 1 });
 
     const words = app.$gsap.utils.toArray(".word-1");
@@ -116,7 +89,7 @@
         pin: true,
         scrub: 1,
         start: "top top",
-        end: "+=600",
+        end: "bottom 10%",
       },
     });
 
@@ -129,5 +102,33 @@
         scrub: 1,
       },
     });
+
+    //variant 2
+    //var tl = app.$gsap.timeline({ repeat: 2, repeatDelay: 1 });
+
+    //const words = app.$gsap.utils.toArray(".word-1");
+    //const points = app.$gsap.utils.toArray(".point-1");
+
+    //tl.to(points, {
+    //  xPercent: -300,
+    //  scrollTrigger: {
+    //    trigger: ".point-1",
+    //    endTrigger: ".points-scene",
+    //    pin: true,
+    //    scrub: 1,
+    //    start: "top top",
+    //    end: "bottom 10%",
+    //  },
+    //});
+
+    //tl.to(words, {
+    //  xPercent: -200,
+    //  yPercent: 90,
+    //  scrollTrigger: {
+    //    trigger: ".word-1",
+    //    pin: true,
+    //    scrub: 1,
+    //  },
+    //});
   });
 </script>
