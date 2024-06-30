@@ -1,6 +1,6 @@
 <template>
   <div class="points-scene relative overflow-hidden md:px-10 px-2.5 xl:mt-26 mt-25">
-    <div class="points flex flex-nowrap relative z-20">
+    <div class="points flex flex-nowrap relative z-20 pt-25">
       <div class="point-1 shrink-0">
         <div class="relative z-10 max-w-[26.875rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]">
           <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 1 }</p>
@@ -63,7 +63,7 @@
       </div>
     </div>
     <div
-      class="words flex flex-nowrap absolute top-[3.75rem] lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase"
+      class="words flex flex-nowrap absolute top-[3.75rem] lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] pt-25 text-orange uppercase"
     >
       <span class="word-1 block xl:pr-[18.8125rem] pr-[7.5rem] shrink-0">ха</span>
       <span class="word-1 block xl:pr-[18.8125rem] pr-[7.5rem] shrink-0">риз</span>
@@ -76,6 +76,34 @@
   const app = useNuxtApp();
 
   onMounted(() => {
+    //let revealContainers = document.querySelectorAll(".point-1");
+
+    //revealContainers.forEach((container) => {
+    //  let tl = app.$gsap.timeline({
+    //    scrollTrigger: {
+    //      trigger: container,
+    //      scrub: true,
+    //      start: "top bottom",
+    //      end: "bottom 80%",
+    //    },
+    //  });
+
+    //  tl.set(container, { autoAlpha: 1 });
+    //  tl.from(container, 1.5, {
+    //    y: -100,
+    //    yPercent: 100,
+    //    ease: "power2.out",
+    //  });
+    //  tl.from(container, 1.5, {
+    //    duration: 2,
+    //    opacity: 0,
+    //    yPercent: -100,
+    //    scale: 1.3,
+    //    delay: -1.5,
+    //    ease: "power2.out",
+    //  });
+    //});
+
     const words = app.$gsap.utils.toArray(".word-1");
     const points = app.$gsap.utils.toArray(".point-1");
 
@@ -83,12 +111,12 @@
       xPercent: -300,
       scrollTrigger: {
         trigger: ".points",
-        endTrigger: '.quality-black',
+        endTrigger: '.points-scene',
         pin: true,
         scrub: 1,
         markers: true,
-        start: 'top top', // when the top of the trigger hits the top of the viewport
-        end: '+=500',
+        start: 'top top',
+        end: '+=600',
       },
     });
 

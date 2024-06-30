@@ -63,6 +63,8 @@
     src="/images/quality/quality-bg.svg"
     alt="Декоративная картинка"
     loading="lazy"
+    width="1903"
+    height="654"
   />
 </template>
 

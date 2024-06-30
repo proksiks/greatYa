@@ -1,5 +1,5 @@
 <template>
-  <div i>
+  <div>
     <Loader />
     <Header />
     <div id="scene">
