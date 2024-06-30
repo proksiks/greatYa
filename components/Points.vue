@@ -65,9 +65,9 @@
     <div
       class="words flex flex-nowrap absolute top-[3.75rem] lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] pt-25 text-orange uppercase"
     >
-      <span class="word-1 block xl:pr-[18.8125rem] pr-[7.5rem] shrink-0">ха</span>
-      <span class="word-1 block xl:pr-[18.8125rem] pr-[7.5rem] shrink-0">риз</span>
-      <span class="word-1 block pr-[3.125rem] shrink-0">мы</span>
+      <span class="word-1 block xl:pr-[18.8125rem] pr-[7.5rem] shrink-0 w-screen">ха</span>
+      <span class="word-1 block xl:pr-[18.8125rem] pr-[7.5rem] shrink-0 w-screen">риз</span>
+      <span class="word-1 block pr-[3.125rem] shrink-0 w-screen">мы</span>
     </div>
   </div>
 </template>
@@ -103,25 +103,25 @@
     //    ease: "power2.out",
     //  });
     //});
+    var tl = app.$gsap.timeline({ repeat: 2, repeatDelay: 1 });
 
     const words = app.$gsap.utils.toArray(".word-1");
     const points = app.$gsap.utils.toArray(".point-1");
 
-    app.$gsap.to(points, {
+    tl.to(points, {
       xPercent: -300,
       scrollTrigger: {
         trigger: ".points",
-        endTrigger: '.points-scene',
+        endTrigger: ".points-scene",
         pin: true,
         scrub: 1,
-        markers: true,
-        start: 'top top',
-        end: '+=600',
+        start: "top top",
+        end: "+=600",
       },
     });
 
-    app.$gsap.to(words, {
-      xPercent: -300,
+    tl.to(words, {
+      xPercent: -200,
       yPercent: 90,
       scrollTrigger: {
         trigger: ".words",

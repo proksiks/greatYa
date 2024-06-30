@@ -18,7 +18,6 @@
   const lenis = new Lenis({
     //content: document.querySelector("#scene"),
     lerp: 0.05,
-    duration: 20,
     orientation: width.value >= 768 ? "vertical" : "horizontal",
     gestureOrientation: "vertical",
     smoothWheel: true,
