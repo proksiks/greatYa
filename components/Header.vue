@@ -23,7 +23,7 @@
           <li class="md:mb-0 mb-10">
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 1 } </span>
             <nuxt-link
-              class="header-link relative font-medium hover:text-orange transition text-color text-nowrap overflow-hidden py-0.5"
+              class="header-link relative font-medium transition text-color text-nowrap overflow-hidden py-0.5"
               to="#"
             >
               о нас
@@ -32,7 +32,7 @@
           <li class="md:mb-0 mb-10">
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 2 } </span>
             <nuxt-link
-              class="header-link relative font-medium hover:text-orange transition text-color overflow-hidden py-0.5"
+              class="header-link relative font-medium transition text-color overflow-hidden py-0.5"
               to="#"
             >
               ценности
@@ -41,7 +41,7 @@
           <li class="md:mb-0 mb-10">
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 3 } </span>
             <nuxt-link
-              class="header-link relative font-medium hover:text-orange transition text-color overflow-hidden py-0.5"
+              class="header-link relative font-medium transition text-color overflow-hidden py-0.5"
               to="#"
             >
               основатели
@@ -50,7 +50,7 @@
           <li>
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 4 } </span>
             <nuxt-link
-              class="header-link relative font-medium hover:text-orange transition text-color overflow-hidden py-0.5"
+              class="header-link relative font-medium transition text-color overflow-hidden py-0.5"
               to="#"
             >
               проекты

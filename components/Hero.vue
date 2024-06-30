@@ -1,8 +1,10 @@
 <template>
-  <video class="w-full h-svh" muted loop ref="video">
-    <source src="/images/hero/screen.mp4" type="video/mp4" />
-    <source src="/images/hero/screen.webm" type="video/webm" />
-  </video>
+  <div class="flex items-center w-full h-svh">
+    <video muted loop ref="video">
+      <source src="/images/hero/screen.mp4" type="video/mp4" />
+      <source src="/images/hero/screen.webm" type="video/webm" />
+    </video>
+  </div>
 </template>
 
 <script setup>
