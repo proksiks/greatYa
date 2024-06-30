@@ -12,7 +12,6 @@
 <script setup>
   import { useWindowSize } from "@vueuse/core";
   import Lenis from "@studio-freight/lenis";
-import { content } from "#tailwind-config";
 
   const { width } = useWindowSize();
   const app = useNuxtApp();

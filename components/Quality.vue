@@ -1,7 +1,5 @@
 <template>
-  <p
-    class="flex justify-between text-white md:px-10 px-2.5 pt-2.5 md:pt-10 pb-5 text-sm tracking-[-0.03em] uppercase"
-  >
+  <p class="flex justify-between text-white md:px-10 px-2.5 pt-2.5 md:pt-10 pb-5 text-sm tracking-[-0.03em] uppercase">
     <span qualityChar>результат</span>
     <span qualityChar>{</span>
     <span qualityChar>{ баланс }</span>
@@ -74,111 +72,109 @@
   const { $gsap: gsap } = useNuxtApp();
 
   onMounted(() => {
-    nextTick(() => {
-      new SplitType("[qualityChar]", {
-        types: "lines, words, chars",
-        tagName: "span",
-      });
-      new SplitType("[qualityDescr]", {
-        types: "lines, words, chars",
-        tagName: "span",
-      });
-      new SplitType("[qualityText]", {
-        types: "lines, words, chars",
-        tagName: "span",
-      });
-      new SplitType("[qualityWord]", {
-        types: "lines, words, chars",
-        tagName: "span",
-      });
+    new SplitType("[qualityChar]", {
+      types: "lines, words, chars",
+      tagName: "span",
+    });
+    new SplitType("[qualityDescr]", {
+      types: "lines, words, chars",
+      tagName: "span",
+    });
+    new SplitType("[qualityText]", {
+      types: "lines, words, chars",
+      tagName: "span",
+    });
+    new SplitType("[qualityWord]", {
+      types: "lines, words, chars",
+      tagName: "span",
+    });
 
-      gsap.from("[qualityChar] .char", {
-        y: 20,
-        opacity: 0,
-        duration: 2,
-        ease: "sine.out",
-        stagger: 0.05,
+    gsap.from("[qualityChar] .char", {
+      y: 20,
+      opacity: 0,
+      duration: 2,
+      ease: "sine.out",
+      stagger: 0.05,
 
+      scrollTrigger: {
+        trigger: "[qualityChar]",
+        start: "top bottom",
+        end: "bottom top+=400px",
+        scrub: true,
+      },
+    });
+
+    gsap.from("[qualityWord] .word", {
+      y: 50,
+      opacity: 0,
+      duration: 2,
+      ease: "sine.out",
+      stagger: 0.4,
+
+      scrollTrigger: {
+        trigger: "[qualityWord]",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+      },
+    });
+
+    gsap.from("[qualityDescr] .word", {
+      y: 100,
+      opacity: 0,
+      duration: 2,
+      ease: "sine.out",
+      stagger: 0.04,
+
+      scrollTrigger: {
+        trigger: "[qualityDescr]",
+        start: "top bottom",
+        end: "bottom top+=200px",
+        scrub: true,
+      },
+    });
+
+    gsap.from("[qualityText] .word", {
+      y: 50,
+      opacity: 0,
+      duration: 2,
+      ease: "sine.out",
+      stagger: 0.15,
+
+      scrollTrigger: {
+        trigger: "[qualityText]",
+        start: "top bottom",
+        end: "bottom top+=400px",
+        scrub: true,
+      },
+    });
+
+    let revealContainers = document.querySelectorAll(".quality-image");
+
+    revealContainers.forEach((container) => {
+      let image = container.querySelector("img");
+      let tl = gsap.timeline({
         scrollTrigger: {
-          trigger: "[qualityChar]",
-          start: "top bottom",
-          end: "bottom top+=400px",
+          trigger: container,
           scrub: true,
+          start: "top bottom",
+          end: "bottom 80%",
         },
       });
 
-      gsap.from("[qualityWord] .word", {
-        y: 50,
-        opacity: 0,
-        duration: 2,
-        ease: "sine.out",
-        stagger: 0.4,
-
-        scrollTrigger: {
-          trigger: "[qualityWord]",
-          start: "top bottom",
-          end: "bottom top",
-          scrub: true,
-        },
+      tl.set(container, { autoAlpha: 1 });
+      tl.from(container, 1.5, {
+        y: -100,
+        yPercent: 100,
+        ease: "power2.out",
       });
-
-      gsap.from("[qualityDescr] .word", {
-        y: 100,
-        opacity: 0,
+      tl.from(image, 1.5, {
         duration: 2,
-        ease: "sine.out",
-        stagger: 0.04,
-
-        scrollTrigger: {
-          trigger: "[qualityDescr]",
-          start: "top bottom",
-          end: "bottom top+=200px",
-          scrub: true,
-        },
-      });
-
-      gsap.from("[qualityText] .word", {
-        y: 50,
         opacity: 0,
-        duration: 2,
-        ease: "sine.out",
-        stagger: 0.15,
-
-        scrollTrigger: {
-          trigger: "[qualityText]",
-          start: "top bottom",
-          end: "bottom top+=400px",
-          scrub: true,
-        },
-      });
-
-      let revealContainers = document.querySelectorAll(".quality-image");
-
-      revealContainers.forEach((container) => {
-        let image = container.querySelector("img");
-        let tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: container,
-            scrub: true,
-            start: "top bottom",
-            end: "bottom 80%",
-          },
-        });
-
-        tl.set(container, { autoAlpha: 1 });
-        tl.from(container, 1.5, {
-          y: -100,
-          yPercent: 100,
-          ease: "power2.out",
-        });
-        tl.from(image, 1.5, {
-          duration: 2,
-          opacity: 0,
-          yPercent: -100,
-          scale: 1.3,
-          delay: -1.5,
-          ease: "power2.out",
-        });
+        yPercent: -100,
+        scale: 1.3,
+        delay: -1.5,
+        ease: "power2.out",
       });
     });
   });

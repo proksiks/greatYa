@@ -1,6 +1,6 @@
 <template>
   <div class="relative overflow-hidden md:px-10 px-2.5 xl:my-26 my-25">
-    <div class="points flex flex-nowrap h-svh">
+    <div class="points flex flex-nowrap h-svh relative z-20">
       <div class="point-1 shrink-0 w-[50%]">
         <div class="relative z-10 max-w-[26.875rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]">
           <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 1 }</p>
@@ -50,7 +50,7 @@
           />
         </div>
       </div>
-      <div class="point-1 shrink-0 w-[50%]">
+      <div class="point-1 shrink-0 w-[50%] flex items-end">
         <div
           class="relative z-20 max-w-[26.875rem] min-w-[14rem] xl:ml-[16.25rem] md:ml-[7.5rem] ml-[5rem] pr-5 mt-auto mb-5"
         >
@@ -63,11 +63,11 @@
       </div>
     </div>
     <div
-      class="words flex flex-nowrap absolute top-[3.75rem] lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange"
+      class="words flex flex-nowrap absolute top-[3.75rem] lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase"
     >
-      <span class="word-1 block xl:mr-[18.8125rem] mr-[7.5rem] shrink-0 w-[50%]">от</span>
-      <span class="word-1 block xl:mr-[18.8125rem] mr-[7.5rem] shrink-0 w-[50%]">лич</span>
-      <span class="word-1 block mr-[3.125rem] shrink-0 w-[50%]">ны</span>
+      <span class="word-1 block xl:mr-[18.8125rem] mr-[7.5rem] shrink-0">ха</span>
+      <span class="word-1 block xl:mr-[18.8125rem] mr-[7.5rem] shrink-0">риз</span>
+      <span class="word-1 block mr-[3.125rem] shrink-0">мы</span>
     </div>
   </div>
 </template>
@@ -79,7 +79,7 @@
     const words = app.$gsap.utils.toArray(".word-1");
     const points = app.$gsap.utils.toArray(".point-1");
     app.$gsap.to(points, {
-      xPercent: -50 * (points.length - 1),
+      xPercent: -100 * (points.length - 1),
       scrollTrigger: {
         trigger: ".points",
         pin: true,
@@ -87,7 +87,8 @@
       },
     });
     app.$gsap.to(words, {
-      xPercent: -50 * (words.length - 1),
+      xPercent: -100 * (words.length - 1),
+      yPercent: 100,
       scrollTrigger: {
         trigger: ".words",
         pin: true,
