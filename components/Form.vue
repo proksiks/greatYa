@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative pb-2">
     <div class="md:text-lg md:mb-[6.75rem] mb-10 pr-5">{{ title }}</div>
     <div class="flex items-center bg-black absolute inset-0 z-20 text-lg" v-if="sucess">
       <span> Спасибо, ваша заявка отправлена! Мы свяжемся с вами в ближайшее время. </span>
@@ -115,7 +115,7 @@
       },
       phone: {
         required: helpers.withMessage("Поле обязательно к заполнению", required),
-        minLength: helpers.withMessage("Введите корректный номер телефона", minLength(18)),
+        minLength: helpers.withMessage("Введите корректный номер телефона", minLength(16)),
       },
     },
   }));
@@ -127,7 +127,6 @@
 
     if (!isFormCorrect.value) return;
 
-    console.log(form);
     sucess.value = true;
   };
 </script>
