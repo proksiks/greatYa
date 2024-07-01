@@ -48,6 +48,7 @@
         <label class="flex items-center flex-wrap gap-y-2 font-petrov cursor-pointer text-[0.75rem] md:text-[1rem]">
           <span class="relative block md:w-5 w-[0.9375rem] md:h-5 h-[0.9375rem] border-2 mr-2.5">
             <input
+              v-model="form.accept"
               class="bg-transparent border-0 peer absolute opacity-0 pointer-events-none left-[-6250rem]"
               type="checkbox"
             />
@@ -65,6 +66,9 @@
           Согласен с&nbsp;
           <nuxt-link class="hover:no-underline underline" to="#"> политикой конфиденциальности </nuxt-link>
         </label>
+        <span v-if="!isFormCorrect && !v$.form.accept.required.$response" class="text-sm text-red">
+          {{ v$.form.accept.required.$message }}
+        </span>
       </div>
       <div class="md:mt-[3.75rem] mt-10">
         <button class="relative uppercase group md:text-lg text-sm" @click="$emit('confirm')">
@@ -99,6 +103,7 @@
   const form = ref({
     name: "",
     phone: "",
+    accept: "",
   });
 
   const isValidString = (string) => {
@@ -116,6 +121,9 @@
       phone: {
         required: helpers.withMessage("Поле обязательно к заполнению", required),
         minLength: helpers.withMessage("Введите корректный номер телефона", minLength(16)),
+      },
+      accept: {
+        required: helpers.withMessage("Поле обязательно к заполнению", required),
       },
     },
   }));

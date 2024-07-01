@@ -34,11 +34,12 @@
         </div>
       </div>
       <div class="grid grid-cols-5 md:col-start-4 md:col-end-9">
-        <form class="col-start-1 md:col-start-2 lg:col-end-5 col-end-6 md:mb-10">
+        <form class="col-start-1 md:col-start-2 lg:col-end-5 col-end-6 md:mb-10" @submit.prevent="submitForm">
           <label class="block relative group mt-[3.75rem]">
             <input
+              v-model="form.email"
               class="peer py-2.5 w-full md:text-lg text-sm bg-transparent placeholder:text-transparent group-hover:border-orange transition-all outline-none border-b-2"
-              type="tel"
+              type="email"
               placeholder="Подписаться*"
             />
             <span
@@ -47,10 +48,18 @@
               Подписаться*
             </span>
           </label>
+          <div v-if="!isFormCorrect && !v$.form.email.required.$response" class="text-sm text-red">
+            {{ v$.form.email.required.$message }}
+          </div>
+          <span v-if="!isFormCorrect && v$.form.email.$error" class="text-sm text-red">
+            Введите корректный адрес электронной почты
+          </span>
+
           <div class="md:mt-10 mt-5">
             <label class="flex items-center flex-wrap gap-y-2 font-petrov cursor-pointer">
               <span class="relative block w-[0.9375rem] md:w-5 h-[0.9375rem] md:h-5 border-2 mr-2.5">
                 <input
+                  v-model="form.accept"
                   class="bg-transparent border-0 peer absolute opacity-0 pointer-events-none left-[-6250rem]"
                   type="checkbox"
                 />
@@ -68,6 +77,9 @@
               Согласен с&nbsp;
               <nuxt-link class="hover:no-underline underline" to="#"> политикой конфиденциальности </nuxt-link>
             </label>
+            <div v-if="!isFormCorrect && !v$.form.accept.required.$response" class="text-sm text-red mt-2">
+              {{ v$.form.accept.required.$message }}
+            </div>
           </div>
           <div class="md:mt-[3.75rem] mt-10">
             <button class="relative uppercase group md:text-lg text-sm" @click="showModal">
@@ -93,9 +105,44 @@
 </template>
 
 <script setup>
+  import useVuelidate from "@vuelidate/core";
+  import { required, helpers, email } from "@vuelidate/validators";
+
   const openAndroidApp = "tg://t.me/USERNAME";
+
   const date = new Date();
   const year = computed(() => {
     return date.getFullYear();
   });
+
+  const sucess = ref(false);
+  const isFormCorrect = ref(true);
+
+  const form = ref({
+    email: "",
+    accept: "",
+  });
+
+  const rules = computed(() => ({
+    form: {
+      email: {
+        required: helpers.withMessage("Поле обязательно к заполнению", required),
+        email,
+      },
+      accept: {
+        required: helpers.withMessage("Поле обязательно к заполнению", required),
+      },
+    },
+  }));
+
+  const v$ = useVuelidate(rules, { form });
+
+  const submitForm = async () => {
+    isFormCorrect.value = await v$.value.$validate();
+
+    if (!isFormCorrect.value) return;
+
+    sucess.value = true;
+    alert("Форма успешно отправлена");
+  };
 </script>
