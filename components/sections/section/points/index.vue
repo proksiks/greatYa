@@ -1,8 +1,8 @@
 <template>
-  <div class="relative overflow-hidden md:px-10 px-2.5 xl:mt-26 mt-25">
+  <div class="relative overflow-hidden md:px-10 px-2.5 xl:mt-26">
     <div class="points flex items-center h-svh">
       <div class="flex flex-nowrap relative z-20">
-        <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none">
+        <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen">
           <div class="z-10 max-w-[26.875rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]">
             <div class="md:pb-5 pb-2.5 pd:text-sm text-[0.625rem]">{ 1 }</div>
             <div class="pb-2.5 md:text-lg text-sm uppercase font-medium">Синергия</div>
@@ -11,7 +11,7 @@
             </div>
           </div>
         </div>
-        <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none">
+        <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen">
           <div class="z-10 mt-20 xl:mr-[16.625rem] md:mr-[7.5rem] mr-[1.6875rem]">
             <img
               class="block xl:mb-[10.25rem] md:mb-[5.625rem] mb-[3.5625rem] min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
@@ -31,7 +31,7 @@
             </div>
           </div>
         </div>
-        <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none">
+        <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen">
           <div class="z-10">
             <div class="max-w-[26.875rem] min-w-[14rem]">
               <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 3 }</p>
@@ -51,7 +51,7 @@
             />
           </div>
         </div>
-        <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none flex items-end">
+        <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen flex items-end">
           <div
             class="relative z-20 max-w-[26.875rem] min-w-[14rem] xl:ml-[16.25rem] md:ml-[7.5rem] ml-[5rem] pr-5 mt-auto mb-5"
           >
@@ -67,11 +67,11 @@
     <div
       class="words flex flex-nowrap items-center absolute h-svh top-0 z-30 lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase"
     >
-      <span class="word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 md:shrink-0 md:w-screen">ха</span>
-      <span class="word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 md:shrink-0 md:w-screen text-center">
+      <span class="word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 shrink-0 min-w-[100vw]">ха</span>
+      <span class="word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 shrink-0 min-w-[100vw] text-center">
         риз
       </span>
-      <span class="word-1 block md:pr-[3.125rem] pr-10 md:shrink-0 md:w-screen">мы</span>
+      <span class="word-1 block md:pr-[3.125rem] pr-10 shrink-0 min-w-[100vw]">мы</span>
     </div>
   </div>
 </template>

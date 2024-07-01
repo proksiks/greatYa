@@ -128,7 +128,7 @@
     });
 
     gsap.from("[qualityDescr] .word", {
-      y: 100,
+      y: 50,
       opacity: 0,
       duration: 2,
       ease: "sine.out",
