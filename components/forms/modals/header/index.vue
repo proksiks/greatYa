@@ -16,7 +16,7 @@
           ></span>
         </button>
       </div>
-      <Form class="flex-1" :title="title" />
+      <forms-welcome class="flex-1" :title="title" />
     </div>
   </VueFinalModal>
 </template>

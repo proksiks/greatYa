@@ -1,13 +1,13 @@
 <template>
-  <Hero />
-  <Promo />
-  <Points />
+  <sections-section-hero />
+  <sections-section-promo />
+  <sections-section-points />
   <div class="class quality-black bg-black">
-    <Quality />
+    <sections-section-quality />
   </div>
-  <Peoples />
-  <Projects />
+  <sections-section-peoples />
+  <sections-section-projects />
   <div class="bg-black">
-    <Welcome />
+    <sections-section-welcome />
   </div>
 </template>

@@ -110,7 +110,7 @@
 
 <script setup>
   import { ModalsContainer, useModal } from "vue-final-modal";
-  import ModalForm from "~/components/ModalForm.vue";
+  import ModalForm from "~/components/forms/modals/header/index.vue";
 
   const { open, close } = useModal({
     component: ModalForm,

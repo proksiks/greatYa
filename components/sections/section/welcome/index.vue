@@ -20,7 +20,7 @@
 
     <div class="md:grid md:grid-cols-8">
       <div class="col-start-3 2xl:col-start-4 col-end-7 text-white">
-        <Form />
+        <forms-welcome />
       </div>
     </div>
   </div>
