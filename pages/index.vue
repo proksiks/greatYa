@@ -1,10 +1,10 @@
 <template>
-  <!--<lazy-sections-section-hero />
+  <lazy-sections-section-hero />
   <lazy-sections-section-promo />
   <lazy-sections-section-points />
   <div class="class quality-black bg-black">
     <lazy-sections-section-quality />
-  </div>-->
+  </div>
   <lazy-sections-section-peoples />
   <lazy-sections-section-projects />
   <div class="bg-black">
