@@ -1,7 +1,7 @@
 <template>
   <div class="points-scene relative overflow-hidden md:px-10 px-2.5 xl:mt-26 mt-25">
     <div class="points flex flex-nowrap relative z-20 pt-25">
-      <div class="point-1 shrink-0">
+      <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none">
         <div class="relative z-10 max-w-[26.875rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]">
           <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 1 }</p>
           <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">Синергия</p>
@@ -10,10 +10,10 @@
           </p>
         </div>
       </div>
-      <div class="point-1 shrink-0">
+      <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none">
         <div class="relative z-10 mt-20 xl:mr-[16.625rem] md:mr-[7.5rem] mr-[1.6875rem]">
           <img
-            class="block xl:mb-[10.25rem] md:mb-[5.625rem] mb-[3.5625rem] min-w-[13.4375rem]"
+            class="block xl:mb-[10.25rem] md:mb-[5.625rem] mb-[3.5625rem] min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
             width="445"
             height="269"
             src="/images/points/point-1.png"
@@ -30,7 +30,7 @@
           </div>
         </div>
       </div>
-      <div class="point-1 shrink-0">
+      <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none">
         <div class="relative z-10">
           <div class="max-w-[26.875rem] min-w-[14rem]">
             <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 3 }</p>
@@ -41,7 +41,7 @@
             </p>
           </div>
           <img
-            class="block md:mt-[8.4375rem] mt-[5rem] xl:ml-[12.0625rem] md:ml-[5.625rem] ml-[1.875rem] min-w-[13.4375rem]"
+            class="block md:mt-[8.4375rem] mt-[5rem] xl:ml-[12.0625rem] md:ml-[5.625rem] ml-[1.875rem] min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
             width="445"
             height="269"
             src="/images/points/point-2.png"
@@ -50,7 +50,7 @@
           />
         </div>
       </div>
-      <div class="point-1 shrink-0 flex items-end">
+      <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none flex items-end">
         <div
           class="relative z-20 max-w-[26.875rem] min-w-[14rem] xl:ml-[16.25rem] md:ml-[7.5rem] ml-[5rem] pr-5 mt-auto mb-5"
         >
@@ -65,9 +65,9 @@
     <div
       class="words flex flex-nowrap absolute top-[3.75rem] lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] pt-25 text-orange uppercase"
     >
-      <span class="word-1 block xl:pr-[18.8125rem] pr-[7.5rem] shrink-0 w-screen">ха</span>
-      <span class="word-1 block xl:pr-[18.8125rem] pr-[7.5rem] shrink-0 w-screen">риз</span>
-      <span class="word-1 block pr-[3.125rem] shrink-0 w-screen">мы</span>
+      <span class="word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 md:shrink-0 md:w-screen">ха</span>
+      <span class="word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 md:shrink-0 md:w-screen">риз</span>
+      <span class="word-1 block md:pr-[3.125rem] pr-10 md:shrink-0 md:w-screen">мы</span>
     </div>
   </div>
 </template>
