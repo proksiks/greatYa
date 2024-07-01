@@ -20,7 +20,7 @@ export default defineNuxtConfig({
   },
   css: ['normalize.css', 'vue-final-modal/style.css'],
   //devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", '@nuxt/image'],
   build: {
     transpile: ['gsap'],
   },

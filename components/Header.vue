@@ -5,13 +5,14 @@
     :class="{ '-translate-y-full': translateHeader }"
   >
     <nuxt-link class="relative z-10" to="/">
-      <img
+      <nuxt-img
         class="md:w-[4.9375rem] w-[3.9375rem]"
         src="/images/logo.svg"
         alt="Логотип"
         width="67"
         height="32"
         loading="lazy"
+        placeholder
       />
     </nuxt-link>
     <div

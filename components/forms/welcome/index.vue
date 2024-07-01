@@ -54,7 +54,7 @@
               type="checkbox"
             />
             <span class="md:w-sm md:h-[0.75rem] w-full h-full absolute peer-checked:opacity-100 opacity-0 transition-all md:top-[0.125rem] md:left-[0.0625rem]">
-              <img src="/images/icons/white-check.svg" width="14" height="12" alt="Галочка" loading="lazy" />
+              <nuxt-img src="/images/icons/white-check.svg" width="14" height="12" alt="Галочка" loading="lazy" placeholder />
             </span>
           </span>
           Согласен с&nbsp;
