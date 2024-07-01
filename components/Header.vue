@@ -4,11 +4,16 @@
     class="flex items-center justify-between z-40 fixed left-0 top-0 w-full text-center lg:px-10 p-2.5 lg:py-5 duration-500 bg-white transition translate"
     :class="{ '-translate-y-full': translateHeader }"
   >
-    <nuxt-link
-      class="relative z-10 bg-[url('images/logo.svg')]  w-[4.1875rem] h-[2rem] bg-cover"
-      to="/"
-      aria-label="Главная"
-    ></nuxt-link>
+    <nuxt-link class="relative z-10" to="/">
+      <img
+        class="md:w-[4.9375rem] w-[3.9375rem]"
+        src="/images/logo.svg"
+        alt="Логотип"
+        width="67"
+        height="32"
+        loading="lazy"
+      />
+    </nuxt-link>
     <div
       class="flex-1 flex md:flex-row flex-col items-center overflow-auto md:overflow-visible justify-between absolute md:static transition-all h-svh md:h-auto w-full md:w-auto -translate-y-full md:translate-y-0 duration-500 left-0 top-0 md:py-0 py-10"
       :class="{ 'block translate-y-0 bg-white': isOpenMenu }"
