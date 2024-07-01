@@ -1,5 +1,5 @@
 <template>
-  <div class="xl:mt-26 md:mt-[11.25rem] mt-25 xl:px-10 px-2.5">
+  <div class="xl:pt-26 md:pt-[11.25rem] pt-25 xl:px-10 px-2.5 h-svh">
     <div
       class="grid sm:grid-cols-8 grid-cols-2 text-nowrap 2xl:leading-[7.3125rem] leading-[100%] tracking-tighter 2xl:text-[8.125rem] xl:text-xl md:text-[3.25rem] text-[2.1875rem] uppercase"
     >
@@ -11,7 +11,7 @@
     </div>
     <div class="grid sm:grid-cols-8 grid-cols-2">
       <div
-        class="font-medium sm:col-start-4 col-end-9 xl:mt-24 mt-20 2xl:text-[2.75rem] md:text-[1.5rem] text-sm leading-[100%] sm:ml-0"
+        class="font-medium sm:col-start-4 col-end-9 xl:pt-24 pt-20 2xl:text-[2.75rem] md:text-[1.5rem] text-sm leading-[100%] sm:ml-0"
       >
         <div word>Мы делаем все возможное, чтобы </div>
         <div word>наша работа не только удивляла, но и </div>

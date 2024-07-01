@@ -9,11 +9,12 @@
   <div class="md:grid md:grid-cols-8 text-white px-2.5 md:px-10">
     <p
       class="md:col-start-1 md:col-end-7 uppercase 2xl:text-2xl xl:text-xl text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] md:pb-20 pb-10"
+      qualityWord
     >
-      <span qualityWord class="block">увлеченная</span>
-      <span qualityWord class="block ml-7 md:ml-[14.5rem] text-nowrap">работа –</span>
-      <span qualityWord class="block ml-7 md:ml-[14.5rem] text-orange text-nowrap">это наш</span>
-      <span qualityWord class="block text-orange">успех</span>
+      <span class="block">увлеченная</span>
+      <span class="block ml-7 md:ml-[14.5rem] text-nowrap">работа –</span>
+      <span class="block ml-7 md:ml-[14.5rem] text-orange text-nowrap">это наш</span>
+      <span class="block text-orange">успех</span>
     </p>
     <p qualityDescr class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov max-w-[26.875rem] md:max-w-none">
       Мы уверены, что великие компании строятся на страстных людях, увлеченных своим делом. Говорят, что наш энтузиазм
@@ -58,14 +59,19 @@
       </div>
     </div>
   </div>
-  <img
-    class="cols-start-3 col-end-5 block"
-    src="/images/quality/quality-bg.svg"
-    alt="Декоративная картинка"
-    loading="lazy"
-    width="1903"
-    height="654"
-  />
+  <div class="overflow-hidden">
+    <div class="relative">
+      <img
+        class="cols-start-3 col-end-5 block"
+        src="/images/quality/quality-bg.svg"
+        alt="Декоративная картинка"
+        loading="lazy"
+        width="1903"
+        height="654"
+      />
+      <div class="quality-white-line absolute inset-0 bg-white"></div>
+    </div>
+  </div>
 </template>
 
 <script setup>
@@ -147,6 +153,20 @@
         trigger: "[qualityText]",
         start: "top bottom",
         end: "bottom top+=400px",
+        scrub: true,
+      },
+    });
+
+    gsap.from(".quality-white-line", {
+      xPercent: 100,
+      duration: 2,
+      ease: "sine.out",
+      stagger: 0.15,
+
+      scrollTrigger: {
+        trigger: ".quality-white-line",
+        start: "top bottom",
+        end: "bottom -50%",
         scrub: true,
       },
     });

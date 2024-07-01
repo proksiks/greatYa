@@ -1,17 +1,17 @@
 <template>
-  <div class="points-scene relative overflow-hidden md:px-10 px-2.5 xl:mt-26 mt-25">
-    <div class="points flex flex-nowrap relative z-20 pt-25">
+  <div class="points-scene relative overflow-hidden md:px-10 px-2.5 xl:mt-26 mt-25 pt-25">
+    <div class="points flex flex-nowrap relative z-20 h-svh">
       <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none">
-        <div class="relative z-10 max-w-[26.875rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]">
-          <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 1 }</p>
-          <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">Синергия</p>
-          <p class="font-petrov md:text-[1rem] text-[0.75rem]">
+        <div class="z-10 max-w-[26.875rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]">
+          <div class="md:pb-5 pb-2.5 pd:text-sm text-[0.625rem]">{ 1 }</div>
+          <div class="pb-2.5 md:text-lg text-sm uppercase font-medium">Синергия</div>
+          <div class="font-petrov md:text-[1rem] text-[0.75rem]">
             Гармоничное объединение для движения к результату, когда 1+1=5
-          </p>
+          </div>
         </div>
       </div>
       <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none">
-        <div class="relative z-10 mt-20 xl:mr-[16.625rem] md:mr-[7.5rem] mr-[1.6875rem]">
+        <div class="z-10 mt-20 xl:mr-[16.625rem] md:mr-[7.5rem] mr-[1.6875rem]">
           <img
             class="block xl:mb-[10.25rem] md:mb-[5.625rem] mb-[3.5625rem] min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
             width="445"
@@ -31,7 +31,7 @@
         </div>
       </div>
       <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none">
-        <div class="relative z-10">
+        <div class="z-10">
           <div class="max-w-[26.875rem] min-w-[14rem]">
             <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 3 }</p>
             <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">Развитие</p>
@@ -63,10 +63,12 @@
       </div>
     </div>
     <div
-      class="words flex flex-nowrap absolute top-[3.75rem] lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] pt-25 text-orange uppercase"
+      class="words flex flex-nowrap absolute h-svh top-[3.75rem] z-30 lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] pt-25 text-orange uppercase"
     >
       <span class="word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 md:shrink-0 md:w-screen">ха</span>
-      <span class="word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 md:shrink-0 md:w-screen">риз</span>
+      <span class="word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 md:shrink-0 md:w-screen text-center">
+        риз
+      </span>
       <span class="word-1 block md:pr-[3.125rem] pr-10 md:shrink-0 md:w-screen">мы</span>
     </div>
   </div>
@@ -76,26 +78,24 @@
   const app = useNuxtApp();
 
   onMounted(() => {
-    var tl = app.$gsap.timeline({ repeat: 2, repeatDelay: 1 });
-
     const words = app.$gsap.utils.toArray(".word-1");
     const points = app.$gsap.utils.toArray(".point-1");
 
-    tl.to(points, {
-      xPercent: -300,
+    app.$gsap.to(points, {
+      xPercent: -110 * (points.length - 1),
+      ease: "linear",
       scrollTrigger: {
         trigger: ".points",
         endTrigger: ".points-scene",
         pin: true,
         scrub: 1,
-        start: "top top",
-        end: "bottom 10%",
       },
     });
 
-    tl.to(words, {
-      xPercent: -200,
-      yPercent: 90,
+    app.$gsap.to(words, {
+      xPercent: -98 * (words.length - 1),
+      yPercent: 34,
+      ease: "none",
       scrollTrigger: {
         trigger: ".words",
         pin: true,

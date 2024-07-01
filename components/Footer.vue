@@ -1,5 +1,5 @@
 <template>
-  <div class="md:mt-26 mt-25 md:mx-10 mx-2.5">
+  <div class="md:mt-26 mt-25 md:mx-10 mx-2.5" ref="footer">
     <div class="md:grid md:grid-cols-8 md:mb-[8rem] mb-[1.8125rem]">
       <div class="col-start-1 col-end-4 hidden md:block">
         <a class="block" href="https://t.me/senior_frontender">telegram app</a>
@@ -23,7 +23,11 @@
             <a class="block" href="https://vk.com/login?u=2&to=L3dlYi5hcHBz" target="_blank">вконтакте</a>
           </div>
           <div class="justify-center md:justify-start my-2.5 md:my-0">
-            <img src="/images/big-logo.svg" alt="Логотип" loading="lazy" />
+            <!--<img src="/images/big-logo.svg" alt="Логотип" loading="lazy" />-->
+            <video muted loop ref="footerVideo">
+              <source src="/images/hero/screen.mp4" type="video/mp4" />
+              <source src="/images/hero/screen.webm" type="video/webm" />
+            </video>
           </div>
           <div class="flex items-end w-full col-span-5 md:hidden">
             <div class="flex items-center justify-between font-petrov w-full text-[0.75rem]">
@@ -115,6 +119,7 @@
     return date.getFullYear();
   });
 
+  const footer = ref(null);
   const sucess = ref(false);
   const isFormCorrect = ref(true);
 
@@ -145,4 +150,31 @@
     sucess.value = true;
     alert("Форма успешно отправлена");
   };
+
+  const footerVideo = ref(null);
+  onMounted(() => {
+    nextTick(() => {
+      const startVideo = async () => {
+        try {
+          await footerVideo.value.play();
+          footerVideo.value.setAttribute("autoplay", true);
+        } catch (err) {
+          console.error(err);
+        }
+      };
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          if (entries[0].isIntersecting) {
+            setTimeout(startVideo, 1000);
+          }
+        },
+        {
+          threshold: 0.1,
+        }
+      );
+
+      observer.observe(footer.value);
+    });
+  });
 </script>
