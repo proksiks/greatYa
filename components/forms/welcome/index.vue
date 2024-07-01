@@ -8,10 +8,11 @@
       <label class="block relative group">
         <input
           v-model="form.name"
-          class="peer py-2.5 w-full md:text-lg text-sm bg-transparent placeholder:text-transparent group-hover:border-orange transition-all outline-none border-b-2"
+          class="peer py-2.5 w-full md:text-lg text-sm bg-transparent placeholder:text-transparent transition-all outline-none border-b-2"
           type="text"
           placeholder="Имя*"
         />
+        <span class="absolute left-0 bottom-0 w-full h-0.5 bg-white"></span>
         <span
           class="peer-[&:not(:placeholder-shown)]:text-sm peer-[&:not(:placeholder-shown)]:top-[-1.625rem] peer-[&:not(:placeholder-shown)]:text-orange transition-all absolute left-0 top-0 md:text-lg text-sm pt-2.5 text-white/40 pointer-events-none"
         >
@@ -30,7 +31,7 @@
           v-model="form.phone"
           placeholder="Телефон*"
           v-maska="'+7 ### ### ## ##'"
-          class="peer py-2.5 w-full md:text-lg text-sm bg-transparent placeholder:text-transparent group-hover:border-orange transition-all outline-none border-b-2"
+          class="peer py-2.5 w-full md:text-lg text-sm bg-transparent placeholder:text-transparent transition-all outline-none border-b-2"
         />
         <span
           class="peer-[&:not(:placeholder-shown)]:text-sm peer-[&:not(:placeholder-shown)]:top-[-1.625rem] peer-[&:not(:placeholder-shown)]:text-orange transition-all absolute left-0 top-0 md:text-lg text-sm pt-2.5 text-white/40 pointer-events-none"
@@ -138,3 +139,9 @@
     sucess.value = true;
   };
 </script>
+
+<style>
+  .t {
+    color: #ff4a4a;
+  }
+</style>

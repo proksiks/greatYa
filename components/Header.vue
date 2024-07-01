@@ -68,7 +68,7 @@
         ></span>
       </button>
     </div>
-    <button class="relative w-10 h-10 cursor-pointer ml-5 md:hidden" @click="openMenu">
+    <button class="relative w-10 h-10 cursor-pointer ml-5 md:hidden" aria-label="Навигационное меню" @click="openMenu">
       <span
         class="w-full absolute h-0.5 left-1/2 top-4 bg-black -translate-x-1/2 transition-all"
         :class="{ '-rotate-45 !top-1/2 -translate-y-1/2': isOpenMenu }"

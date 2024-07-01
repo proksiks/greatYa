@@ -21,7 +21,7 @@
                   new <br />
                   white house
                 </span>
-                <button @click="() => open()">
+                <button @click="() => open()" aria-label="Модальное окно">
                   <svg
                     class="md:max-w-none max-w-2 max-h-2 md:max-h-none"
                     width="51"
@@ -53,7 +53,7 @@
                   Норден. <br />
                   это комфорт
                 </span>
-                <button @click="() => open()">
+                <button @click="() => open()" aria-label="Модальное окно">
                   <svg
                     class="md:max-w-none max-w-2 max-h-2 md:max-h-none"
                     width="51"
@@ -83,7 +83,7 @@
                   малоэтажный <br />
                   мини город 2024
                 </span>
-                <button @click="() => open()">
+                <button @click="() => open()" aria-label="Модальное окно">
                   <svg
                     class="md:max-w-none max-w-2 max-h-2 md:max-h-none"
                     width="51"
