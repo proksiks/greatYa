@@ -13,14 +13,12 @@
           <div class="project-1 flex-shrink-0 max-w-[15.8125rem] xl:max-w-[42.25rem] gap-[14%] xl:pr-[14%]">
             <div class="text-[0.625rem] md:text-[1rem]">{ 1 }</div>
             <div class="py-2.5 md:py-5">
-              <nuxt-img
-                format="webp"
+              <img
                 src="/images/projects/project-1.png"
                 width="676"
                 height="445"
                 alt="Проект"
                 loading="lazy"
-                placeholder
               />
             </div>
             <div>
@@ -30,13 +28,12 @@
                   white house
                 </span>
                 <button @click="() => open()" aria-label="Модальное окно">
-                  <nuxt-img
+                  <img
                     src="/images/icons/more.svg"
                     width="51"
                     height="51"
                     loading="lazy"
                     alt="Подробнее"
-                    placeholder
                   />
                 </button>
               </div>
@@ -51,14 +48,12 @@
           >
             <div class="text-[0.625rem] md:text-[1rem]">{ 2 }</div>
             <div class="py-2.5 md:py-5">
-              <nuxt-img
-                format="webp"
+              <img
                 src="/images/projects/project-2.png"
                 width="676"
                 height="445"
                 alt="Проект"
                 loading="lazy"
-                placeholder
               />
             </div>
             <div>
@@ -68,13 +63,12 @@
                   это комфорт
                 </span>
                 <button @click="() => open()" aria-label="Модальное окно">
-                  <nuxt-img
+                  <img
                     src="/images/icons/more.svg"
                     width="51"
                     height="51"
                     loading="lazy"
                     alt="Подробнее"
-                    placeholder
                   />
                 </button>
               </div>
@@ -87,14 +81,12 @@
           <div class="project-1 flex-shrink-0 w-[40%] mr-[1.5625rem] sm:mr-[3.75rem] xl:mr-[15.875rem] md:pr-10 pr-2.5">
             <div class="text-[0.625rem] md:text-[1rem]">{ 3 }</div>
             <div class="py-2.5 md:py-5">
-              <nuxt-img
-                format="webp"
+              <img
                 src="/images/projects/project-3.png"
                 width="558"
                 height="445"
                 alt="Проект"
                 loading="lazy"
-                placeholder
               />
             </div>
             <div>
@@ -104,13 +96,12 @@
                   мини город 2024
                 </span>
                 <button @click="() => open()" aria-label="Модальное окно">
-                  <nuxt-img
+                  <img
                     src="/images/icons/more.svg"
                     width="51"
                     height="51"
                     loading="lazy"
                     alt="Подробнее"
-                    placeholder
                   />
                 </button>
               </div>

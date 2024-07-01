@@ -25,7 +25,6 @@
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.12.0",
     "typescript": "^5.5.2",
-    "vue-tsc": "^2.0.22",
-    "@nuxt/image": "^1.0.0"
+    "vue-tsc": "^2.0.22"
   }
 }

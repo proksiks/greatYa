@@ -12,8 +12,7 @@
       </div>
       <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none">
         <div class="z-10 mt-20 xl:mr-[16.625rem] md:mr-[7.5rem] mr-[1.6875rem]">
-          <nuxt-img
-            format="webp"
+          <img
             class="block xl:mb-[10.25rem] md:mb-[5.625rem] mb-[3.5625rem] min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
             width="445"
             height="269"
@@ -41,8 +40,7 @@
               города проектами
             </p>
           </div>
-          <nuxt-img
-            format="webp"
+          <img
             class="block md:mt-[8.4375rem] mt-[5rem] xl:ml-[12.0625rem] md:ml-[5.625rem] ml-[1.875rem] min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
             width="445"
             height="269"
