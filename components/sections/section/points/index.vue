@@ -1,5 +1,5 @@
 <template>
-  <div class="points-scene relative overflow-hidden md:px-10 px-2.5 xl:mt-26 mt-25 pt-25">
+  <div class="relative overflow-hidden md:px-10 px-2.5 xl:mt-26 mt-25">
     <div class="points flex items-center h-svh">
       <div class="flex flex-nowrap relative z-20">
         <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none">
@@ -96,7 +96,7 @@
 
     app.$gsap.to(words, {
       xPercent: -98 * (words.length - 1),
-      yPercent: 40,
+      yPercent: 50,
       ease: "none",
       scrollTrigger: {
         trigger: ".words",
@@ -104,33 +104,5 @@
         scrub: 1,
       },
     });
-
-    //variant 2
-    //var tl = app.$gsap.timeline({ repeat: 2, repeatDelay: 1 });
-
-    //const words = app.$gsap.utils.toArray(".word-1");
-    //const points = app.$gsap.utils.toArray(".point-1");
-
-    //tl.to(points, {
-    //  xPercent: -300,
-    //  scrollTrigger: {
-    //    trigger: ".point-1",
-    //    endTrigger: ".points-scene",
-    //    pin: true,
-    //    scrub: 1,
-    //    start: "top top",
-    //    end: "bottom 10%",
-    //  },
-    //});
-
-    //tl.to(words, {
-    //  xPercent: -200,
-    //  yPercent: 90,
-    //  scrollTrigger: {
-    //    trigger: ".word-1",
-    //    pin: true,
-    //    scrub: 1,
-    //  },
-    //});
   });
 </script>
