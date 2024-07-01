@@ -14,6 +14,7 @@
             <div class="text-[0.625rem] md:text-[1rem]">{ 1 }</div>
             <div class="py-2.5 md:py-5">
               <nuxt-img
+                format="webp"
                 src="/images/projects/project-1.png"
                 width="676"
                 height="445"
@@ -51,6 +52,7 @@
             <div class="text-[0.625rem] md:text-[1rem]">{ 2 }</div>
             <div class="py-2.5 md:py-5">
               <nuxt-img
+                format="webp"
                 src="/images/projects/project-2.png"
                 width="676"
                 height="445"
@@ -86,6 +88,7 @@
             <div class="text-[0.625rem] md:text-[1rem]">{ 3 }</div>
             <div class="py-2.5 md:py-5">
               <nuxt-img
+                format="webp"
                 src="/images/projects/project-3.png"
                 width="558"
                 height="445"
