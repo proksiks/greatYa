@@ -22,16 +22,7 @@
                   white house
                 </span>
                 <button @click="() => open()" aria-label="Модальное окно">
-                  <svg
-                    class="md:max-w-none max-w-2 max-h-2 md:max-h-none"
-                    width="51"
-                    height="51"
-                    viewBox="0 0 51 51"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M0 3C17.8418 3 48 3 48 3M48 3V51M48 3L2.31325 48.6867" stroke="#F2490A" stroke-width="6" />
-                  </svg>
+                  <img src="/images/icons/more.svg" width="51" height="51" loading="lazy" alt="Подробнее" />
                 </button>
               </div>
               <div class="max-w-[17.125rem] font-manrope md:text-[1rem] text-[0.75rem]">
@@ -54,16 +45,7 @@
                   это комфорт
                 </span>
                 <button @click="() => open()" aria-label="Модальное окно">
-                  <svg
-                    class="md:max-w-none max-w-2 max-h-2 md:max-h-none"
-                    width="51"
-                    height="51"
-                    viewBox="0 0 51 51"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M0 3C17.8418 3 48 3 48 3M48 3V51M48 3L2.31325 48.6867" stroke="#F2490A" stroke-width="6" />
-                  </svg>
+                  <img src="/images/icons/more.svg" width="51" height="51" loading="lazy" alt="Подробнее" />
                 </button>
               </div>
               <div class="max-w-[17.125rem] font-manrope md:text-[1rem] text-[0.75rem]">
@@ -84,16 +66,7 @@
                   мини город 2024
                 </span>
                 <button @click="() => open()" aria-label="Модальное окно">
-                  <svg
-                    class="md:max-w-none max-w-2 max-h-2 md:max-h-none"
-                    width="51"
-                    height="51"
-                    viewBox="0 0 51 51"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M0 3C17.8418 3 48 3 48 3M48 3V51M48 3L2.31325 48.6867" stroke="#F2490A" stroke-width="6" />
-                  </svg>
+                  <img src="/images/icons/more.svg" width="51" height="51" loading="lazy" alt="Подробнее" />
                 </button>
               </div>
               <div class="max-w-[17.125rem] font-manrope md:text-[1rem] text-[0.75rem]">
