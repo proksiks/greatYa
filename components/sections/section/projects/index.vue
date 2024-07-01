@@ -7,71 +7,75 @@
       <p class="ml-5 md:ml-0 col-start-4 col-end-9 text-orange">в проектах</p>
     </div>
 
-    <div class="projects md:px-10 px-2.5">
-      <div class="points flex items-center h-svh">
-        <div class="flex flex-nowrap">
-          <div class="project-1 flex-shrink-0 max-w-[15.8125rem] xl:max-w-[42.25rem] gap-[14%] xl:pr-[14%]">
-            <div class="text-[0.625rem] md:text-[1rem]">{ 1 }</div>
-            <div class="py-2.5 md:py-5">
-              <img src="/images/projects/project-1.png" width="676" height="445" alt="Проект" loading="lazy" />
-            </div>
-            <div>
-              <div class="flex items-start justify-between pb-2.5">
-                <span class="text-sm md:text-lg mr-5 font-medium uppercase leading-none">
-                  new <br />
-                  white house
-                </span>
-                <button @click="() => open()" aria-label="Модальное окно">
-                  <img src="/images/icons/more.svg" width="51" height="51" loading="lazy" alt="Подробнее" />
-                </button>
+    <div class="md:px-10 px-2.5">
+      <div class="projects flex items-center md:h-svh">
+        <div class="flex flex-nowrap relative z-20">
+          <div class="project-1 flex-shrink-0 flex min-w-[50%] justify-start">
+            <div class="pr-[5%] md:pr-[14%]">
+              <div class="text-[0.625rem] md:text-[1rem]">{ 1 }</div>
+              <div class="py-2.5 md:py-5">
+                <img src="/images/projects/project-1.png" width="676" height="445" alt="Проект" loading="lazy" />
               </div>
-              <div class="max-w-[17.125rem] font-manrope md:text-[1rem] text-[0.75rem]">
-                от 3,7 млн ₽ <br />
-                ввод в эксплутацию: II квартал 2024 г. Тюмень
-              </div>
-            </div>
-          </div>
-          <div
-            class="project-1 flex-shrink-0 w-[40%] mr-[1.5625rem] sm:mr-[3.75rem] xl:mr-[8.75rem] md:mt-[6.5rem] mt-[2.25rem]"
-          >
-            <div class="text-[0.625rem] md:text-[1rem]">{ 2 }</div>
-            <div class="py-2.5 md:py-5">
-              <img src="/images/projects/project-2.png" width="676" height="445" alt="Проект" loading="lazy" />
-            </div>
-            <div>
-              <div class="flex items-start justify-between pb-2.5">
-                <span class="text-sm md:text-lg mr-5 font-medium uppercase leading-none">
-                  Норден. <br />
-                  это комфорт
-                </span>
-                <button @click="() => open()" aria-label="Модальное окно">
-                  <img src="/images/icons/more.svg" width="51" height="51" loading="lazy" alt="Подробнее" />
-                </button>
-              </div>
-              <div class="max-w-[17.125rem] font-manrope md:text-[1rem] text-[0.75rem]">
-                от 12,7 млн ₽ <br />
-                ввод в эксплутацию: IV квартал 2024 г. Тюмень
+              <div>
+                <div class="flex items-start justify-between pb-2.5">
+                  <span class="text-sm md:text-lg mr-5 font-medium uppercase leading-none">
+                    new <br />
+                    white house
+                  </span>
+                  <button @click="() => open()" aria-label="Модальное окно">
+                    <img src="/images/icons/more.svg" width="51" height="51" loading="lazy" alt="Подробнее" />
+                  </button>
+                </div>
+                <div class="max-w-[17.125rem] font-manrope md:text-[1rem] text-[0.75rem]">
+                  от 3,7 млн ₽ <br />
+                  ввод в эксплутацию: II квартал 2024 г. Тюмень
+                </div>
               </div>
             </div>
           </div>
-          <div class="project-1 flex-shrink-0 w-[40%] mr-[1.5625rem] sm:mr-[3.75rem] xl:mr-[15.875rem] md:pr-10 pr-2.5">
-            <div class="text-[0.625rem] md:text-[1rem]">{ 3 }</div>
-            <div class="py-2.5 md:py-5">
-              <img src="/images/projects/project-3.png" width="558" height="445" alt="Проект" loading="lazy" />
-            </div>
-            <div>
-              <div class="flex items-start justify-between pb-2.5">
-                <span class="text-sm md:text-lg mr-5 font-medium uppercase leading-none">
-                  малоэтажный <br />
-                  мини город 2024
-                </span>
-                <button @click="() => open()" aria-label="Модальное окно">
-                  <img src="/images/icons/more.svg" width="51" height="51" loading="lazy" alt="Подробнее" />
-                </button>
+          <div class="project-1 flex-shrink-0 flex min-w-[50%] justify-start">
+            <div class="pr-[5%] md:pr-[14%]">
+              <div class="text-[0.625rem] md:text-[1rem]">{ 2 }</div>
+              <div class="py-2.5 md:py-5">
+                <img src="/images/projects/project-2.png" width="676" height="445" alt="Проект" loading="lazy" />
               </div>
-              <div class="max-w-[17.125rem] font-manrope md:text-[1rem] text-[0.75rem]">
-                от 12,7 млн ₽ <br />
-                начало строительства: 2024 г. Тюмень
+              <div>
+                <div class="flex items-start justify-between pb-2.5">
+                  <span class="text-sm md:text-lg mr-5 font-medium uppercase leading-none">
+                    Норден. <br />
+                    это комфорт
+                  </span>
+                  <button @click="() => open()" aria-label="Модальное окно">
+                    <img src="/images/icons/more.svg" width="51" height="51" loading="lazy" alt="Подробнее" />
+                  </button>
+                </div>
+                <div class="max-w-[17.125rem] font-manrope md:text-[1rem] text-[0.75rem]">
+                  от 12,7 млн ₽ <br />
+                  ввод в эксплутацию: IV квартал 2024 г. Тюмень
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-1 flex-shrink-0 flex min-w-[50%] justify-start">
+            <div class="pr-[5%] md:pr-[14%]">
+              <div class="text-[0.625rem] md:text-[1rem]">{ 3 }</div>
+              <div class="py-2.5 md:py-5">
+                <img src="/images/projects/project-3.png" width="558" height="445" alt="Проект" loading="lazy" />
+              </div>
+              <div>
+                <div class="flex items-start justify-between pb-2.5">
+                  <span class="text-sm md:text-lg mr-5 font-medium uppercase leading-none">
+                    малоэтажный <br />
+                    мини город 2024
+                  </span>
+                  <button @click="() => open()" aria-label="Модальное окно">
+                    <img src="/images/icons/more.svg" width="51" height="51" loading="lazy" alt="Подробнее" />
+                  </button>
+                </div>
+                <div class="max-w-[17.125rem] font-manrope md:text-[1rem] text-[0.75rem]">
+                  от 12,7 млн ₽ <br />
+                  начало строительства: 2024 г. Тюмень
+                </div>
               </div>
             </div>
           </div>
@@ -102,13 +106,12 @@
   const app = useNuxtApp();
 
   onMounted(() => {
-    var tl = app.$gsap.timeline({ repeat: 2, repeatDelay: 1 });
     const projects = app.$gsap.utils.toArray(".project-1");
 
-    tl.to(projects, {
-      xPercent: -98 * (projects.length - 1),
-      yPercent: 10,
-      ease: "none",
+    app.$gsap.to(projects, {
+      xPercent: -100 * (projects.length - 1),
+      yPercent: 40,
+      ease: "linear",
       scrollTrigger: {
         trigger: ".projects",
         pin: true,
