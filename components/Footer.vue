@@ -162,11 +162,29 @@
           console.error(err);
         }
       };
+      const pauseVideo = async () => {
+        try {
+          await footerVideo.value.pause();
+        } catch (err) {
+          console.error(err);
+        }
+      };
+      const loadVideo = async () => {
+        try {
+          await footerVideo.value.load();
+        } catch (err) {
+          console.error(err);
+        }
+      };
 
       const observer = new IntersectionObserver(
         (entries) => {
           if (entries[0].isIntersecting) {
             setTimeout(startVideo, 1000);
+          } else {
+            setTimeout(pauseVideo, 5 - 0);
+            footerVideo.currentTime = 0;
+            setTimeout(loadVideo, 5 - 0);
           }
         },
         {
