@@ -12,6 +12,12 @@ export default defineNuxtConfig({
       meta: [{ hid: 'description', name: 'description', content: 'Харизмы' }]
     }
   },
+  builder: 'vite',
+  vite: {
+    build: {
+      chunkSizeWarningLimit: 1000
+    }
+  },
   css: ['normalize.css', 'vue-final-modal/style.css'],
   //devtools: { enabled: true },
   modules: ["@nuxtjs/tailwindcss"],
