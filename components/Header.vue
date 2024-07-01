@@ -4,16 +4,11 @@
     class="flex items-center justify-between z-40 fixed left-0 top-0 w-full text-center lg:px-10 p-2.5 lg:py-5 duration-500 bg-white transition translate"
     :class="{ '-translate-y-full': translateHeader }"
   >
-    <nuxt-link class="relative z-10" to="/">
-      <img
-        class="md:w-[4.9375rem] w-[3.9375rem]"
-        src="/images/logo.svg"
-        alt="Логотип"
-        width="79"
-        height="49"
-        loading="lazy"
-      />
-    </nuxt-link>
+    <nuxt-link
+      class="relative z-10 bg-[url('images/logo.svg')]  w-[4.1875rem] h-[2rem] bg-cover"
+      to="/"
+      aria-label="Главная"
+    ></nuxt-link>
     <div
       class="flex-1 flex md:flex-row flex-col items-center overflow-auto md:overflow-visible justify-between absolute md:static transition-all h-svh md:h-auto w-full md:w-auto -translate-y-full md:translate-y-0 duration-500 left-0 top-0 md:py-0 py-10"
       :class="{ 'block translate-y-0 bg-white': isOpenMenu }"
@@ -31,28 +26,19 @@
           </li>
           <li class="md:mb-0 mb-10">
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 2 } </span>
-            <nuxt-link
-              class="header-link relative font-medium transition text-color overflow-hidden py-0.5"
-              to="#"
-            >
+            <nuxt-link class="header-link relative font-medium transition text-color overflow-hidden py-0.5" to="#">
               ценности
             </nuxt-link>
           </li>
           <li class="md:mb-0 mb-10">
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 3 } </span>
-            <nuxt-link
-              class="header-link relative font-medium transition text-color overflow-hidden py-0.5"
-              to="#"
-            >
+            <nuxt-link class="header-link relative font-medium transition text-color overflow-hidden py-0.5" to="#">
               основатели
             </nuxt-link>
           </li>
           <li>
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 4 } </span>
-            <nuxt-link
-              class="header-link relative font-medium transition text-color overflow-hidden py-0.5"
-              to="#"
-            >
+            <nuxt-link class="header-link relative font-medium transition text-color overflow-hidden py-0.5" to="#">
               проекты
             </nuxt-link>
           </li>

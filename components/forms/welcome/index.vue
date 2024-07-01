@@ -53,16 +53,9 @@
               class="bg-transparent border-0 peer absolute opacity-0 pointer-events-none left-[-6250rem]"
               type="checkbox"
             />
-            <svg
-              class="absolute peer-checked:opacity-100 opacity-0 transition-all top-[0.125rem] left-[0.0625rem]"
-              width="14"
-              height="12"
-              viewBox="0 0 14 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M1 6L4.78571 10L12.5 1" stroke="white" stroke-width="2" />
-            </svg>
+            <span class="md:w-sm md:h-[0.75rem] w-full h-full absolute peer-checked:opacity-100 opacity-0 transition-all md:top-[0.125rem] md:left-[0.0625rem]">
+              <img src="/images/icons/white-check.svg" width="14" height="12" alt="Галочка" loading="lazy" />
+            </span>
           </span>
           Согласен с&nbsp;
           <nuxt-link class="hover:no-underline underline" to="#"> политикой конфиденциальности </nuxt-link>
