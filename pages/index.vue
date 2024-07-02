@@ -2,7 +2,7 @@
   <lazy-sections-section-hero />
   <lazy-sections-section-promo />
   <lazy-sections-section-points />
-  <div class="class quality-black bg-black">
+  <div class="bg-black">
     <lazy-sections-section-quality />
   </div>
   <lazy-sections-section-peoples />

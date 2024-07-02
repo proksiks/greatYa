@@ -28,7 +28,7 @@
       в каждом дне, в каждом проекте.
     </p>
   </div>
-  <div qualityImages class="sm:grid grid-cols-8 xl:my-26 my-25 px-2.5 md:px-10">
+  <div class="sm:grid grid-cols-8 xl:my-26 my-25 px-2.5 md:px-10">
     <div class="col-start-1 col-end-3">
       <div class="quality-image overflow-hidden">
         <img

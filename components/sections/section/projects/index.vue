@@ -1,16 +1,16 @@
 <template>
   <div class="overflow-hidden">
     <div
-      class="md:grid grid-cols-8 md:pb-20 pb-10 2xl:text-2xl xl:text-xl md:text-[4.5rem] text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] ml-5 md:ml-0"
+      class="md:grid grid-cols-8 md:pb-20 pb-10 2xl:text-2xl xl:text-xl md:text-[4.5rem] text-[2.1875rem] tracking-[-0.07em] leading-[100%] ml-5 md:ml-0"
     >
       <div class="col-start-3 col-end-9">харизмы</div>
-      <p class="ml-5 md:ml-0 col-start-4 col-end-9 text-orange">в проектах</p>
+      <div class="ml-5 md:ml-0 col-start-4 col-end-9 text-orange">в проектах</div>
     </div>
 
     <div class="md:px-10 px-2.5">
       <div class="projects flex items-center md:h-svh">
         <div class="flex flex-nowrap relative z-20">
-          <div class="project-1 flex-shrink-0 flex min-w-[50%] justify-start">
+          <div class="project-1 flex-shrink-0 flex md:min-w-[50%] justify-start">
             <div class="pr-[5%] md:pr-[14%]">
               <div class="text-[0.625rem] md:text-[1rem]">{ 1 }</div>
               <div class="py-2.5 md:py-5">
@@ -33,7 +33,7 @@
               </div>
             </div>
           </div>
-          <div class="project-1 flex-shrink-0 flex min-w-[50%] justify-start">
+          <div class="project-1 flex-shrink-0 flex md:min-w-[50%] justify-start">
             <div class="pr-[5%] md:pr-[14%]">
               <div class="text-[0.625rem] md:text-[1rem]">{ 2 }</div>
               <div class="py-2.5 md:py-5">
@@ -56,7 +56,7 @@
               </div>
             </div>
           </div>
-          <div class="project-1 flex-shrink-0 flex min-w-[50%] justify-start">
+          <div class="project-1 flex-shrink-0 flex md:min-w-[50%] justify-start">
             <div class="pr-[5%] md:pr-[14%]">
               <div class="text-[0.625rem] md:text-[1rem]">{ 3 }</div>
               <div class="py-2.5 md:py-5">
