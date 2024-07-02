@@ -4,6 +4,7 @@
 .nuxt
 .nitro
 .cache
+.work-time
 dist
 
 # Node dependencies

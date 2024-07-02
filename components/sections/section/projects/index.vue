@@ -2,6 +2,7 @@
   <div class="overflow-hidden">
     <div
       class="md:grid grid-cols-8 md:pb-20 pb-10 2xl:text-2xl xl:text-xl md:text-[4.5rem] text-[2.1875rem] tracking-[-0.07em] leading-[100%] ml-5 md:ml-0"
+      id="projects"
     >
       <div class="col-start-3 col-end-9">харизмы</div>
       <div class="ml-5 md:ml-0 col-start-4 col-end-9 text-orange">в проектах</div>
@@ -10,7 +11,7 @@
     <div class="md:px-10 px-2.5">
       <div class="projects flex items-center md:h-svh">
         <div class="flex flex-nowrap relative z-20">
-          <div class="project-1 flex-shrink-0 flex md:min-w-[50%] justify-start">
+          <div class="project-1 flex-shrink-0 flex w-screen md:w-auto md:min-w-[50%] justify-start">
             <div class="pr-[5%] md:pr-[14%]">
               <div class="text-[0.625rem] md:text-[1rem]">{ 1 }</div>
               <div class="py-2.5 md:py-5">
@@ -33,7 +34,7 @@
               </div>
             </div>
           </div>
-          <div class="project-1 flex-shrink-0 flex md:min-w-[50%] justify-start">
+          <div class="project-1 flex-shrink-0 flex w-screen md:w-auto md:min-w-[50%] justify-start">
             <div class="pr-[5%] md:pr-[14%]">
               <div class="text-[0.625rem] md:text-[1rem]">{ 2 }</div>
               <div class="py-2.5 md:py-5">
@@ -56,7 +57,7 @@
               </div>
             </div>
           </div>
-          <div class="project-1 flex-shrink-0 flex md:min-w-[50%] justify-start">
+          <div class="project-1 flex-shrink-0 flex w-screen md:w-auto md:min-w-[50%] justify-start">
             <div class="pr-[5%] md:pr-[14%]">
               <div class="text-[0.625rem] md:text-[1rem]">{ 3 }</div>
               <div class="py-2.5 md:py-5">
@@ -110,7 +111,7 @@
 
     app.$gsap.to(projects, {
       xPercent: -100 * (projects.length - 1),
-      yPercent: 40,
+      yPercent: 10,
       ease: "linear",
       scrollTrigger: {
         trigger: ".projects",

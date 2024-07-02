@@ -12,7 +12,7 @@
         </p>
       </div>
     </div>
-    <div class="flex flex-col-reverse pb-10 md:grid md:grid-cols-8">
+    <div class="flex flex-col-reverse md:pb-10 pb-5 md:grid md:grid-cols-8">
       <div class="md:col-start-1 md:col-end-4">
         <div class="flex flex-col justify-end md:mt-0 mt-[4.75rem] h-full">
           <div class="flex justify-center w-full text-[0.75rem] md:hidden">
@@ -30,20 +30,28 @@
               <track src="/images/hero/screen.mp4" kind="captions" srclang="ru" label="Описание" />
             </video>
           </div>
-          <div class="flex items-end w-full col-span-5 md:hidden">
+          <div class="w-full col-span-5 md:hidden">
             <div class="flex items-center justify-between font-petrov w-full text-[0.75rem]">
-              <nuxt-link class="hover:no-underline underline" to="#">Политика конфиденциальности</nuxt-link>
-              <span class="">© {{ year }} отличны</span>
+              <nuxt-link class="font-petrov hover:no-underline underline" to="#">Политика конфиденциальности</nuxt-link>
+              <span class="uppercase">© {{ year }} харизмы</span>
             </div>
+            <a class="flex items-center justify-center uppercase text-[0.75rem] mt-5" href="https://bureausuchkov.com/" target="_blank">
+              сделано в бюро сучкова
+              <img class="ml-2" src="/images/dev-logo.svg" alt="бюро сучкова" loading="lazy" width="15" height="15" />
+            </a>
           </div>
         </div>
       </div>
-      <div class="grid grid-cols-5 md:col-start-4 md:col-end-9">
+      <div class="grid grid-cols-5 md:col-start-4 md:col-end-9 font-petrov">
         <forms-footer />
+        <div class="md:flex items-end col-start-1 col-end-2 uppercase hidden">© 2024 харизмы</div>
         <div class="col-start-2 col-end-6 w-full hidden md:flex items-end">
           <div class="flex items-center justify-between w-full">
             <nuxt-link class="hover:no-underline underline" to="#">Политика конфиденциальности</nuxt-link>
-            <span>© {{ year }} отличны</span>
+            <a class="flex items-center uppercase" href="https://bureausuchkov.com/" target="_blank">
+              сделано в бюро сучкова
+              <img class="ml-2" src="/images/dev-logo.svg" alt="бюро сучкова" loading="lazy" width="15" height="15" />
+            </a>
           </div>
         </div>
       </div>

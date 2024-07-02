@@ -1,5 +1,5 @@
 <template>
-  <div class="relative overflow-hidden md:px-10 px-2.5 xl:mt-26">
+  <div class="relative overflow-hidden md:px-10 px-2.5 xl:mt-26" id="value">
     <div class="points flex items-center h-svh">
       <div class="flex flex-nowrap relative z-20">
         <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen">
@@ -68,9 +68,7 @@
       class="words flex flex-nowrap items-center absolute h-svh top-0 z-30 lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase"
     >
       <span class="word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 shrink-0 min-w-[100vw]">ха</span>
-      <span class="word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 shrink-0 min-w-[100vw] text-center">
-        риз
-      </span>
+      <span class="word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 shrink-0 min-w-[100vw] text-center"> риз </span>
       <span class="word-1 block md:pr-[3.125rem] pr-10 shrink-0 min-w-[100vw]">мы</span>
     </div>
   </div>

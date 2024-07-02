@@ -1,16 +1,16 @@
 <template>
   <form class="col-start-1 md:col-start-2 lg:col-end-5 col-end-6 md:mb-10" @submit.prevent="submitForm">
-    <label class="block relative group mt-[3.75rem]">
+    <label class="block relative group md:mt-[3.75rem] mt-5">
       <input
         v-model="form.email"
         class="peer py-2.5 w-full md:text-lg text-sm bg-transparent placeholder:text-transparent group-hover:border-orange transition-all outline-none border-b-2"
         type="email"
-        placeholder="Подписаться*"
+        placeholder="Почта*"
       />
       <span
         class="uppercase peer-[&:not(:placeholder-shown)]:text-sm peer-[&:not(:placeholder-shown)]:top-[-1.625rem] peer-[&:not(:placeholder-shown)]:text-orange transition-all absolute left-0 top-0 md:text-lg text-sm pt-2.5 text-black/40 pointer-events-none"
       >
-        Подписаться*
+        Почта*
       </span>
     </label>
     <div v-if="!isFormCorrect && !v$.form.email.required.$response" class="text-sm text-red">

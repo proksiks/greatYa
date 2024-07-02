@@ -22,30 +22,30 @@
         <ul class="md:flex gap-5 uppercase">
           <li class="md:mb-0 mb-10">
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 1 } </span>
-            <nuxt-link
+            <a
               class="header-link relative font-medium transition text-color text-nowrap overflow-hidden py-0.5"
-              to="#"
+              href="#about"
             >
               о нас
-            </nuxt-link>
+            </a>
           </li>
           <li class="md:mb-0 mb-10">
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 2 } </span>
-            <nuxt-link class="header-link relative font-medium transition text-color overflow-hidden py-0.5" to="#">
+            <a class="header-link relative font-medium transition text-color overflow-hidden py-0.5" href="#value">
               ценности
-            </nuxt-link>
+            </a>
           </li>
           <li class="md:mb-0 mb-10">
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 3 } </span>
-            <nuxt-link class="header-link relative font-medium transition text-color overflow-hidden py-0.5" to="#">
+            <a class="header-link relative font-medium transition text-color overflow-hidden py-0.5" href="#peoples">
               основатели
-            </nuxt-link>
+            </a>
           </li>
           <li>
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 4 } </span>
-            <nuxt-link class="header-link relative font-medium transition text-color overflow-hidden py-0.5" to="#">
+            <a class="header-link relative font-medium transition text-color overflow-hidden py-0.5" href="#projects">
               проекты
-            </nuxt-link>
+            </a>
           </li>
         </ul>
       </nav>
