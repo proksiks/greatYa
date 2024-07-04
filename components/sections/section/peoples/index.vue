@@ -38,7 +38,7 @@
               Мильченко
             </p>
             <p class="font-petrov text-sm md:text-md mb-2.5">Основатель</p>
-            <p class="font-petrov">Покоритель Килиманджаро</p>
+            <p class="font-petrov text-sm md:text-md">Покоритель Килиманджаро</p>
           </div>
         </div>
       </div>
@@ -68,7 +68,7 @@
               Перминов
             </p>
             <p class="font-petrov text-sm md:text-md mb-2.5">Основатель</p>
-            <p class="font-petrov">Спортсмен-триатлонист</p>
+            <p class="font-petrov text-sm md:text-md">Спортсмен-триатлонист</p>
           </div>
         </div>
       </div>
@@ -97,7 +97,7 @@
               Замятин
             </p>
             <p class="font-petrov text-sm md:text-md mb-2.5">Основатель</p>
-            <p class="font-petrov">Заядлый мотоциклист</p>
+            <p class="font-petrov text-sm md:text-md">Заядлый мотоциклист</p>
           </div>
         </div>
       </div>
