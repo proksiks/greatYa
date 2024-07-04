@@ -23,7 +23,7 @@
     smoothWheel: true,
   });
 
-  onMounted(() => {
+  onNuxtReady(() => {
     lenis.on("scroll", app.$ScrollTrigger.update);
 
     app.$gsap.ticker.add((time) => {

@@ -3,9 +3,13 @@
     <div
       class="md:grid grid-cols-8 md:mb-20 mb-10 2xl:text-2xl xl:text-xl md:text-[4.5rem] text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] ml-5 md:ml-0"
       id="peoples"
+    >
+      <p
+        class="peoples-title md:col-start-3 md:col-end-7 uppercase 2xl:text-2xl xl:text-xl text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] md:pb-20 pb-10"
       >
-      <div class="col-start-3 col-end-9">харизмы</div>
-      <p class="ml-5 md:ml-0 col-start-4 col-end-9 text-orange">в людях</p>
+        <span class="block">харизмы</span>
+        <span class="block ml-7 md:ml-[14.5rem] text-orange text-nowrap">в людях</span>
+      </p>
     </div>
 
     <div class="xl:grid xl:grid-cols-8 gap-5">
@@ -17,88 +21,111 @@
             <span class="block md:hidden mb-3 text-[0.625rem]"> { 1 } </span>
             <img
               class="object-cover xl:max-w-none min-w-[15.5625rem] 2xl:w-[27.8125rem] xl:w-[21.75rem] w-auto"
-              src="/images/peoples/people-1.png"
+              src="/images/peoples/people-1.jpg"
               alt="Ильяс Койносов"
               width="445"
               height="500"
-              loading="lazy"
             />
           </div>
 
           <div class="flex flex-col">
             <span class="hidden md:block mb-5"> { 1 } </span>
             <p class="font-petrov mb-5 text-[0.75rem] md:text-[1rem]">
-              «Мы преданная своему делу и увлеченная команда, которая занимается строительством жилых домов. За нашими
-              плечами 25 лет опыта и сотни довольных клиентов. Мы вкладываем душу в то, что делаем.»
+              «Наше единение, наши идеи и наша преданность своей профессии делают нас уникальной компанией.»
             </p>
             <p class="font-medium md:text-lg text-sm mb-2 md:mb-2.5 mt-auto">
-              Ильяс <br />
-              Койносов
+              Александр <br />
+              Мильченко
             </p>
-            <p class="font-petrov text-[0.75rem] md:text-[1rem]">Генеральный директор</p>
+            <p class="font-petrov text-sm md:text-md mb-2.5">Основатель</p>
+            <p class="font-petrov">Покоритель Килиманджаро</p>
           </div>
         </div>
       </div>
       <div
-        class="xl:row-start-2 xl:row-end-3 xl:col-start-5 xl:col-end-9 items-start xl:-mt-[10.25rem] row-span max-w-[16.0625rem] sm:ml-auto md:ml-0 md:max-w-[43.75rem] xl:max-w-none mb-[3.75rem] lx:mb-0"
+        class="xl:row-start-2 xl:row-end-3 xl:col-start-5 xl:col-end-9 items-start xl:-mt-[15rem] row-span max-w-[16.0625rem] sm:ml-auto md:ml-0 md:max-w-[43.75rem] xl:max-w-none mb-[3.75rem] lx:mb-0"
       >
         <div class="flex md:flex-row flex-col gap-5 pr-5">
           <div>
             <span class="block md:hidden mb-3 text-[0.625rem]"> { 2 } </span>
             <img
               class="object-cover xl:max-w-none min-w-[15.5625rem] 2xl:w-[34.875rem] xl:w-[23.75rem] w-auto"
-              src="/images/peoples/people-2.png"
+              src="/images/peoples/people-2.jpg"
               alt="Ильяс Койносов"
               width="558"
               height="445"
-              loading="lazy"
             />
           </div>
 
           <div class="flex flex-col">
             <span class="hidden md:block mb-5"> { 2 } </span>
             <p class="font-petrov mb-5 text-[0.75rem] md:text-[1rem]">
-              «Благодаря сочетанию современного дизайна и традиционной эстетики, мы строим дома, которые воплощают в
-              себе баланс стиля, комфорта »
+              «Мы создаем команды единомышленников, а не коллег. Только так мы способны реализовывать цели, которые
+              кажутся недостижимыми для других.»
             </p>
             <p class="font-medium md:text-lg text-sm mb-2 md:mb-2.5 mt-auto">
-              Максим <br />
-              Долгушин
+              Александр <br />
+              Перминов
             </p>
-            <p class="font-petrov text-[0.75rem] md:text-[1rem]">Генеральный директор</p>
+            <p class="font-petrov text-sm md:text-md mb-2.5">Основатель</p>
+            <p class="font-petrov">Спортсмен-триатлонист</p>
           </div>
         </div>
       </div>
       <div
-        class="xl:row-start-3 xl:row-end-3 gap-5 xl:col-start-2 xl:col-end-6 2xl:mt-[14.8125rem] xl:mt-[8.25rem] ml-[3.25rem] xl:ml-0 max-w-[19.5625rem] md:max-w-none"
+        class="xl:row-start-3 xl:row-end-3 gap-5 xl:col-start-2 xl:col-end-6 2xl:mt-[10rem] xl:mt-[8.25rem] ml-[3.25rem] xl:ml-0 max-w-[19.5625rem] md:max-w-none"
       >
         <div class="flex md:flex-row flex-col gap-5 pr-5">
           <div>
             <span class="block md:hidden mb-3 text-[0.625rem]"> { 3 } </span>
             <img
               class="object-cover xl:max-w-none min-w-[15.5625rem] 2xl:w-[34.875rem] xl:w-[23.75rem] w-auto"
-              src="/images/peoples/people-3.png"
+              src="/images/peoples/people-3.jpg"
               alt="Олег Кондрашин"
               width="558"
               height="445"
-              loading="lazy"
             />
           </div>
 
           <div class="flex flex-col">
             <span class="hidden md:block mb-5">{ 3 }</span>
             <p class="font-petrov mb-5 text-[0.75rem] md:text-[1rem]">
-              «Мы преданная своему делу и увлеченная команда, которая занимается строительством жилых домов. За нашими
-              плечами 25 лет опыта и сотни довольных клиентов. Мы вкладываем душу в то, что делаем.»
+              «Доброта - это лучший инструмент, чтобы предоставить нашим клиентам выдающийся сервис.»
             </p>
             <p class="font-medium md:text-lg text-sm mb-2 md:mb-2.5 mt-auto">
-              Олег <br />
-              Кондрашин
+              Максим <br />
+              Замятин
             </p>
-            <p class="font-petrov text-[0.75rem] md:text-[1rem]">Генеральный директор</p>
+            <p class="font-petrov text-sm md:text-md mb-2.5">Основатель</p>
+            <p class="font-petrov">Заядлый мотоциклист</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script setup>
+  import SplitType from "split-type";
+
+  const app = useNuxtApp();
+
+  onNuxtReady(() => {
+    new SplitType(".peoples-title", {
+      types: "lines, words, chars",
+      tagName: "span",
+    });
+    app.$gsap.from(".peoples-title .word", {
+      y: 20,
+      opacity: 0,
+      duration: 2,
+      ease: "sine.out",
+      stagger: 0.1,
+
+      scrollTrigger: {
+        trigger: ".peoples-title",
+        scrub: true,
+      },
+    });
+  });
+</script>

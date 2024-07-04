@@ -2,9 +2,9 @@
   <div class="md:mt-26 mt-25 md:mx-10 mx-2.5" ref="footer">
     <div class="md:grid md:grid-cols-8 md:mb-[8rem] mb-[1.8125rem]">
       <div class="col-start-1 col-end-4 hidden md:block">
-        <a class="block" href="https://t.me/senior_frontender">telegram app</a>
-        <a class="block mt-5" href="https://www.youtube.com/?app=desktop&hl=ru" target="_blank">youtube</a>
-        <a class="block mt-5" href="https://vk.com/login?u=2&to=L3dlYi5hcHBz" target="_blank">вконтакте</a>
+        <a class="block uppercase font-medium hover:text-orange transition-all" href="https://www.youtube.com/channel/UCf1D4M-fAz75YWQugRCk4sA" target="_blank">youtube</a>
+        <a class="block uppercase font-medium mt-5 hover:text-orange transition-all" href="https://vk.com/gsbktmn" target="_blank">вконтакте</a>
+        <a class="block uppercase font-medium mt-5 hover:text-orange transition-all" href="https://t.me/sbk_tyumen">telegram</a>
       </div>
       <div class="col-start-4 col-end-9">
         <p class="xl:text-[2.75rem] md:text-[1.5rem] font-medium">
@@ -16,11 +16,11 @@
       <div class="md:col-start-1 md:col-end-4">
         <div class="flex flex-col justify-end md:mt-0 mt-[4.75rem] h-full">
           <div class="flex justify-center w-full text-[0.75rem] md:hidden">
-            <a class="block" href="tg://t.me/USERNAME">telegram app</a>
-            <a class="block mx-[2.9375rem]" href="https://www.youtube.com/?app=desktop&hl=ru" target="_blank">
+            <a class="block uppercase font-medium" href="tg://t.me/sbk_tyumen">telegram</a>
+            <a class="block uppercase font-medium mx-[2.9375rem]" href="https://www.youtube.com/channel/UCf1D4M-fAz75YWQugRCk4sA" target="_blank">
               youtube
             </a>
-            <a class="block" href="https://vk.com/login?u=2&to=L3dlYi5hcHBz" target="_blank">вконтакте</a>
+            <a class="block uppercase font-medium" href="https://vk.com/gsbktmn" target="_blank">вконтакте</a>
           </div>
           <div class="justify-center md:justify-start my-2.5 md:my-0">
             <!--<img src="/images/big-logo.svg" alt="Логотип" loading="lazy" />-->
@@ -43,11 +43,11 @@
         </div>
       </div>
       <div class="grid grid-cols-5 md:col-start-4 md:col-end-9 font-petrov">
-        <forms-footer />
+        <forms-footer class="col-start-1 md:col-start-2 lg:col-end-5 col-end-6" />
         <div class="md:flex items-end col-start-1 col-end-2 uppercase hidden">© 2024 харизмы</div>
         <div class="col-start-2 col-end-6 w-full hidden md:flex items-end">
           <div class="flex items-center justify-between w-full">
-            <nuxt-link class="hover:no-underline underline" to="#">Политика конфиденциальности</nuxt-link>
+            <a class="hover:no-underline underline" href="pdfs/policy.pdf" download>Политика конфиденциальности</a>
             <a class="flex items-center uppercase" href="https://bureausuchkov.com/" target="_blank">
               сделано в бюро сучкова
               <img class="ml-2" src="/images/dev-logo.svg" alt="бюро сучкова" loading="lazy" width="15" height="15" />

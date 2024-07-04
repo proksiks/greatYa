@@ -5,7 +5,8 @@
   <div class="bg-black">
     <lazy-sections-section-quality />
   </div>
-  <lazy-sections-section-peoples />
+  <sections-section-peoples />
+  <lazy-sections-section-numbers />
   <lazy-sections-section-projects />
   <div class="bg-black">
     <lazy-sections-section-welcome />

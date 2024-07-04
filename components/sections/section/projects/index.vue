@@ -106,7 +106,7 @@
 
   const app = useNuxtApp();
 
-  onMounted(() => {
+  onNuxtReady(() => {
     const projects = app.$gsap.utils.toArray(".project-1");
 
     app.$gsap.to(projects, {

@@ -1,5 +1,5 @@
 <template>
-  <div class="relative overflow-hidden md:px-10 px-2.5 xl:mt-26" id="value">
+  <div class="relative overflow-hidden md:px-10 px-2.5 xl:mt-25" id="value">
     <div class="points flex items-center h-svh">
       <div class="flex flex-nowrap relative z-20">
         <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen">
@@ -77,10 +77,9 @@
 <script setup>
   const app = useNuxtApp();
 
-  onMounted(() => {
+  onNuxtReady(() => {
     const words = app.$gsap.utils.toArray(".word-1");
     const points = app.$gsap.utils.toArray(".point-1");
-
     app.$gsap.to(points, {
       xPercent: -110 * (points.length - 1),
       yPercent: 20,
@@ -91,7 +90,6 @@
         scrub: 1,
       },
     });
-
     app.$gsap.to(words, {
       xPercent: -98 * (words.length - 1),
       yPercent: 50,

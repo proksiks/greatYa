@@ -79,7 +79,7 @@
 
   const { $gsap: gsap } = useNuxtApp();
 
-  onMounted(() => {
+  onNuxtReady(() => {
     new SplitType("[qualityChar]", {
       types: "lines, words, chars",
       tagName: "span",
@@ -158,7 +158,7 @@
     });
 
     gsap.from(".quality-white-line", {
-      xPercent: 100,
+      xPercent: 140,
       duration: 2,
       ease: "sine.out",
       stagger: 0.15,
@@ -166,7 +166,7 @@
       scrollTrigger: {
         trigger: ".quality-white-line",
         start: "top bottom",
-        end: "bottom -50%",
+        end: "bottom -25%",
         scrub: true,
       },
     });
