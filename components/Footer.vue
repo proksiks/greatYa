@@ -24,7 +24,7 @@
           </div>
           <div class="justify-center md:justify-start my-2.5 md:my-0">
             <!--<img src="/images/big-logo.svg" alt="Логотип" loading="lazy" />-->
-            <video muted loop ref="footerVideo" poster="/images/video-holder.png">
+            <video muted loop ref="footerVideo" poster="/images/video-holder.png" playsinline src="/images/hero/screen.mp4">
               <source src="/images/hero/screen.webm" type="video/webm" />
               <source src="/images/hero/screen.mp4" type="video/mp4" />
               <track src="/images/hero/screen.mp4" kind="captions" srclang="ru" label="Описание" />
