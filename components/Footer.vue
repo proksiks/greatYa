@@ -16,7 +16,7 @@
       <div class="md:col-start-1 md:col-end-4">
         <div class="flex flex-col justify-end md:mt-0 mt-[4.75rem] h-full">
           <div class="flex justify-center w-full text-[0.75rem] md:hidden">
-            <a class="block uppercase font-medium" href="tg://t.me/sbk_tyumen">telegram</a>
+            <a class="block uppercase font-medium" href="tg://sbk_tyumen">telegram</a>
             <a class="block uppercase font-medium mx-[2.9375rem]" href="https://www.youtube.com/channel/UCf1D4M-fAz75YWQugRCk4sA" target="_blank">
               youtube
             </a>
