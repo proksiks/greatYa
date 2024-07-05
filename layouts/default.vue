@@ -6,7 +6,7 @@
       <div class="bg-white">
         <slot />
       </div>
-      <div :style="{ paddingTop: `${footerHeight}px` }">
+      <div :style="{ marginTop: `${footerHeight}px` }">
         <div class="fixed bottom-0 left-0 w-full bg-white -z-10" ref="footer">
           <Footer />
         </div>
