@@ -4,7 +4,7 @@
       <div class="col-start-1 col-end-4 hidden md:block">
         <a class="block uppercase font-medium hover:text-orange transition-all" href="https://www.youtube.com/channel/UCf1D4M-fAz75YWQugRCk4sA" target="_blank">youtube</a>
         <a class="block uppercase font-medium mt-5 hover:text-orange transition-all" href="https://vk.com/gsbktmn" target="_blank">вконтакте</a>
-        <a class="block uppercase font-medium mt-5 hover:text-orange transition-all" href="https://t.me/sbk_tyumen">telegram</a>
+        <a class="block uppercase font-medium mt-5 hover:text-orange transition-all" href="https://t.me/sbk_tyumen" target="_blank">telegram</a>
       </div>
       <div class="col-start-4 col-end-9">
         <p class="xl:text-[2.75rem] md:text-[1.5rem] font-medium">
@@ -16,7 +16,7 @@
       <div class="md:col-start-1 md:col-end-4">
         <div class="flex flex-col justify-end md:mt-0 mt-[4.75rem] h-full">
           <div class="flex justify-center w-full text-[0.75rem] md:hidden">
-            <a class="block uppercase font-medium" href="tg://sbk_tyumen">telegram</a>
+            <a class="block uppercase font-medium" href="https://t.me/sbk_tyumen" target="_blank">telegram</a>
             <a class="block uppercase font-medium md:mx-[2.9375rem] mx-8" href="https://www.youtube.com/channel/UCf1D4M-fAz75YWQugRCk4sA" target="_blank">
               youtube
             </a>
