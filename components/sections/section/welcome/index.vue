@@ -1,7 +1,7 @@
 <template>
-  <div class="md:px-10 px-2.5 md:pb-[11.25rem] pb-25">
+  <div class="md:px-10 px-2.5 md:pb-[11.25rem] pb-25 overflow-hidden">
     <p
-      class="flex justify-between text-white md:px-10 px-2.5 pt-2.5 md:pt-10 pb-5 text-sm tracking-[-0.03em] uppercase"
+      class="flex justify-between text-white pt-2.5 md:pt-10 pb-5 text-sm tracking-[-0.03em] uppercase"
     >
       <span class="welcome-char">результат</span>
       <span class="welcome-char">{</span>
