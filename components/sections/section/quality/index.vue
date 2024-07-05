@@ -1,28 +1,30 @@
 <template>
-  <p class="flex justify-between text-white md:px-10 px-2.5 pt-2.5 md:pt-10 pb-5 text-sm tracking-[-0.03em] uppercase">
-    <span qualityChar>результат</span>
-    <span qualityChar>{</span>
-    <span qualityChar>{ баланс }</span>
-    <span qualityChar>эстетика</span>
-    <span qualityChar>}</span>
+  <p
+    class="quality-head flex justify-between text-white md:px-10 px-2.5 pt-2.5 md:pt-10 pb-5 text-sm tracking-[-0.03em] uppercase"
+  >
+    <span class="quality-head-text">результат</span>
+    <span class="quality-head-text">{</span>
+    <span class="quality-head-text">{ баланс }</span>
+    <span class="quality-head-text">эстетика</span>
+    <span class="quality-head-text">}</span>
   </p>
   <div class="md:grid md:grid-cols-8 text-white px-2.5 md:px-10">
     <p
       class="md:col-start-1 md:col-end-7 uppercase 2xl:text-2xl xl:text-xl text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] md:pb-20 pb-10"
-      qualityWord
     >
-      <span class="block">увлеченная</span>
-      <span class="block ml-7 md:ml-[14.5rem] text-nowrap">работа –</span>
-      <span class="block ml-7 md:ml-[14.5rem] text-orange text-nowrap">это наш</span>
-      <span class="block text-orange">успех</span>
+      <span class="quality-head-title block">увлеченная</span>
+      <span class="quality-head-title block ml-7 md:ml-[14.5rem] text-nowrap">работа –</span>
+      <span class="quality-head-title block ml-7 md:ml-[14.5rem] text-orange text-nowrap">это наш</span>
+      <span class="quality-head-title block text-orange">успех</span>
     </p>
-    <p qualityDescr class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.125rem] max-w-[26.875rem] md:max-w-none">
+    <p
+      class="quality-descr md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.125rem] max-w-[26.875rem] md:max-w-none"
+    >
       Мы уверены, что великие компании строятся на страстных людях, увлеченных своим делом. Говорят, что наш энтузиазм
       заряжает всех вокруг, а наши идеи становятся искрами, зажигающими огонь инноваций.
     </p>
     <p
-      class="md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] mt-[3.75rem] md:mt-[10rem] pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
-      qualityText
+      class="quality-descr md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] mt-[3.75rem] md:mt-[10rem] pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
     >
       Мы видим в работе не просто обязанность, а возможность воплощать смелые идеи, делая мир лучше, краше и интереснее
       в каждом дне, в каждом проекте.
@@ -72,29 +74,10 @@
 </template>
 
 <script setup>
-  import SplitType from "split-type";
-
   const { $gsap: gsap } = useNuxtApp();
 
   onNuxtReady(() => {
-    new SplitType("[qualityChar]", {
-      types: "lines, words, chars",
-      tagName: "span",
-    });
-    new SplitType("[qualityDescr]", {
-      types: "lines, words, chars",
-      tagName: "span",
-    });
-    new SplitType("[qualityText]", {
-      types: "lines, words, chars",
-      tagName: "span",
-    });
-    new SplitType("[qualityWord]", {
-      types: "lines, words, chars",
-      tagName: "span",
-    });
-
-    gsap.from("[qualityChar] .char", {
+    gsap.from(".quality-head-text", {
       y: 20,
       opacity: 0,
       duration: 2,
@@ -102,14 +85,12 @@
       stagger: 0.05,
 
       scrollTrigger: {
-        trigger: "[qualityChar]",
-        start: "top bottom",
-        end: "bottom top+=400px",
+        trigger: ".quality-head",
         scrub: true,
       },
     });
 
-    gsap.from("[qualityWord] .word", {
+    gsap.from(".quality-head-title", {
       y: 50,
       opacity: 0,
       duration: 2,
@@ -117,29 +98,12 @@
       stagger: 0.4,
 
       scrollTrigger: {
-        trigger: "[qualityWord]",
-        start: "top bottom",
-        end: "bottom top",
+        trigger: ".quality-head-title",
         scrub: true,
       },
     });
 
-    gsap.from("[qualityDescr] .word", {
-      y: 50,
-      opacity: 0,
-      duration: 2,
-      ease: "sine.out",
-      stagger: 0.04,
-
-      scrollTrigger: {
-        trigger: "[qualityDescr]",
-        start: "top bottom",
-        end: "bottom top+=200px",
-        scrub: true,
-      },
-    });
-
-    gsap.from("[qualityText] .word", {
+    gsap.from(".quality-descr", {
       y: 50,
       opacity: 0,
       duration: 2,
@@ -147,9 +111,7 @@
       stagger: 0.15,
 
       scrollTrigger: {
-        trigger: "[qualityText]",
-        start: "top bottom",
-        end: "bottom top+=400px",
+        trigger: ".quality-descr",
         scrub: true,
       },
     });
