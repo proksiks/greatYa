@@ -18,7 +18,7 @@
     </p>
     <p qualityDescr class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov max-w-[26.875rem] md:max-w-none">
       Мы уверены, что великие компании строятся на страстных людях, увлеченных своим делом. Говорят, что наш энтузиазм
-      заражает всех вокруг, а наши идеи становятся искрами, зажигающими огонь инноваций.
+      заряжает всех вокруг, а наши идеи становятся искрами, зажигающими огонь инноваций.
     </p>
     <p
       class="md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] mt-[3.75rem] md:mt-[10rem] pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"

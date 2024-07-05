@@ -1,6 +1,7 @@
 <template>
   <div class="xl:pt-26 md:pt-[11.25rem] pt-25 xl:px-10 px-2.5">
-    <div
+    <di
+      v
       id="about"
       class="grid sm:grid-cols-8 grid-cols-2 text-nowrap 2xl:leading-[7.3125rem] leading-[100%] tracking-tighter 2xl:text-[8.125rem] xl:text-xl md:text-[3.25rem] text-[2.1875rem] uppercase"
     >
@@ -9,11 +10,9 @@
         в том <br />
         что делаем
       </div>
-    </div>
+    </di>
     <div class="grid sm:grid-cols-8 grid-cols-2">
-      <div
-        class="font-medium sm:col-start-4 col-end-9 xl:pt-24 pt-20 2xl:text-[2.75rem] md:text-[1.5rem] text-sm leading-[100%] sm:ml-0"
-      >
+      <div class="font-petrov sm:col-start-3 col-end-9 xl:pt-24 pt-20 leading-[100%] sm:ml-0 max-w-[26.875rem]">
         <div word>
           Мы верим, что истинная сила кроется в том, как мы делаем свою работу — с любовью, страстью и харизмой.
         </div>
@@ -21,6 +20,10 @@
           Мы делаем все возможное, чтобы наша работа оставляла яркие следы в сердцах клиентов. Каждый проект — это
           возможность дать нечто большее, чем они ожидают.
         </div>
+      </div>
+      <div
+        class="font-medium sm:col-start-4 col-end-9 xl:pt-24 pt-20 2xl:text-[2.75rem] md:text-[1.5rem] text-sm leading-[100%] sm:ml-0"
+      >
         <div class="mt-5" word>
           Наша команда — это союз харизматичных людей, привносящих в работу свою индивидуальность, творчество и фанатизм
           к делу. Мы не просто выполняем задачи, мы создаем наследие для потомков. Достойная цель, чтобы жить!

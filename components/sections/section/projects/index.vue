@@ -1,7 +1,7 @@
 <template>
   <div class="overflow-hidden">
     <div
-      class="md:grid grid-cols-8 md:pb-20 pb-10 2xl:text-2xl xl:text-xl md:text-[4.5rem] text-[2.1875rem] tracking-[-0.07em] leading-[100%] ml-5 md:ml-0"
+      class="md:grid grid-cols-8 md:pb-20 pb-10 2xl:text-2xl xl:text-xl md:text-[4.5rem] text-[2.1875rem] tracking-[-0.07em] leading-[100%] ml-5 md:ml-0 uppercase"
       id="projects"
     >
       <div class="col-start-3 col-end-9">харизмы</div>
@@ -15,21 +15,18 @@
             <div class="pr-[5%] md:pr-[14%]">
               <div class="text-[0.625rem] md:text-[1rem]">{ 1 }</div>
               <div class="py-2.5 md:py-5">
-                <img src="/images/projects/project-1.png" width="676" height="445" alt="Проект" loading="lazy" />
+                <img src="/images/projects/project-1.jpg" width="676" height="445" alt="Проект" loading="lazy" />
               </div>
               <div>
                 <div class="flex items-start justify-between pb-2.5">
-                  <span class="text-sm md:text-lg mr-5 font-medium uppercase leading-none">
-                    new <br />
-                    white house
-                  </span>
-                  <button @click="() => open()" aria-label="Модальное окно">
+                  <span class="text-sm md:text-lg mr-5 font-medium uppercase leading-none"> Novator </span>
+                  <a href="https://мойноватор.рф/" target="_blank" aria-label="Модальное окно">
                     <img src="/images/icons/more.svg" width="51" height="51" loading="lazy" alt="Подробнее" />
-                  </button>
+                  </a>
                 </div>
                 <div class="max-w-[17.125rem] font-manrope md:text-[1rem] text-[0.75rem]">
-                  от 3,7 млн ₽ <br />
-                  ввод в эксплутацию: II квартал 2024 г. Тюмень
+                  Жилой квартал с WOW опциями: собственный бульвар, концептуальные дворы, уникальные планировки, потолки
+                  от 2,88 м.
                 </div>
               </div>
             </div>
@@ -38,21 +35,17 @@
             <div class="pr-[5%] md:pr-[14%]">
               <div class="text-[0.625rem] md:text-[1rem]">{ 2 }</div>
               <div class="py-2.5 md:py-5">
-                <img src="/images/projects/project-2.png" width="676" height="445" alt="Проект" loading="lazy" />
+                <img src="/images/projects/project-2.jpg" width="676" height="445" alt="Проект" loading="lazy" />
               </div>
               <div>
                 <div class="flex items-start justify-between pb-2.5">
-                  <span class="text-sm md:text-lg mr-5 font-medium uppercase leading-none">
-                    Норден. <br />
-                    это комфорт
-                  </span>
-                  <button @click="() => open()" aria-label="Модальное окно">
+                  <span class="text-sm md:text-lg mr-5 font-medium uppercase leading-none"> Акватория </span>
+                  <a href="https://аквартиры.рф/" target="_blank" aria-label="Модальное окно">
                     <img src="/images/icons/more.svg" width="51" height="51" loading="lazy" alt="Подробнее" />
-                  </button>
+                  </a>
                 </div>
                 <div class="max-w-[17.125rem] font-manrope md:text-[1rem] text-[0.75rem]">
-                  от 12,7 млн ₽ <br />
-                  ввод в эксплутацию: IV квартал 2024 г. Тюмень
+                  Микрорайон, КРТ, 45 га. 8 очередей, в том числе введено в эксплуатацию 3 очереди
                 </div>
               </div>
             </div>
@@ -61,21 +54,17 @@
             <div class="pr-[5%] md:pr-[14%]">
               <div class="text-[0.625rem] md:text-[1rem]">{ 3 }</div>
               <div class="py-2.5 md:py-5">
-                <img src="/images/projects/project-3.png" width="558" height="445" alt="Проект" loading="lazy" />
+                <img src="/images/projects/project-3.jpg" width="558" height="445" alt="Проект" loading="lazy" />
               </div>
               <div>
                 <div class="flex items-start justify-between pb-2.5">
-                  <span class="text-sm md:text-lg mr-5 font-medium uppercase leading-none">
-                    малоэтажный <br />
-                    мини город 2024
-                  </span>
+                  <span class="text-sm md:text-lg mr-5 font-medium uppercase leading-none"> Новые проекты </span>
                   <button @click="() => open()" aria-label="Модальное окно">
                     <img src="/images/icons/more.svg" width="51" height="51" loading="lazy" alt="Подробнее" />
                   </button>
                 </div>
                 <div class="max-w-[17.125rem] font-manrope md:text-[1rem] text-[0.75rem]">
-                  от 12,7 млн ₽ <br />
-                  начало строительства: 2024 г. Тюмень
+                  Впереди много новых уникальных проектов. Совсем скоро расскажем!
                 </div>
               </div>
             </div>
