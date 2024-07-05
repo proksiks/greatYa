@@ -66,7 +66,7 @@
         src="/images/quality/quality-bg.svg"
         alt="Декоративная картинка"
         width="1903"
-        height="654"
+        height="660"
       />
       <div class="quality-white-line absolute inset-0 bg-white"></div>
     </div>
