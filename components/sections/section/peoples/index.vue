@@ -133,33 +133,5 @@
         scrub: true,
       },
     });
-
-    let revealContainers = document.querySelectorAll(".people-image");
-
-    revealContainers.forEach((container) => {
-      let image = container.querySelector("img");
-      let tl = app.$gsap.timeline({
-        scrollTrigger: {
-          trigger: container,
-          scrub: true,
-          start: "-150% bottom",
-          end: "bottom 120%",
-        },
-      });
-
-      tl.set(container, { autoAlpha: 1 });
-      tl.from(container, 1.5, {
-        yPercent: 100,
-        ease: "power2.out",
-      });
-      tl.from(image, 1.5, {
-        duration: 2,
-        opacity: 0,
-        yPercent: -100,
-        scale: 1.3,
-        delay: -1.5,
-        ease: "power2.out",
-      });
-    });
   });
 </script>
