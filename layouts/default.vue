@@ -16,22 +16,22 @@
 </template>
 
 <script setup>
-  //import Lenis from "@studio-freight/lenis";
-  //const app = useNuxtApp();
-  //const lenis = new Lenis({
-  //  duration: 1.2,
-  //  lerp: 0.05,
-  //  smoothWheel: true,
-  //  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-  //});
+  import Lenis from "@studio-freight/lenis";
+  const app = useNuxtApp();
+  const lenis = new Lenis({
+    duration: 1.2,
+    lerp: 0.05,
+    smoothWheel: true,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  });
 
-  //function raf(time) {
-  //  lenis.raf(time);
-  //  app.$ScrollTrigger.update();
-  //  requestAnimationFrame(raf);
-  //}
+  function raf(time) {
+    lenis.raf(time);
+    app.$ScrollTrigger.update();
+    requestAnimationFrame(raf);
+  }
 
-  //requestAnimationFrame(raf);
+  requestAnimationFrame(raf);
 
   const footer = ref(null);
   const footerHeight = ref(0);

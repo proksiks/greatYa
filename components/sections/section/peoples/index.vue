@@ -112,10 +112,16 @@
 </template>
 
 <script setup>
+  import SplitType from "split-type";
+
   const app = useNuxtApp();
 
   onNuxtReady(() => {
-    app.$gsap.from(".peoples-title", {
+    new SplitType(".peoples-title", {
+      types: "lines, words, chars",
+      tagName: "span",
+    });
+    app.$gsap.from(".peoples-title .word", {
       y: 20,
       opacity: 0,
       duration: 2,

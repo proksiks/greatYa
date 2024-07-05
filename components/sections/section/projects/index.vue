@@ -80,6 +80,7 @@
 </template>
 
 <script setup>
+  import SplitType from "split-type";
   import { ModalsContainer, useModal } from "vue-final-modal";
   import ModalForm from "~/components/forms/modals/header/index.vue";
 
@@ -101,7 +102,11 @@
   const scrollProjects = ref(null);
 
   onNuxtReady(() => {
-    app.$gsap.from(".projects-title", {
+    new SplitType(".projects-title", {
+      types: "lines, words, chars",
+      tagName: "span",
+    });
+    app.$gsap.from(".projects-title .word", {
       y: 20,
       opacity: 0,
       duration: 2,
