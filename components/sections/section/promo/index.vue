@@ -12,7 +12,7 @@
       </div>
     </di>
     <div class="grid sm:grid-cols-8 grid-cols-2">
-      <div class="font-petrov sm:col-start-3 col-end-9 xl:pt-24 pt-20 leading-[100%] sm:ml-0 max-w-[26.875rem]">
+      <div class="font-petrov md:text-[1.125rem] sm:col-start-3 col-end-9 xl:pt-24 pt-20 leading-[100%] sm:ml-0 max-w-[26.875rem]">
         <div word>
           Мы верим, что истинная сила кроется в том, как мы делаем свою работу — с любовью, страстью и харизмой.
         </div>

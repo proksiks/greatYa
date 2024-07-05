@@ -6,7 +6,7 @@
           <div class="z-10 max-w-[26.875rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]">
             <div class="md:pb-5 pb-2.5 pd:text-sm text-[0.625rem]">{ 1 }</div>
             <div class="pb-2.5 md:text-lg text-sm uppercase font-medium">133 балла</div>
-            <div class="font-petrov md:text-[1rem] text-[0.75rem]">
+            <div class="font-petrov md:text-[1.125rem] text-[0.75rem]">
               Гармоничное объединение для движения к результату, когда 1+1=5
             </div>
           </div>
@@ -16,9 +16,9 @@
             <div class="mb-2">
               <div class="md:pb-5 pb-2.5 pd:text-sm text-[0.625rem]">{ 2 }</div>
               <div class="pb-2.5 md:text-lg text-sm uppercase font-medium">1000 футбольных полей</div>
-              <div class="font-petrov md:text-[1rem] text-[0.75rem]">
-                равен по площади наш земельный банк мы будем <br class="md:block hidden" />
-                строить!
+              <div class="font-petrov md:text-[1.125rem] text-[0.75rem]">
+                равен по площади наш земельный банк <br class="md:block hidden" />
+                мы будем строить!
               </div>
             </div>
             <img
@@ -31,7 +31,7 @@
             <div class="max-w-[26.875rem] min-w-[14rem] xl:ml-[7.5625rem] md:ml-[2.5rem] ml-[1.25rem] mb-5">
               <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 3 }</p>
               <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">91% сотрудников</p>
-              <p class="font-petrov md:text-[1rem] text-[0.75rem] max-w-[25rem]">
+              <p class="font-petrov md:text-[1.125rem] text-[0.75rem] max-w-[25rem]">
                 в хорошем настроении и высокой энергии по матрице эмоционального состояния Д.Карузо мы бодры, веселы...
               </p>
             </div>
@@ -42,7 +42,7 @@
             <div class="max-w-[26.875rem] min-w-[14rem]">
               <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 4 }</p>
               <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">516 лет</p>
-              <p class="font-petrov md:text-[1rem] text-[0.75rem]">
+              <p class="font-petrov md:text-[1.125rem] text-[0.75rem]">
                 разницы между открытием Америки и нашим, но у нас тоже амбициозные планы
               </p>
             </div>
@@ -60,7 +60,7 @@
             <div class="max-w-[26.875rem] min-w-[14rem] pr-5 mb-5 xl:ml-[15.625rem] ml-25">
               <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 5 }</p>
               <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">16 лет</p>
-              <p class="font-petrov md:text-[1rem] text-[0.75rem]">
+              <p class="font-petrov md:text-[1.125rem] text-[0.75rem]">
                 мы назывались СБК <br class="md:block hidden" />
                 мы меняемся, не изменяя себе!
               </p>
@@ -68,7 +68,7 @@
             <div class="max-w-[26.875rem] min-w-[14rem] pr-5 mb-5 mt-auto">
               <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 6 }</p>
               <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">37 лет</p>
-              <p class="font-petrov md:text-[1rem] text-[0.75rem]">
+              <p class="font-petrov md:text-[1.125rem] text-[0.75rem]">
                 средний возраст соратников внутри коллектива <br class="md:block hidden" />
                 все абсолютно молоды душой
               </p>

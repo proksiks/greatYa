@@ -31,7 +31,7 @@
           </div>
           <div class="w-full col-span-5 md:hidden">
             <div class="flex items-center justify-between font-petrov w-full text-[0.75rem]">
-              <a class="font-petrov hover:no-underline underline" href="pdfs/policy.pdf" download>Политика конфиденциальности</a>
+              <a class="hover:no-underline underline" href="pdfs/policy.pdf" download>Политика конфиденциальности</a>
               <span class="uppercase">© {{ year }} харизмы</span>
             </div>
             <a class="flex items-center justify-center uppercase text-[0.75rem] mt-5" href="https://bureausuchkov.com/" target="_blank">

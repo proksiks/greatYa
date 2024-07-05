@@ -32,7 +32,7 @@
 
           <div class="flex flex-col">
             <span class="hidden md:block mb-5"> { 1 } </span>
-            <p class="font-petrov mb-5 text-[0.75rem] md:text-[1rem]">
+            <p class="font-petrov mb-5 text-[0.75rem] md:text-[1.125rem]">
               «Наше единение, наши идеи и наша преданность своей профессии делают нас уникальной компанией.»
             </p>
             <p class="font-medium md:text-lg text-sm mb-2 md:mb-2.5 mt-auto">
@@ -63,7 +63,7 @@
 
           <div class="flex flex-col">
             <span class="hidden md:block mb-5"> { 2 } </span>
-            <p class="font-petrov mb-5 text-[0.75rem] md:text-[1rem]">
+            <p class="font-petrov mb-5 text-[0.75rem] md:text-[1.125rem]">
               «Мы создаем команды единомышленников, а не коллег. Только так мы способны реализовывать цели, которые
               кажутся недостижимыми для других.»
             </p>
@@ -95,7 +95,7 @@
 
           <div class="flex flex-col">
             <span class="hidden md:block mb-5">{ 3 }</span>
-            <p class="font-petrov mb-5 text-[0.75rem] md:text-[1rem]">
+            <p class="font-petrov mb-5 text-[0.75rem] md:text-[1.125rem]">
               «Доброта - это лучший инструмент, чтобы предоставить нашим клиентам выдающийся сервис.»
             </p>
             <p class="font-medium md:text-lg text-sm mb-2 md:mb-2.5 mt-auto">
@@ -132,6 +132,33 @@
         trigger: ".peoples-title",
         scrub: true,
       },
+    });
+
+    let revealContainers = document.querySelectorAll(".people-image");
+
+    revealContainers.forEach((container) => {
+      let image = container.querySelector("img");
+      let tl = app.$gsap.timeline({
+        scrollTrigger: {
+          trigger: container,
+          scrub: true,
+          start: "-150% bottom",
+          end: "bottom 120%",
+        },
+      });
+
+      tl.set(container, { autoAlpha: 1 });
+      tl.from(container, 1.5, {
+        yPercent: 100,
+        ease: "power2.out",
+      });
+      tl.from(image, 1.5, {
+        duration: 2,
+        opacity: 0,
+        scale: 1.3,
+        delay: -1.5,
+        ease: "power2.out",
+      });
     });
   });
 </script>

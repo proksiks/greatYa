@@ -16,7 +16,7 @@
       <span class="block ml-7 md:ml-[14.5rem] text-orange text-nowrap">это наш</span>
       <span class="block text-orange">успех</span>
     </p>
-    <p qualityDescr class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov max-w-[26.875rem] md:max-w-none">
+    <p qualityDescr class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.125rem] max-w-[26.875rem] md:max-w-none">
       Мы уверены, что великие компании строятся на страстных людях, увлеченных своим делом. Говорят, что наш энтузиазм
       заряжает всех вокруг, а наши идеи становятся искрами, зажигающими огонь инноваций.
     </p>
