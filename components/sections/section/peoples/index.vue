@@ -19,13 +19,15 @@
         <div class="flex md:flex-row flex-col gap-5 pr-5">
           <div>
             <span class="block md:hidden mb-3 text-[0.625rem]"> { 1 } </span>
-            <img
-              class="object-cover xl:max-w-none min-w-[15.5625rem] 2xl:w-[27.8125rem] xl:w-[21.75rem] w-auto"
-              src="/images/peoples/people-1.jpg"
-              alt="Ильяс Койносов"
-              width="445"
-              height="500"
-            />
+            <div class="people-image overflow-hidden">
+              <img
+                class="object-cover xl:max-w-none min-w-[15.5625rem] 2xl:w-[27.8125rem] xl:w-[21.75rem] w-auto"
+                src="/images/peoples/people-1.jpg"
+                alt="Ильяс Койносов"
+                width="445"
+                height="500"
+              />
+            </div>
           </div>
 
           <div class="flex flex-col">
@@ -43,18 +45,20 @@
         </div>
       </div>
       <div
-        class="xl:row-start-2 xl:row-end-3 xl:col-start-5 xl:col-end-9 items-start xl:-mt-[15rem] row-span max-w-[16.0625rem] sm:ml-auto md:ml-0 md:max-w-[43.75rem] xl:max-w-none mb-[3.75rem] lx:mb-0"
+        class="xl:row-start-2 xl:row-end-3 xl:col-start-5 xl:col-end-9 items-start row-span max-w-[16.0625rem] sm:ml-auto md:ml-0 md:max-w-[43.75rem] xl:max-w-none mb-[3.75rem] lx:mb-0"
       >
         <div class="flex md:flex-row flex-col gap-5 pr-5">
           <div>
             <span class="block md:hidden mb-3 text-[0.625rem]"> { 2 } </span>
-            <img
-              class="object-cover xl:max-w-none min-w-[15.5625rem] 2xl:w-[34.875rem] xl:w-[23.75rem] w-auto"
-              src="/images/peoples/people-2.jpg"
-              alt="Ильяс Койносов"
-              width="558"
-              height="445"
-            />
+            <div class="people-image overflow-hidden">
+              <img
+                class="object-cover xl:max-w-none min-w-[15.5625rem] 2xl:w-[34.875rem] xl:w-[23.75rem] w-auto"
+                src="/images/peoples/people-2.jpg"
+                alt="Ильяс Койносов"
+                width="558"
+                height="445"
+              />
+            </div>
           </div>
 
           <div class="flex flex-col">
@@ -78,13 +82,15 @@
         <div class="flex md:flex-row flex-col gap-5 pr-5">
           <div>
             <span class="block md:hidden mb-3 text-[0.625rem]"> { 3 } </span>
-            <img
-              class="object-cover xl:max-w-none min-w-[15.5625rem] 2xl:w-[34.875rem] xl:w-[23.75rem] w-auto"
-              src="/images/peoples/people-3.jpg"
-              alt="Олег Кондрашин"
-              width="558"
-              height="445"
-            />
+            <div class="people-image overflow-hidden">
+              <img
+                class="object-cover xl:max-w-none min-w-[15.5625rem] 2xl:w-[34.875rem] xl:w-[23.75rem] w-auto"
+                src="/images/peoples/people-3.jpg"
+                alt="Олег Кондрашин"
+                width="558"
+                height="445"
+              />
+            </div>
           </div>
 
           <div class="flex flex-col">
@@ -126,6 +132,34 @@
         trigger: ".peoples-title",
         scrub: true,
       },
+    });
+
+    let revealContainers = document.querySelectorAll(".people-image");
+
+    revealContainers.forEach((container) => {
+      let image = container.querySelector("img");
+      let tl = app.$gsap.timeline({
+        scrollTrigger: {
+          trigger: container,
+          scrub: true,
+          start: "-150% bottom",
+          end: "bottom 120%",
+        },
+      });
+
+      tl.set(container, { autoAlpha: 1 });
+      tl.from(container, 1.5, {
+        yPercent: 100,
+        ease: "power2.out",
+      });
+      tl.from(image, 1.5, {
+        duration: 2,
+        opacity: 0,
+        yPercent: -100,
+        scale: 1.3,
+        delay: -1.5,
+        ease: "power2.out",
+      });
     });
   });
 </script>

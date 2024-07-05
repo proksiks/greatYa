@@ -37,13 +37,12 @@
           alt="Жилой комплекс"
           width="443"
           height="500"
-          loading="lazy"
         />
       </div>
     </div>
     <div class="col-start-4 col-end-8 ml-[2rem] md:ml-0 xl:mt-[17.25rem] md:mt-[7.75rem] mt-[1.5rem]">
       <div class="quality-image overflow-hidden">
-        <img src="/images/quality/quality-2.png" alt="Жилой комплекс" width="909" height="561" loading="lazy" />
+        <img src="/images/quality/quality-2.png" alt="Жилой комплекс" width="909" height="561" />
       </div>
     </div>
     <div class="col-start-3 col-end-5 md:mt-[10rem] mt-[3.75rem]">
@@ -54,7 +53,6 @@
           alt="Жилой комплекс"
           width="443"
           height="500"
-          loading="lazy"
         />
       </div>
     </div>
@@ -65,7 +63,6 @@
         class="cols-start-3 col-end-5 block"
         src="/images/quality/quality-bg.svg"
         alt="Декоративная картинка"
-        loading="lazy"
         width="1903"
         height="654"
       />

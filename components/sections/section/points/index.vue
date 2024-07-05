@@ -1,6 +1,6 @@
 <template>
   <div class="relative overflow-hidden md:px-10 px-2.5 xl:mt-25" id="value">
-    <div class="points flex items-center h-svh">
+    <div class="points flex items-center h-svh" ref="scrollPoints">
       <div class="flex flex-nowrap relative z-20">
         <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen">
           <div class="z-10 max-w-[26.875rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]">
@@ -19,7 +19,6 @@
               height="269"
               src="/images/points/point-1.png"
               alt="Здание"
-              loading="lazy"
             />
             <div class="max-w-[26.875rem] min-w-[14rem] xl:ml-[7.5625rem] md:ml-[2.5rem] ml-[1.25rem] mb-5">
               <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 2 }</p>
@@ -47,7 +46,6 @@
               height="269"
               src="/images/points/point-2.png"
               alt="Здание"
-              loading="lazy"
             />
           </div>
         </div>
@@ -66,6 +64,7 @@
     </div>
     <div
       class="words flex flex-nowrap items-center absolute h-svh top-0 z-30 lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase"
+      ref="scrollPointsWords"
     >
       <span class="word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 shrink-0 min-w-[100vw]">ха</span>
       <span class="word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 shrink-0 min-w-[100vw] text-center"> риз </span>
@@ -76,7 +75,8 @@
 
 <script setup>
   const app = useNuxtApp();
-
+  const scrollPoints = ref(null);
+  const scrollPointsWords = ref(null);
   onNuxtReady(() => {
     const words = app.$gsap.utils.toArray(".word-1");
     const points = app.$gsap.utils.toArray(".point-1");
@@ -85,9 +85,11 @@
       yPercent: 20,
       ease: "linear",
       scrollTrigger: {
-        trigger: ".points",
+        trigger: scrollPoints.value,
         pin: true,
-        scrub: 1,
+        scrub: 3,
+        span: 1 / (points.length - 1),
+        end: "+=" + scrollPoints.value.offsetWidth,
       },
     });
     app.$gsap.to(words, {
@@ -95,9 +97,11 @@
       yPercent: 50,
       ease: "none",
       scrollTrigger: {
-        trigger: ".words",
+        trigger: scrollPointsWords.value,
         pin: true,
-        scrub: 1,
+        scrub: 3,
+        span: 1 / (words.length - 1),
+        end: "+=" + scrollPoints.value.offsetWidth,
       },
     });
   });

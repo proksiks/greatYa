@@ -23,7 +23,6 @@
             <a class="block uppercase font-medium" href="https://vk.com/gsbktmn" target="_blank">вконтакте</a>
           </div>
           <div class="justify-center md:justify-start my-2.5 md:my-0">
-            <!--<img src="/images/big-logo.svg" alt="Логотип" loading="lazy" />-->
             <video muted loop ref="footerVideo" poster="/images/video-holder.png" playsinline src="/images/hero/screen.mp4">
               <source src="/images/hero/screen.webm" type="video/webm" />
               <source src="/images/hero/screen.mp4" type="video/mp4" />
@@ -37,7 +36,7 @@
             </div>
             <a class="flex items-center justify-center uppercase text-[0.75rem] mt-5" href="https://bureausuchkov.com/" target="_blank">
               сделано в бюро сучкова
-              <img class="ml-2" src="/images/dev-logo.svg" alt="бюро сучкова" loading="lazy" width="15" height="15" />
+              <img class="ml-2" src="/images/dev-logo.svg" alt="бюро сучкова" width="15" height="15" />
             </a>
           </div>
         </div>
@@ -50,7 +49,7 @@
             <a class="hover:no-underline underline" href="pdfs/policy.pdf" download>Политика конфиденциальности</a>
             <a class="flex items-center uppercase" href="https://bureausuchkov.com/" target="_blank">
               сделано в бюро сучкова
-              <img class="ml-2" src="/images/dev-logo.svg" alt="бюро сучкова" loading="lazy" width="15" height="15" />
+              <img class="ml-2" src="/images/dev-logo.svg" alt="бюро сучкова" width="15" height="15" />
             </a>
           </div>
         </div>

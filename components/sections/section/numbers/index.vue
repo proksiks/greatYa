@@ -1,6 +1,6 @@
 <template>
   <div class="relative overflow-hidden md:px-10 px-2.5 xl:mt-26" id="value">
-    <div class="relative z-20 numbers flex items-center h-svh">
+    <div class="relative z-20 numbers flex items-center h-svh" ref="scrollNumbers">
       <div class="flex flex-nowrap">
         <div class="number-point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen">
           <div class="z-10 max-w-[26.875rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]">
@@ -27,7 +27,6 @@
               height="269"
               src="/images/points/point-1.png"
               alt="Здание"
-              loading="lazy"
             />
             <div class="max-w-[26.875rem] min-w-[14rem] xl:ml-[7.5625rem] md:ml-[2.5rem] ml-[1.25rem] mb-5">
               <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 3 }</p>
@@ -53,7 +52,6 @@
               height="269"
               src="/images/points/point-3.png"
               alt="Здание"
-              loading="lazy"
             />
           </div>
         </div>
@@ -81,6 +79,7 @@
     </div>
     <div
       class="numbers-words flex flex-nowrap items-center absolute h-svh top-0 z-10 lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase pointer-events-none"
+      ref="scrollNumbersWords"
     >
       <span class="number-word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 shrink-0 min-w-[100vw]">в ци</span>
       <span class="number-word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 shrink-0 min-w-[100vw] text-center">
@@ -93,6 +92,8 @@
 
 <script setup>
   const app = useNuxtApp();
+  const scrollNumbers = ref(null);
+  const scrollNumbersWords = ref(null);
 
   onNuxtReady(() => {
     const words = app.$gsap.utils.toArray(".number-word-1");
@@ -102,9 +103,11 @@
       xPercent: -110 * (numbers.length - 1),
       ease: "linear",
       scrollTrigger: {
-        trigger: ".numbers",
+        trigger: scrollNumbers.value,
         pin: true,
-        scrub: 1,
+        scrub: 3,
+        span: 1 / (numbers.length - 1),
+        end: "+=" + scrollNumbers.value.offsetWidth,
       },
     });
 
@@ -113,9 +116,11 @@
       yPercent: 25,
       ease: "none",
       scrollTrigger: {
-        trigger: ".numbers-words",
+        trigger: scrollNumbersWords.value,
         pin: true,
-        scrub: 1,
+        scrub: 3,
+        span: 1 / (words.length - 1),
+        end: "+=" + scrollNumbers.value.offsetWidth,
       },
     });
   });

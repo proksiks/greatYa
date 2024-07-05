@@ -9,19 +9,19 @@
     </div>
 
     <div class="md:px-10 px-2.5">
-      <div class="projects flex items-center md:h-svh">
+      <div class="projects flex items-center md:h-svh" ref="scrollProjects">
         <div class="flex flex-nowrap relative z-20">
           <div class="project-1 flex-shrink-0 flex w-screen md:w-auto md:min-w-[50%] justify-start">
             <div class="pr-[5%] md:pr-[14%]">
               <div class="text-[0.625rem] md:text-[1rem]">{ 1 }</div>
               <div class="py-2.5 md:py-5">
-                <img src="/images/projects/project-1.jpg" width="676" height="445" alt="Проект" loading="lazy" />
+                <img src="/images/projects/project-1.jpg" width="676" height="445" alt="Проект" />
               </div>
               <div>
                 <div class="flex items-start justify-between pb-2.5">
                   <span class="text-sm md:text-lg mr-5 font-medium uppercase leading-none"> Novator </span>
                   <a href="https://мойноватор.рф/" target="_blank" aria-label="Модальное окно">
-                    <img src="/images/icons/more.svg" width="51" height="51" loading="lazy" alt="Подробнее" />
+                    <img src="/images/icons/more.svg" width="51" height="51" alt="Подробнее" />
                   </a>
                 </div>
                 <div class="max-w-[17.125rem] font-manrope md:text-[1rem] text-[0.75rem]">
@@ -35,13 +35,13 @@
             <div class="pr-[5%] md:pr-[14%]">
               <div class="text-[0.625rem] md:text-[1rem]">{ 2 }</div>
               <div class="py-2.5 md:py-5">
-                <img src="/images/projects/project-2.jpg" width="676" height="445" alt="Проект" loading="lazy" />
+                <img src="/images/projects/project-2.jpg" width="676" height="445" alt="Проект" />
               </div>
               <div>
                 <div class="flex items-start justify-between pb-2.5">
                   <span class="text-sm md:text-lg mr-5 font-medium uppercase leading-none"> Акватория </span>
                   <a href="https://аквартиры.рф/" target="_blank" aria-label="Модальное окно">
-                    <img src="/images/icons/more.svg" width="51" height="51" loading="lazy" alt="Подробнее" />
+                    <img src="/images/icons/more.svg" width="51" height="51" alt="Подробнее" />
                   </a>
                 </div>
                 <div class="max-w-[17.125rem] font-manrope md:text-[1rem] text-[0.75rem]">
@@ -54,13 +54,13 @@
             <div class="pr-[5%] md:pr-[14%]">
               <div class="text-[0.625rem] md:text-[1rem]">{ 3 }</div>
               <div class="py-2.5 md:py-5">
-                <img src="/images/projects/project-3.jpg" width="558" height="445" alt="Проект" loading="lazy" />
+                <img src="/images/projects/project-3.jpg" width="558" height="445" alt="Проект" />
               </div>
               <div>
                 <div class="flex items-start justify-between pb-2.5">
                   <span class="text-sm md:text-lg mr-5 font-medium uppercase leading-none"> Новые проекты </span>
                   <button @click="() => open()" aria-label="Модальное окно">
-                    <img src="/images/icons/more.svg" width="51" height="51" loading="lazy" alt="Подробнее" />
+                    <img src="/images/icons/more.svg" width="51" height="51" alt="Подробнее" />
                   </button>
                 </div>
                 <div class="max-w-[17.125rem] font-manrope md:text-[1rem] text-[0.75rem]">
@@ -94,6 +94,7 @@
   });
 
   const app = useNuxtApp();
+  const scrollProjects = ref(null);
 
   onNuxtReady(() => {
     const projects = app.$gsap.utils.toArray(".project-1");
@@ -103,9 +104,11 @@
       yPercent: 10,
       ease: "linear",
       scrollTrigger: {
-        trigger: ".projects",
+        trigger: scrollProjects.value,
         pin: true,
-        scrub: 1,
+        scrub: 3,
+        span: 1 / (projects.length - 1),
+        end: "+=" + scrollProjects.value.offsetWidth,
       },
     });
   });

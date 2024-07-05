@@ -11,7 +11,6 @@
         alt="Логотип"
         width="67"
         height="32"
-        loading="lazy"
       />
     </nuxt-link>
     <div
