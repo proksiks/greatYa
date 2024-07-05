@@ -25,7 +25,7 @@
               class="block xl:mb-[10.25rem] md:mb-[5.625rem] mb-[3.5625rem] min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
               width="445"
               height="269"
-              src="/images/points/point-1.png"
+              src="/images/points/point-3.png"
               alt="Здание"
             />
             <div class="max-w-[26.875rem] min-w-[14rem] xl:ml-[7.5625rem] md:ml-[2.5rem] ml-[1.25rem] mb-5">
@@ -50,7 +50,7 @@
               class="block md:mt-[8.4375rem] mt-[5rem] xl:ml-[12.0625rem] md:ml-[5.625rem] ml-[1.875rem] min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
               width="445"
               height="269"
-              src="/images/points/point-3.png"
+              src="/images/points/point-4.png"
               alt="Здание"
             />
           </div>

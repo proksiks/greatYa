@@ -4,8 +4,12 @@
       class="md:grid grid-cols-8 md:pb-20 pb-10 2xl:text-2xl xl:text-xl md:text-[4.5rem] text-[2.1875rem] tracking-[-0.07em] leading-[100%] ml-5 md:ml-0 uppercase"
       id="projects"
     >
-      <div class="col-start-3 col-end-9">харизмы</div>
-      <div class="ml-5 md:ml-0 col-start-4 col-end-9 text-orange">в проектах</div>
+      <p
+        class="projects-title md:col-start-3 md:col-end-7 uppercase 2xl:text-2xl xl:text-xl text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] md:pb-20 pb-10"
+      >
+        <span class="block">харизмы</span>
+        <span class="block ml-7 md:ml-[14.5rem] text-orange text-nowrap">в проектах</span>
+      </p>
     </div>
 
     <div class="md:px-10 px-2.5">
@@ -76,6 +80,7 @@
 </template>
 
 <script setup>
+  import SplitType from "split-type";
   import { ModalsContainer, useModal } from "vue-final-modal";
   import ModalForm from "~/components/forms/modals/header/index.vue";
 
@@ -97,6 +102,23 @@
   const scrollProjects = ref(null);
 
   onNuxtReady(() => {
+    new SplitType(".projects-title", {
+      types: "lines, words, chars",
+      tagName: "span",
+    });
+    app.$gsap.from(".projects-title .word", {
+      y: 20,
+      opacity: 0,
+      duration: 2,
+      ease: "sine.out",
+      stagger: 0.1,
+
+      scrollTrigger: {
+        trigger: ".projects-title",
+        scrub: true,
+      },
+    });
+
     const projects = app.$gsap.utils.toArray(".project-1");
 
     app.$gsap.to(projects, {

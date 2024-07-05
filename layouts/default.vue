@@ -3,8 +3,14 @@
     <Loader />
     <Header />
     <div id="scene">
-      <slot />
-      <Footer />
+      <div class="bg-white">
+        <slot />
+      </div>
+      <div :style="{ paddingTop: `${footerHeight}px` }">
+        <div class="fixed bottom-0 left-0 w-full bg-white -z-10" ref="footer">
+          <Footer />
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -27,7 +33,10 @@
 
   requestAnimationFrame(raf);
 
+  const footer = ref(null);
+  const footerHeight = ref(0);
   onMounted(() => {
+    footerHeight.value = footer.value.offsetHeight;
     document.querySelectorAll('a[href^="#"]').forEach((el) => {
       el.addEventListener("click", (e) => {
         e.preventDefault();

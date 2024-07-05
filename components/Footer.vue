@@ -1,5 +1,5 @@
 <template>
-  <div class="md:mt-26 mt-25 md:mx-10 mx-2.5" ref="footer">
+  <div class="md:mt-26 mt-25 md:px-10 px-2.5 -z-10" ref="footer">
     <div class="md:grid md:grid-cols-8 md:mb-[8rem] mb-[1.8125rem]">
       <div class="col-start-1 col-end-4 hidden md:block">
         <a class="block uppercase font-medium hover:text-orange transition-all" href="https://www.youtube.com/channel/UCf1D4M-fAz75YWQugRCk4sA" target="_blank">youtube</a>
@@ -31,7 +31,7 @@
           </div>
           <div class="w-full col-span-5 md:hidden">
             <div class="flex items-center justify-between font-petrov w-full text-[0.75rem]">
-              <nuxt-link class="font-petrov hover:no-underline underline" to="#">Политика конфиденциальности</nuxt-link>
+              <a class="font-petrov hover:no-underline underline" href="pdfs/policy.pdf" download>Политика конфиденциальности</a>
               <span class="uppercase">© {{ year }} харизмы</span>
             </div>
             <a class="flex items-center justify-center uppercase text-[0.75rem] mt-5" href="https://bureausuchkov.com/" target="_blank">
@@ -71,22 +71,22 @@
     nextTick(() => {
       const startVideo = async () => {
         try {
-          await footerVideo.value.play();
-          footerVideo.value.setAttribute("autoplay", true);
+          await footerVideo?.value.play();
+          footerVideo?.value.setAttribute("autoplay", true);
         } catch (err) {
           console.error(err);
         }
       };
       const pauseVideo = async () => {
         try {
-          await footerVideo.value.pause();
+          await footerVideo?.value.pause();
         } catch (err) {
           console.error(err);
         }
       };
       const loadVideo = async () => {
         try {
-          await footerVideo.value.load();
+          await footerVideo?.value.load();
         } catch (err) {
           console.error(err);
         }

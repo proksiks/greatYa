@@ -58,7 +58,7 @@
             </span>
           </span>
           Согласен с&nbsp;
-          <nuxt-link class="hover:no-underline underline" to="#"> политикой конфиденциальности </nuxt-link>
+          <a class="hover:no-underline underline" href="pdfs/policy.pdf" download> политикой конфиденциальности </a>
         </label>
         <span v-if="!isFormCorrect && !v$.form.accept.required.$response" class="text-sm text-red">
           {{ v$.form.accept.required.$message }}

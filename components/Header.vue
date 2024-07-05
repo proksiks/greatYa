@@ -5,13 +5,7 @@
     :class="{ '-translate-y-full': translateHeader }"
   >
     <nuxt-link class="relative z-10" to="/">
-      <img
-        class="md:w-[4.9375rem] w-[3.9375rem]"
-        src="/images/logo.svg"
-        alt="Логотип"
-        width="67"
-        height="32"
-      />
+      <img class="md:w-[4.9375rem] w-[3.9375rem]" src="/images/logo.svg" alt="Логотип" width="67" height="32" />
     </nuxt-link>
     <div
       class="flex-1 flex md:flex-row flex-col items-center overflow-auto md:overflow-visible justify-between absolute md:static transition-all h-svh md:h-auto w-full md:w-auto -translate-y-full md:translate-y-0 duration-500 left-0 top-0 md:py-0 py-10"
@@ -92,8 +86,6 @@
   const header = ref(null);
   const translateHeader = ref(false);
   const isOpenMenu = ref(false);
-  const showLine = ref(false);
-  const hideLine = ref(false);
 
   function openMenu() {
     isOpenMenu.value = !isOpenMenu.value;
