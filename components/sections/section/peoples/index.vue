@@ -25,7 +25,7 @@
                 src="/images/peoples/people-1.jpg"
                 alt="Ильяс Койносов"
                 width="445"
-                height="500"
+                height="728"
               />
             </div>
           </div>
@@ -56,7 +56,7 @@
                 src="/images/peoples/people-2.jpg"
                 alt="Ильяс Койносов"
                 width="558"
-                height="445"
+                height="744"
               />
             </div>
           </div>
@@ -88,7 +88,7 @@
                 src="/images/peoples/people-3.jpg"
                 alt="Олег Кондрашин"
                 width="558"
-                height="445"
+                height="911"
               />
             </div>
           </div>
