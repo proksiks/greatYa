@@ -16,9 +16,27 @@
 </template>
 
 <script setup>
+  import Lenis from "@studio-freight/lenis";
   const footer = ref(null);
   const footerHeight = ref(0);
+  const { $ScrollTrigger: ScrollTrigger } = useNuxtApp();
+
   onMounted(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      lerp: 0.05,
+      smoothWheel: true,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      ScrollTrigger.update();
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
     footerHeight.value = footer.value.offsetHeight;
     document.querySelectorAll('a[href^="#"]').forEach((el) => {
       el.addEventListener("click", (e) => {

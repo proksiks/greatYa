@@ -101,7 +101,7 @@
   const app = useNuxtApp();
   const scrollProjects = ref(null);
 
-  onNuxtReady(() => {
+  onMounted(() => {
     new SplitType(".projects-title", {
       types: "lines, words, chars",
       tagName: "span",

@@ -76,7 +76,7 @@
 
   const { $gsap: gsap } = useNuxtApp();
 
-  onNuxtReady(() => {
+  onMounted(() => {
     new SplitType("[qualityChar]", {
       types: "lines, words, chars",
       tagName: "span",

@@ -12,7 +12,12 @@ export default defineNuxtConfig({
     }
   },
   css: ['normalize.css', 'vue-final-modal/style.css'],
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", '@hypernym/nuxt-gsap'],
+  gsap: {
+    extraPlugins: {
+      scrollTrigger: true
+    }
+  },
   tailwindcss: {
     exposeConfig: true,
     viewer: true,

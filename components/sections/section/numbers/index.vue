@@ -95,7 +95,7 @@
   const scrollNumbers = ref(null);
   const scrollNumbersWords = ref(null);
 
-  onNuxtReady(() => {
+  onMounted(() => {
     const words = app.$gsap.utils.toArray(".number-word-1");
     const numbers = app.$gsap.utils.toArray(".number-point-1");
 

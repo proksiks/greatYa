@@ -77,7 +77,9 @@
   const app = useNuxtApp();
   const scrollPoints = ref(null);
   const scrollPointsWords = ref(null);
-  onNuxtReady(() => {
+
+  // onNuxtReady ||
+  onMounted(() => {
     const words = app.$gsap.utils.toArray(".word-1");
     const points = app.$gsap.utils.toArray(".point-1");
     app.$gsap.to(points, {

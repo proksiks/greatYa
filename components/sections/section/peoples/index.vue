@@ -116,7 +116,7 @@
 
   const app = useNuxtApp();
 
-  onNuxtReady(() => {
+  onMounted(() => {
     new SplitType(".peoples-title", {
       types: "lines, words, chars",
       tagName: "span",
