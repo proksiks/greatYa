@@ -5,7 +5,7 @@
   <div class="bg-black">
     <sections-section-quality />
   </div>
-  <sections-section-peoples />
+  <!--<sections-section-peoples />-->
   <sections-section-numbers />
   <sections-section-projects />
   <div class="bg-black">
