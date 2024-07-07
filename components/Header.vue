@@ -18,6 +18,7 @@
             <a
               class="header-link relative font-medium transition text-color text-nowrap overflow-hidden py-0.5"
               href="#about"
+              @click="stopLenis"
             >
               о нас
             </a>
