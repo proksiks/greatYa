@@ -1,5 +1,5 @@
 <template>
-  <!--<p class="flex justify-between text-white md:px-10 px-2.5 pt-2.5 md:pt-10 pb-5 text-sm tracking-[-0.03em] uppercase">
+  <p class="flex justify-between text-white md:px-10 px-2.5 pt-2.5 md:pt-10 pb-5 text-sm tracking-[-0.03em] uppercase">
     <span qualityChar>результат</span>
     <span qualityChar>{</span>
     <span qualityChar>{ баланс }</span>
@@ -76,7 +76,7 @@
     >
       дне, в каждом проекте.
     </p>
-  </div>-->
+  </div>
   <div class="sm:grid grid-cols-8 xl:my-26 my-25 px-2.5 md:px-10">
     <div class="col-start-1 col-end-3">
       <div class="quality-image overflow-hidden">
