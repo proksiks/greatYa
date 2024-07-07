@@ -7,7 +7,7 @@
     <span qualityChar>}</span>
   </p>
   <div class="md:grid md:grid-cols-8 text-white px-2.5 md:px-10">
-    <p
+    <!--<p
       class="md:col-start-1 md:col-end-7 uppercase 2xl:text-2xl xl:text-xl text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] md:pb-20 pb-10"
       qualityWord
     >
@@ -15,8 +15,8 @@
       <span class="block ml-7 md:ml-[14.5rem] text-nowrap">работа –</span>
       <span class="block ml-7 md:ml-[14.5rem] text-orange text-nowrap">это наш</span>
       <span class="block text-orange">успех</span>
-    </p>
-    <!--<p
+    </p>-->
+    <p
       qualityDescr
       class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.125rem] max-w-[26.875rem] md:max-w-none"
     >
@@ -75,7 +75,7 @@
       qualityText
     >
       дне, в каждом проекте.
-    </p> -->
+    </p>
   </div>
   <div class="sm:grid grid-cols-8 xl:my-26 my-25 px-2.5 md:px-10">
     <div class="col-start-1 col-end-3">
