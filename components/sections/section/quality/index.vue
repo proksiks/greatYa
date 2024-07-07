@@ -16,7 +16,7 @@
       <span class="block ml-7 md:ml-[14.5rem] text-orange text-nowrap">это наш</span>
       <span class="block text-orange">успех</span>
     </p>
-    <p
+    <!--<p
       qualityDescr
       class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.125rem] max-w-[26.875rem] md:max-w-none"
     >
@@ -75,7 +75,7 @@
       qualityText
     >
       дне, в каждом проекте.
-    </p>
+    </p> -->
   </div>
   <div class="sm:grid grid-cols-8 xl:my-26 my-25 px-2.5 md:px-10">
     <div class="col-start-1 col-end-3">
