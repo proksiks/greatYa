@@ -13,8 +13,8 @@
     </div>
 
     <div class="md:px-10 px-2.5">
-      <div class="projects flex items-center md:min-h-[100svh]" ref="scrollProjects">
-        <div class="flex flex-nowrap relative z-20">
+      <div class="projects flex items-center" ref="scrollProjects">
+        <div class="flex flex-nowrap relative z-20 md:py-25 py-20">
           <div class="project-1 flex-shrink-0 flex w-screen md:w-auto md:min-w-[50%] justify-start">
             <div class="pr-[5%] md:pr-[14%] pb-[5%]">
               <div class="text-[0.625rem] md:text-[1.125rem]">{ 1 }</div>

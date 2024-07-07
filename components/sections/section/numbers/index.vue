@@ -1,7 +1,7 @@
 <template>
   <div class="relative overflow-hidden md:px-10 px-2.5" id="value">
-    <div class="relative z-20 numbers flex items-center h-svh" ref="scrollNumbers">
-      <div class="flex flex-nowrap">
+    <div class="relative z-20 numbers flex items-center" ref="scrollNumbers">
+      <div class="flex flex-nowrap md:py-25 py-20">
         <div class="number-point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen">
           <div class="z-10 max-w-[26.875rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]">
             <div class="md:pb-5 pb-2.5 pd:text-sm text-[0.625rem]">{ 1 }</div>

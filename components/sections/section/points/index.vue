@@ -1,7 +1,7 @@
 <template>
   <div class="relative overflow-hidden md:px-10 px-2.5 xl:mt-25" id="value">
-    <div class="points flex items-center h-svh" ref="scrollPoints">
-      <div class="flex flex-nowrap relative z-20">
+    <div class="points flex items-center" ref="scrollPoints">
+      <div class="flex flex-nowrap relative z-20 md:py-25 py-20">
         <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen">
           <div class="z-10 max-w-[26.875rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]">
             <div class="md:pb-5 pb-2.5 pd:text-sm text-[0.625rem]">{ 1 }</div>
@@ -84,7 +84,6 @@
     const points = app.$gsap.utils.toArray(".point-1");
     app.$gsap.to(points, {
       xPercent: -110 * (points.length - 1),
-      yPercent: 20,
       ease: "linear",
       scrollTrigger: {
         trigger: scrollPoints.value,
@@ -96,7 +95,6 @@
     });
     app.$gsap.to(words, {
       xPercent: -98 * (words.length - 1),
-      yPercent: 50,
       ease: "none",
       scrollTrigger: {
         trigger: scrollPointsWords.value,
