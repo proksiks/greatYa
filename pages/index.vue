@@ -3,7 +3,7 @@
   <sections-section-promo />
   <sections-section-points />
   <div class="bg-black">
-    <sections-section-quality />
+    <!--<sections-section-quality />-->
   </div>
   <!--<sections-section-peoples />-->
   <sections-section-numbers />
