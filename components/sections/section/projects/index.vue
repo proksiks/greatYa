@@ -13,10 +13,10 @@
     </div>
 
     <div class="md:px-10 px-2.5">
-      <div class="projects flex items-center md:h-svh" ref="scrollProjects">
+      <div class="projects flex items-center md:min-h-[100svh]" ref="scrollProjects">
         <div class="flex flex-nowrap relative z-20">
           <div class="project-1 flex-shrink-0 flex w-screen md:w-auto md:min-w-[50%] justify-start">
-            <div class="pr-[5%] md:pr-[14%]">
+            <div class="pr-[5%] md:pr-[14%] pb-[5%]">
               <div class="text-[0.625rem] md:text-[1.125rem]">{ 1 }</div>
               <div class="py-2.5 md:py-5">
                 <img src="/images/projects/project-1.jpg" width="676" height="380" alt="Проект" />
@@ -36,7 +36,7 @@
             </div>
           </div>
           <div class="project-1 flex-shrink-0 flex w-screen md:w-auto md:min-w-[50%] justify-start">
-            <div class="pr-[5%] md:pr-[14%]">
+            <div class="pr-[5%] md:pr-[14%] pb-[5%]">
               <div class="text-[0.625rem] md:text-[1.125rem]">{ 2 }</div>
               <div class="py-2.5 md:py-5">
                 <img src="/images/projects/project-2.jpg" width="676" height="450" alt="Проект" />
@@ -55,7 +55,7 @@
             </div>
           </div>
           <div class="project-1 flex-shrink-0 flex w-screen md:w-auto md:min-w-[50%] justify-start">
-            <div class="pr-[5%] md:pr-[14%]">
+            <div class="pr-[5%] md:pr-[14%] pb-[5%]">
               <div class="text-[0.625rem] md:text-[1.125rem]">{ 3 }</div>
               <div class="py-2.5 md:py-5">
                 <img src="/images/projects/project-3.jpg" width="558" height="402" alt="Проект" />
@@ -123,7 +123,6 @@
 
     app.$gsap.to(projects, {
       xPercent: -100 * (projects.length - 1),
-      yPercent: 10,
       ease: "linear",
       scrollTrigger: {
         trigger: scrollProjects.value,
