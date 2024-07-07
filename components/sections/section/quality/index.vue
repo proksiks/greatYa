@@ -1,81 +1,82 @@
 <template>
-  <p class="flex justify-between text-white md:px-10 px-2.5 pt-2.5 md:pt-10 pb-5 text-sm tracking-[-0.03em] uppercase">
+  <div
+    class="flex justify-between text-white md:px-10 px-2.5 pt-2.5 md:pt-10 pb-5 text-sm tracking-[-0.03em] uppercase"
+  >
     <span qualityChar>результат</span>
     <span qualityChar>{</span>
     <span qualityChar>{ баланс }</span>
     <span qualityChar>эстетика</span>
     <span qualityChar>}</span>
-  </p>
+  </div>
   <div class="md:grid md:grid-cols-8 text-white px-2.5 md:px-10">
-    <!--<p
+    <div
       class="md:col-start-1 md:col-end-7 uppercase 2xl:text-2xl xl:text-xl text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] md:pb-20 pb-10"
-      qualityWord
     >
-      <span class="block">увлеченная</span>
-      <span class="block ml-7 md:ml-[14.5rem] text-nowrap">работа –</span>
-      <span class="block ml-7 md:ml-[14.5rem] text-orange text-nowrap">это наш</span>
-      <span class="block text-orange">успех</span>
-    </p>-->
-    <p
+      <span qualityWord class="block">увлеченная</span>
+      <span qualityWord class="block ml-7 md:ml-[14.5rem] text-nowrap">работа –</span>
+      <span qualityWord class="block ml-7 md:ml-[14.5rem] text-orange text-nowrap">это наш</span>
+      <span qualityWord class="block text-orange">успех</span>
+    </div>
+    <div
       qualityDescr
       class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.125rem] max-w-[26.875rem] md:max-w-none"
     >
       Мы уверены, что великие компании строятся на
-    </p>
-    <p
+    </div>
+    <div
       qualityDescr
       class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.125rem] max-w-[26.875rem] md:max-w-none"
     >
       страстных людях, увлеченных своим делом. Говорят,
-    </p>
-    <p
+    </div>
+    <div
       qualityDescr
       class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.125rem] max-w-[26.875rem] md:max-w-none"
     >
       что наш энтузиазм заряжает всех вокруг, а наши
-    </p>
-    <p
+    </div>
+    <div
       qualityDescr
       class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.125rem] max-w-[26.875rem] md:max-w-none"
     >
       идеи становятся искрами, зажигающими огонь
-    </p>
-    <p
+    </div>
+    <div
       qualityDescr
       class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.125rem] max-w-[26.875rem] md:max-w-none"
     >
       инноваций.
-    </p>
-    <p
+    </div>
+    <div
       class="md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] mt-[3.75rem] md:mt-[10rem] pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
       qualityText
     >
       Мы видим в работе не просто
-    </p>
-    <p
+    </div>
+    <div
       class="md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
       qualityText
     >
       обязанность, а возможность
-    </p>
-    <p
+    </div>
+    <div
       class="md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
       qualityText
     >
       воплощать смелые идеи, делая мир
-    </p>
-    <p
+    </div>
+    <div
       class="md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
       qualityText
     >
-      лучше, краше и интереснее в каждом
-    </p>
-    <p
+      лучше, краше и интереснее в
+    </div>
+    <div
       class="md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
       qualityText
     >
-      дне, в каждом проекте.
-    </p>
+      каждом дне, в каждом проекте.
+    </div>
   </div>
   <div class="sm:grid grid-cols-8 xl:my-26 my-25 px-2.5 md:px-10">
     <div class="col-start-1 col-end-3">
