@@ -24,8 +24,8 @@
         class="font-medium sm:col-start-4 col-end-9 xl:pt-24 pt-20 2xl:text-[2.75rem] md:text-[1.5rem] text-sm leading-[100%] sm:ml-0"
       >
         <div word>Наша команда — это союз</div>
-        <div word>харизматичных людей, привносящих&nbsp;в</div>
-        <div word>работу свою индивидуальность,</div>
+        <div word>харизматичных людей, привносящих</div>
+        <div word>в работу свою индивидуальность,</div>
         <div word>творчество и фанатизм к делу. Мы не</div>
         <div word>просто выполняем задачи, мы</div>
         <div word>создаем наследие для потомков.</div>
