@@ -60,9 +60,11 @@
   <div class="overflow-hidden">
     <div class="relative">
       <img
-        class="block cols-start-3 col-end-5 w-[118.9375rem] object-cover h-[41.25rem]"
+        class="block cols-start-3 col-end-5 object-cover"
         src="/images/quality/quality-bg.svg"
         alt="Декоративная картинка"
+        width="1903"
+        height="660"
       />
       <div class="quality-white-line absolute inset-0 bg-white"></div>
     </div>
