@@ -16,16 +16,65 @@
       <span class="block ml-7 md:ml-[14.5rem] text-orange text-nowrap">это наш</span>
       <span class="block text-orange">успех</span>
     </p>
-    <p qualityDescr class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.125rem] max-w-[26.875rem] md:max-w-none">
-      Мы уверены, что великие компании строятся на страстных людях, увлеченных своим делом. Говорят, что наш энтузиазм
-      заряжает всех вокруг, а наши идеи становятся искрами, зажигающими огонь инноваций.
+    <p
+      qualityDescr
+      class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.125rem] max-w-[26.875rem] md:max-w-none"
+    >
+      Мы уверены, что великие компании строятся на
+    </p>
+    <p
+      qualityDescr
+      class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.125rem] max-w-[26.875rem] md:max-w-none"
+    >
+      страстных людях, увлеченных своим делом. Говорят,
+    </p>
+    <p
+      qualityDescr
+      class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.125rem] max-w-[26.875rem] md:max-w-none"
+    >
+      что наш энтузиазм заряжает всех вокруг, а наши
+    </p>
+    <p
+      qualityDescr
+      class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.125rem] max-w-[26.875rem] md:max-w-none"
+    >
+      идеи становятся искрами, зажигающими огонь
+    </p>
+    <p
+      qualityDescr
+      class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.125rem] max-w-[26.875rem] md:max-w-none"
+    >
+      инноваций.
     </p>
     <p
       class="md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] mt-[3.75rem] md:mt-[10rem] pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
       qualityText
     >
-      Мы видим в работе не просто обязанность, а возможность воплощать смелые идеи, делая мир лучше, краше и интереснее
-      в каждом дне, в каждом проекте.
+      Мы видим в работе не просто
+    </p>
+    <p
+      class="md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
+      qualityText
+    >
+      обязанность, а возможность
+    </p>
+    <p
+      class="md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
+      qualityText
+    >
+      воплощать смелые идеи, делая мир
+    </p>
+    <p
+      class="md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
+      qualityText
+    >
+      лучше, краше и интереснее в каждом
+    </p>
+    <p
+      class="md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
+      qualityText
+    >
+      дне, в каждом проекте.
     </p>
   </div>
   <!--<div class="sm:grid grid-cols-8 xl:my-26 my-25 px-2.5 md:px-10">
