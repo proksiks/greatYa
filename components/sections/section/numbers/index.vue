@@ -6,7 +6,7 @@
           <div class="z-10 max-w-[27.875rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]">
             <div class="md:pb-5 pb-2.5 pd:text-sm text-[0.625rem]">{ 1 }</div>
             <div class="pb-2.5 md:text-lg text-sm uppercase font-medium">133 балла </div>
-            <div class="pb-2.5 md:text-[1.25rem] text-sm font-petrov">средний IQ сотрудников компании</div>
+            <div class="pb-2.5 md:text-[1.25rem] text-sm font-petrov">средний IQ сотрудников компании,</div>
             <div class="font-petrov md:text-[1.25rem] text-[0.75rem]">
               сообразительность и креативность - наш конек
             </div>
