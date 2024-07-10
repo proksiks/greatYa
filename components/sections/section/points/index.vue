@@ -63,7 +63,7 @@
       </div>
     </div>
     <div
-      class="words flex flex-nowrap items-center absolute h-svh top-0 lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase"
+      class="words flex flex-nowrap items-center absolute z-10 h-svh top-0 lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase"
       ref="scrollPointsWords"
     >
       <span class="word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 shrink-0 min-w-[100vw]">ха</span>
