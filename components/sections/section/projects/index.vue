@@ -17,7 +17,7 @@
         <div class="flex flex-nowrap relative z-20 md:py-25 py-20">
           <div class="project-1 flex-shrink-0 flex w-screen md:w-auto md:min-w-[50%] justify-start">
             <div class="pr-[5%] md:pr-[14%] pb-[5%]">
-              <div class="text-[0.625rem] md:text-[1.125rem]">{ 1 }</div>
+              <div class="text-[0.625rem] md:text-[1.25rem]">{ 1 }</div>
               <div class="py-2.5 md:py-5">
                 <img src="/images/projects/project-1.jpg" width="676" height="380" alt="Проект" />
               </div>
@@ -28,7 +28,7 @@
                     <img src="/images/icons/more.svg" width="51" height="51" alt="Подробнее" />
                   </a>
                 </div>
-                <div class="max-w-[17.125rem] font-manrope md:text-[1.125rem] text-[0.75rem]">
+                <div class="max-w-[17.125rem] font-manrope md:text-[1.25rem] text-[0.75rem]">
                   Жилой квартал с WOW опциями: собственный бульвар, концептуальные дворы, уникальные планировки, потолки
                   от 2,88 м.
                 </div>
@@ -37,7 +37,7 @@
           </div>
           <div class="project-1 flex-shrink-0 flex w-screen md:w-auto md:min-w-[50%] justify-start">
             <div class="pr-[5%] md:pr-[14%] pb-[5%]">
-              <div class="text-[0.625rem] md:text-[1.125rem]">{ 2 }</div>
+              <div class="text-[0.625rem] md:text-[1.25rem]">{ 2 }</div>
               <div class="py-2.5 md:py-5">
                 <img src="/images/projects/project-2.jpg" width="676" height="450" alt="Проект" />
               </div>
@@ -48,7 +48,7 @@
                     <img src="/images/icons/more.svg" width="51" height="51" alt="Подробнее" />
                   </a>
                 </div>
-                <div class="max-w-[17.125rem] font-manrope md:text-[1.125rem] text-[0.75rem]">
+                <div class="max-w-[17.125rem] font-manrope md:text-[1.25rem] text-[0.75rem]">
                   Микрорайон, КРТ, 45 га. 8 очередей, в том числе введено в эксплуатацию 3 очереди
                 </div>
               </div>
@@ -56,7 +56,7 @@
           </div>
           <div class="project-1 flex-shrink-0 flex w-screen md:w-auto md:min-w-[50%] justify-start">
             <div class="pr-[5%] md:pr-[14%] pb-[5%]">
-              <div class="text-[0.625rem] md:text-[1.125rem]">{ 3 }</div>
+              <div class="text-[0.625rem] md:text-[1.25rem]">{ 3 }</div>
               <div class="py-2.5 md:py-5">
                 <img src="/images/projects/project-3.jpg" width="558" height="402" alt="Проект" />
               </div>
@@ -67,7 +67,7 @@
                     <img src="/images/icons/more.svg" width="51" height="51" alt="Подробнее" />
                   </button>
                 </div>
-                <div class="max-w-[17.125rem] font-manrope md:text-[1.125rem] text-[0.75rem]">
+                <div class="max-w-[17.125rem] font-manrope md:text-[1.25rem] text-[0.75rem]">
                   Впереди много новых уникальных проектов. Совсем скоро расскажем!
                 </div>
               </div>
