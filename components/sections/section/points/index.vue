@@ -1,12 +1,12 @@
 <template>
-  <div class="relative overflow-hidden md:px-10 px-2.5 xl:mt-25" id="value">
+  <div class="relative overflow-hidden md:px-10 px-2.5" id="value">
     <div
       class="words flex flex-nowrap items-center absolute h-svh top-0 lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase"
       ref="scrollPointsWords"
     >
-      <span class="word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 shrink-0 min-w-[100vw]">ха</span>
-      <span class="word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 shrink-0 min-w-[100vw] text-center"> риз </span>
-      <span class="word-1 block md:pr-[3.125rem] pr-10 shrink-0 min-w-[100vw]">мы</span>
+      <span class="word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 shrink-0">ха</span>
+      <span class="word-1 block pr-10 shrink-0 text-center"> риз </span>
+      <span class="word-1 block pr-10">мы</span>
     </div>
     <div class="points flex items-center" ref="scrollPoints">
       <div class="flex flex-nowrap relative z-20 md:py-25 py-20">
@@ -70,10 +70,21 @@
         </div>
       </div>
     </div>
+
+    <div class="md:pt-25 md:pb-26 sm:pb-25 pb-10">
+      <div
+        class="points-text font-medium max-w-[75rem] 2xl:text-[2.75rem] md:text-[1.5rem] text-sm md:leading-[125%] ml-auto"
+      >
+        Наша команда — это союз харизматичных людей, привносящих в работу свою индивидуальность, творчество и фанатизм к
+        делу. Мы не просто выполняем задачи, мы создаем наследие для потомков. Достойная цель, чтобы жить!
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup>
+  import SplitType from "split-type";
+
   const app = useNuxtApp();
   const scrollPoints = ref(null);
   const scrollPointsWords = ref(null);
@@ -94,7 +105,7 @@
       },
     });
     app.$gsap.to(words, {
-      xPercent: -98 * (words.length - 1),
+      xPercent: -110 * (words.length - 1),
       ease: "none",
       scrollTrigger: {
         trigger: scrollPointsWords.value,
@@ -102,6 +113,24 @@
         scrub: 3,
         span: 1 / (words.length - 1),
         end: "+=" + scrollPoints.value.offsetWidth,
+      },
+    });
+
+    new SplitType(".points-text", {
+      types: "words",
+      tagName: "span",
+    });
+
+    app.$gsap.from(".points-text .word", {
+      y: 100,
+      opacity: 0,
+      duration: 2,
+      ease: "sine.out",
+      stagger: 0.075,
+
+      scrollTrigger: {
+        trigger: ".points-text",
+        scrub: true,
       },
     });
   });

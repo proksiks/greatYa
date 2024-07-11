@@ -44,7 +44,7 @@
               <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 4 }</p>
               <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">516 лет</p>
               <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
-                разницы между открытием Америки и нашим, <br class="md:block hidden" />
+                разницы между открытием Америки и нашим <br />
                 но у нас тоже амбициозные планы
               </p>
             </div>
@@ -115,7 +115,6 @@
 
     app.$gsap.to(words, {
       xPercent: -110 * (words.length - 1),
-      yPercent: 25,
       ease: "none",
       scrollTrigger: {
         trigger: scrollNumbersWords.value,

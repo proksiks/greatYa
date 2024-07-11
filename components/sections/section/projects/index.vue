@@ -16,7 +16,7 @@
       <div class="projects flex items-center" ref="scrollProjects">
         <div class="flex flex-nowrap relative z-20 md:py-25 py-20">
           <div class="project-1 flex-shrink-0 flex w-screen md:w-auto md:min-w-[50%] justify-start">
-            <div class="pr-[5%] md:pr-[14%] pb-[5%]">
+            <a class="block pr-[5%] md:pr-[14%] pb-[5%] text-left" href="https://мойноватор.рф/" target="_blank">
               <div class="text-[0.625rem] md:text-[1.125rem]">{ 1 }</div>
               <div class="py-2.5 md:py-5">
                 <img src="/images/projects/project-1.jpg" width="676" height="380" alt="Проект" />
@@ -24,19 +24,19 @@
               <div>
                 <div class="flex items-start justify-between pb-2.5">
                   <span class="text-sm md:text-lg mr-5 font-medium uppercase leading-none"> Novator </span>
-                  <a href="https://мойноватор.рф/" target="_blank" aria-label="Модальное окно">
+                  <span>
                     <img src="/images/icons/more.svg" width="51" height="51" alt="Подробнее" />
-                  </a>
+                  </span>
                 </div>
                 <div class="max-w-[17.125rem] font-manrope md:text-[1.125rem] text-[0.75rem]">
                   Жилой квартал с WOW опциями: собственный бульвар, концептуальные дворы, уникальные планировки, потолки
                   от&nbsp;2,88&nbsp;м.
                 </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="project-1 flex-shrink-0 flex w-screen md:w-auto md:min-w-[50%] justify-start">
-            <div class="pr-[5%] md:pr-[14%] pb-[5%]">
+            <a class="block pr-[5%] md:pr-[14%] pb-[5%] text-left" href="https://аквартиры.рф/" target="_blank">
               <div class="text-[0.625rem] md:text-[1.125rem]">{ 2 }</div>
               <div class="py-2.5 md:py-5">
                 <img src="/images/projects/project-2.jpg" width="676" height="450" alt="Проект" />
@@ -44,18 +44,18 @@
               <div>
                 <div class="flex items-start justify-between pb-2.5">
                   <span class="text-sm md:text-lg mr-5 font-medium uppercase leading-none"> Акватория </span>
-                  <a href="https://аквартиры.рф/" target="_blank" aria-label="Модальное окно">
+                  <span>
                     <img src="/images/icons/more.svg" width="51" height="51" alt="Подробнее" />
-                  </a>
+                  </span>
                 </div>
                 <div class="max-w-[17.125rem] font-manrope md:text-[1.125rem] text-[0.75rem]">
                   Микрорайон, КРТ, 45 га. 8 очередей, в том числе введено в эксплуатацию 3 очереди
                 </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="project-1 flex-shrink-0 flex w-screen md:w-auto md:min-w-[50%] justify-start">
-            <div class="pr-[5%] md:pr-[14%] pb-[5%]">
+            <button class="block pr-[5%] md:pr-[14%] pb-[5%] text-left" aria-label="Модальное окно" @click="() => open()">
               <div class="text-[0.625rem] md:text-[1.125rem]">{ 3 }</div>
               <div class="py-2.5 md:py-5">
                 <img src="/images/projects/project-3.jpg" width="558" height="402" alt="Проект" />
@@ -63,15 +63,15 @@
               <div>
                 <div class="flex items-start justify-between pb-2.5">
                   <span class="text-sm md:text-lg mr-5 font-medium uppercase leading-none"> Новые проекты </span>
-                  <button @click="() => open()" aria-label="Модальное окно">
+                  <span>
                     <img src="/images/icons/more.svg" width="51" height="51" alt="Подробнее" />
-                  </button>
+                  </span>
                 </div>
                 <div class="max-w-[17.125rem] font-manrope md:text-[1.125rem] text-[0.75rem]">
                   Впереди много новых уникальных проектов. Совсем скоро расскажем!
                 </div>
               </div>
-            </div>
+            </button>
           </div>
         </div>
       </div>

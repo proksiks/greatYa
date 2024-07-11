@@ -19,63 +19,17 @@
     </div>
     <div
       qualityDescr
-      class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.25rem] max-w-[26.875rem] md:max-w-none leading-tight"
+      class="md:col-start-3 col-end-8 font-petrov xl:text-[2.75rem] md:text-28 text-[1rem] max-w-[26.875rem] md:max-w-none leading-tight"
     >
-      Мы уверены, что великие компании строятся на
-    </div>
-    <div
-      qualityDescr
-      class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.25rem] max-w-[26.875rem] md:max-w-none leading-tight"
-    >
-      страстных людях, увлеченных своим делом.
-    </div>
-    <div
-      qualityDescr
-      class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.25rem] max-w-[26.875rem] md:max-w-none leading-tight"
-    >
-      Говорят, что наш энтузиазм заряжает всех
-    </div>
-    <div
-      qualityDescr
-      class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.25rem] max-w-[26.875rem] md:max-w-none leading-tight"
-    >
-      вокруг, а наши идеи становятся искрами,
-    </div>
-    <div
-      qualityDescr
-      class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.25rem] max-w-[26.875rem] md:max-w-none leading-tight"
-    >
-      зажигающими огонь инноваций.
+      Мы уверены, что великие компании строятся на страстных людях, увлеченных своим делом. Говорят, что наш энтузиазм
+      заражает всех вокруг, а наши идеи становятся искрами, зажигающими огонь инноваций.
     </div>
     <div
       class="md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] mt-[3.75rem] md:mt-[10rem] pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
-      qualityText
+      qualityDescr
     >
-      Мы видим в работе не просто
-    </div>
-    <div
-      class="md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
-      qualityText
-    >
-      обязанность, а возможность
-    </div>
-    <div
-      class="md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
-      qualityText
-    >
-      воплощать смелые идеи, делая мир
-    </div>
-    <div
-      class="md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
-      qualityText
-    >
-      лучше, краше и интереснее в
-    </div>
-    <div
-      class="md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
-      qualityText
-    >
-      каждом дне, в каждом проекте.
+      Мы видим в работе не просто обязанность, а возможность воплощать смелые идеи, делая мир лучше, краше и интереснее
+      в каждом дне, в каждом проекте.
     </div>
   </div>
   <div class="sm:grid grid-cols-8 xl:my-26 my-25 px-2.5 md:px-10">
@@ -132,11 +86,7 @@
       tagName: "span",
     });
     new SplitType("[qualityDescr]", {
-      types: "lines, words, chars",
-      tagName: "span",
-    });
-    new SplitType("[qualityText]", {
-      types: "lines, words, chars",
+      types: "words",
       tagName: "span",
     });
     new SplitType("[qualityWord]", {
@@ -175,31 +125,14 @@
     });
 
     gsap.from("[qualityDescr] .word", {
-      y: 50,
+      y: 100,
       opacity: 0,
       duration: 2,
       ease: "sine.out",
-      stagger: 0.04,
+      stagger: 0.075,
 
       scrollTrigger: {
         trigger: "[qualityDescr]",
-        start: "top bottom",
-        end: "bottom top+=200px",
-        scrub: true,
-      },
-    });
-
-    gsap.from("[qualityText] .word", {
-      y: 50,
-      opacity: 0,
-      duration: 2,
-      ease: "sine.out",
-      stagger: 0.15,
-
-      scrollTrigger: {
-        trigger: "[qualityText]",
-        start: "top bottom",
-        end: "bottom top+=400px",
         scrub: true,
       },
     });
