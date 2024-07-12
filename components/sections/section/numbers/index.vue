@@ -3,7 +3,7 @@
     <div class="relative z-20 numbers flex items-center" ref="scrollNumbers">
       <div class="flex flex-nowrap md:py-25 py-20">
         <div class="number-point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen">
-          <div class="z-10 max-w-[27.875rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]">
+          <div class="z-10 max-w-[27.875rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem] pt-10">
             <div class="md:pb-5 pb-2.5 pd:text-sm text-[0.625rem]">{ 1 }</div>
             <div class="pb-2.5 md:text-lg text-sm uppercase font-medium">133 балла</div>
             <div class="pb-2.5 md:text-[1.25rem] text-sm font-petrov">средний IQ сотрудников компании,</div>
@@ -11,7 +11,7 @@
           </div>
         </div>
         <div class="number-point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen">
-          <div class="z-10 mt-20 xl:mr-[10rem] md:mr-[5rem] mr-[2rem]">
+          <div class="z-10 xl:mr-[10rem] md:mr-[5rem] mr-[2rem]">
             <div class="mb-2">
               <div class="md:pb-5 pb-2.5 pd:text-sm text-[0.625rem]">{ 2 }</div>
               <div class="pb-2.5 md:text-lg text-sm uppercase font-medium">1 000 футбольных полей</div>
@@ -40,7 +40,7 @@
         </div>
         <div class="number-point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen">
           <div class="z-10">
-            <div class="max-w-[26.875rem] min-w-[14rem]">
+            <div class="max-w-[26.875rem] min-w-[14rem] pt-10">
               <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 4 }</p>
               <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">516 лет</p>
               <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
@@ -49,7 +49,7 @@
               </p>
             </div>
             <img
-              class="block md:mt-[8.4375rem] mt-[5rem] xl:ml-[12.0625rem] md:ml-[5.625rem] ml-[1.875rem] min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
+              class="block md:mt-25 mt-20 xl:ml-[12.0625rem] md:ml-[5.625rem] ml-[1.875rem] min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
               width="445"
               height="269"
               src="/images/points/point-4.png"
@@ -67,7 +67,7 @@
                 мы меняемся, не изменяя себе!
               </p>
             </div>
-            <div class="max-w-[28.875rem] min-w-[14rem] pr-5 mb-5 mt-auto">
+            <div class="max-w-[28.875rem] min-w-[14rem] pr-5 mb-5 mt-auto pl-10">
               <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 6 }</p>
               <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">37 лет</p>
               <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
@@ -83,11 +83,9 @@
       class="numbers-words flex flex-nowrap items-center absolute h-svh top-0 z-10 lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase pointer-events-none"
       ref="scrollNumbersWords"
     >
-      <span class="number-word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 shrink-0 min-w-[50vw]">в ци</span>
-      <span class="number-word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 shrink-0 min-w-[50vw] text-center">
-        фр
-      </span>
-      <span class="number-word-1 block md:pr-[3.125rem] pr-10 shrink-0 min-w-[50vw]">ах</span>
+      <span class="number-word-1 block xl:pr-25 md:pr-20 pr-10 shrink-0 pt-20">в ци</span>
+      <span class="number-word-1 block xl:pr-25 md:pr-20 pr-10 shrink-0 pt-20">фр</span>
+      <span class="number-word-1 block md:pr-[3.125rem] pr-10 shrink-0 pt-20">ах</span>
     </div>
   </div>
 </template>
@@ -101,9 +99,9 @@
     const words = app.$gsap.utils.toArray(".number-word-1");
     const numbers = app.$gsap.utils.toArray(".number-point-1");
 
-    app.$gsap.to(numbers, {
-      xPercent: -110 * (numbers.length - 1),
-      ease: "linear",
+    app.$gsap.to(scrollNumbers.value, {
+      xPercent: -100,
+      ease: "none",
       scrollTrigger: {
         trigger: scrollNumbers.value,
         pin: true,
@@ -113,8 +111,8 @@
       },
     });
 
-    app.$gsap.to(words, {
-      xPercent: -110 * (words.length - 1),
+    app.$gsap.to(scrollNumbersWords.value, {
+      xPercent: -120,
       ease: "none",
       scrollTrigger: {
         trigger: scrollNumbersWords.value,

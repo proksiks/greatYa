@@ -18,26 +18,42 @@
             <a
               class="header-link relative font-medium transition text-color text-nowrap overflow-hidden py-0.5"
               href="#about"
-              @click="stopLenis"
+              @mouseover="$emit('mouseover')"
+              @mouseleave="$emit('mouseleave')"
             >
               о нас
             </a>
           </li>
           <li class="md:mb-0 mb-10">
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 2 } </span>
-            <a class="header-link relative font-medium transition text-color overflow-hidden py-0.5" href="#value">
+            <a
+              class="header-link relative font-medium transition text-color overflow-hidden py-0.5"
+              href="#value"
+              @mouseover="$emit('mouseover')"
+              @mouseleave="$emit('mouseleave')"
+            >
               ценности
             </a>
           </li>
           <li class="md:mb-0 mb-10">
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 3 } </span>
-            <a class="header-link relative font-medium transition text-color overflow-hidden py-0.5" href="#peoples">
+            <a
+              class="header-link relative font-medium transition text-color overflow-hidden py-0.5"
+              href="#peoples"
+              @mouseover="$emit('mouseover')"
+              @mouseleave="$emit('mouseleave')"
+            >
               основатели
             </a>
           </li>
           <li>
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 4 } </span>
-            <a class="header-link relative font-medium transition text-color overflow-hidden py-0.5" href="#projects">
+            <a
+              class="header-link relative font-medium transition text-color overflow-hidden py-0.5"
+              href="#projects"
+              @mouseover="$emit('mouseover')"
+              @mouseleave="$emit('mouseleave')"
+            >
               проекты
             </a>
           </li>

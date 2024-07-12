@@ -1,5 +1,5 @@
 <template>
-  <div class="md:px-10 px-2.5 xl:py-26 py-25">
+  <div class="md:px-10 px-2.5 xl:py-26 py-25 overflow-hidden">
     <div
       class="md:grid grid-cols-8 md:mb-20 mb-10 2xl:text-2xl xl:text-xl md:text-[4.5rem] text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] ml-5 md:ml-0"
       id="peoples"
@@ -7,13 +7,15 @@
       <p
         class="peoples-title md:col-start-3 md:col-end-7 uppercase 2xl:text-2xl xl:text-xl text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] md:pb-20 pb-10"
       >
-        <span class="block">харизмы</span>
-        <span class="block ml-7 md:ml-[14.5rem] text-orange text-nowrap">в людях</span>
+        <span class="block whitespace-nowrap">харизмы</span>
+        <span class="block whitespace-nowrap ml-7 md:ml-[14.5rem] text-orange text-nowrap">в людях</span>
       </p>
     </div>
 
     <div class="xl:grid xl:grid-cols-8">
-      <div class="xl:col-start-1 xl:col-end-5 xl:ml-0 ml-auto sm:ml-0 xl:mb-0 mb-[3.75rem] max-w-[16.0625rem] md:max-w-none">
+      <div
+        class="xl:col-start-1 xl:col-end-5 xl:ml-0 ml-auto sm:ml-0 xl:mb-0 mb-[3.75rem] max-w-[16.0625rem] md:max-w-none"
+      >
         <div class="flex md:flex-row flex-col gap-5">
           <div>
             <div class="people-image overflow-hidden">
@@ -28,7 +30,7 @@
           </div>
 
           <div class="flex flex-col">
-            <p class="font-medium mb-5 md:text-lg text-sm">
+            <p class="font-medium mb-5 md:text-lg text-sm" peopleTitle>
               «Наше единение, наши идеи и наша преданность своей профессии делают нас уникальной компанией»
             </p>
             <div class="font-petrov mt-auto md:text-[1.375rem] text-sm">
@@ -56,7 +58,7 @@
           </div>
 
           <div class="flex flex-col">
-            <p class="font-medium mb-5 md:text-lg text-sm">
+            <p class="font-medium mb-5 md:text-lg text-sm" peopleTitle>
               «Мы создаем команды единомышленников, а не коллег. Только так мы способны реализовывать цели, которые
               кажутся недостижимыми для других»
             </p>
@@ -85,7 +87,7 @@
           </div>
 
           <div class="flex flex-col">
-            <p class="font-medium mb-5 md:text-lg text-sm">
+            <p class="font-medium mb-5 md:text-lg text-sm" peopleTitle>
               «Доброта - это лучший инструмент, чтобы предоставить нашим клиентам выдающийся сервис»
             </p>
             <div class="font-petrov mt-auto md:text-[1.375rem] text-sm">
@@ -107,10 +109,10 @@
 
   onMounted(() => {
     new SplitType(".peoples-title", {
-      types: "words",
+      types: "chars",
       tagName: "span",
     });
-    app.$gsap.from(".peoples-title .word", {
+    app.$gsap.from(".peoples-title .char", {
       y: 20,
       opacity: 0,
       duration: 2,

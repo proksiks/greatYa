@@ -19,13 +19,13 @@
     </div>
     <div
       qualityDescr
-      class="md:col-start-3 col-end-8 font-petrov xl:text-[2.75rem] md:text-28 text-[1rem] max-w-[26.875rem] md:max-w-none leading-tight"
+      class="md:col-start-3 col-end-8 xl:text-[2.75rem] md:text-28 text-[1rem] max-w-[26.875rem] md:max-w-none leading-tight"
     >
       Мы уверены, что великие компании строятся на страстных людях, увлеченных своим делом. Говорят, что наш энтузиазм
       заражает всех вокруг, а наши идеи становятся искрами, зажигающими огонь инноваций.
     </div>
     <div
-      class="md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] mt-[3.75rem] md:mt-[10rem] pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
+      class="md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] mt-10 md:mt-25 pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
       qualityDescr
     >
       Мы видим в работе не просто обязанность, а возможность воплощать смелые идеи, делая мир лучше, краше и интереснее

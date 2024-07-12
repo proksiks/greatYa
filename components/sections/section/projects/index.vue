@@ -7,8 +7,8 @@
       <p
         class="projects-title md:col-start-3 md:col-end-7 uppercase 2xl:text-2xl xl:text-xl text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] md:pb-20 pb-10"
       >
-        <span class="block">харизмы</span>
-        <span class="block ml-7 md:ml-[14.5rem] text-orange text-nowrap">в проектах</span>
+        <span class="block whitespace-nowrap">харизмы</span>
+        <span class="block whitespace-nowrap ml-7 md:ml-[14.5rem] text-orange text-nowrap">в проектах</span>
       </p>
     </div>
 
@@ -55,7 +55,7 @@
             </a>
           </div>
           <div class="project-1 flex-shrink-0 flex w-screen md:w-auto md:min-w-[50%] justify-start">
-            <button class="block pr-[5%] md:pr-[14%] pb-[5%] text-left" aria-label="Модальное окно" @click="() => open()">
+            <button class="block pr-[5%] md:pr-[14%] text-left" aria-label="Модальное окно" @click="() => open()">
               <div class="text-[0.625rem] md:text-[1.125rem]">{ 3 }</div>
               <div class="py-2.5 md:py-5">
                 <img src="/images/projects/project-3.jpg" width="558" height="402" alt="Проект" />
@@ -103,10 +103,10 @@
 
   onMounted(() => {
     new SplitType(".projects-title", {
-      types: "lines, words, chars",
+      types: "chars",
       tagName: "span",
     });
-    app.$gsap.from(".projects-title .word", {
+    app.$gsap.from(".projects-title .char", {
       y: 20,
       opacity: 0,
       duration: 2,

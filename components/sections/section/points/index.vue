@@ -1,12 +1,12 @@
 <template>
-  <div class="relative overflow-hidden md:px-10 px-2.5" id="value">
+  <div class="points-block relative overflow-hidden md:px-10 px-2.5" id="value">
     <div
       class="words flex flex-nowrap items-center absolute h-svh top-0 lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase"
       ref="scrollPointsWords"
     >
-      <span class="word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 shrink-0">ха</span>
-      <span class="word-1 block pr-10 shrink-0 text-center"> риз </span>
-      <span class="word-1 block pr-10">мы</span>
+      <span class="word-1 block xl:pr-25 shrink-0">ха</span>
+      <span class="word-1 block xl:pr-25 shrink-0 text-center"> риз </span>
+      <span class="word-1 block">мы</span>
     </div>
     <div class="points flex items-center" ref="scrollPoints">
       <div class="flex flex-nowrap relative z-20 md:py-25 py-20">
@@ -20,7 +20,7 @@
           </div>
         </div>
         <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen">
-          <div class="z-10 mt-20 xl:mr-[16.625rem] md:mr-[7.5rem] mr-[1.6875rem]">
+          <div class="z-10 mt-20 xl:mr-26 mr-10">
             <img
               class="block xl:mb-[10.25rem] md:mb-[5.625rem] mb-[3.5625rem] min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
               width="445"
@@ -49,7 +49,7 @@
               </p>
             </div>
             <img
-              class="block md:mt-[8.4375rem] mt-[5rem] xl:ml-[12.0625rem] md:ml-[5.625rem] ml-[1.875rem] min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
+              class="block md:mt-[8.4375rem] mt-[5rem] xl:ml-26 md:ml-25 ml-[1.875rem] min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
               width="445"
               height="410"
               src="/images/points/point-2.png"
@@ -58,9 +58,7 @@
           </div>
         </div>
         <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen flex items-end">
-          <div
-            class="relative z-20 max-w-[26.875rem] min-w-[14rem] xl:ml-[16.25rem] md:ml-[7.5rem] ml-[5rem] pr-5 mt-auto mb-5"
-          >
+          <div class="relative z-20 max-w-[26.875rem] min-w-[14rem] xl:ml-25 ml-20 pr-5 mt-auto mb-5">
             <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 4 }</p>
             <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">Эффективность</p>
             <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
@@ -91,27 +89,23 @@
 
   // onNuxtReady ||
   onMounted(() => {
-    const words = app.$gsap.utils.toArray(".word-1");
-    const points = app.$gsap.utils.toArray(".point-1");
-    app.$gsap.to(points, {
-      xPercent: -110 * (points.length - 1),
-      ease: "linear",
+    app.$gsap.to(scrollPoints.value, {
+      xPercent: -115,
+      ease: "none",
       scrollTrigger: {
         trigger: scrollPoints.value,
         pin: true,
         scrub: 3,
-        span: 1 / (points.length - 1),
         end: "+=" + scrollPoints.value.offsetWidth,
       },
     });
-    app.$gsap.to(words, {
-      xPercent: -110 * (words.length - 1),
+    app.$gsap.to(scrollPointsWords.value, {
+      xPercent: -70,
       ease: "none",
       scrollTrigger: {
         trigger: scrollPointsWords.value,
         pin: true,
         scrub: 3,
-        span: 1 / (words.length - 1),
         end: "+=" + scrollPoints.value.offsetWidth,
       },
     });

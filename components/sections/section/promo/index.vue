@@ -1,5 +1,5 @@
 <template>
-  <div class="xl:pt-26 md:pt-[11.25rem] pt-25 xl:px-10 px-2.5">
+  <div class="xl:pt-26 md:pt-[11.25rem] pt-25 xl:px-10 px-2.5 md:pb-25 pb-20">
     <div
       id="about"
       class="grid sm:grid-cols-8 grid-cols-2 text-nowrap 2xl:leading-[7.3125rem] leading-[100%] tracking-tighter 2xl:text-[8.125rem] xl:text-xl md:text-[3.25rem] text-[2.1875rem] uppercase"
@@ -34,7 +34,7 @@
 
   onMounted(() => {
     new SplitType("[char]", {
-      types: "lines, words, chars",
+      types: "chars",
       tagName: "span",
     });
 
