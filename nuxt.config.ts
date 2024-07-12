@@ -11,7 +11,7 @@ export default defineNuxtConfig({
       meta: [{ hid: 'description', name: 'description', content: 'Харизмы' }]
     }
   },
-  css: ['normalize.css', '/fonts/fonts.css', 'vue-final-modal/style.css'],
+  css: ['normalize.css', 'fonts/fonts.css', 'vue-final-modal/style.css'],
   modules: ["@nuxtjs/tailwindcss", '@hypernym/nuxt-gsap'],
   gsap: {
     extraPlugins: {
