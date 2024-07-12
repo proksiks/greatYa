@@ -19,13 +19,13 @@
         <div class="flex md:flex-row flex-col gap-5">
           <div>
             <div class="people-image overflow-hidden">
-              <!--<img
+              <img
                 class="object-cover xl:max-w-none"
                 src="/images/peoples/people-1.png"
                 alt="Александр Мильченко"
                 width="445"
                 height="728"
-              />-->
+              />
             </div>
           </div>
 
