@@ -16,7 +16,7 @@
   <!--<sections-section-peoples />-->
   <sections-section-numbers />
   <sections-section-projects />
-  <!--<div class="bg-black">
+  <div class="bg-black">
     <sections-section-welcome />
-  </div>-->
+  </div>
 </template>
