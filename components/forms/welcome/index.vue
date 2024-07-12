@@ -1,6 +1,6 @@
 <template>
   <div class="relative pb-2">
-    <div class="md:text-lg md:pb-[6.75rem] pb-10 pr-5">{{ title }}</div>
+    <div class="md:text-lg md:mb-[6.75rem] mb-10 pr-5">{{ title }}</div>
     <div class="flex items-center bg-black absolute inset-0 z-20 text-lg" v-if="sucess">
       <span> Спасибо, ваша заявка отправлена! Мы свяжемся с вами в ближайшее время. </span>
     </div>
@@ -25,7 +25,7 @@
       <span v-else-if="!isFormCorrect && !v$.form.name.isValidString.$response" class="text-sm text-red">
         {{ v$.form.name.isValidString.$message }}
       </span>
-      <label class="block relative group md:pt-[3.75rem] pt-10">
+      <label class="block relative group md:mt-[3.75rem] mt-10">
         <input
           type="tel"
           v-model="form.phone"
@@ -45,7 +45,7 @@
       <div v-else-if="!isFormCorrect && !v$.form.phone.minLength.$response" class="text-sm text-red">
         {{ v$.form.phone.minLength.$message }}
       </div>
-      <div class="md:pt-10 pt-5">
+      <div class="md:mt-10 mt-5">
         <label class="flex items-center flex-wrap gap-y-2 font-petrov cursor-pointer text-[0.75rem] md:text-[1rem]">
           <span class="relative block md:w-5 w-[0.9375rem] md:h-5 h-[0.9375rem] border-2 mr-2.5">
             <input
@@ -53,7 +53,9 @@
               class="bg-transparent border-0 peer absolute opacity-0 pointer-events-none left-[-6250rem]"
               type="checkbox"
             />
-            <span class="md:w-sm md:h-[0.75rem] w-full h-full absolute peer-checked:opacity-100 opacity-0 transition-all md:top-[0.125rem] md:left-[0.0625rem]">
+            <span
+              class="md:w-sm md:h-[0.75rem] w-full h-full absolute peer-checked:opacity-100 opacity-0 transition-all md:top-[0.125rem] md:left-[0.0625rem]"
+            >
               <img src="/images/icons/white-check.svg" width="14" height="12" alt="Галочка" />
             </span>
           </span>
@@ -64,7 +66,7 @@
           {{ v$.form.accept.required.$message }}
         </span>
       </div>
-      <div class="md:pt-[3.75rem] pt-10">
+      <div class="md:mt-[3.75rem] mt-10">
         <button class="relative uppercase group md:text-lg text-sm" @click="$emit('confirm')">
           отправить
           <span
