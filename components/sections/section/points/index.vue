@@ -20,17 +20,18 @@
           </div>
         </div>
         <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen">
-          <div class="z-10 mt-20 xl:mr-26 mr-10">
-            <img
-              class="block xl:mb-[10.25rem] md:mb-[5.625rem] mb-[3.5625rem] min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
-              width="445"
-              height="269"
-              src="/images/points/point-1.png"
-              alt="Здание"
-            />
-            <div class="max-w-[26.875rem] min-w-[14rem] xl:ml-[7.5625rem] md:ml-[2.5rem] ml-[1.25rem] mb-5">
-              <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 2 }</p>
-              <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">Любовь</p>
+          <div class="z-10 pt-20 xl:pr-26 pr-10">
+            <div class="xl:pb-[10.25rem] md:pb-[5.625rem] pb-[3.5625rem]">
+              <img class="block min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
+                width="445"
+                height="269"
+                src="/images/points/point-1.png"
+                alt="Здание"
+              />
+            </div>
+            <div class="max-w-[26.875rem] min-w-[14rem] xl:ml-[7.5625rem] md:ml-[2.5rem] ml-[1.25rem] pb-5">
+              <p class="md:pb-5 pb-2.5 md:text-sm text-[0.625rem]">{ 2 }</p>
+              <p class="pb-2.5 md:text-lg text-sm uppercase font-medium">Любовь</p>
               <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
                 Искренняя заинтересованность в жизни и развитии дела, клиентов, жизни людей. Мы делаем все важное для
                 результата сами, проактивно
@@ -41,40 +42,33 @@
         <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen">
           <div class="z-10">
             <div class="max-w-[26.875rem] min-w-[14rem]">
-              <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 3 }</p>
-              <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">Развитие</p>
+              <p class="md:pb-5 pb-2.5 md:text-sm text-[0.625rem]">{ 3 }</p>
+              <p class="pb-2.5 md:text-lg text-sm uppercase font-medium">Развитие</p>
               <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
                 Постоянные изменения себя через знания, опыт и обучение. Каждый день быть лучше, чем вчера. Обогатить
                 города проектами
               </p>
             </div>
-            <img
-              class="block md:mt-[8.4375rem] mt-[5rem] xl:ml-26 md:ml-25 ml-[1.875rem] min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
-              width="445"
-              height="410"
-              src="/images/points/point-2.png"
-              alt="Здание"
-            />
+            <div class="md:pt-[8.4375rem] pt-[5rem] xl:ml-26 md:ml-25 ml-[1.875rem]">
+              <img
+                class="block min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
+                width="445"
+                height="410"
+                src="/images/points/point-2.png"
+                alt="Здание"
+              />
+            </div>
           </div>
         </div>
         <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen flex items-end">
-          <div class="relative z-20 max-w-[26.875rem] min-w-[14rem] xl:ml-25 ml-20 pr-5 mt-auto mb-5">
-            <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 4 }</p>
-            <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">Эффективность</p>
+          <div class="relative z-20 max-w-[26.875rem] min-w-[14rem] xl:ml-25 ml-20 pr-5 mt-auto pb-5">
+            <p class="md:pb-5 pb-2.5 md:text-sm text-[0.625rem]">{ 4 }</p>
+            <p class="pb-2.5 md:text-lg text-sm uppercase font-medium">Эффективность</p>
             <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
               Получение максимального результата с приложением максимальных усилий
             </p>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="md:pt-25 md:pb-26 sm:pb-25 pb-10">
-      <div
-        class="points-text font-medium max-w-[75rem] 2xl:text-[2.75rem] md:text-[1.5rem] text-sm md:leading-[125%] ml-auto"
-      >
-        Наша команда — это союз харизматичных людей, привносящих в работу свою индивидуальность, творчество и фанатизм к
-        делу. Мы не просто выполняем задачи, мы создаем наследие для потомков. Достойная цель, чтобы жить!
       </div>
     </div>
   </div>

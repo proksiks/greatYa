@@ -1,6 +1,6 @@
 <template>
   <div class="xl:pt-26 md:pt-[11.25rem] pt-25 xl:px-10 px-2.5 md:pb-25 pb-20">
-    <div
+    <!--<div
       id="about"
       class="grid sm:grid-cols-8 grid-cols-2 text-nowrap 2xl:leading-[7.3125rem] leading-[100%] tracking-tighter 2xl:text-[8.125rem] xl:text-xl md:text-[3.25rem] text-[2.1875rem] uppercase"
     >
@@ -9,8 +9,8 @@
         в том <br />
         что делаем
       </div>
-    </div>
-    <div class="grid sm:grid-cols-8 grid-cols-2">
+    </div>-->
+    <!--<div class="grid sm:grid-cols-8 grid-cols-2">
       <div
         class="font-medium sm:col-start-4 col-end-9 xl:pt-24 pt-20 2xl:text-[2.75rem] md:text-[1.5rem] text-sm md:leading-[125%] leading-none sm:ml-0"
       >
@@ -19,12 +19,12 @@
           как мы делаем свою работу — с любовью, 
           страстью и харизмой.
         </div>
-        <div class="mt-5" word>
+        <div class="pt-5" word>
           Мы делаем все возможное, чтобы наша работа оставляла яркие следы в сердцах клиентов. Каждый проект — это
           возможность дать нечто большее, чем они ожидают.
         </div>
       </div>
-    </div>
+    </div>-->
   </div>
 </template>
 <script setup>

@@ -6,7 +6,7 @@
     overlay-transition="vfm-fade"
   >
     <div class="bg-black text-white md:p-20 sm:p-10 p-5 h-full overflow-auto flex flex-col">
-      <div class="mb-[2.25rem] sticky -top-20 z-10">
+      <div class="pb-[2.25rem] sticky -top-20 z-10">
         <button class="relative w-[3.1875rem] h-[3.1875rem] ml-auto block" @click="$emit('close')">
           <span
             class="block w-full h-1 bg-orange absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -rotate-45"

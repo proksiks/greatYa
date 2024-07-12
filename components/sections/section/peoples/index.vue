@@ -1,7 +1,7 @@
 <template>
   <div class="md:px-10 px-2.5 xl:py-26 py-25 overflow-hidden">
     <div
-      class="md:grid grid-cols-8 md:mb-20 mb-10 2xl:text-2xl xl:text-xl md:text-[4.5rem] text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] ml-5 md:ml-0"
+      class="md:grid grid-cols-8 md:pb-20 pb-10 2xl:text-2xl xl:text-xl md:text-[4.5rem] text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] ml-5 md:ml-0"
       id="peoples"
     >
       <p
@@ -14,7 +14,7 @@
 
     <div class="xl:grid xl:grid-cols-8">
       <div
-        class="xl:col-start-1 xl:col-end-5 xl:ml-0 ml-auto sm:ml-0 xl:mb-0 mb-[3.75rem] max-w-[16.0625rem] md:max-w-none"
+        class="xl:col-start-1 xl:col-end-5 xl:ml-0 ml-auto sm:ml-0 xl:pb-0 pb-[3.75rem] max-w-[16.0625rem] md:max-w-none"
       >
         <div class="flex md:flex-row flex-col gap-5">
           <div>
@@ -30,11 +30,11 @@
           </div>
 
           <div class="flex flex-col">
-            <p class="font-medium mb-5 md:text-lg text-sm" peopleTitle>
+            <p class="font-medium pb-5 md:text-lg text-sm" peopleTitle>
               «Наше единение, наши идеи и наша преданность своей профессии делают нас уникальной компанией»
             </p>
             <div class="font-petrov mt-auto md:text-[1.375rem] text-sm">
-              <p class="mb-2.5">Александр Мильченко</p>
+              <p class="pb-2.5">Александр Мильченко</p>
               <p>основатель</p>
               <p>покоритель Килиманджаро</p>
             </div>
@@ -42,28 +42,28 @@
         </div>
       </div>
       <div
-        class="xl:row-start-2 xl:row-end-3 xl:col-start-5 xl:col-end-9 items-start row-span max-w-[16.0625rem] sm:ml-auto md:ml-0 md:max-w-[43.75rem] xl:max-w-none mb-[3.75rem] lx:mb-0"
+        class="xl:row-start-2 xl:row-end-3 xl:col-start-5 xl:col-end-9 items-start row-span max-w-[16.0625rem] sm:ml-auto md:ml-0 md:max-w-[43.75rem] xl:max-w-none pb-[3.75rem] lx:pb-0"
       >
         <div class="flex md:flex-row flex-col gap-5">
           <div>
             <div class="people-image overflow-hidden">
-              <!--<img
+              <img
                 class="object-cover xl:max-w-none"
                 src="/images/peoples/people-2.png"
                 alt="Александр Перминов"
                 width="445"
                 height="728"
-              />-->
+              />
             </div>
           </div>
 
           <div class="flex flex-col">
-            <p class="font-medium mb-5 md:text-lg text-sm" peopleTitle>
+            <p class="font-medium pb-5 md:text-lg text-sm" peopleTitle>
               «Мы создаем команды единомышленников, а не коллег. Только так мы способны реализовывать цели, которые
               кажутся недостижимыми для других»
             </p>
             <div class="font-petrov mt-auto md:text-[1.375rem] text-sm">
-              <p class="mb-2.5">Александр Перминов</p>
+              <p class="pb-2.5">Александр Перминов</p>
               <p>основатель</p>
               <p>спортсмен-триатлонист</p>
             </div>
@@ -76,22 +76,22 @@
         <div class="flex md:flex-row flex-col gap-5 pr-5">
           <div>
             <div class="people-image overflow-hidden">
-              <!--<img
+              <img
                 class="object-cover xl:max-w-none"
                 src="/images/peoples/people-3.png"
                 alt="Максим Замятин"
                 width="445"
                 height="728"
-              />-->
+              />
             </div>
           </div>
 
           <div class="flex flex-col">
-            <p class="font-medium mb-5 md:text-lg text-sm" peopleTitle>
+            <p class="font-medium pb-5 md:text-lg text-sm" peopleTitle>
               «Доброта - это лучший инструмент, чтобы предоставить нашим клиентам выдающийся сервис»
             </p>
             <div class="font-petrov mt-auto md:text-[1.375rem] text-sm">
-              <p class="mb-2.5">Максим Замятин</p>
+              <p class="pb-2.5">Максим Замятин</p>
               <p>основатель</p>
               <p>заядлый мотоциклист</p>
             </div>

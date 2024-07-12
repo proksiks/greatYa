@@ -25,51 +25,51 @@
       заражает всех вокруг, а наши идеи становятся искрами, зажигающими огонь инноваций.
     </div>
     <div
-      class="md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] mt-10 md:mt-25 pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
+      class="md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] pt-10 md:pt-25 pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
       qualityDescr
     >
       Мы видим в работе не просто обязанность, а возможность воплощать смелые идеи, делая мир лучше, краше и интереснее
       в каждом дне, в каждом проекте.
     </div>
   </div>
-  <div class="sm:grid grid-cols-8 xl:my-26 my-25 px-2.5 md:px-10">
+  <div class="sm:grid grid-cols-8 xl:py-26 py-25 px-2.5 md:px-10">
     <div class="col-start-1 col-end-3">
       <div class="quality-image overflow-hidden">
-        <!--<img
+        <img
           class="xs:max-w-[9.625rem] md:max-w-[15.625rem] xl:max-w-none"
           src="/images/quality/quality-1.png"
           alt="Жилой комплекс"
           width="443"
           height="500"
-        />-->
+        />
       </div>
     </div>
-    <div class="col-start-4 col-end-8 ml-[2rem] md:ml-0 xl:mt-[17.25rem] md:mt-[7.75rem] mt-[1.5rem]">
+    <div class="col-start-4 col-end-8 ml-[2rem] md:ml-0 xl:pt-[17.25rem] md:pt-[7.75rem] pt-[1.5rem]">
       <div class="quality-image overflow-hidden">
-        <!--<img src="/images/quality/quality-2.png" alt="Жилой комплекс" width="909" height="561" />-->
+        <img src="/images/quality/quality-2.png" alt="Жилой комплекс" width="909" height="561" />
       </div>
     </div>
-    <div class="col-start-3 col-end-5 md:mt-[10rem] mt-[3.75rem]">
+    <div class="col-start-3 col-end-5 md:pt-[10rem] pt-[3.75rem]">
       <div class="quality-image overflow-hidden">
-        <!--<img
+        <img
           class="xs:max-w-[9.625rem] md:max-w-[15.625rem] xl:max-w-none mx-auto"
           src="/images/quality/quality-3.png"
           alt="Жилой комплекс"
           width="443"
           height="500"
-        />-->
+        />
       </div>
     </div>
   </div>
   <div class="overflow-hidden">
     <div class="relative">
-      <!--<img
+      <img
         class="block cols-start-3 col-end-5 object-cover"
         src="/images/quality/quality-bg.svg"
         alt="Декоративная картинка"
         width="1903"
         height="660"
-      />-->
+      />
       <div class="quality-white-line absolute inset-0 bg-white"></div>
     </div>
   </div>

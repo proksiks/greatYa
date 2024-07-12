@@ -3,8 +3,8 @@
     <div class="flex items-center bg-white absolute inset-0 z-20 text-lg text-black" v-if="sucess">
       <span> Спасибо, ваша заявка отправлена! Мы свяжемся с вами в ближайшее время. </span>
     </div>
-    <form class="md:mb-10" @submit.prevent="submitForm">
-      <label class="block relative group md:mt-[3.75rem] mt-5">
+    <form class="md:pb-10" @submit.prevent="submitForm">
+      <label class="block relative group md:pt-[3.75rem] pt-5">
         <input
           v-model="form.email"
           class="peer py-2.5 w-full md:text-lg text-sm bg-transparent placeholder:text-transparent group-hover:border-orange transition-all outline-none border-b-2"
@@ -24,7 +24,7 @@
         Введите корректный адрес электронной почты
       </span>
 
-      <div class="md:mt-10 mt-5">
+      <div class="md:pt-10 pt-5">
         <label class="flex items-center flex-wrap gap-y-2 font-petrov cursor-pointer">
           <span class="relative block w-[0.9375rem] md:w-5 h-[0.9375rem] md:h-5 border-2 mr-2.5">
             <input
@@ -41,11 +41,11 @@
           Согласен с&nbsp;
           <a class="hover:no-underline underline" href="pdfs/policy.pdf" download> политикой конфиденциальности </a>
         </label>
-        <div v-if="!isFormCorrect && !v$.form.accept.required.$response" class="text-sm text-red mt-2">
+        <div v-if="!isFormCorrect && !v$.form.accept.required.$response" class="text-sm text-red pt-2">
           {{ v$.form.accept.required.$message }}
         </div>
       </div>
-      <div class="md:mt-[3.75rem] mt-10">
+      <div class="md:pt-[3.75rem] pt-10">
         <button class="relative uppercase group md:text-lg text-sm" @click="showModal">
           подписаться
           <span

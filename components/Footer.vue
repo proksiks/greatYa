@@ -22,7 +22,7 @@
             </a>
             <a class="block uppercase font-medium" href="https://vk.com/gsbktmn" target="_blank">вконтакте</a>
           </div>
-          <div class="justify-center md:justify-start my-2.5 md:my-0">
+          <div class="justify-center md:justify-start py-2.5 md:py-0">
             <video muted loop ref="footerVideo" poster="/images/video-holder.png" playsinline src="/images/hero/screen.mp4">
               <source src="/images/hero/screen.webm" type="video/webm" />
               <source src="/images/hero/screen.mp4" type="video/mp4" />
