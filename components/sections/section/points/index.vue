@@ -22,7 +22,8 @@
         <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen">
           <div class="z-10 pt-20 xl:pr-26 pr-10">
             <div class="xl:pb-[10.25rem] md:pb-[5.625rem] pb-[3.5625rem]">
-              <img class="block min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
+              <img
+                class="block min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
                 width="445"
                 height="269"
                 src="/images/points/point-1.png"
@@ -69,6 +70,14 @@
             </p>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="md:pt-25 md:pb-26 sm:pb-25 pb-10">
+      <div
+        class="points-text font-medium max-w-[75rem] 2xl:text-[2.75rem] md:text-[1.5rem] text-sm md:leading-[125%] ml-auto"
+      >
+        Наша команда — это союз харизматичных людей, привносящих в работу свою индивидуальность, творчество и фанатизм к
+        делу. Мы не просто выполняем задачи, мы создаем наследие для потомков. Достойная цель, чтобы жить!
       </div>
     </div>
   </div>
