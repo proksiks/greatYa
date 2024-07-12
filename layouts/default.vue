@@ -6,8 +6,8 @@
       <div class="bg-white">
         <slot />
       </div>
-      <div class="overflow-hidden" :style="{ marginTop: `${footerHeight}px` }">
-        <div class="fixed bottom-0 left-0 w-full bg-white -z-10" ref="footer">
+      <div :style="{ marginTop: `${footerHeight}px` }">
+        <div class="overflow-hidden fixed bottom-0 left-0 w-full bg-white -z-10" ref="footer">
           <Footer />
         </div>
       </div>
