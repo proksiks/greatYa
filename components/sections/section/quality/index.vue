@@ -35,41 +35,41 @@
   <div class="sm:grid grid-cols-8 xl:my-26 my-25 px-2.5 md:px-10">
     <div class="col-start-1 col-end-3">
       <div class="quality-image overflow-hidden">
-        <img
+        <!--<img
           class="xs:max-w-[9.625rem] md:max-w-[15.625rem] xl:max-w-none"
           src="/images/quality/quality-1.png"
           alt="Жилой комплекс"
           width="443"
           height="500"
-        />
+        />-->
       </div>
     </div>
     <div class="col-start-4 col-end-8 ml-[2rem] md:ml-0 xl:mt-[17.25rem] md:mt-[7.75rem] mt-[1.5rem]">
       <div class="quality-image overflow-hidden">
-        <img src="/images/quality/quality-2.png" alt="Жилой комплекс" width="909" height="561" />
+        <!--<img src="/images/quality/quality-2.png" alt="Жилой комплекс" width="909" height="561" />-->
       </div>
     </div>
     <div class="col-start-3 col-end-5 md:mt-[10rem] mt-[3.75rem]">
       <div class="quality-image overflow-hidden">
-        <img
+        <!--<img
           class="xs:max-w-[9.625rem] md:max-w-[15.625rem] xl:max-w-none mx-auto"
           src="/images/quality/quality-3.png"
           alt="Жилой комплекс"
           width="443"
           height="500"
-        />
+        />-->
       </div>
     </div>
   </div>
   <div class="overflow-hidden">
     <div class="relative">
-      <img
+      <!--<img
         class="block cols-start-3 col-end-5 object-cover"
         src="/images/quality/quality-bg.svg"
         alt="Декоративная картинка"
         width="1903"
         height="660"
-      />
+      />-->
       <div class="quality-white-line absolute inset-0 bg-white"></div>
     </div>
   </div>
