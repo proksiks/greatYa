@@ -4,94 +4,94 @@
 
 @font-face {
   font-family: "Benzin";
-  src: url("fonts/benzin/Benzin-Regular.woff2");
+  src: url("/fonts/benzin/Benzin-Regular.woff2");
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "Benzin";
-  src: url("fonts/benzin/Benzin-Medium.woff2");
+  src: url("/fonts/benzin/Benzin-Medium.woff2");
   font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Petrov";
-  src: url("fonts/petrov/PetrovSans-Trial-Bold.woff2");
+  src: url("/fonts/petrov/PetrovSans-Trial-Bold.woff2");
   font-weight: 700;
   font-display: swap;
 }
 @font-face {
   font-family: "Petrov";
-  src: url("fonts/petrov/PetrovSans-Trial-Regular.woff2");
+  src: url("/fonts/petrov/PetrovSans-Trial-Regular.woff2");
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "Petrov";
-  src: url("fonts/petrov/PetrovSans-Trial-Book.woff2");
+  src: url("/fonts/petrov/PetrovSans-Trial-Book.woff2");
   font-weight: 300;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Manrope";
-  src: url("fonts/manrope/Manrope-ExtraBold.woff2");
+  src: url("/fonts/manrope/Manrope-ExtraBold.woff2");
   font-weight: 900;
 }
 @font-face {
   font-family: "Manrope";
-  src: url("fonts/manrope/Manrope-Bold.woff2");
+  src: url("/fonts/manrope/Manrope-Bold.woff2");
   font-weight: 700;
   font-display: swap;
 }
 @font-face {
   font-family: "Manrope";
-  src: url("fonts/manrope/Manrope-SemiBold.woff2");
+  src: url("/fonts/manrope/Manrope-SemiBold.woff2");
   font-weight: 600;
   font-display: swap;
 }
 @font-face {
   font-family: "Manrope";
-  src: url("fonts/manrope/Manrope-Medium.woff2");
+  src: url("/fonts/manrope/Manrope-Medium.woff2");
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
   font-family: "Manrope";
-  src: url("fonts/manrope/Manrope-Regular.woff2");
+  src: url("/fonts/manrope/Manrope-Regular.woff2");
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Intro";
-  src: url("fonts/intro/Intro-Regular.woff2");
+  src: url("/fonts/intro/Intro-Regular.woff2");
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Inter";
-  src: url("fonts/inter/Inter-ExtraBold.woff2");
+  src: url("/fonts/inter/Inter-ExtraBold.woff2");
   font-weight: 900;
   font-display: swap;
 }
 @font-face {
   font-family: "Inter";
-  src: url("fonts/inter/Inter-SemiBold.woff2");
+  src: url("/fonts/inter/Inter-SemiBold.woff2");
   font-weight: 600;
   font-display: swap;
 }
 @font-face {
   font-family: "Inter";
-  src: url("fonts/inter/Inter-Medium.woff2");
+  src: url("/fonts/inter/Inter-Medium.woff2");
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
   font-family: "Inter";
-  src: url("fonts/inter/Inter-Regular.woff2");
+  src: url("/fonts/inter/Inter-Regular.woff2");
   font-weight: 400;
   font-display: swap;
 }
