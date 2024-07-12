@@ -7,11 +7,12 @@ export default defineNuxtConfig({
         lang: "RU"
       },
       title: "Харизмы",
-      link: [{ rel: 'shortcut icon', href: 'favicon.ico' }],
+
+      link: [{ rel: 'shortcut icon', href: 'favicon.ico' }, { rel: 'stylesheet', href: 'fonts/fonts.css' }],
       meta: [{ hid: 'description', name: 'description', content: 'Харизмы' }]
     }
   },
-  css: ['normalize.css', 'fonts/fonts.css', 'vue-final-modal/style.css'],
+  css: ['normalize.css', 'vue-final-modal/style.css'],
   modules: ["@nuxtjs/tailwindcss", '@hypernym/nuxt-gsap'],
   gsap: {
     extraPlugins: {
