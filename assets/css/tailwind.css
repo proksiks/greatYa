@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/*
 @font-face {
   font-family: "Benzin";
   src: url("~/assets/fonts/benzin/Benzin-Regular.woff2");
@@ -124,4 +124,4 @@
   .lenis.lenis-smooth iframe {
     @apply pointer-events-none;
   }
-}
+}*/
