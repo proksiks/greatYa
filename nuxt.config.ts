@@ -8,7 +8,7 @@ export default defineNuxtConfig({
       },
       title: "Харизмы",
 
-      link: [{ rel: 'shortcut icon', href: 'favicon.ico' }, { rel: 'stylesheet', href: 'fonts/fonts.css' }],
+      link: [{ rel: 'shortcut icon', href: 'favicon.ico' }],
       meta: [{ hid: 'description', name: 'description', content: 'Харизмы' }]
     }
   },
