@@ -19,13 +19,13 @@
         <div class="flex md:flex-row flex-col gap-5">
           <div>
             <div class="people-image overflow-hidden">
-              <img
+              <!--<img
                 class="object-cover xl:max-w-none"
                 src="/images/peoples/people-1.png"
                 alt="Александр Мильченко"
                 width="445"
                 height="728"
-              />
+              />-->
             </div>
           </div>
 
@@ -47,13 +47,13 @@
         <div class="flex md:flex-row flex-col gap-5">
           <div>
             <div class="people-image overflow-hidden">
-              <img
+              <!--<img
                 class="object-cover xl:max-w-none"
                 src="/images/peoples/people-2.png"
                 alt="Александр Перминов"
                 width="445"
                 height="728"
-              />
+              />-->
             </div>
           </div>
 
@@ -76,13 +76,13 @@
         <div class="flex md:flex-row flex-col gap-5 pr-5">
           <div>
             <div class="people-image overflow-hidden">
-              <img
+              <!--<img
                 class="object-cover xl:max-w-none"
                 src="/images/peoples/people-3.png"
                 alt="Максим Замятин"
                 width="445"
                 height="728"
-              />
+              />-->
             </div>
           </div>
 
