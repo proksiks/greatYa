@@ -51,12 +51,12 @@
       },
     });
 
-    new SplitType("[word]", {
-      types: "words",
-      tagName: "span",
-    });
+    //new SplitType("[word]", {
+    //  types: "words",
+    //  tagName: "span",
+    //});
 
-    gsap.from("[word] .word", {
+    gsap.from("[word]", {
       y: 100,
       opacity: 0,
       duration: 2,
