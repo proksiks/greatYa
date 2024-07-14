@@ -31,7 +31,7 @@
           </div>
 
           <div class="flex flex-col">
-            <p class="font-benzin font-medium pb-5 md:text-lg text-sm" peopleTitle>
+            <p class="font-benzin font-medium pb-5 md:text-lg text-sm">
               «Наше единение, наши идеи и наша преданность своей профессии делают нас уникальной компанией»
             </p>
             <div class="font-petrov mt-auto md:text-[1.375rem] text-sm">
@@ -60,7 +60,7 @@
           </div>
 
           <div class="flex flex-col">
-            <p class="font-benzin font-medium pb-5 md:text-lg text-sm" peopleTitle>
+            <p class="font-benzin font-medium pb-5 md:text-lg text-sm">
               «Мы создаем команды единомышленников, а не коллег. Только так мы способны реализовывать цели, которые
               кажутся недостижимыми для других»
             </p>
@@ -90,7 +90,7 @@
           </div>
 
           <div class="flex flex-col">
-            <p class="font-benzin font-medium pb-5 md:text-lg text-sm" peopleTitle>
+            <p class="font-benzin font-medium pb-5 md:text-lg text-sm">
               «Доброта - это лучший инструмент, чтобы предоставить нашим клиентам выдающийся сервис»
             </p>
             <div class="font-petrov mt-auto md:text-[1.375rem] text-sm">
@@ -106,30 +106,10 @@
 </template>
 
 <script setup>
-  import SplitType from "split-type";
-
   const app = useNuxtApp();
 
   onMounted(() => {
-    new SplitType("[peopleTitle]", {
-      types: "chars",
-      tagName: "span",
-    });
-    app.$gsap.from("[peopleTitle] .char", {
-      y: 20,
-      opacity: 0,
-      duration: 2,
-      ease: "sine.out",
-      stagger: 0.1,
-
-      scrollTrigger: {
-        trigger: "[peopleTitle]",
-        scrub: true,
-      },
-    });
-
     let revealContainers = document.querySelectorAll(".people-image");
-
     revealContainers.forEach((container) => {
       let image = container.querySelector("img");
       let tl = app.$gsap.timeline({

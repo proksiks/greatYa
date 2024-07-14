@@ -1,14 +1,14 @@
 <template>
-  <div class="font-benzin points-block relative overflow-hidden md:px-10 px-2.5" id="value">
+  <div class="points-block relative overflow-hidden md:px-10 px-2.5" id="value">
     <div
-      class="words flex flex-nowrap items-center absolute h-svh top-0 lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase"
+      class="font-benzin words flex flex-nowrap items-center absolute h-svh top-0 lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase"
       ref="scrollPointsWords"
     >
       <span class="word-1 md:min-w-[50rem] block xl:pr-25 shrink-0">ха</span>
       <span class="word-1 md:min-w-[62.5rem] block xl:pr-25 shrink-0 text-center"> риз </span>
       <span class="word-1 block">мы</span>
     </div>
-    <div class="points flex items-center" ref="scrollPoints">
+    <div class="font-benzin points flex items-center" ref="scrollPoints">
       <div class="flex flex-nowrap relative z-20 md:py-25 py-20">
         <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none">
           <div class="z-10 max-w-[26.875rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]">

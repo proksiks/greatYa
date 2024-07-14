@@ -18,15 +18,13 @@
       <span class="quality-char block text-orange">успех</span>
     </div>
     <div
-      qualityDescr
-      class="md:col-start-3 col-end-8 xl:text-[2.75rem] md:text-28 text-[1rem] max-w-[26.875rem] md:max-w-none leading-tight"
+      class="quality-word md:col-start-3 col-end-8 xl:text-[2.75rem] md:text-28 text-[1rem] max-w-[26.875rem] md:max-w-none leading-tight"
     >
       Мы уверены, что великие компании строятся на страстных людях, увлеченных своим делом. Говорят, что наш энтузиазм
       заражает всех вокруг, а наши идеи становятся искрами, зажигающими огонь инноваций.
     </div>
     <div
-      class="md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] pt-10 md:pt-25 pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
-      qualityDescr
+      class="quality-word md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] pt-10 md:pt-25 pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
     >
       Мы видим в работе не просто обязанность, а возможность воплощать смелые идеи, делая мир лучше, краше и интереснее
       в каждом дне, в каждом проекте.
@@ -87,6 +85,10 @@
       types: "chars",
       tagName: "span",
     });
+    new SplitType(".quality-word", {
+      types: "words",
+      tagName: "span",
+    });
 
     gsap.from('.quality-char .char', {
       y: 50,
@@ -96,6 +98,17 @@
       stagger: 0.05,
       scrollTrigger: {
         trigger: ".quality-char",
+        scrub: true,
+      },
+    });
+    gsap.from('.quality-word .word', {
+      y: 50,
+      opacity: 0,
+      duration: 2,
+      ease: "sine.out",
+      stagger: 0.05,
+      scrollTrigger: {
+        trigger: ".quality-word",
         scrub: true,
       },
     });
