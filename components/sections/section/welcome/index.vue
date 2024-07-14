@@ -37,7 +37,7 @@
     });
 
     gsap.from(".welcome-char .char", {
-      y: 200,
+      y: 50,
       opacity: 0,
       duration: 2,
       ease: "sine.out",
