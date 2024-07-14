@@ -21,13 +21,13 @@ export default <Partial<Config>>{
                 DEFAULT: '#ff0000',
             },
         },
-        //fontFamily: {
-        //    benzin: ['Benzin', 'sans-serif'],
-        //    petrov: ['Petrov', 'sans-serif'],
-        //    manrope: ['Manrope', 'sans-serif'],
-        //    intro: ['Intro', 'sans-serif'],
-        //    inter: ['Inter', 'sans-serif'],
-        //},
+        fontFamily: {
+            benzin: ['Benzin', 'sans-serif'],
+            petrov: ['Petrov', 'sans-serif'],
+            manrope: ['Manrope', 'sans-serif'],
+            intro: ['Intro', 'sans-serif'],
+            inter: ['Inter', 'sans-serif'],
+        },
         screens: {
             xs: '320px',
             sm: '480px',
