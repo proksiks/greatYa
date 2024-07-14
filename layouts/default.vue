@@ -8,7 +8,7 @@
           <slot />
         </div>
         <div :style="{ marginTop: `${footerHeight}px` }">
-          <div class="overflow-hidden fixed bottom-0 left-0 w-full bg-white -z-10" ref="footer">
+          <div class="fixed bottom-0 left-0 w-full bg-white -z-10" ref="footer">
             <Footer />
           </div>
         </div>
@@ -69,7 +69,7 @@
     position: relative;
     min-height: 100svh;
   }
-
+  /* 
   .web-app {
     width: 100%;
     overflow: hidden;
@@ -79,4 +79,5 @@
     width: 100vw;
     overflow: hidden;
   }
+    */
 </style>
