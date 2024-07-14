@@ -17,7 +17,7 @@
       <span qualityWord class="block ml-7 md:ml-[14.5rem] text-orange text-nowrap">это наш</span>
       <span qualityWord class="block text-orange">успех</span>
     </div>
-    <div
+    <!--<div
       qualityDescr
       class="md:col-start-3 col-end-8 xl:text-[2.75rem] md:text-28 text-[1rem] max-w-[26.875rem] md:max-w-none leading-tight"
     >
@@ -30,7 +30,7 @@
     >
       Мы видим в работе не просто обязанность, а возможность воплощать смелые идеи, делая мир лучше, краше и интереснее
       в каждом дне, в каждом проекте.
-    </div>
+    </div>-->
   </div>
   <div class="sm:grid grid-cols-8 xl:py-26 py-25 px-2.5 md:px-10">
     <div class="col-start-1 col-end-3">
