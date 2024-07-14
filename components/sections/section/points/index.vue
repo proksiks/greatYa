@@ -98,7 +98,6 @@
     const words = app.$gsap.utils.toArray(".word-1");
     const points = app.$gsap.utils.toArray(".point-1");
     app.$gsap.to(points, {
-      x: 100 * (points.length - 1),
       xPercent: -100 * (points.length - 1),
       ease: "none",
       scrollTrigger: {

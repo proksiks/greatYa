@@ -61,7 +61,7 @@
         </div>
         <div class="number-point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen flex">
           <div class="flex flex-col flex-1">
-            <div class="max-w-[26.875rem] min-w-[14rem] pr-5 mb-5 xl:ml-[15.625rem] ml-25">
+            <div class="max-w-[26.875rem] min-w-[14rem] pr-5 mb-5 xl:ml-[15.625rem] ml-25 mt-25">
               <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 5 }</p>
               <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">16 лет</p>
               <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
@@ -114,7 +114,7 @@
     });
 
     app.$gsap.to(words, {
-      xPercent: -100 * (words.length - 1),
+      xPercent: -140 * (words.length - 1),
       ease: "none",
       scrollTrigger: {
         trigger: scrollNumbersWords.value,
