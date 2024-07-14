@@ -22,7 +22,8 @@ export default <Partial<Config>>{
             },
         },
         fontFamily: {
-            benzin: ['Benzin', 'sans-serif'],
+            sans: ['Benzin', 'sans-serif'],
+            //benzin: ['Benzin', 'sans-serif'],
             petrov: ['Petrov', 'sans-serif'],
             manrope: ['Manrope', 'sans-serif'],
         },
