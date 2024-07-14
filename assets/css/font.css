@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Benzin";
-  src: url("~/assets/fonts/benzin/Benzin-Regular.woff2");
+  src: url("~/assets/fonts/benzin/Benzin-Regular.ttf");
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "Benzin";
-  src: url("~/assets/fonts/benzin/Benzin-Medium.woff2");
+  src: url("~/assets/fonts/benzin/Benzin-Medium.ttf");
   font-weight: 500;
   font-display: swap;
 }

@@ -25,7 +25,7 @@
       </div>
     </div>-->
     <div class="grid sm:grid-cols-8 grid-cols-2">
-      <div class="sm:col-start-4 col-end-9 xl:pt-24 pt-20 sm:ml-0">
+      <div class="font-benzin sm:col-start-4 col-end-9 xl:pt-24 pt-20 sm:ml-0">
         <span class="promo-text font-medium 2xl:text-xl md:text-[1.5rem] text-sm md:leading-tight leading-none">
           Мы верим, что истинная сила кроется в том, как мы делаем свою работу — с любовью, страстью и харизмой. <br />
         </span>
