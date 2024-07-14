@@ -10,7 +10,9 @@
         что делаем
       </div>
     </div>
-    <div class="grid sm:grid-cols-8 grid-cols-2">
+    <!-- Тот самый баг из-за которого всё скачет оч неприятный баг 2 недели -->
+    <!-- Проблема в тексте стандартный шрифт грузится раньше, потом GSAP, потом шрифт tailwind хм -->
+    <!--<div class="grid sm:grid-cols-8 grid-cols-2">
       <div
         class="font-medium sm:col-start-4 col-end-9 xl:pt-24 pt-20 2xl:text-[2.75rem] md:text-[1.5rem] text-sm md:leading-tight leading-none sm:ml-0"
       >
@@ -22,7 +24,7 @@
           возможность дать нечто большее, чем они ожидают.
         </div>
       </div>
-    </div>
+    </div>-->
   </div>
 </template>
 <script setup>
