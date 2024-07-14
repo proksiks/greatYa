@@ -67,8 +67,8 @@
         class="block cols-start-3 col-end-5 object-cover"
         src="/images/quality/quality-bg.svg"
         alt="Декоративная картинка"
-        width="1903"
-        height="660"
+        width="1920"
+        height="800"
       />
       <div class="quality-white-line absolute inset-0 bg-white"></div>
     </div>
