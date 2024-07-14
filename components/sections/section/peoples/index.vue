@@ -5,10 +5,10 @@
       id="peoples"
     >
       <p
-        class="peoples-title md:col-start-3 md:col-end-7 uppercase 2xl:text-2xl xl:text-xl text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] md:pb-20 pb-10"
+        class="md:col-start-3 md:col-end-7 uppercase 2xl:text-2xl xl:text-xl text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] md:pb-20 pb-10"
       >
-        <span class="block whitespace-nowrap">харизмы</span>
-        <span class="block whitespace-nowrap ml-7 md:ml-[14.5rem] text-orange text-nowrap">в людях</span>
+        <span class="peoples-title block whitespace-nowrap">харизмы</span>
+        <span class="peoples-title block whitespace-nowrap ml-7 md:ml-[14.5rem] text-orange text-nowrap">в людях</span>
       </p>
     </div>
 
@@ -106,9 +106,28 @@
 </template>
 
 <script setup>
+  import SplitType from "split-type";
+
   const app = useNuxtApp();
 
   onMounted(() => {
+    new SplitType(".peoples-title", {
+      types: "chars",
+      tagName: "span",
+    });
+
+    app.$gsap.from(".peoples-title .char", {
+      y: 100,
+      opacity: 0,
+      duration: 2,
+      ease: "sine.out",
+      stagger: 0.075,
+      scrollTrigger: {
+        trigger: ".peoples-title",
+        scrub: true,
+      },
+    });
+
     let revealContainers = document.querySelectorAll(".people-image");
     revealContainers.forEach((container) => {
       let image = container.querySelector("img");
