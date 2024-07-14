@@ -11,7 +11,9 @@
       </div>
     </div>
     <div class="grid sm:grid-cols-8 grid-cols-2">
-      <div class="font-medium sm:col-start-4 col-end-9 xl:pt-24 pt-20 md:leading-tight leading-none sm:ml-0">
+      <div
+        class="font-medium sm:col-start-4 col-end-9 xl:pt-24 pt-20 2xl:text-xl md:text-[1.5rem] text-sm md:leading-tight leading-none sm:ml-0"
+      >
         <div word>
           Мы верим, что истинная сила кроется в том, как мы делаем свою работу — с любовью, страстью и харизмой.
         </div>
