@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="web-app">
     <Loader />
     <Header @mouseover="stopScroll" @mouseleave="startScroll" @close="startScroll" />
     <div id="scene">

@@ -91,3 +91,20 @@
   font-weight: 400;
   font-display: swap;
 }
+
+/* Баг со шрифтами 2 недели боли */
+
+
+html * {
+  outline: 100px;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  min-height: 100svh;
+  overflow: hidden;
+}
+body > * {
+  overflow: auto;
+}

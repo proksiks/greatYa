@@ -4,13 +4,13 @@
       id="about"
       class="grid sm:grid-cols-8 grid-cols-2 text-nowrap 2xl:leading-[7.3125rem] leading-none tracking-tighter 2xl:text-[8.125rem] xl:text-xl md:text-[3.25rem] text-[2.1875rem] uppercase"
     >
-      <div class="whitespace-nowrap sm:col-start-3 col-end-9" char>харизмы</div>
+      <div class="whitespace-nowrap sm:col-start-3 col-end-9" ref="">харизмы</div>
       <div class="whitespace-nowrap sm:col-start-4 col-end-9 sm:ml-0 ml-8 text-orange" char>
         в том <br />
         что делаем
       </div>
     </div>
-    <!--<div class="grid sm:grid-cols-8 grid-cols-2">
+    <div class="grid sm:grid-cols-8 grid-cols-2">
       <div
         class="font-medium sm:col-start-4 col-end-9 xl:pt-24 pt-20 2xl:text-[2.75rem] md:text-[1.5rem] text-sm md:leading-tight leading-none sm:ml-0"
       >
@@ -22,7 +22,7 @@
           возможность дать нечто большее, чем они ожидают.
         </div>
       </div>
-    </div>-->
+    </div>
   </div>
 </template>
 <script setup>
@@ -36,13 +36,17 @@
       tagName: "span",
     });
 
+    new SplitType("[word]", {
+      types: "words",
+      tagName: "span",
+    });
+
     gsap.from("[char] .char", {
       y: 200,
       opacity: 0,
       duration: 2,
       ease: "sine.out",
       stagger: 0.05,
-
       scrollTrigger: {
         trigger: "[char]",
         start: "top bottom",
@@ -50,19 +54,12 @@
         scrub: true,
       },
     });
-
-    new SplitType("[word]", {
-      types: "words",
-      tagName: "span",
-    });
-
     gsap.from("[word] .word", {
       y: 100,
       opacity: 0,
       duration: 2,
       ease: "sine.out",
       stagger: 0.075,
-
       scrollTrigger: {
         trigger: "[word]",
         start: "top bottom",

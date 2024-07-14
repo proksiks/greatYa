@@ -1,7 +1,7 @@
 <template>
   <header
     ref="header"
-    class="flex items-center justify-between z-40 fixed left-0 top-0 w-full text-center lg:px-10 p-2.5 lg:py-5 duration-500 bg-white transition translate"
+    class="flex items-center justify-between z-40 fixed left-0 top-0 w-screen text-center lg:px-10 p-2.5 lg:py-5 duration-500 bg-white transition translate"
     :class="{ '-translate-y-full': translateHeader }"
   >
     <nuxt-link class="relative z-10" to="/">
