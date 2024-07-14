@@ -69,6 +69,7 @@
         alt="Декоративная картинка"
         width="1920"
         height="800"
+        loading="lazy"
       />
       <div class="quality-white-line absolute inset-0 bg-white"></div>
     </div>
@@ -90,7 +91,7 @@
       tagName: "span",
     });
 
-    gsap.from('.quality-char .char', {
+    gsap.from(".quality-char .char", {
       y: 50,
       opacity: 0,
       duration: 2,
@@ -101,7 +102,7 @@
         scrub: true,
       },
     });
-    gsap.from('.quality-word .word', {
+    gsap.from(".quality-word .word", {
       y: 50,
       opacity: 0,
       duration: 2,
