@@ -25,8 +25,6 @@ export default <Partial<Config>>{
             benzin: ['Benzin', 'sans-serif'],
             petrov: ['Petrov', 'sans-serif'],
             manrope: ['Manrope', 'sans-serif'],
-            intro: ['Intro', 'sans-serif'],
-            inter: ['Inter', 'sans-serif'],
         },
         screens: {
             xs: '320px',
