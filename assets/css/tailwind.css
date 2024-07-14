@@ -5,7 +5,7 @@
 
 @layer base {
   html {
-    @apply font-benzin;
+    /*@apply font-benzin;*/
     @apply text-black;
     @apply font-normal;
   }
