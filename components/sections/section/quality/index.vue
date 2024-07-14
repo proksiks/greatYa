@@ -2,20 +2,20 @@
   <div
     class="flex justify-between text-white md:px-10 px-2.5 pt-2.5 md:pt-10 pb-5 text-sm tracking-[-0.03em] uppercase"
   >
-    <span qualityChar>результат</span>
-    <span qualityChar>{</span>
-    <span qualityChar>{ баланс }</span>
-    <span qualityChar>эстетика</span>
-    <span qualityChar>}</span>
+    <span class="quality-char">результат</span>
+    <span class="quality-char">{</span>
+    <span class="quality-char">{ баланс }</span>
+    <span class="quality-char">эстетика</span>
+    <span class="quality-char">}</span>
   </div>
   <div class="md:grid md:grid-cols-8 text-white px-2.5 md:px-10">
     <div
       class="md:col-start-1 md:col-end-7 uppercase 2xl:text-2xl xl:text-xl text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] md:pb-20 pb-10"
     >
-      <span qualityWord class="block">увлеченная</span>
-      <span qualityWord class="block ml-7 md:ml-[14.5rem] text-nowrap">работа –</span>
-      <span qualityWord class="block ml-7 md:ml-[14.5rem] text-orange text-nowrap">это наш</span>
-      <span qualityWord class="block text-orange">успех</span>
+      <span class="quality-char block">увлеченная</span>
+      <span class="quality-char block ml-7 md:ml-[14.5rem] text-nowrap">работа –</span>
+      <span class="quality-char block ml-7 md:ml-[14.5rem] text-orange text-nowrap">это наш</span>
+      <span class="quality-char block text-orange">успех</span>
     </div>
     <!--<div
       qualityDescr
@@ -41,12 +41,13 @@
           alt="Жилой комплекс"
           width="443"
           height="500"
+          loading="lazy"
         />
       </div>
     </div>
     <div class="col-start-4 col-end-8 ml-[2rem] md:ml-0 xl:pt-[17.25rem] md:pt-[7.75rem] pt-[1.5rem]">
       <div class="quality-image overflow-hidden">
-        <img src="/images/quality/quality-2.png" alt="Жилой комплекс" width="909" height="561" />
+        <img src="/images/quality/quality-2.png" alt="Жилой комплекс" width="909" height="561" loading="lazy" />
       </div>
     </div>
     <div class="col-start-3 col-end-5 md:pt-[10rem] pt-[3.75rem]">
@@ -57,6 +58,7 @@
           alt="Жилой комплекс"
           width="443"
           height="500"
+          loading="lazy"
         />
       </div>
     </div>
@@ -81,58 +83,19 @@
   const { $gsap: gsap } = useNuxtApp();
 
   onMounted(() => {
-    new SplitType("[qualityChar]", {
-      types: "lines, words, chars",
-      tagName: "span",
-    });
-    new SplitType("[qualityDescr]", {
-      types: "words",
-      tagName: "span",
-    });
-    new SplitType("[qualityWord]", {
-      types: "lines, words, chars",
+    new SplitType(".quality-char", {
+      types: "chars",
       tagName: "span",
     });
 
-    gsap.from("[qualityChar] .char", {
-      y: 20,
-      opacity: 0,
-      duration: 2,
-      ease: "sine.out",
-      stagger: 0.05,
-
-      scrollTrigger: {
-        trigger: "[qualityChar]",
-        start: "top bottom",
-        end: "bottom top+=400px",
-        scrub: true,
-      },
-    });
-
-    gsap.from("[qualityWord] .word", {
+    gsap.from('.quality-char .char', {
       y: 50,
       opacity: 0,
       duration: 2,
       ease: "sine.out",
-      stagger: 0.4,
-
+      stagger: 0.05,
       scrollTrigger: {
-        trigger: "[qualityWord]",
-        start: "top bottom",
-        end: "bottom top",
-        scrub: true,
-      },
-    });
-
-    gsap.from("[qualityDescr] .word", {
-      y: 100,
-      opacity: 0,
-      duration: 2,
-      ease: "sine.out",
-      stagger: 0.075,
-
-      scrollTrigger: {
-        trigger: "[qualityDescr]",
+        trigger: ".quality-char",
         scrub: true,
       },
     });
@@ -145,8 +108,6 @@
 
       scrollTrigger: {
         trigger: ".quality-white-line",
-        start: "top bottom",
-        end: "bottom -25%",
         scrub: true,
       },
     });

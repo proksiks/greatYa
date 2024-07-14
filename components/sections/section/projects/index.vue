@@ -19,7 +19,7 @@
             <a class="block pr-[5%] md:pr-[14%] pb-[5%] text-left" href="https://мойноватор.рф/" target="_blank">
               <div class="text-[0.625rem] md:text-[1.125rem]">{ 1 }</div>
               <div class="py-2.5 md:py-5">
-                <img src="/images/projects/project-1.jpg" width="676" height="380" alt="Проект" />
+                <img src="/images/projects/project-1.jpg" width="676" height="380" alt="Проект" loading="lazy" />
               </div>
               <div>
                 <div class="flex items-start justify-between pb-2.5">
@@ -39,7 +39,7 @@
             <a class="block pr-[5%] md:pr-[14%] pb-[5%] text-left" href="https://аквартиры.рф/" target="_blank">
               <div class="text-[0.625rem] md:text-[1.125rem]">{ 2 }</div>
               <div class="py-2.5 md:py-5">
-                <img src="/images/projects/project-2.jpg" width="676" height="450" alt="Проект" />
+                <img src="/images/projects/project-2.jpg" width="676" height="450" alt="Проект" loading="lazy" />
               </div>
               <div>
                 <div class="flex items-start justify-between pb-2.5">
@@ -58,7 +58,7 @@
             <button class="block pr-[5%] md:pr-[14%] text-left" aria-label="Модальное окно" @click="() => open()">
               <div class="text-[0.625rem] md:text-[1.125rem]">{ 3 }</div>
               <div class="py-2.5 md:py-5">
-                <img src="/images/projects/project-3.jpg" width="558" height="402" alt="Проект" />
+                <img src="/images/projects/project-3.jpg" width="558" height="402" alt="Проект" loading="lazy" />
               </div>
               <div>
                 <div class="flex items-start justify-between pb-2.5">

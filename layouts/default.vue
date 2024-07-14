@@ -1,14 +1,16 @@
 <template>
   <div class="web-app">
-    <Loader />
-    <Header @mouseover="stopScroll" @mouseleave="startScroll" @close="startScroll" />
-    <div id="scene">
-      <div class="bg-white">
-        <slot />
-      </div>
-      <div :style="{ marginTop: `${footerHeight}px` }">
-        <div class="overflow-hidden fixed bottom-0 left-0 w-full bg-white -z-10" ref="footer">
-          <Footer />
+    <div class="screen">
+      <Loader />
+      <Header @mouseover="stopScroll" @mouseleave="startScroll" @close="startScroll" />
+      <div id="scene">
+        <div class="bg-white">
+          <slot />
+        </div>
+        <div :style="{ marginTop: `${footerHeight}px` }">
+          <div class="overflow-hidden fixed bottom-0 left-0 w-full bg-white -z-10" ref="footer">
+            <Footer />
+          </div>
         </div>
       </div>
     </div>
@@ -61,11 +63,20 @@
 <style>
   html {
     outline: 100px;
-    overflow: hidden;
   }
 
   body {
     position: relative;
     min-height: 100svh;
+  }
+
+  .web-app {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .screen {
+    width: 100vw;
+    overflow: hidden;
   }
 </style>

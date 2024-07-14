@@ -28,6 +28,7 @@
                 height="269"
                 src="/images/points/point-1.png"
                 alt="Здание"
+                loading="lazy"
               />
             </div>
             <div class="max-w-[26.875rem] min-w-[14rem] xl:ml-[7.5625rem] md:ml-[2.5rem] ml-[1.25rem] pb-5">
@@ -57,6 +58,7 @@
                 height="410"
                 src="/images/points/point-2.png"
                 alt="Здание"
+                loading="lazy"
               />
             </div>
           </div>

@@ -25,6 +25,7 @@
                 alt="Александр Мильченко"
                 width="445"
                 height="728"
+                loading="lazy"
               />
             </div>
           </div>
@@ -53,6 +54,7 @@
                 alt="Александр Перминов"
                 width="445"
                 height="728"
+                loading="lazy"
               />
             </div>
           </div>
@@ -82,6 +84,7 @@
                 alt="Максим Замятин"
                 width="445"
                 height="728"
+                loading="lazy"
               />
             </div>
           </div>

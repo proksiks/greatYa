@@ -1,14 +1,14 @@
 <template>
-  <sections-section-hero />
-  <sections-section-promo />
-  <sections-section-points />
+  <lazy-sections-section-hero />
+  <lazy-sections-section-promo />
+  <lazy-sections-section-points />
   <div class="bg-black">
-    <sections-section-quality />
+    <lazy-sections-section-quality />
   </div>
-  <sections-section-peoples />
-  <sections-section-numbers />
-  <sections-section-projects />
+  <lazy-sections-section-peoples />
+  <lazy-sections-section-numbers />
+  <lazy-sections-section-projects />
   <div class="bg-black">
-    <sections-section-welcome />
+    <lazy-sections-section-welcome />
   </div>
 </template>

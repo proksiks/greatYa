@@ -26,6 +26,7 @@
               height="269"
               src="/images/points/point-3.png"
               alt="Здание"
+              loading="lazy"
             />
             <div class="max-w-[28.875rem] min-w-[14rem] xl:ml-[7.5625rem] md:ml-[2.5rem] ml-[1.25rem] mb-5">
               <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 3 }</p>
@@ -54,6 +55,7 @@
               height="269"
               src="/images/points/point-4.png"
               alt="Здание"
+              loading="lazy"
             />
           </div>
         </div>
