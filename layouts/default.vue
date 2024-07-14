@@ -57,3 +57,15 @@
     });
   });
 </script>
+
+<style>
+  html {
+    outline: 100px;
+    overflow: hidden;
+  }
+
+  body {
+    position: relative;
+    min-height: 100svh;
+  }
+</style>

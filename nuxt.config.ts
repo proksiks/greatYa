@@ -12,11 +12,15 @@ export default defineNuxtConfig({
       meta: [{ hid: 'description', name: 'description', content: 'Харизмы' }]
     }
   },
+
   css: ['normalize.css', 'vue-final-modal/style.css'],
   modules: ["@nuxtjs/tailwindcss"],
+
   tailwindcss: {
     exposeConfig: true,
     viewer: true,
   },
+
   ssr: false,
+  compatibilityDate: '2024-07-14',
 })
