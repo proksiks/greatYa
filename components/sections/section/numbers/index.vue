@@ -1,5 +1,5 @@
 <template>
-  <div class="relative overflow-hidden md:px-10 px-2.5" id="value">
+  <div class="relative overflow-hidden md:px-10 px-2.5 font-benzin" id="value">
     <div class="relative z-20 numbers flex items-center" ref="scrollNumbers">
       <div class="flex flex-nowrap md:py-25 py-20">
         <div class="number-point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen">

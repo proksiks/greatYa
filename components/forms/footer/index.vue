@@ -3,7 +3,7 @@
     <div class="flex items-center bg-white absolute inset-0 z-20 text-lg text-black" v-if="sucess">
       <span> Спасибо, ваша заявка отправлена! Мы свяжемся с вами в ближайшее время. </span>
     </div>
-    <form class="md:mb-10" @submit.prevent="submitForm">
+    <form class="md:mb-10 font-benzin" @submit.prevent="submitForm">
       <label class="block relative group md:mt-[3.75rem] mt-5">
         <input
           v-model="form.email"
@@ -46,7 +46,7 @@
         </div>
       </div>
       <div class="md:mt-[3.75rem] mt-10">
-        <button class="relative uppercase group md:text-lg text-sm" @click="showModal">
+        <button class="font-benzin relative uppercase group md:text-lg text-sm" @click="showModal">
           подписаться
           <span
             class="absolute -bottom-1 left-0 w-full h-0.5 bg-black transition duration-300 origin-right scale-x-100 group-hover:scale-x-0"

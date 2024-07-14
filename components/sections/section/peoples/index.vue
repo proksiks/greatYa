@@ -1,7 +1,7 @@
 <template>
   <div class="md:px-10 px-2.5 xl:py-26 py-25 overflow-hidden">
     <div
-      class="md:grid grid-cols-8 md:pb-20 pb-10 2xl:text-2xl xl:text-xl md:text-[4.5rem] text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] ml-5 md:ml-0"
+      class="font-benzin scroll-m-[4.375rem] md:grid grid-cols-8 md:pb-20 pb-10 2xl:text-2xl xl:text-xl md:text-[4.5rem] text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] ml-5 md:ml-0"
       id="peoples"
     >
       <p
@@ -31,7 +31,7 @@
           </div>
 
           <div class="flex flex-col">
-            <p class="font-medium pb-5 md:text-lg text-sm" peopleTitle>
+            <p class="font-benzin font-medium pb-5 md:text-lg text-sm" peopleTitle>
               «Наше единение, наши идеи и наша преданность своей профессии делают нас уникальной компанией»
             </p>
             <div class="font-petrov mt-auto md:text-[1.375rem] text-sm">
@@ -60,7 +60,7 @@
           </div>
 
           <div class="flex flex-col">
-            <p class="font-medium pb-5 md:text-lg text-sm" peopleTitle>
+            <p class="font-benzin font-medium pb-5 md:text-lg text-sm" peopleTitle>
               «Мы создаем команды единомышленников, а не коллег. Только так мы способны реализовывать цели, которые
               кажутся недостижимыми для других»
             </p>
@@ -90,7 +90,7 @@
           </div>
 
           <div class="flex flex-col">
-            <p class="font-medium pb-5 md:text-lg text-sm" peopleTitle>
+            <p class="font-benzin font-medium pb-5 md:text-lg text-sm" peopleTitle>
               «Доброта - это лучший инструмент, чтобы предоставить нашим клиентам выдающийся сервис»
             </p>
             <div class="font-petrov mt-auto md:text-[1.375rem] text-sm">
@@ -111,11 +111,11 @@
   const app = useNuxtApp();
 
   onMounted(() => {
-    new SplitType(".peoples-title", {
+    new SplitType("[peopleTitle]", {
       types: "chars",
       tagName: "span",
     });
-    app.$gsap.from(".peoples-title .char", {
+    app.$gsap.from("[peopleTitle] .char", {
       y: 20,
       opacity: 0,
       duration: 2,
@@ -123,7 +123,7 @@
       stagger: 0.1,
 
       scrollTrigger: {
-        trigger: ".peoples-title",
+        trigger: "[peopleTitle]",
         scrub: true,
       },
     });

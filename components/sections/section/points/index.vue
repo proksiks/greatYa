@@ -1,5 +1,5 @@
 <template>
-  <div class="points-block relative overflow-hidden md:px-10 px-2.5" id="value">
+  <div class="font-benzin points-block relative overflow-hidden md:px-10 px-2.5" id="value">
     <div
       class="words flex flex-nowrap items-center absolute h-svh top-0 lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase"
       ref="scrollPointsWords"
@@ -74,14 +74,14 @@
         </div>
       </div>
     </div>
-    <!--<div class="md:pt-25 md:pb-26 sm:pb-25 pb-10">
+    <div class="md:pt-25 md:pb-26 sm:pb-25 pb-10">
       <div
         class="points-text font-medium max-w-[75rem] 2xl:text-[2.75rem] md:text-[1.5rem] text-sm md:leading-[125%] ml-auto"
       >
         Наша команда — это союз харизматичных людей, привносящих в работу свою индивидуальность, творчество и фанатизм к
         делу. Мы не просто выполняем задачи, мы создаем наследие для потомков. Достойная цель, чтобы жить!
       </div>
-    </div>-->
+    </div>
     <!-- Возможно что это из-за кастомного шрифта, можно попробовать подключить как нужно через модули или просто использовать другой, возможно это поможет -->
   </div>
 </template>
