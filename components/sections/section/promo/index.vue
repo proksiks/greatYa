@@ -2,7 +2,7 @@
   <div class="xl:pt-26 md:pt-[11.25rem] pt-25 xl:px-10 px-2.5 md:pb-25 pb-20">
     <div
       id="about"
-      class="grid sm:grid-cols-8 grid-cols-2 text-nowrap 2xl:leading-[7.3125rem] leading-none tracking-tighter 2xl:text-[8.125rem] xl:text-xl md:text-[3.25rem] text-[2.1875rem] uppercase"
+      class="font-benzin grid sm:grid-cols-8 grid-cols-2 text-nowrap 2xl:leading-[7.3125rem] leading-none tracking-tighter 2xl:text-[8.125rem] xl:text-xl md:text-[3.25rem] text-[2.1875rem] uppercase"
     >
       <div class="whitespace-nowrap sm:col-start-3 col-end-9" char>харизмы</div>
       <div class="whitespace-nowrap sm:col-start-4 col-end-9 sm:ml-0 ml-8 text-orange" char>
