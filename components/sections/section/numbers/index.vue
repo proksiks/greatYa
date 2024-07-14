@@ -103,7 +103,7 @@
 
     app.$gsap.to(numbers, {
       xPercent: -100 * (numbers.length - 1),
-      ease: "linear",
+      ease: "none",
       scrollTrigger: {
         trigger: scrollNumbers.value,
         pin: true,
