@@ -1,7 +1,7 @@
 <template>
   <div>
     <Loader />
-    <Header @mouseover="stopScroll" @mouseleave="startScroll" />
+    <Header @mouseover="stopScroll" @mouseleave="startScroll" @close="startScroll" />
     <div id="scene">
       <div class="bg-white">
         <slot />

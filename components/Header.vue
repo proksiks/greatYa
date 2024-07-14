@@ -13,7 +13,7 @@
     >
       <nav class="mx-auto md:mt-0 mt-10">
         <ul class="md:flex gap-5 uppercase">
-          <li class="md:mb-0 mb-10">
+          <li class="md:mb-0 mb-10" @click="closeMenu">
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 1 } </span>
             <a
               class="header-link relative font-medium transition text-color text-nowrap overflow-hidden py-0.5"
@@ -24,7 +24,7 @@
               о нас
             </a>
           </li>
-          <li class="md:mb-0 mb-10">
+          <li class="md:mb-0 mb-10" @click="closeMenu">
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 2 } </span>
             <a
               class="header-link relative font-medium transition text-color overflow-hidden py-0.5"
@@ -35,7 +35,7 @@
               ценности
             </a>
           </li>
-          <li class="md:mb-0 mb-10">
+          <li class="md:mb-0 mb-10" @click="closeMenu">
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 3 } </span>
             <a
               class="header-link relative font-medium transition text-color overflow-hidden py-0.5"
@@ -46,7 +46,7 @@
               основатели
             </a>
           </li>
-          <li>
+          <li @click="closeMenu">
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 4 } </span>
             <a
               class="header-link relative font-medium transition text-color overflow-hidden py-0.5"
@@ -86,6 +86,7 @@
 <script setup>
   import { ModalsContainer, useModal } from "vue-final-modal";
   import ModalForm from "~/components/forms/modals/header/index.vue";
+  const emit = defineEmits(['click'])
 
   const { open, close } = useModal({
     component: ModalForm,
@@ -107,6 +108,11 @@
   function openMenu() {
     isOpenMenu.value = !isOpenMenu.value;
     document.body.classList.toggle("overflow-hidden");
+  }
+  function closeMenu() {
+    isOpenMenu.value = false;
+    document.body.classList.remove("overflow-hidden");
+    emit('close')
   }
 
   onMounted(() => {
