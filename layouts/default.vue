@@ -61,9 +61,10 @@
 </script>
 
 <style>
-  html {
-    outline: 100px;
-  }
+  /*html * {
+    Для отладки 
+    /*outline: 1px solid black; 
+  }*/
 
   body {
     position: relative;
