@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
   font-family: "Benzin";
   src: url("~/assets/fonts/benzin/Benzin-Regular.woff2");
   font-weight: 400;
@@ -90,7 +90,7 @@
   src: url("~/assets/fonts/inter/Inter-Regular.woff2");
   font-weight: 400;
   font-display: swap;
-}
+}*/
 
 @tailwind base;
 @tailwind components;
@@ -98,7 +98,7 @@
 
 @layer base {
   html {
-    @apply font-benzin;
+    /*@apply font-benzin;*/
     @apply text-black;
     @apply font-normal;
   }
