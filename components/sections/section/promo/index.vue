@@ -10,12 +10,12 @@
         что делаем
       </div>
     </div>
-    <div class="">
-      <div class="">
+    <div class="grid sm:grid-cols-8 grid-cols-2">
+      <div class="font-medium sm:col-start-4 col-end-9 xl:pt-24 pt-20 md:leading-tight leading-none sm:ml-0">
         <div word>
           Мы верим, что истинная сила кроется в том, как мы делаем свою работу — с любовью, страстью и харизмой.
         </div>
-        <div word>
+        <div class="pt-5" word>
           Мы делаем все возможное, чтобы наша работа оставляла яркие следы в сердцах клиентов. Каждый проект — это
           возможность дать нечто большее, чем они ожидают.
         </div>
