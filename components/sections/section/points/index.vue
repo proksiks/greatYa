@@ -1,17 +1,17 @@
 <template>
   <div class="points-block relative overflow-hidden md:px-10 px-2.5" id="value">
     <div
-      class="font-benzin words flex flex-nowrap items-center absolute h-svh top-0 lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase"
+      class="font-benzin words flex flex-nowrap items-center absolute md:h-svh top-0 md:pt-0 pt-[40%] lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase"
       ref="scrollPointsWords"
     >
-      <span class="word-1 md:min-w-[50rem] block xl:pr-25 shrink-0">ха</span>
-      <span class="word-1 md:min-w-[62.5rem] block xl:pr-25 shrink-0 text-center"> риз </span>
+      <span class="word-1 block xl:pr-25 shrink-0">ха</span>
+      <span class="word-1 block xl:pr-25 shrink-0 text-center"> риз </span>
       <span class="word-1 block">мы</span>
     </div>
     <div class="font-benzin points flex items-center" ref="scrollPoints">
       <div class="flex flex-nowrap relative z-20 md:py-25 py-20">
         <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none">
-          <div class="z-10 max-w-[26.875rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]">
+          <div class="z-10 max-w-[33.125rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]">
             <div class="md:pb-5 pb-2.5 pd:text-sm text-[0.625rem]">{ 1 }</div>
             <div class="pb-2.5 md:text-lg text-sm uppercase font-medium">Синергия</div>
             <div class="font-petrov md:text-[1.25rem] text-[0.75rem]">
@@ -20,7 +20,7 @@
           </div>
         </div>
         <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none">
-          <div class="z-10 pt-20 xl:pr-26 pr-10">
+          <div class="z-10 pt-20 xl:mr-25 mr-10">
             <div class="xl:pb-[10.25rem] md:pb-[5.625rem] pb-[3.5625rem]">
               <img
                 class="block min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
@@ -31,7 +31,7 @@
                 loading="lazy"
               />
             </div>
-            <div class="max-w-[26.875rem] min-w-[14rem] xl:ml-[7.5625rem] md:ml-[2.5rem] ml-[1.25rem] pb-5">
+            <div class="max-w-[33.125rem] min-w-[14rem] xl:ml-[7.5625rem] md:ml-[2.5rem] ml-[1.25rem] pb-5">
               <p class="md:pb-5 pb-2.5 md:text-sm text-[0.625rem]">{ 2 }</p>
               <p class="pb-2.5 md:text-lg text-sm uppercase font-medium">Любовь</p>
               <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
@@ -43,7 +43,7 @@
         </div>
         <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none">
           <div class="z-10">
-            <div class="max-w-[26.875rem] min-w-[14rem]">
+            <div class="max-w-[33.125rem] min-w-[14rem]">
               <p class="md:pb-5 pb-2.5 md:text-sm text-[0.625rem]">{ 3 }</p>
               <p class="pb-2.5 md:text-lg text-sm uppercase font-medium">Развитие</p>
               <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
@@ -63,15 +63,15 @@
             </div>
           </div>
         </div>
-        <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none flex items-end">
-          <div class="relative z-20 max-w-[26.875rem] min-w-[14rem] xl:ml-25 ml-20 pr-5 mt-auto pb-5">
+        <!--<div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none flex items-end">
+          <div class="relative z-20 max-w-[33.125rem] min-w-[14rem] xl:ml-25 ml-20 pr-5 mt-auto pb-5">
             <p class="md:pb-5 pb-2.5 md:text-sm text-[0.625rem]">{ 4 }</p>
             <p class="pb-2.5 md:text-lg text-sm uppercase font-medium">Эффективность</p>
             <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
               Получение максимального результата с приложением максимальных усилий
             </p>
           </div>
-        </div>
+        </div>-->
       </div>
     </div>
     <div class="md:pt-25 md:pb-26 sm:pb-25 pb-10">
@@ -87,8 +87,10 @@
 </template>
 
 <script setup>
+  import { useWindowSize } from "@vueuse/core";
   import SplitType from "split-type";
 
+  const { width } = useWindowSize();
   const app = useNuxtApp();
   const scrollPoints = ref(null);
   const scrollPointsWords = ref(null);
@@ -98,7 +100,7 @@
     const words = app.$gsap.utils.toArray(".word-1");
     const points = app.$gsap.utils.toArray(".point-1");
     app.$gsap.to(points, {
-      xPercent: -100 * (points.length - 1),
+      xPercent: width.value > 768 ? -30 * (points.length - 1) : -100 * (points.length - 1),
       ease: "none",
       scrollTrigger: {
         trigger: scrollPoints.value,
@@ -108,8 +110,8 @@
         end: "+=" + scrollPoints.value.offsetWidth,
       },
     });
-    app.$gsap.to(words, {
-      xPercent: -100 * (words.length - 1),
+    app.$gsap.to(scrollPointsWords.value, {
+      xPercent: width.value > 768 ? -50 : -70,
       ease: "none",
       scrollTrigger: {
         trigger: scrollPointsWords.value,
