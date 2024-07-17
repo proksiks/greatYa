@@ -4,18 +4,19 @@
       class="font-benzin words flex flex-nowrap items-center absolute md:h-svh top-0 md:pt-0 pt-[40%] lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase"
       ref="scrollPointsWords"
     >
-      <span class="word-1 block xl:pr-25 shrink-0">ха</span>
-      <span class="word-1 block xl:pr-25 shrink-0 text-center"> риз </span>
+      <span class="word-1 block xl:pr-25 shrink-0 mr-5">ха</span>
+      <span class="word-1 block xl:pr-25 shrink-0 text-center mr-5"> риз </span>
       <span class="word-1 block">мы</span>
     </div>
     <div class="font-benzin points flex items-center" ref="scrollPoints">
       <div class="flex flex-nowrap relative z-20 md:py-25 py-20">
         <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none">
-          <div class="z-10 max-w-[33.125rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]">
-            <div class="md:pb-5 pb-2.5 pd:text-sm text-[0.625rem]">{ 1 }</div>
-            <div class="pb-2.5 md:text-lg text-sm uppercase font-medium">Синергия</div>
+          <div class="z-10 max-w-[28.125rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]">
+            <div class="md:pb-5 pb-2.5 md:text-sm text-[0.625rem]">{ 1 }</div>
+            <div class="pb-2.5 md:text-lg text-sm uppercase font-medium">МЫ</div>
             <div class="font-petrov md:text-[1.25rem] text-[0.75rem]">
-              Гармоничное объединение для движения к результату, когда 1+1=5
+              Всегда делаем больше, ожидают от нас клиенты, получая истинное удовлетворение от этого. Изменение среды
+              меняет жизни и это наполняет смыслом нашу работу.
             </div>
           </div>
         </div>
@@ -31,24 +32,24 @@
                 loading="lazy"
               />
             </div>
-            <div class="max-w-[33.125rem] min-w-[14rem] xl:ml-[7.5625rem] md:ml-[2.5rem] ml-[1.25rem] pb-5">
+            <div class="max-w-[28.125rem] min-w-[14rem] xl:ml-[7.5625rem] md:ml-[2.5rem] ml-[1.25rem] pb-5">
               <p class="md:pb-5 pb-2.5 md:text-sm text-[0.625rem]">{ 2 }</p>
-              <p class="pb-2.5 md:text-lg text-sm uppercase font-medium">Любовь</p>
+              <p class="pb-2.5 md:text-lg text-sm uppercase font-medium">МЫ</p>
               <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
-                Искренняя заинтересованность в жизни и развитии дела, клиентов, жизни людей. Мы делаем все важное для
-                результата сами, проактивно
+                Ориентир в нашей страсти и увлеченности своим делом. Делаем все для максимального результата, ищем новые
+                способы добиться его быстрее.
               </p>
             </div>
           </div>
         </div>
         <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none">
           <div class="z-10">
-            <div class="max-w-[33.125rem] min-w-[14rem]">
+            <div class="max-w-[28.125rem] min-w-[14rem]">
               <p class="md:pb-5 pb-2.5 md:text-sm text-[0.625rem]">{ 3 }</p>
-              <p class="pb-2.5 md:text-lg text-sm uppercase font-medium">Развитие</p>
+              <p class="pb-2.5 md:text-lg text-sm uppercase font-medium">МЫ</p>
               <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
-                Постоянные изменения себя через знания, опыт и обучение. Каждый день быть лучше, чем вчера. Обогатить
-                города проектами
+                Меняем себя через обучение и новый опыт. Развиваем друг друга, вместе реализуем свой потенциал и вместе
+                обогащаем город нашими проектами.
               </p>
             </div>
             <div class="md:pt-[8.4375rem] pt-[5rem] xl:ml-26 md:ml-25 ml-[1.875rem]">
@@ -74,12 +75,14 @@
         </div>-->
       </div>
     </div>
-    <div class="md:pt-25 md:pb-26 sm:pb-25 pb-10">
-      <div
-        class="font-semibold points-text max-w-[75rem] 2xl:text-[2.75rem] md:text-[1.5rem] text-sm md:leading-[125%] ml-auto"
-      >
-        Наша команда — это союз харизматичных людей, привносящих в работу свою индивидуальность, творчество и фанатизм к
-        делу. Мы не просто выполняем задачи, мы создаем наследие для потомков. Достойная цель, чтобы жить!
+    <div class="font-benzin md:pt-25 md:pb-26 sm:pb-25 pb-10">
+      <div class="md:min-h-[24.25rem] min-h-[7.125rem]">
+        <div
+          class="font-medium points-text max-w-[75rem] 2xl:text-[2.75rem] md:text-[1.5rem] text-sm md:leading-[125%] ml-auto"
+        >
+          Наша команда — это союз харизматичных людей, привносящих в работу свою индивидуальность, творчество и фанатизм
+          к делу. Мы не просто выполняем задачи, мы создаем наследие для потомков. Достойная цель, чтобы жить!
+        </div>
       </div>
     </div>
     <!-- Возможно что это из-за кастомного шрифта, можно попробовать подключить как нужно через модули или просто использовать другой, возможно это поможет -->
@@ -100,7 +103,7 @@
     const words = app.$gsap.utils.toArray(".word-1");
     const points = app.$gsap.utils.toArray(".point-1");
     app.$gsap.to(points, {
-      xPercent: width.value > 768 ? -30 * (points.length - 1) : -100 * (points.length - 1),
+      xPercent: width.value > 768 ? -20 * (points.length - 1) : -100 * (points.length - 1),
       ease: "none",
       scrollTrigger: {
         trigger: scrollPoints.value,

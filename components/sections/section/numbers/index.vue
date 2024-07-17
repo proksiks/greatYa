@@ -85,14 +85,18 @@
       class="numbers-words flex flex-nowrap items-center absolute h-svh top-0 z-10 lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase pointer-events-none"
       ref="scrollNumbersWords"
     >
-      <span class="number-word-1 block xl:pr-25 md:pr-20 pr-10 shrink-0 pt-20">в ци</span>
-      <span class="number-word-1 block xl:pr-25 md:pr-20 pr-10 shrink-0 pt-20">фр</span>
-      <span class="number-word-1 block md:pr-[3.125rem] pr-10 shrink-0 pt-20">ах</span>
+      <span class="number-word-1 block xl:pr-25 md:pr-20 pr-10 shrink-0 md:pt-20">в ци</span>
+      <span class="number-word-1 block xl:pr-25 md:pr-20 pr-10 shrink-0 md:pt-20">фр</span>
+      <span class="number-word-1 block md:pr-[3.125rem] pr-10 shrink-0 md:pt-20">ах</span>
     </div>
   </div>
 </template>
 
 <script setup>
+  import { useWindowSize } from "@vueuse/core";
+
+  const { width } = useWindowSize();
+
   const app = useNuxtApp();
   const scrollNumbers = ref(null);
   const scrollNumbersWords = ref(null);
@@ -102,7 +106,7 @@
     const numbers = app.$gsap.utils.toArray(".number-point-1");
 
     app.$gsap.to(numbers, {
-      xPercent: -100 * (numbers.length - 1),
+      xPercent: width.value > 768 ? -50 * (numbers.length - 1) : -100 * (numbers.length - 1),
       ease: "none",
       scrollTrigger: {
         trigger: scrollNumbers.value,
@@ -113,8 +117,8 @@
       },
     });
 
-    app.$gsap.to(words, {
-      xPercent: -140 * (words.length - 1),
+    app.$gsap.to(scrollNumbersWords.value, {
+      xPercent: width.value > 768 ? -60 : -90,
       ease: "none",
       scrollTrigger: {
         trigger: scrollNumbersWords.value,

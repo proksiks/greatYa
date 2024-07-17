@@ -17,17 +17,19 @@
       <span class="quality-char block ml-7 md:ml-[14.5rem] text-orange text-nowrap">это наш</span>
       <span class="quality-char block text-orange">успех</span>
     </div>
-    <div
-      class="font-semibold quality-word md:col-start-3 col-end-8 xl:text-[2.75rem] md:text-28 text-[1rem] max-w-[26.875rem] md:max-w-none leading-tight"
-    >
-      Мы уверены, что великие компании строятся на страстных людях, увлеченных своим делом. Говорят, что наш энтузиазм
-      заражает всех вокруг, а наши идеи становятся искрами, зажигающими огонь инноваций.
+    <div class="quality-word font-benzin md:col-start-3 col-end-8 md:min-h-[20.75rem] min-h-[10.125rem]">
+      <div class="font-medium xl:text-[2.75rem] md:text-28 text-[1rem] max-w-[26.875rem] md:max-w-none leading-tight">
+        Мы уверены, что великие компании строятся на страстных людях, увлеченных своим делом. Говорят, что наш энтузиазм
+        заражает всех вокруг, а наши идеи становятся искрами, зажигающими огонь инноваций.
+      </div>
     </div>
     <div
-      class="font-semibold quality-word md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] pt-10 md:pt-25 pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
+      class="quality-word font-benzin md:col-start-4 md:col-end-9 mt-10 md:mt-25 md:min-h-[15.875rem] min-h-[8.125rem] md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
     >
-      Мы видим в работе не просто обязанность, а возможность воплощать смелые идеи, делая мир лучше, краше и интереснее
-      в каждом дне, в каждом проекте.
+      <div class="font-medium xl:text-[2.75rem] md:text-28 text-[1rem] pr-10">
+        Мы видим в работе не просто обязанность, а возможность воплощать смелые идеи, делая мир лучше, краше и
+        интереснее в каждом дне, в каждом проекте.
+      </div>
     </div>
   </div>
   <div class="sm:grid grid-cols-8 xl:py-26 py-25 px-2.5 md:px-10">
