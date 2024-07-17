@@ -1,5 +1,5 @@
 <template>
-  <div class="xl:pt-26 pt-25 xl:px-10 px-2.5 md:pb-25 pb-20">
+  <div class="xl:pt-26 pt-25 xl:px-10 px-2.5 md:pb-25">
     <div
       id="about"
       class="font-benzin grid sm:grid-cols-8 grid-cols-2 text-nowrap 2xl:leading-[7.3125rem] leading-none tracking-tighter 2xl:text-[8.125rem] xl:text-xl md:text-[3.25rem] text-[2.1875rem] uppercase"
@@ -26,13 +26,13 @@
     </div>-->
     <div class="font-benzin grid sm:grid-cols-8 grid-cols-2">
       <div class="font-semibold sm:col-start-4 col-end-9 xl:pt-24 pt-20 sm:ml-0">
-        <div class="promo-text md:min-h-[10.75rem]">
+        <div class="promo-text md:min-h-[10.75rem] min-h-[2.75rem]">
           <span class="2xl:text-xl md:text-[1.5rem] text-sm md:leading-tight leading-none">
             Мы верим, что истинная сила кроется в том, как мы делаем свою работу — с любовью, страстью и харизмой.
             <br />
           </span>
         </div>
-        <div class="promo-text md:min-h-[20.75rem]">
+        <div class="promo-text md:min-h-[20.75rem] min-h-[84px]">
           <span class="promo-text 2xl:text-xl md:text-[1.5rem] text-sm md:leading-tight leading-none">
             <br />
             Мы делаем все возможное, чтобы наша работа оставляла яркие следы в сердцах клиентов. Каждый проект — это
