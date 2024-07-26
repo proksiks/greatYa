@@ -118,7 +118,7 @@
     });
 
     app.$gsap.to(scrollNumbersWords.value, {
-      xPercent: width.value > 768 ? -70 : -90,
+      xPercent: width.value > 768 ? -40 : -100,
       ease: "none",
       scrollTrigger: {
         trigger: scrollNumbersWords.value,
