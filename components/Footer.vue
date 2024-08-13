@@ -32,7 +32,7 @@
       </div>
       <div class="col-start-4 col-end-9">
         <p class="xl:text-[2.75rem] md:text-[1.5rem] font-medium">
-          У нас происходит много всего! Подпишись, чтобы быть в курсе
+          Приглашаем стать частью нашей команды
         </p>
       </div>
     </div>

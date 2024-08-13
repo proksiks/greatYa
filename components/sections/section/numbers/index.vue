@@ -82,7 +82,7 @@
       </div>
     </div>
     <div
-      class="numbers-words flex flex-nowrap items-center absolute h-svh top-0 z-10 lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase pointer-events-none"
+      class="numbers-words flex flex-nowrap items-center absolute pt-[14.375rem] md:pt-0 md:h-svh top-0 z-10 lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase pointer-events-none"
       ref="scrollNumbersWords"
     >
       <span class="number-word-1 block xl:pr-25 md:pr-20 pr-10 shrink-0 md:pt-20">в ци</span>

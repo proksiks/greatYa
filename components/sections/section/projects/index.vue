@@ -5,7 +5,7 @@
       id="projects"
     >
       <p
-        class="projects-title md:col-start-3 md:col-end-7 uppercase 2xl:text-2xl xl:text-xl text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] md:pb-20 pb-10"
+        class="projects-title md:col-start-3 md:col-end-7 uppercase 2xl:text-2xl xl:text-xl text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] xl:pb-20 md:pb-10"
       >
         <span class="block whitespace-nowrap">харизмы</span>
         <span class="block whitespace-nowrap ml-7 md:ml-[14.5rem] text-orange text-nowrap">в проектах</span>
@@ -14,7 +14,7 @@
 
     <div class="md:px-10 px-2.5">
       <div class="projects flex items-center font-benzin" ref="scrollProjects">
-        <div class="flex flex-nowrap relative z-20 md:py-25 py-20">
+        <div class="flex flex-nowrap relative z-20 lg:py-25 md:py-20 py-10">
           <div class="project-1 flex-shrink-0 flex w-screen md:w-auto md:min-w-[50%] justify-start">
             <a class="block pr-[5%] md:pr-[14%] pb-[5%] text-left" href="https://мойноватор.рф/" target="_blank">
               <div class="text-[0.625rem] md:text-[1.125rem]">{ 1 }</div>

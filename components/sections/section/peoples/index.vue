@@ -67,7 +67,7 @@
             <div class="font-petrov mt-auto md:text-[1.375rem] text-sm">
               <p class="pb-2.5">Александр Перминов</p>
               <p>основатель</p>
-              <p>спортсмен-триатлонист</p>
+              <p>триатлонист Ironmen</p>
             </div>
           </div>
         </div>

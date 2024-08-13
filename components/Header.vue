@@ -107,11 +107,9 @@
 
   function openMenu() {
     isOpenMenu.value = !isOpenMenu.value;
-    document.body.classList.toggle("overflow-hidden");
   }
   function closeMenu() {
     isOpenMenu.value = false;
-    document.body.classList.remove("overflow-hidden");
     emit('close')
   }
 

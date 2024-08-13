@@ -9,7 +9,7 @@
       <span class="word-1 block">мы</span>
     </div>
     <div class="font-benzin points flex items-center" ref="scrollPoints">
-      <div class="flex flex-nowrap relative z-20 2xl:py-25 py-20">
+      <div class="flex flex-nowrap relative z-20 2xl:py-25 md:py-20 py-10">
         <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none">
           <div class="z-10 max-w-[28.125rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]">
             <div class="md:pb-5 pb-2.5 md:text-sm text-[0.625rem]">{ 1 }</div>
@@ -64,15 +64,6 @@
             </div>
           </div>
         </div>
-        <!--<div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none flex items-end">
-          <div class="relative z-20 max-w-[33.125rem] min-w-[14rem] xl:ml-25 ml-20 pr-5 mt-auto pb-5">
-            <p class="md:pb-5 pb-2.5 md:text-sm text-[0.625rem]">{ 4 }</p>
-            <p class="pb-2.5 md:text-lg text-sm uppercase font-medium">Эффективность</p>
-            <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
-              Получение максимального результата с приложением максимальных усилий
-            </p>
-          </div>
-        </div>-->
       </div>
     </div>
     <div class="font-benzin 2xl:pt-25 2xl:pb-26 sm:pb-25 pb-10">
@@ -85,7 +76,6 @@
         </div>
       </div>
     </div>
-    <!-- Возможно что это из-за кастомного шрифта, можно попробовать подключить как нужно через модули или просто использовать другой, возможно это поможет -->
   </div>
 </template>
 

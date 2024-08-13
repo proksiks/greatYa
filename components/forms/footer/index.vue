@@ -47,7 +47,7 @@
       </div>
       <div class="md:mt-[3.75rem] mt-10">
         <button class="font-benzin relative uppercase group md:text-lg text-sm" @click="showModal">
-          подписаться
+          ОТПРАВИТЬ
           <span
             class="absolute -bottom-1 left-0 w-full h-0.5 bg-black transition duration-300 origin-right scale-x-100 group-hover:scale-x-0"
           ></span>
