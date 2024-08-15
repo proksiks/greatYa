@@ -1,7 +1,7 @@
 <template>
   <div class="points-block relative overflow-hidden md:px-10 px-2.5" id="value">
     <div
-      class="font-benzin words flex flex-nowrap items-center absolute md:h-svh top-0 md:pt-0 pt-[40%] lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase"
+      class="font-benzin words flex flex-nowrap items-center absolute md:h-svh top-0 md:pt-0 pt-[40%] lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase will-change-transform"
       ref="scrollPointsWords"
     >
       <span class="word-1 block xl:pr-25 shrink-0 mr-5">ха</span>
