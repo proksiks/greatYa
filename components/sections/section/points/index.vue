@@ -4,13 +4,13 @@
       class="font-benzin words flex flex-nowrap items-center absolute md:h-svh top-0 md:pt-0 pt-[40%] lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase will-change-transform"
       ref="scrollPointsWords"
     >
-      <span class="word-1 block xl:pr-25 shrink-0 mr-5">ха</span>
-      <span class="word-1 block xl:pr-25 shrink-0 text-center mr-5"> риз </span>
-      <span class="word-1 block">мы</span>
+      <span class="word-1 block xl:pr-25 shrink-0 mr-5 md:mr-0 will-change-transform">ха</span>
+      <span class="word-1 block xl:pr-25 shrink-0 text-center mr-5 md:mr-0 will-change-transform"> риз </span>
+      <span class="word-1 block will-change-transform">мы</span>
     </div>
     <div class="font-benzin points flex items-center" ref="scrollPoints">
       <div class="flex flex-nowrap relative z-20 2xl:py-25 md:py-20 py-10">
-        <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none">
+        <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none will-change-transform">
           <div class="z-10 max-w-[28.125rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]">
             <div class="md:pb-5 pb-2.5 md:text-sm text-[0.625rem]">{ 1 }</div>
             <div class="pb-2.5 md:text-lg text-sm uppercase font-medium">МЫ</div>
@@ -20,7 +20,7 @@
             </div>
           </div>
         </div>
-        <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none">
+        <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none will-change-transform">
           <div class="z-10 pt-20 xl:mr-25 mr-10">
             <div class="2xl:pb-[10.25rem] md:pb-[5.625rem] pb-[3.5625rem]">
               <img
@@ -42,7 +42,7 @@
             </div>
           </div>
         </div>
-        <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none">
+        <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none will-change-transform">
           <div class="z-10">
             <div class="max-w-[28.125rem] min-w-[14rem]">
               <p class="md:pb-5 pb-2.5 md:text-sm text-[0.625rem]">{ 3 }</p>
@@ -90,55 +90,61 @@
 
   // onNuxtReady ||
   onMounted(() => {
-    const words = app.$gsap.utils.toArray(".word-1");
-    const points = app.$gsap.utils.toArray(".point-1");
-    let totalBoxWidth = 0
-    for (let index = 0; index < words.length; index++) {
-      const element = words[index];
-      if (element.offsetWidth) {
-        totalBoxWidth += element.offsetWidth;
+    onNuxtReady(() => {
+      const words = app.$gsap.utils.toArray(".word-1");
+      const points = app.$gsap.utils.toArray(".point-1");
+      let totalWordsWidth = 0;
+      let totalPointsWidth = 0;
+      for (let index = 0; index < words.length - 2; index++) {
+        if (words[index].offsetWidth) {
+          totalWordsWidth += words[index].offsetWidth;
+        }
       }
-    }
-    
-    app.$gsap.to(points, {
-      xPercent: width.value > 768 ? -30 * (points.length - 1) : -100 * (points.length - 1),
-      ease: "none",
-      scrollTrigger: {
-        trigger: scrollPoints.value,
-        pin: true,
-        scrub: 3,
-        span: 1 / (points.length - 1),
-        end: "+=" + scrollPoints.value.offsetWidth,
-      },
-    });
-    app.$gsap.to(scrollPointsWords.value, {
-      x: -totalBoxWidth,
-      ease: "none",
-      scrollTrigger: {
-        trigger: scrollPointsWords.value,
-        pin: true,
-        scrub: 3,
-        span: 1 / (words.length - 1),
-        end: "+=" + scrollPoints.value.offsetWidth,
-      },
-    });
+      for (let index = 0; index < points.length - 2; index++) {
+        if (points[index].offsetWidth) {
+          totalPointsWidth += points[index].offsetWidth;
+        }
+      }
+      app.$gsap.to(points, {
+        x: -totalPointsWidth,
+        ease: "none",
+        scrollTrigger: {
+          trigger: scrollPoints.value,
+          pin: true,
+          scrub: 3,
+          span: 1 / (points.length - 1),
+          end: "+=" + scrollPoints.value.offsetWidth,
+        },
+      });
+      app.$gsap.to(scrollPointsWords.value, {
+        x: -totalWordsWidth,
+        ease: "none",
+        scrollTrigger: {
+          trigger: scrollPointsWords.value,
+          pin: true,
+          scrub: 3,
+          span: 1 / (words.length - 1),
+          end: "+=" + scrollPoints.value.offsetWidth,
+        },
+      });
 
-    new SplitType(".points-text", {
-      types: "words",
-      tagName: "span",
-    });
+      new SplitType(".points-text", {
+        types: "words",
+        tagName: "span",
+      });
 
-    app.$gsap.from(".points-text .word", {
-      y: 100,
-      opacity: 0,
-      duration: 2,
-      ease: "sine.out",
-      stagger: 0.075,
+      app.$gsap.from(".points-text .word", {
+        y: 100,
+        opacity: 0,
+        duration: 2,
+        ease: "sine.out",
+        stagger: 0.075,
 
-      scrollTrigger: {
-        trigger: ".points-text",
-        scrub: true,
-      },
+        scrollTrigger: {
+          trigger: ".points-text",
+          scrub: true,
+        },
+      });
     });
   });
 </script>
