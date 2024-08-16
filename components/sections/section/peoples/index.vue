@@ -111,46 +111,48 @@
   const app = useNuxtApp();
 
   onMounted(() => {
-    new SplitType(".peoples-title", {
-      types: "chars",
-      tagName: "span",
-    });
+    onNuxtReady(() => {
+      new SplitType(".peoples-title", {
+        types: "chars",
+        tagName: "span",
+      });
 
-    app.$gsap.from(".peoples-title .char", {
-      y: 100,
-      opacity: 0,
-      duration: 2,
-      ease: "sine.out",
-      stagger: 0.075,
-      scrollTrigger: {
-        trigger: ".peoples-title",
-        scrub: true,
-      },
-    });
-
-    let revealContainers = document.querySelectorAll(".people-image");
-    revealContainers.forEach((container) => {
-      let image = container.querySelector("img");
-      let tl = app.$gsap.timeline({
+      app.$gsap.from(".peoples-title .char", {
+        y: 100,
+        opacity: 0,
+        duration: 2,
+        ease: "sine.out",
+        stagger: 0.075,
         scrollTrigger: {
-          trigger: container,
+          trigger: ".peoples-title",
           scrub: true,
-          start: "-150% bottom",
-          end: "bottom 120%",
         },
       });
 
-      tl.set(container, { autoAlpha: 1 });
-      tl.from(container, 1.5, {
-        yPercent: 100,
-        ease: "power2.out",
-      });
-      tl.from(image, 1.5, {
-        duration: 2,
-        opacity: 0,
-        scale: 1.3,
-        delay: -1.5,
-        ease: "power2.out",
+      let revealContainers = document.querySelectorAll(".people-image");
+      revealContainers.forEach((container) => {
+        let image = container.querySelector("img");
+        let tl = app.$gsap.timeline({
+          scrollTrigger: {
+            trigger: container,
+            scrub: true,
+            start: "-150% bottom",
+            end: "bottom 120%",
+          },
+        });
+
+        tl.set(container, { autoAlpha: 1 });
+        tl.from(container, 1.5, {
+          yPercent: 100,
+          ease: "power2.out",
+        });
+        tl.from(image, 1.5, {
+          duration: 2,
+          opacity: 0,
+          scale: 1.3,
+          delay: -1.5,
+          ease: "power2.out",
+        });
       });
     });
   });

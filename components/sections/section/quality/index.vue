@@ -88,76 +88,78 @@
   const { $gsap: gsap } = useNuxtApp();
 
   onMounted(() => {
-    new SplitType(".quality-char", {
-      types: "chars",
-      tagName: "span",
-    });
-    new SplitType(".quality-word", {
-      types: "words",
-      tagName: "span",
-    });
+    onNuxtReady(() => {
+      new SplitType(".quality-char", {
+        types: "chars",
+        tagName: "span",
+      });
+      new SplitType(".quality-word", {
+        types: "words",
+        tagName: "span",
+      });
 
-    gsap.from(".quality-char .char", {
-      y: 50,
-      opacity: 0,
-      duration: 2,
-      ease: "sine.out",
-      stagger: 0.05,
-      scrollTrigger: {
-        trigger: ".quality-char",
-        scrub: true,
-      },
-    });
-    gsap.from(".quality-word .word", {
-      y: 50,
-      opacity: 0,
-      duration: 2,
-      ease: "sine.out",
-      stagger: 0.05,
-      scrollTrigger: {
-        trigger: ".quality-word",
-        scrub: true,
-      },
-    });
-
-    gsap.from(".quality-white-line", {
-      xPercent: 140,
-      duration: 2,
-      ease: "sine.out",
-      stagger: 0.15,
-
-      scrollTrigger: {
-        trigger: ".quality-white-line",
-        scrub: true,
-      },
-    });
-
-    let revealContainers = document.querySelectorAll(".quality-image");
-
-    revealContainers.forEach((container) => {
-      let image = container.querySelector("img");
-      let tl = gsap.timeline({
+      gsap.from(".quality-char .char", {
+        y: 50,
+        opacity: 0,
+        duration: 2,
+        ease: "sine.out",
+        stagger: 0.05,
         scrollTrigger: {
-          trigger: container,
+          trigger: ".quality-char",
           scrub: true,
-          start: "top bottom",
-          end: "bottom 80%",
+        },
+      });
+      gsap.from(".quality-word .word", {
+        y: 50,
+        opacity: 0,
+        duration: 2,
+        ease: "sine.out",
+        stagger: 0.05,
+        scrollTrigger: {
+          trigger: ".quality-word",
+          scrub: true,
         },
       });
 
-      tl.set(container, { autoAlpha: 1 });
-      tl.from(container, 1.5, {
-        y: -100,
-        yPercent: 100,
-        ease: "power2.out",
-      });
-      tl.from(image, 1.5, {
+      gsap.from(".quality-white-line", {
+        xPercent: 140,
         duration: 2,
-        opacity: 0,
-        yPercent: -100,
-        scale: 1.3,
-        delay: -1.5,
-        ease: "power2.out",
+        ease: "sine.out",
+        stagger: 0.15,
+
+        scrollTrigger: {
+          trigger: ".quality-white-line",
+          scrub: true,
+        },
+      });
+
+      let revealContainers = document.querySelectorAll(".quality-image");
+
+      revealContainers.forEach((container) => {
+        let image = container.querySelector("img");
+        let tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: container,
+            scrub: true,
+            start: "top bottom",
+            end: "bottom 80%",
+          },
+        });
+
+        tl.set(container, { autoAlpha: 1 });
+        tl.from(container, 1.5, {
+          y: -100,
+          yPercent: 100,
+          ease: "power2.out",
+        });
+        tl.from(image, 1.5, {
+          duration: 2,
+          opacity: 0,
+          yPercent: -100,
+          scale: 1.3,
+          delay: -1.5,
+          ease: "power2.out",
+        });
       });
     });
   });

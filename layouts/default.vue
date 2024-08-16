@@ -1,6 +1,6 @@
 <template>
-  <div class="web-app">
-    <div class="screen">
+  <div class="web-app overflow-hidden">
+    <div class="screen w-screen">
       <Loader />
       <Header @mouseover="stopScroll" @mouseleave="startScroll" @close="startScroll" />
       <div id="scene">

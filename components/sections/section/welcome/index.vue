@@ -31,36 +31,38 @@
 
   const { $gsap: gsap } = useNuxtApp();
   onMounted(() => {
-    new SplitType(".welcome-char", {
-      types: "chars",
-      tagName: "span",
-    });
+    onNuxtReady(() => {
+      new SplitType(".welcome-char", {
+        types: "chars",
+        tagName: "span",
+      });
 
-    gsap.from(".welcome-char .char", {
-      y: 50,
-      opacity: 0,
-      duration: 2,
-      ease: "sine.out",
-      stagger: 0.05,
-      scrollTrigger: {
-        trigger: ".welcome-char",
-        scrub: true,
-      },
-    });
+      gsap.from(".welcome-char .char", {
+        y: 50,
+        opacity: 0,
+        duration: 2,
+        ease: "sine.out",
+        stagger: 0.05,
+        scrollTrigger: {
+          trigger: ".welcome-char",
+          scrub: true,
+        },
+      });
 
-    gsap.from(".welcome-form", {
-      y: 50,
-      opacity: 0,
-      duration: 2,
-      ease: "sine.out",
-      stagger: 0.4,
+      gsap.from(".welcome-form", {
+        y: 50,
+        opacity: 0,
+        duration: 2,
+        ease: "sine.out",
+        stagger: 0.4,
 
-      scrollTrigger: {
-        trigger: ".welcome-form",
-        start: "top bottom",
-        end: "bottom +=400px",
-        scrub: true,
-      },
+        scrollTrigger: {
+          trigger: ".welcome-form",
+          start: "top bottom",
+          end: "bottom +=400px",
+          scrub: true,
+        },
+      });
     });
   });
 </script>

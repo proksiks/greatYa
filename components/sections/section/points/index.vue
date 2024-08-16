@@ -4,14 +4,14 @@
       class="font-benzin words flex flex-nowrap items-center absolute md:h-svh top-0 md:pt-0 pt-[40%] lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase will-change-transform"
       ref="scrollPointsWords"
     >
-      <span class="word-1 block xl:pr-25 shrink-0 mr-5 md:mr-0 will-change-transform">ха</span>
-      <span class="word-1 block xl:pr-25 shrink-0 text-center mr-5 md:mr-0 will-change-transform"> риз </span>
-      <span class="word-1 block will-change-transform">мы</span>
+      <span class="word-1 block shrink-0 mr-5 md:mr-0 will-change-transform">ха</span>
+      <span class="word-1 block xl:pl-25 shrink-0 text-center mr-5 md:mr-0 will-change-transform"> риз </span>
+      <span class="word-1 block will-change-transform xl:pl-25">мы</span>
     </div>
     <div class="font-benzin points flex items-center" ref="scrollPoints">
       <div class="flex flex-nowrap relative z-20 2xl:py-25 md:py-20 py-10">
         <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none will-change-transform">
-          <div class="z-10 max-w-[28.125rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]">
+          <div class="z-10 max-w-[28.125rem] min-w-[14rem]">
             <div class="md:pb-5 pb-2.5 md:text-sm text-[0.625rem]">{ 1 }</div>
             <div class="pb-2.5 md:text-lg text-sm uppercase font-medium">МЫ</div>
             <div class="font-petrov md:text-[1.25rem] text-[0.75rem]">
@@ -21,7 +21,7 @@
           </div>
         </div>
         <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none will-change-transform">
-          <div class="z-10 pt-20 xl:mr-25 mr-10">
+          <div class="z-10 pt-20 xl:mr-25 mr-10 xl:pl-[9.375rem] md:pl-[5rem] pl-[1.6875rem]">
             <div class="2xl:pb-[10.25rem] md:pb-[5.625rem] pb-[3.5625rem]">
               <img
                 class="block min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
@@ -84,28 +84,33 @@
   import SplitType from "split-type";
 
   const { width } = useWindowSize();
-  const app = useNuxtApp();
+  const { $gsap: gsap } = useNuxtApp();
   const scrollPoints = ref(null);
   const scrollPointsWords = ref(null);
 
   // onNuxtReady ||
   onMounted(() => {
     onNuxtReady(() => {
-      const words = app.$gsap.utils.toArray(".word-1");
-      const points = app.$gsap.utils.toArray(".point-1");
       let totalWordsWidth = 0;
       let totalPointsWidth = 0;
-      for (let index = 0; index < words.length - 2; index++) {
-        if (words[index].offsetWidth) {
-          totalWordsWidth += words[index].offsetWidth;
+      const words = scrollPointsWords.value.querySelectorAll(".word-1");
+      const points = scrollPoints.value.querySelectorAll(".point-1");
+
+      points.forEach((element, index) => {
+        if (index < points.length - 2 && element.offsetWidth) {
+          totalPointsWidth += element.offsetWidth;
         }
-      }
-      for (let index = 0; index < points.length - 2; index++) {
-        if (points[index].offsetWidth) {
-          totalPointsWidth += points[index].offsetWidth;
+      });
+
+      words.forEach((element, index) => {
+        if (index >= 2 && element.offsetWidth) {
+          totalWordsWidth += element.offsetWidth;
         }
-      }
-      app.$gsap.to(points, {
+      });
+
+      console.log(totalWordsWidth);
+
+      gsap.to(points, {
         x: -totalPointsWidth,
         ease: "none",
         scrollTrigger: {
@@ -116,7 +121,7 @@
           end: "+=" + scrollPoints.value.offsetWidth,
         },
       });
-      app.$gsap.to(scrollPointsWords.value, {
+      gsap.to(scrollPointsWords.value, {
         x: -totalWordsWidth,
         ease: "none",
         scrollTrigger: {
@@ -133,7 +138,7 @@
         tagName: "span",
       });
 
-      app.$gsap.from(".points-text .word", {
+      gsap.from(".points-text .word", {
         y: 100,
         opacity: 0,
         duration: 2,

@@ -102,31 +102,33 @@
   const scrollNumbersWords = ref(null);
 
   onMounted(() => {
-    const words = app.$gsap.utils.toArray(".number-word-1");
-    const numbers = app.$gsap.utils.toArray(".number-point-1");
+    onNuxtReady(() => {
+      const words = app.$gsap.utils.toArray(".number-word-1");
+      const numbers = app.$gsap.utils.toArray(".number-point-1");
 
-    app.$gsap.to(numbers, {
-      xPercent: width.value > 768 ? -70 * (numbers.length - 1) : -100 * (numbers.length - 1),
-      ease: "none",
-      scrollTrigger: {
-        trigger: scrollNumbers.value,
-        pin: true,
-        scrub: 3,
-        span: 1 / (numbers.length - 1),
-        end: "+=" + scrollNumbers.value.offsetWidth,
-      },
-    });
+      app.$gsap.to(numbers, {
+        xPercent: width.value > 768 ? -70 * (numbers.length - 1) : -100 * (numbers.length - 1),
+        ease: "none",
+        scrollTrigger: {
+          trigger: scrollNumbers.value,
+          pin: true,
+          scrub: 3,
+          span: 1 / (numbers.length - 1),
+          end: "+=" + scrollNumbers.value.offsetWidth,
+        },
+      });
 
-    app.$gsap.to(scrollNumbersWords.value, {
-      xPercent: width.value > 768 ? -40 : -100,
-      ease: "none",
-      scrollTrigger: {
-        trigger: scrollNumbersWords.value,
-        pin: true,
-        scrub: 3,
-        span: 1 / (words.length - 1),
-        end: "+=" + scrollNumbers.value.offsetWidth,
-      },
+      app.$gsap.to(scrollNumbersWords.value, {
+        xPercent: width.value > 768 ? -40 : -100,
+        ease: "none",
+        scrollTrigger: {
+          trigger: scrollNumbersWords.value,
+          pin: true,
+          scrub: 3,
+          span: 1 / (words.length - 1),
+          end: "+=" + scrollNumbers.value.offsetWidth,
+        },
+      });
     });
   });
 </script>
