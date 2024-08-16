@@ -23,39 +23,34 @@
   const footer = ref(null);
   const footerHeight = ref(0);
   const { $ScrollTrigger: ScrollTrigger } = useNuxtApp();
+  const lenis = new Lenis({
+    duration: 1.2,
+    lerp: 0.05,
+    smoothWheel: true,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  });
+
   const { width } = useWindowSize();
 
-  //function stopScroll() {
-  //  if (width.value > 1024) {
-  //    lenis.stop();
-  //  }
-  //}
-  //function startScroll() {
-  //  if (width.value > 1024) {
-  //    lenis.start();
-  //  }
-  //}
-
-  //function disableScroll() {
-  //  lenis.start();
-  //}
+  function stopScroll() {
+    if(width.value > 1024) {
+      lenis.stop();
+    }
+  }
+  function startScroll() {
+    if(width.value > 1024) {
+      lenis.start();
+    }
+  }
 
   onMounted(() => {
-    if (width.value > 1024) {
-      const lenis = new Lenis({
-        duration: 1.2,
-        lerp: 0.05,
-        smoothWheel: true,
-        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      });
-      function raf(time) {
-        lenis.raf(time);
-        ScrollTrigger.update();
-        requestAnimationFrame(raf);
-      }
-
+    function raf(time) {
+      lenis.raf(time);
+      ScrollTrigger.update();
       requestAnimationFrame(raf);
     }
+    
+    requestAnimationFrame(raf);
 
     footerHeight.value = footer.value.offsetHeight;
     document.querySelectorAll('a[href^="#"]').forEach((el) => {
