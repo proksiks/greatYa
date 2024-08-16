@@ -1,10 +1,10 @@
 <template>
   <client-only>
-    <div class="relative overflow-hidden md:px-10 px-2.5 font-benzin" id="value">
+    <div class="relative overflow-hidden font-benzin" id="value">
       <div class="relative z-20 numbers flex items-center will-change-transform" ref="scrollNumbers">
         <div class="flex flex-nowrap 2xl:py-25 py-20">
-          <div class="number-point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen">
-            <div class="z-10 max-w-[27.875rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]">
+          <div class="number-point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen md:pl-10 pl-2.5">
+            <div class="z-10 max-w-[27.875rem] min-w-[14rem]">
               <div class="md:pb-5 pb-2.5 pd:text-sm text-[0.625rem]">{ 1 }</div>
               <div class="pb-2.5 md:text-lg text-sm uppercase font-medium">133 балла</div>
               <div class="pb-2.5 md:text-[1.25rem] text-sm font-petrov">средний IQ сотрудников компании,</div>
@@ -13,7 +13,9 @@
               </div>
             </div>
           </div>
-          <div class="number-point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen">
+          <div
+            class="number-point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen xl:pl-[9.375rem] md:pl-[5rem] pl-[1.6875rem]"
+          >
             <div class="z-10 2xl:mt-20 mt-10 xl:mr-[10rem] md:mr-[5rem] mr-[2rem]">
               <div class="mb-2">
                 <div class="md:pb-5 pb-2.5 pd:text-sm text-[0.625rem]">{ 2 }</div>
@@ -88,9 +90,10 @@
         class="numbers-words flex flex-nowrap items-center absolute pt-[14.375rem] md:pt-0 md:h-svh top-0 z-10 lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase pointer-events-none"
         ref="scrollNumbersWords"
       >
-        <span class="number-word-1 block xl:pr-25 md:pr-20 pr-10 shrink-0 md:pt-20">в ци</span>
-        <span class="number-word-1 block xl:pr-25 md:pr-20 pr-10 shrink-0 md:pt-20">фр</span>
-        <span class="number-word-1 block md:pr-[3.125rem] pr-10 shrink-0 md:pt-20">ах</span>
+        <span class="number-word-1 block xl:pr-25 md:pr-20 pr-10 shrink-0 md:pt-20 md:pl-10 pl-2.5">в</span>
+        <span class="number-word-1 block xl:pr-25 md:pr-20 pr-10 shrink-0 md:pt-20 md:pl-10 pl-2.5">ци</span>
+        <span class="number-word-1 block shrink-0 md:pt-20">фр</span>
+        <span class="number-word-1 block xl:pl-25 md:pl-20 pl-10 md:pr-[3.125rem] pr-10 shrink-0 md:pt-20">ах</span>
       </div>
     </div>
   </client-only>
@@ -105,27 +108,29 @@
   const scrollNumbers = ref(null);
   const scrollNumbersWords = ref(null);
 
+  const windowSize = computed(() => {
+    return width.value > 768 ? 2 : 1;
+  });
   onMounted(() => {
     onNuxtReady(() => {
       let totalWordsWidth = 0;
       let totalPointsWidth = 0;
       const points = scrollNumbers.value.querySelectorAll(".number-point-1");
       const words = scrollNumbersWords.value.querySelectorAll(".number-word-1");
-
       points.forEach((element, index) => {
-        if (index < points.length - 2 && element.offsetWidth) {
+        if (index < points.length - windowSize.value && element.offsetWidth) {
           totalPointsWidth += element.offsetWidth;
         }
       });
 
       words.forEach((element, index) => {
-        if (index >= 2 && element.offsetWidth) {
+        if (index < words.length - windowSize.value && element.offsetWidth) {
           totalWordsWidth += element.offsetWidth;
         }
       });
 
       gsap.to(points, {
-        x: -totalWordsWidth,
+        x: -totalPointsWidth,
         ease: "none",
         scrollTrigger: {
           trigger: scrollNumbers.value,
@@ -137,7 +142,7 @@
       });
 
       gsap.to(scrollNumbersWords.value, {
-        xPercent: width.value > 768 ? -40 : -100,
+        x: -totalWordsWidth,
         ease: "none",
         scrollTrigger: {
           trigger: scrollNumbersWords.value,

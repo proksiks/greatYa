@@ -95,6 +95,7 @@
 </template>
 
 <script setup>
+  import { useWindowSize } from "@vueuse/core";
   import SplitType from "split-type";
   import { ModalsContainer, useModal } from "vue-final-modal";
   import ModalForm from "~/components/forms/modals/header/index.vue";
@@ -113,8 +114,13 @@
     },
   });
 
+  const { width } = useWindowSize();
   const { $gsap: gsap } = useNuxtApp();
   const scrollProjects = ref(null);
+
+  const windowSize = computed(() => {
+    return width.value > 768 ? 2 : 1;
+  });
 
   onMounted(() => {
     onNuxtReady(() => {
@@ -122,7 +128,7 @@
       const projects = scrollProjects.value.querySelectorAll(".project-1");
 
       projects.forEach((element, index) => {
-        if (index < projects.length - 2 && element.offsetWidth) {
+        if (index < projects.length - windowSize.value && element.offsetWidth) {
           totalProjectsWidth += element.offsetWidth;
         }
       });

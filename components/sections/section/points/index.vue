@@ -1,17 +1,17 @@
 <template>
   <client-only>
-    <div class="points-block relative overflow-hidden md:px-10 px-2.5" id="value">
+    <div class="points-block relative overflow-hidden" id="value">
       <div
-        class="font-benzin words flex flex-nowrap items-center absolute md:h-svh top-0 md:pt-0 pt-[40%] lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase will-change-transform"
+        class="font-benzin words pb-20 flex flex-nowrap items-center absolute md:h-svh top-0 md:pt-0 pt-[40%] lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase will-change-transform"
         ref="scrollPointsWords"
       >
-        <span class="word-1 block shrink-0 mr-5 md:mr-0 will-change-transform">ха</span>
+        <span class="word-1 block shrink-0 mr-5 md:mr-0 will-change-transform pl-2.5 md:pl-10">ха</span>
         <span class="word-1 block xl:pl-25 shrink-0 text-center mr-5 md:mr-0 will-change-transform"> риз </span>
         <span class="word-1 block will-change-transform xl:pl-25">мы</span>
       </div>
       <div class="font-benzin points flex items-center" ref="scrollPoints">
         <div class="flex flex-nowrap relative z-20 2xl:py-25 md:py-20 py-10">
-          <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none will-change-transform">
+          <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none will-change-transform pl-2.5 md:pl-10">
             <div class="z-10 max-w-[28.125rem] min-w-[14rem]">
               <div class="md:pb-5 pb-2.5 md:text-sm text-[0.625rem]">{ 1 }</div>
               <div class="pb-2.5 md:text-lg text-sm uppercase font-medium">МЫ</div>
@@ -88,6 +88,10 @@
   const scrollPoints = ref(null);
   const scrollPointsWords = ref(null);
 
+  const windowSize = computed(() => {
+    return width.value > 768 ? 2 : 1;
+  });
+
   // onNuxtReady ||
   onMounted(() => {
     onNuxtReady(() => {
@@ -97,13 +101,13 @@
       const points = scrollPoints.value.querySelectorAll(".point-1");
 
       points.forEach((element, index) => {
-        if (index < points.length - 2 && element.offsetWidth) {
+        if (index < points.length - windowSize.value && element.offsetWidth) {
           totalPointsWidth += element.offsetWidth;
         }
       });
 
       words.forEach((element, index) => {
-        if (index >= 2 && element.offsetWidth) {
+        if (index < words.length - windowSize.value && element.offsetWidth) {
           totalWordsWidth += element.offsetWidth;
         }
       });
