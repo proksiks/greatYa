@@ -1,73 +1,73 @@
 <template>
-  <div class="points-block relative overflow-hidden md:px-10 px-2.5" id="value">
-    <div
-      class="font-benzin words flex flex-nowrap items-center absolute md:h-svh top-0 md:pt-0 pt-[40%] lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase will-change-transform"
-      ref="scrollPointsWords"
-    >
-      <span class="word-1 block shrink-0 mr-5 md:mr-0 will-change-transform">ха</span>
-      <span class="word-1 block xl:pl-25 shrink-0 text-center mr-5 md:mr-0 will-change-transform"> риз </span>
-      <span class="word-1 block will-change-transform xl:pl-25">мы</span>
-    </div>
-    <div class="font-benzin points flex items-center" ref="scrollPoints">
-      <div class="flex flex-nowrap relative z-20 2xl:py-25 md:py-20 py-10">
-        <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none will-change-transform">
-          <div class="z-10 max-w-[28.125rem] min-w-[14rem]">
-            <div class="md:pb-5 pb-2.5 md:text-sm text-[0.625rem]">{ 1 }</div>
-            <div class="pb-2.5 md:text-lg text-sm uppercase font-medium">МЫ</div>
-            <div class="font-petrov md:text-[1.25rem] text-[0.75rem]">
-              Всегда делаем больше, чем ожидают от нас клиенты, получая истинное удовлетворение от этого. Изменение
-              среды меняет жизни и это наполняет смыслом нашу работу.
+  <client-only>
+    <div class="points-block relative overflow-hidden md:px-10 px-2.5" id="value">
+      <div
+        class="font-benzin words flex flex-nowrap items-center absolute md:h-svh top-0 md:pt-0 pt-[40%] lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase will-change-transform"
+        ref="scrollPointsWords"
+      >
+        <span class="word-1 block shrink-0 mr-5 md:mr-0 will-change-transform">ха</span>
+        <span class="word-1 block xl:pl-25 shrink-0 text-center mr-5 md:mr-0 will-change-transform"> риз </span>
+        <span class="word-1 block will-change-transform xl:pl-25">мы</span>
+      </div>
+      <div class="font-benzin points flex items-center" ref="scrollPoints">
+        <div class="flex flex-nowrap relative z-20 2xl:py-25 md:py-20 py-10">
+          <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none will-change-transform">
+            <div class="z-10 max-w-[28.125rem] min-w-[14rem]">
+              <div class="md:pb-5 pb-2.5 md:text-sm text-[0.625rem]">{ 1 }</div>
+              <div class="pb-2.5 md:text-lg text-sm uppercase font-medium">МЫ</div>
+              <div class="font-petrov md:text-[1.25rem] text-[0.75rem]">
+                Всегда делаем больше, чем ожидают от нас клиенты, получая истинное удовлетворение от этого. Изменение
+                среды меняет жизни и это наполняет смыслом нашу работу.
+              </div>
             </div>
           </div>
-        </div>
-        <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none will-change-transform">
-          <div class="z-10 pt-20 xl:mr-25 mr-10 xl:pl-[9.375rem] md:pl-[5rem] pl-[1.6875rem]">
-            <div class="2xl:pb-[10.25rem] md:pb-[5.625rem] pb-[3.5625rem]">
-              <img
-                class="block min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
-                width="445"
-                height="269"
-                src="/images/points/point-1.png"
-                alt="Здание"
-                loading="lazy"
-              />
-            </div>
-            <div class="max-w-[28.125rem] min-w-[14rem] xl:ml-[7.5625rem] md:ml-[2.5rem] ml-[1.25rem] pb-5">
-              <p class="md:pb-5 pb-2.5 md:text-sm text-[0.625rem]">{ 2 }</p>
-              <p class="pb-2.5 md:text-lg text-sm uppercase font-medium">МЫ</p>
-              <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
-                Ориентир для коллег в нашей страсти и увелеченности своим делом. Делаем все для максимального
-                результата, ищем новые способы добиться его быстрее.
-              </p>
+          <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none will-change-transform">
+            <div class="z-10 pt-20 xl:mr-25 mr-10 xl:pl-[9.375rem] md:pl-[5rem] pl-[1.6875rem]">
+              <div class="2xl:pb-[10.25rem] md:pb-[5.625rem] pb-[3.5625rem]">
+                <img
+                  class="block min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
+                  width="445"
+                  height="269"
+                  src="/images/points/point-1.png"
+                  alt="Здание"
+                  loading="lazy"
+                />
+              </div>
+              <div class="max-w-[28.125rem] min-w-[14rem] xl:ml-[7.5625rem] md:ml-[2.5rem] ml-[1.25rem] pb-5">
+                <p class="md:pb-5 pb-2.5 md:text-sm text-[0.625rem]">{ 2 }</p>
+                <p class="pb-2.5 md:text-lg text-sm uppercase font-medium">МЫ</p>
+                <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
+                  Ориентир для коллег в нашей страсти и увелеченности своим делом. Делаем все для максимального
+                  результата, ищем новые способы добиться его быстрее.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none will-change-transform">
-          <div class="z-10">
-            <div class="max-w-[28.125rem] min-w-[14rem]">
-              <p class="md:pb-5 pb-2.5 md:text-sm text-[0.625rem]">{ 3 }</p>
-              <p class="pb-2.5 md:text-lg text-sm uppercase font-medium">МЫ</p>
-              <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
-                Меняем себя через обучение и новый опыт. Развиваем друг друга, вместе реализуем свой потенциал и вместе
-                обогащаем город нашими проектами.
-              </p>
-            </div>
-            <div class="md:pt-[8.4375rem] pt-[5rem] xl:ml-26 md:ml-25 ml-[1.875rem]">
-              <img
-                class="block min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
-                width="445"
-                height="410"
-                src="/images/points/point-2.png"
-                alt="Здание"
-                loading="lazy"
-              />
+          <div class="point-1 shrink-0 max-w-[16.5rem] md:max-w-none will-change-transform">
+            <div class="z-10">
+              <div class="max-w-[28.125rem] min-w-[14rem]">
+                <p class="md:pb-5 pb-2.5 md:text-sm text-[0.625rem]">{ 3 }</p>
+                <p class="pb-2.5 md:text-lg text-sm uppercase font-medium">МЫ</p>
+                <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
+                  Меняем себя через обучение и новый опыт. Развиваем друг друга, вместе реализуем свой потенциал и
+                  вместе обогащаем город нашими проектами.
+                </p>
+              </div>
+              <div class="md:pt-[8.4375rem] pt-[5rem] xl:ml-26 md:ml-25 ml-[1.875rem]">
+                <img
+                  class="block min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
+                  width="445"
+                  height="410"
+                  src="/images/points/point-2.png"
+                  alt="Здание"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="font-benzin 2xl:pt-25 2xl:pb-26 sm:pb-25 pb-10">
-      <div class="md:min-h-[7.5625rem] 2xl:min-h-[24.25rem] min-h-[7.125rem]">
+      <div class="font-benzin 2xl:pt-25 2xl:pb-26 sm:pb-25 pb-10">
         <div
           class="font-medium points-text max-w-[75rem] 2xl:text-[2.75rem] md:text-[1.5rem] text-sm md:leading-[125%] ml-auto"
         >
@@ -76,7 +76,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </client-only>
 </template>
 
 <script setup>
@@ -107,8 +107,6 @@
           totalWordsWidth += element.offsetWidth;
         }
       });
-
-      console.log(totalWordsWidth);
 
       gsap.to(points, {
         x: -totalPointsWidth,
