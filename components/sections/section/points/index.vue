@@ -92,6 +92,14 @@
   onMounted(() => {
     const words = app.$gsap.utils.toArray(".word-1");
     const points = app.$gsap.utils.toArray(".point-1");
+    let totalBoxWidth = 0
+    for (let index = 0; index < words.length; index++) {
+      const element = words[index];
+      if (element.offsetWidth) {
+        totalBoxWidth += element.offsetWidth;
+      }
+    }
+    
     app.$gsap.to(points, {
       xPercent: width.value > 768 ? -30 * (points.length - 1) : -100 * (points.length - 1),
       ease: "none",
@@ -104,7 +112,7 @@
       },
     });
     app.$gsap.to(scrollPointsWords.value, {
-      xPercent: width.value > 768 ? -50 : -70,
+      x: -totalBoxWidth,
       ease: "none",
       scrollTrigger: {
         trigger: scrollPointsWords.value,
