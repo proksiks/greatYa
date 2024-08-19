@@ -19,7 +19,9 @@
           <span class="quality-char block ml-7 md:ml-[14.5rem] text-orange text-nowrap">это наш</span>
           <span class="quality-char block text-orange">успех</span>
         </div>
-        <div class="quality-word font-benzin md:col-start-3 col-end-8">
+        <div
+          class="quality-word font-benzin md:col-start-3 col-end-8 xl:min-h-[20.625rem] md:min-h-[13.125rem] min-h-[7.6875rem]"
+        >
           <div
             class="font-medium 2xl:text-[2.75rem] md:text-[1.5rem] text-sm max-w-[26.875rem] md:max-w-none leading-tight"
           >
@@ -28,7 +30,7 @@
           </div>
         </div>
         <div
-          class="quality-word font-benzin md:col-start-4 md:col-end-9 mt-10 md:mt-25 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"
+          class="quality-word font-benzin md:col-start-4 md:col-end-9 mt-10 md:mt-25 md:max-w-none max-w-[20.1875rem] min-h-[6.0625rem] md:ml-0 ml-auto md:min-h-[8.75rem] xl:min-h-[15.75rem]"
         >
           <div class="font-medium 2xl:text-[2.75rem] md:text-[1.5rem] text-sm pr-10">
             Мы видим в работе не просто обязанность, а возможность воплощать смелые идеи, делая мир лучше, краше и

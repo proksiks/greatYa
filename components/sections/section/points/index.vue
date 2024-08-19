@@ -6,8 +6,8 @@
         ref="scrollPointsWords"
       >
         <span class="word-1 block shrink-0 mr-5 md:mr-0 will-change-transform pl-2.5 md:pl-10">ха</span>
-        <span class="word-1 block xl:pl-25 shrink-0 text-center mr-5 md:mr-0 will-change-transform"> риз </span>
-        <span class="word-1 block will-change-transform xl:pl-25">мы</span>
+        <span class="word-1 block xl:px-25 shrink-0 text-center mr-5 md:mr-0 will-change-transform"> риз </span>
+        <span class="word-1 block will-change-transform md:pr-10 pr-2.5">мы</span>
       </div>
       <div class="font-benzin points flex items-center" ref="scrollPoints">
         <div class="flex flex-nowrap relative z-20 2xl:py-25 md:py-20 py-10">
@@ -67,9 +67,9 @@
           </div>
         </div>
       </div>
-      <div class="font-benzin 2xl:pt-25 2xl:pb-26 sm:pb-25 pb-10">
+      <div class="font-benzin 2xl:pt-25 2xl:pb-26 sm:pb-25 pb-10 px-2.5">
         <div
-          class="font-medium points-text max-w-[75rem] 2xl:text-[2.75rem] md:text-[1.5rem] text-sm md:leading-[125%] ml-auto"
+          class="font-medium points-text max-w-[75rem] 2xl:text-[2.75rem] md:text-[1.5rem] text-sm md:leading-[125%] ml-auto min-h-[7.0625rem] md:min-h-[7.5rem] xl:min-h-[24.0625rem]"
         >
           Наша команда — это союз харизматичных людей, привносящих в работу свою индивидуальность, творчество и фанатизм
           к делу. Мы не просто выполняем задачи, мы создаем наследие для потомков. Достойная цель, чтобы жить!

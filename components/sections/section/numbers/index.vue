@@ -90,8 +90,7 @@
         class="numbers-words flex flex-nowrap items-center absolute pt-[14.375rem] md:pt-0 md:h-svh top-0 z-10 lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase pointer-events-none"
         ref="scrollNumbersWords"
       >
-        <span class="number-word-1 block xl:pr-25 md:pr-20 pr-10 shrink-0 md:pt-20 md:pl-10 pl-2.5">в</span>
-        <span class="number-word-1 block xl:pr-25 md:pr-20 pr-10 shrink-0 md:pt-20 md:pl-10 pl-2.5">ци</span>
+        <span class="number-word-1 block xl:pr-25 md:pr-20 pr-10 shrink-0 md:pt-20 md:pl-10 pl-2.5">в ци</span>
         <span class="number-word-1 block shrink-0 md:pt-20">фр</span>
         <span class="number-word-1 block xl:pl-25 md:pl-20 pl-10 md:pr-[3.125rem] pr-10 shrink-0 md:pt-20">ах</span>
       </div>
