@@ -1,16 +1,17 @@
 <template>
   <div class="web-app overflow-hidden">
-    <div class="screen w-screen">
+    <div>
       <Loader />
       <Header @mouseover="stopScroll" @mouseleave="startScroll" @close="startScroll" />
-      <div id="scene">
-        <div class="bg-white">
+      <div class="w-screen" id="scene">
+        <div class="bg-white relative z-10">
           <slot />
         </div>
-        <div :style="{ marginTop: `${footerHeight}px` }">
-          <div class="fixed bottom-0 left-0 w-full bg-white -z-10" ref="footer">
+        <div>
+          <div class="fixed bottom-0 left-0 bg-white w-screen" ref="footer">
             <Footer />
           </div>
+          <div class="pointer-events-none" :style="{height : `${footerHeight}px`}"></div>
         </div>
       </div>
     </div>

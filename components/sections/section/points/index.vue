@@ -124,7 +124,7 @@
         },
       });
       gsap.to(scrollPointsWords.value, {
-        x: -totalWordsWidth,
+        x: -totalWordsWidth * 1.1,
         ease: "none",
         scrollTrigger: {
           trigger: scrollPointsWords.value,

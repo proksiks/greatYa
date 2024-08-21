@@ -1,5 +1,5 @@
 <template>
-  <div class="font-benzin md:mt-26 mt-25 md:px-10 px-2.5 -z-10" ref="footer">
+  <div class="font-benzin md:pt-26 pt-25 md:px-10 px-2.5" ref="footer">
     <div class="md:grid md:grid-cols-8 md:mb-[8rem] mb-[1.8125rem]">
       <div class="col-start-1 col-end-4 hidden md:block">
         <div>
