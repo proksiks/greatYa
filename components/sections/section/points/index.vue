@@ -10,7 +10,7 @@
         <span class="word-1 md:block will-change-transform md:pr-10 pr-2.5">мы</span>
       </div>
       <div class="font-benzin points flex items-center" ref="scrollPoints">
-        <div class="md:flex md:flex-nowrap relative z-20 2xl:py-25 md:py-20 md:px-0 px-2.5">
+        <div class="md:flex md:flex-nowrap relative z-20 2xl:py-25 xl:py-20 md:py-10 md:px-0 px-2.5">
           <div class="point-1 shrink-0 md:max-w-none will-change-transform md:pl-10 md:mb-0 mb-5">
             <div class="z-10 max-w-[28.125rem] min-w-[14rem]">
               <div class="md:pb-5 pb-2.5 md:text-sm text-[0.625rem]">{ 1 }</div>
@@ -65,7 +65,7 @@
               </div>
               <div class="md:pt-[8.4375rem] xl:ml-26 md:ml-25 mb-10 mt-4">
                 <img
-                  class="block min-w-[13.4375rem] md:w-[27.8125rem] w-full"
+                  class="block min-w-[13.4375rem] xl:w-[27.8125rem] md:w-[23.4375rem] w-full h-auto"
                   width="445"
                   height="410"
                   src="/images/points/point-2.png"

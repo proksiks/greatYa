@@ -12,11 +12,11 @@
       </div>
       <div class="relative z 20 md:grid md:grid-cols-8 text-white px-2.5 md:px-10">
         <div
-          class="font-benzin md:col-start-1 md:col-end-7 uppercase 2xl:text-2xl xl:text-xl text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] md:pb-20 pb-10"
+          class="font-benzin md:col-start-1 md:col-end-7 uppercase 2xl:text-2xl lg:text-xl text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] md:pb-20 pb-10"
         >
           <span class="quality-char block">увлеченная</span>
-          <span class="quality-char block ml-7 md:ml-[14.5rem] text-nowrap">работа –</span>
-          <span class="quality-char block ml-7 md:ml-[14.5rem] text-orange text-nowrap">это наш</span>
+          <span class="quality-char block  md:ml-7 xl:ml-[14.5rem] text-nowrap">работа –</span>
+          <span class="quality-char block  md:ml-7 xl:ml-[14.5rem] text-orange text-nowrap">это наш</span>
           <span class="quality-char block text-orange">успех</span>
         </div>
         <div
@@ -38,8 +38,8 @@
           </div>
         </div>
       </div>
-      <div class="relative z 20 sm:grid grid-cols-8 2xl:py-26 py-25 px-2.5 md:px-10">
-        <div class="col-start-1 col-end-3">
+      <div class="relative z 20 sm:grid grid-cols-8 2xl:py-26 py-25 px-2.5 xl:px-10">
+        <div class="col-start-1 xl:col-end-3 col-end-4">
           <div class="quality-image overflow-hidden">
             <img
               class="xs:max-w-[9.625rem] md:max-w-[15.625rem] xl:max-w-none"
@@ -56,7 +56,7 @@
             <img src="/images/quality/quality-2.png" alt="Жилой комплекс" width="909" height="561" loading="lazy" />
           </div>
         </div>
-        <div class="col-start-3 col-end-5 md:pt-[10rem] pt-[3.75rem]">
+        <div class="col-start-3 xl:col-end-5 col-end-7 md:pt-[10rem] pt-[3.75rem]">
           <div class="quality-image overflow-hidden">
             <img
               class="xs:max-w-[9.625rem] md:max-w-[15.625rem] xl:max-w-none mx-auto"

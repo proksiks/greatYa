@@ -6,10 +6,10 @@
         id="peoples"
       >
         <p
-          class="md:col-start-3 md:col-end-7 uppercase 2xl:text-2xl xl:text-xl text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] md:pb-20 pb-10"
+          class="md:col-start-3 md:col-end-7 font-benzin 2xl:leading-[7.3125rem] leading-none tracking-tighter 2xl:text-[8.125rem] xl:text-xl md:text-[3.25rem] text-[2.1875rem] uppercase md:pb-20 pb-10"
         >
           <span class="peoples-title block whitespace-nowrap">харизмы</span>
-          <span class="peoples-title block whitespace-nowrap ml-7 md:ml-[14.5rem] text-orange text-nowrap">
+          <span class="peoples-title block whitespace-nowrap md:ml-7 xl:ml-[14.5rem] text-orange text-nowrap">
             в людях
           </span>
         </p>
@@ -17,13 +17,13 @@
 
       <div class="xl:grid xl:grid-cols-8 gap-5">
         <div
-          class="xl:col-start-1 xl:col-end-5 xl:ml-0 ml-auto sm:ml-0 xl:pb-0 pb-[3.75rem] max-w-[16.0625rem] md:max-w-none"
+          class="xl:col-start-1 xl:col-end-5 xl:ml-0 ml-auto sm:ml-0 xl:pb-0 pb-[3.75rem] max-w-[16.0625rem] md:max-w-[43.75rem] xl:max-w-none"
         >
           <div class="flex md:flex-row flex-col gap-5">
             <div>
               <div class="people-image overflow-hidden">
                 <img
-                  class="object-cover xl:max-w-none"
+                  class="object-cover xl:max-w-none min-w-[16.0625rem]"
                   src="/images/peoples/people-1.webp"
                   alt="Александр Мильченко"
                   width="440"
@@ -34,7 +34,7 @@
             </div>
 
             <div class="flex flex-col">
-              <p class="font-benzin font-medium pb-5 md:text-lg text-sm">
+              <p class="font-benzin font-medium pb-5 md:text-md xl:text-lg text-sm">
                 «Наше единение, наши идеи и наша преданность своей профессии делают нас уникальной компанией»
               </p>
               <div class="font-petrov mt-auto md:text-[1.375rem] text-sm">
@@ -46,13 +46,13 @@
           </div>
         </div>
         <div
-          class="xl:row-start-2 xl:row-end-3 xl:col-start-4 2xl:col-start-5 xl:col-end-9 items-start row-span max-w-[16.0625rem] sm:ml-auto md:ml-0 md:max-w-[43.75rem] xl:max-w-none pb-[3.75rem] lx:pb-0"
+          class="xl:row-start-2 xl:row-end-3 xl:col-start-4 2xl:col-start-5 xl:col-end-9 items-start row-span max-w-[16.0625rem] sm:ml-auto md:mx-auto lg:mx-0 md:max-w-[43.75rem] xl:max-w-none pb-[3.75rem] lx:pb-0"
         >
-          <div class="flex md:flex-row flex-col gap-5">
+          <div class="flex md:flex-row-reverse lg:flex-row flex-col gap-5">
             <div>
               <div class="people-image overflow-hidden">
                 <img
-                  class="object-cover xl:max-w-none"
+                  class="object-cover xl:max-w-none min-w-[16.0625rem]"
                   src="/images/peoples/people-2.webp"
                   alt="Александр Перминов"
                   width="388"
@@ -63,7 +63,7 @@
             </div>
 
             <div class="flex flex-col">
-              <p class="font-benzin font-medium pb-5 md:text-lg text-sm">
+              <p class="font-benzin font-medium pb-5 md:text-md xl:text-lg text-sm">
                 «Мы создаем команды единомышленников, а не коллег. Только так мы способны реализовывать цели, которые
                 кажутся недостижимыми для других»
               </p>
@@ -76,13 +76,13 @@
           </div>
         </div>
         <div
-          class="xl:row-start-3 xl:row-end-3 gap-5 xl:col-start-1 xl:col-end-6 2xl:col-end-5 ml-[3.25rem] xl:ml-0 max-w-[19.5625rem] md:max-w-none"
+          class="xl:row-start-3 xl:row-end-3 gap-5 xl:col-start-1 xl:col-end-6 2xl:col-end-5 ml-[3.25rem] md:ml-auto xl:ml-0 max-w-[19.5625rem] md:max-w-[43.75rem] xl:max-w-none"
         >
-          <div class="flex md:flex-row flex-col gap-5 md:pr-5">
+          <div class="flex md:flex-row-reverse lg:flex-row flex-col gap-5 md:pr-5">
             <div>
               <div class="people-image overflow-hidden">
                 <img
-                  class="object-cover xl:max-w-none"
+                  class="object-cover xl:max-w-none min-w-[16.0625rem]"
                   src="/images/peoples/people-3.webp"
                   alt="Максим Замятин"
                   width="388"
@@ -93,7 +93,7 @@
             </div>
 
             <div class="flex flex-col">
-              <p class="font-benzin font-medium pb-5 md:text-lg text-sm">
+              <p class="font-benzin font-medium pb-5 md:text-md xl:text-lg text-sm">
                 «Доброта - это лучший инструмент, чтобы предоставить нашим клиентам выдающийся сервис»
               </p>
               <div class="font-petrov mt-auto md:text-[1.375rem] text-sm">

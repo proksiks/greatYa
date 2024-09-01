@@ -1,6 +1,6 @@
 <template>
   <client-only>
-    <div class="font-benzin md:px-10 px-2.5 xl:pb-[11.25rem] md:pb-25 pb-10 overflow-hidden">
+    <div class="font-benzin md:px-5 xl:px-10 px-2.5 xl:pb-[11.25rem] md:pb-25 pb-10 overflow-hidden">
       <p class="flex justify-between text-white pt-2.5 md:pt-10 pb-5 text-sm tracking-[-0.03em] uppercase">
         <span class="welcome-char">результат</span>
         <span class="welcome-char">{</span>
@@ -10,7 +10,7 @@
       </p>
       <div class="md:grid md:grid-cols-8 text-white">
         <p
-          class="welcome-words md:col-start-1 md:col-end-7 uppercase 2xl:text-2xl xl:text-xl md:text-[4.5rem] text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] md:pb-[4.375rem] pb-10"
+          class="welcome-words md:col-start-1 md:col-end-7 uppercase 2xl:text-2xl xl:text-xl md:text-[62px] text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] md:pb-[4.375rem] pb-10"
         >
           <span class="welcome-char block">приглашаем</span>
           <span class="welcome-char block ml-5 md:ml-[4.5rem] lx:ml-[14.5rem] text-nowrap">стать частью </span>
@@ -20,7 +20,7 @@
       </div>
 
       <div class="md:grid md:grid-cols-8">
-        <div class="welcome-form col-start-3 2xl:col-start-4 col-end-7 text-white">
+        <div class="welcome-form col-start-3 2xl:col-start-4 col-end-9 text-white">
           <forms-welcome />
         </div>
       </div>

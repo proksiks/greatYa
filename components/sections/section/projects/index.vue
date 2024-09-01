@@ -1,12 +1,12 @@
 <template>
   <client-only>
-    <div class="overflow-hidden">
+    <div class="overflow-hidden md:mt-0 mt-20">
       <div
-        class="font-benzin md:grid grid-cols-8 md:pb-20 pb-10 2xl:text-2xl xl:text-xl md:text-[4.5rem] text-[2.1875rem] tracking-[-0.07em] leading-[100%] ml-5 md:ml-0 uppercase"
+        class="font-benzin md:grid grid-cols-8 xl:pb-20 md:pb-10 2xl:text-2xl xl:text-xl md:text-[4.5rem] text-[2.1875rem] tracking-[-0.07em] leading-[100%] ml-5 md:ml-0 uppercase"
         id="projects"
       >
         <p
-          class="projects-title md:col-start-3 md:col-end-7 uppercase 2xl:text-2xl xl:text-xl text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] xl:pb-20 md:pb-10"
+          class="projects-title md:col-start-3 md:col-end-7 font-benzin 2xl:leading-[7.3125rem] leading-none tracking-tighter 2xl:text-[8.125rem] xl:text-xl md:text-[3.25rem] text-[2.1875rem] uppercase xl:pb-20 md:pb-10"
         >
           <span class="block whitespace-nowrap">харизмы</span>
           <span class="block whitespace-nowrap ml-7 md:ml-[14.5rem] text-orange text-nowrap">в проектах</span>
@@ -15,7 +15,7 @@
 
       <div class="md:px-10 px-2.5">
         <div class="projects flex items-center font-benzin" ref="scrollProjects">
-          <div class="md:flex flex-nowrap relative z-20 lg:py-25 md:py-20 py-10">
+          <div class="md:flex flex-nowrap relative z-20 lg:py-25 py-10">
             <div
               class="project-1 flex-shrink-0 flex w-screen md:w-auto md:min-w-[50%] justify-start will-change-transform"
             >

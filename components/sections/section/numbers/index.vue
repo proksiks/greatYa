@@ -1,6 +1,6 @@
 <template>
   <client-only>
-    <div class="relative overflow-hidden font-benzin md:px-0 px-2.5 md:mb-0 mb-10" id="value">
+    <div class="relative overflow-hidden font-benzin md:px-0 px-2.5 xl:mb-0 mb-10" id="value">
       <div class="md:hidden text-[2.125rem] leading-[90%] tracking-tighter mb-[1.625rem] uppercase">
         <div>харизмы</div>
         <div class="text-orange ml-7">в цифрах</div>
@@ -91,7 +91,7 @@
                   мы меняемся, не изменяя себе!
                 </p>
               </div>
-              <div class="max-w-[28.875rem] min-w-[14rem] pr-5 mb-5 mt-auto">
+              <div class="md:pl-5 pl-0 max-w-[28.875rem] min-w-[14rem] pr-5 mb-5 mt-auto">
                 <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 6 }</p>
                 <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">37 лет</p>
                 <p class="md:font-petrov md:text-[1.25rem] md:font-normal font-medium">
