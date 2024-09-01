@@ -15,7 +15,7 @@
 
       <div class="md:px-10 px-2.5">
         <div class="projects flex items-center font-benzin" ref="scrollProjects">
-          <div class="flex flex-nowrap relative z-20 lg:py-25 md:py-20 py-10">
+          <div class="md:flex flex-nowrap relative z-20 lg:py-25 md:py-20 py-10">
             <div
               class="project-1 flex-shrink-0 flex w-screen md:w-auto md:min-w-[50%] justify-start will-change-transform"
             >
@@ -26,10 +26,16 @@
                     <img src="/images/projects/project-1.jpg" width="676" height="380" alt="Проект" loading="lazy" />
                   </div>
                   <div>
-                    <div class="flex items-start justify-between pb-2.5">
+                    <div class="flex md:items-start items-center justify-between pb-2.5">
                       <span class="text-sm md:text-lg mr-5 font-medium uppercase leading-none"> Novator </span>
                       <span>
-                        <img src="/images/icons/more.svg" width="51" height="51" alt="Подробнее" />
+                        <img
+                          src="/images/icons/more.svg"
+                          class="md:w-[3.1875rem] w-[1.75rem]"
+                          width="51"
+                          height="51"
+                          alt="Подробнее"
+                        />
                       </span>
                     </div>
                     <div class="max-w-[17.125rem] font-manrope md:text-[1.125rem] text-[0.75rem]">
@@ -50,10 +56,16 @@
                     <img src="/images/projects/project-2.jpg" width="676" height="450" alt="Проект" loading="lazy" />
                   </div>
                   <div>
-                    <div class="flex items-start justify-between pb-2.5">
+                    <div class="flex md:items-start items-center justify-between pb-2.5">
                       <span class="text-sm md:text-lg mr-5 font-medium uppercase leading-none"> Акватория </span>
                       <span>
-                        <img src="/images/icons/more.svg" width="51" height="51" alt="Подробнее" />
+                        <img
+                          src="/images/icons/more.svg"
+                          class="md:w-[3.1875rem] w-[1.75rem]"
+                          width="51"
+                          height="51"
+                          alt="Подробнее"
+                        />
                       </span>
                     </div>
                     <div class="max-w-[310px] font-manrope md:text-[1.125rem] text-[0.75rem]">
@@ -74,13 +86,19 @@
                     <img src="/images/projects/project-3.jpg" width="558" height="402" alt="Проект" loading="lazy" />
                   </div>
                   <div>
-                    <div class="flex items-start justify-between pb-2.5">
+                    <div class="flex md:items-start items-center justify-between pb-2.5">
                       <span class="text-sm md:text-lg mr-5 font-medium uppercase leading-none"> Новые проекты </span>
                       <span>
-                        <img src="/images/icons/more.svg" width="51" height="51" alt="Подробнее" />
+                        <img
+                          src="/images/icons/more.svg"
+                          class="md:w-[3.1875rem] w-[1.75rem]"
+                          width="51"
+                          height="51"
+                          alt="Подробнее"
+                        />
                       </span>
                     </div>
-                    <div class="max-w-[17.125rem] font-manrope md:text-[1.125rem] text-[0.75rem]">
+                    <div class="max-w-[17.125rem] font-manrope md:text-[1.125rem] text-[0.75rem] text-left">
                       Впереди много новых уникальных проектов. Совсем скоро расскажем!
                     </div>
                   </div>
@@ -124,43 +142,45 @@
 
   onMounted(() => {
     onNuxtReady(() => {
-      let totalProjectsWidth = 0;
-      const projects = scrollProjects.value.querySelectorAll(".project-1");
+      if (width.value > 767) {
+        let totalProjectsWidth = 0;
+        const projects = scrollProjects.value.querySelectorAll(".project-1");
 
-      projects.forEach((element, index) => {
-        if (index < projects.length - windowSize.value && element.offsetWidth) {
-          totalProjectsWidth += element.offsetWidth;
-        }
-      });
+        projects.forEach((element, index) => {
+          if (index < projects.length - windowSize.value && element.offsetWidth) {
+            totalProjectsWidth += element.offsetWidth;
+          }
+        });
 
-      gsap.to(projects, {
-        x: -totalProjectsWidth,
-        ease: "none",
-        scrollTrigger: {
-          trigger: scrollProjects.value,
-          pin: true,
-          scrub: 3,
-          span: 1 / (projects.length - 1),
-          end: "+=" + scrollProjects.value.offsetWidth,
-        },
-      });
+        gsap.to(projects, {
+          x: -totalProjectsWidth,
+          ease: "none",
+          scrollTrigger: {
+            trigger: scrollProjects.value,
+            pin: true,
+            scrub: 3,
+            span: 1 / (projects.length - 1),
+            end: "+=" + scrollProjects.value.offsetWidth,
+          },
+        });
 
-      new SplitType(".projects-title", {
-        types: "chars",
-        tagName: "span",
-      });
-      gsap.from(".projects-title .char", {
-        y: 20,
-        opacity: 0,
-        duration: 2,
-        ease: "none",
-        stagger: 0.1,
+        new SplitType(".projects-title", {
+          types: "chars",
+          tagName: "span",
+        });
+        gsap.from(".projects-title .char", {
+          y: 20,
+          opacity: 0,
+          duration: 2,
+          ease: "none",
+          stagger: 0.1,
 
-        scrollTrigger: {
-          trigger: ".projects-title",
-          scrub: true,
-        },
-      });
+          scrollTrigger: {
+            trigger: ".projects-title",
+            scrub: true,
+          },
+        });
+      }
     });
   });
 </script>

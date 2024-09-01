@@ -1,8 +1,8 @@
 <template>
   <client-only>
-    <div>
+    <div class="quality-block relative">
       <div
-        class="font-benzin flex justify-between text-white md:px-10 px-2.5 pt-2.5 md:pt-10 pb-5 text-sm tracking-[-0.03em] uppercase"
+        class="relative z 20 font-benzin flex justify-between text-white md:px-10 px-2.5 pt-2.5 md:pt-10 pb-5 text-sm tracking-[-0.03em] uppercase"
       >
         <span class="quality-char">результат</span>
         <span class="quality-char">{</span>
@@ -10,7 +10,7 @@
         <span class="quality-char">эстетика</span>
         <span class="quality-char">}</span>
       </div>
-      <div class="md:grid md:grid-cols-8 text-white px-2.5 md:px-10">
+      <div class="relative z 20 md:grid md:grid-cols-8 text-white px-2.5 md:px-10">
         <div
           class="font-benzin md:col-start-1 md:col-end-7 uppercase 2xl:text-2xl xl:text-xl text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] md:pb-20 pb-10"
         >
@@ -38,7 +38,7 @@
           </div>
         </div>
       </div>
-      <div class="sm:grid grid-cols-8 2xl:py-26 py-25 px-2.5 md:px-10">
+      <div class="relative z 20 sm:grid grid-cols-8 2xl:py-26 py-25 px-2.5 md:px-10">
         <div class="col-start-1 col-end-3">
           <div class="quality-image overflow-hidden">
             <img
@@ -69,8 +69,9 @@
           </div>
         </div>
       </div>
-      <div class="overflow-hidden">
-        <div class="relative">
+      <div class="relative z 20 overflow-hidden">
+        <div class="bg-quality relative">
+          <div class="absolute bg-white-line w-full h-full bg-white"></div>
           <img
             class="block cols-start-3 col-end-5 object-cover"
             src="/images/quality/quality-bg.svg"
@@ -79,7 +80,6 @@
             height="800"
             loading="lazy"
           />
-          <div class="quality-white-line absolute inset-0 bg-white"></div>
         </div>
       </div>
     </div>
@@ -88,51 +88,52 @@
 
 <script setup>
   import SplitType from "split-type";
+  import { useWindowSize } from "@vueuse/core";
 
   const { $gsap: gsap } = useNuxtApp();
-
+  const { width } = useWindowSize();
   onMounted(() => {
     onNuxtReady(() => {
-      new SplitType(".quality-char", {
-        types: "chars",
-        tagName: "span",
-      });
-      new SplitType(".quality-word", {
-        types: "words",
-        tagName: "span",
-      });
+      if (width.value > 767) {
+        new SplitType(".quality-char", {
+          types: "chars",
+          tagName: "span",
+        });
+        new SplitType(".quality-word", {
+          types: "words",
+          tagName: "span",
+        });
 
-      gsap.from(".quality-char .char", {
-        y: 50,
-        opacity: 0,
-        duration: 2,
-        ease: "sine.out",
-        stagger: 0.05,
-        scrollTrigger: {
-          trigger: ".quality-char",
-          scrub: true,
-        },
-      });
-      gsap.from(".quality-word .word", {
-        y: 50,
-        opacity: 0,
-        duration: 2,
-        ease: "sine.out",
-        stagger: 0.05,
-        scrollTrigger: {
-          trigger: ".quality-word",
-          scrub: true,
-        },
-      });
-
-      gsap.from(".quality-white-line", {
+        gsap.from(".quality-char .char", {
+          y: 50,
+          opacity: 0,
+          duration: 2,
+          ease: "sine.out",
+          stagger: 0.05,
+          scrollTrigger: {
+            trigger: ".quality-char",
+            scrub: true,
+          },
+        });
+        gsap.from(".quality-word .word", {
+          y: 50,
+          opacity: 0,
+          duration: 2,
+          ease: "sine.out",
+          stagger: 0.05,
+          scrollTrigger: {
+            trigger: ".quality-word",
+            scrub: true,
+          },
+        });
+      }
+      gsap.from(".bg-white-line", {
         xPercent: 140,
         duration: 2,
         ease: "sine.out",
         stagger: 0.15,
-
         scrollTrigger: {
-          trigger: ".quality-white-line",
+          trigger: ".bg-quality",
           scrub: true,
         },
       });

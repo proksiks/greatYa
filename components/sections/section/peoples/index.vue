@@ -1,6 +1,6 @@
 <template>
   <client-only>
-    <div class="md:px-10 px-2.5 2xl:py-26 py-25 overflow-hidden">
+    <div class="md:px-10 px-2.5 2xl:py-26 md:py-25 py-20 overflow-hidden">
       <div
         class="font-benzin scroll-m-[4.375rem] md:grid grid-cols-8 md:pb-20 pb-10 2xl:text-2xl xl:text-xl md:text-[4.5rem] text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] ml-5 md:ml-0"
         id="peoples"
@@ -9,9 +9,9 @@
           class="md:col-start-3 md:col-end-7 uppercase 2xl:text-2xl xl:text-xl text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] md:pb-20 pb-10"
         >
           <span class="peoples-title block whitespace-nowrap">харизмы</span>
-          <span class="peoples-title block whitespace-nowrap ml-7 md:ml-[14.5rem] text-orange text-nowrap"
-            >в людях</span
-          >
+          <span class="peoples-title block whitespace-nowrap ml-7 md:ml-[14.5rem] text-orange text-nowrap">
+            в людях
+          </span>
         </p>
       </div>
 
@@ -78,7 +78,7 @@
         <div
           class="xl:row-start-3 xl:row-end-3 gap-5 xl:col-start-1 xl:col-end-6 2xl:col-end-5 ml-[3.25rem] xl:ml-0 max-w-[19.5625rem] md:max-w-none"
         >
-          <div class="flex md:flex-row flex-col gap-5 pr-5">
+          <div class="flex md:flex-row flex-col gap-5 md:pr-5">
             <div>
               <div class="people-image overflow-hidden">
                 <img
@@ -111,27 +111,30 @@
 
 <script setup>
   import SplitType from "split-type";
-
+  import { useWindowSize } from "@vueuse/core";
   const app = useNuxtApp();
+  const { width } = useWindowSize();
 
   onMounted(() => {
     onNuxtReady(() => {
-      new SplitType(".peoples-title", {
-        types: "chars",
-        tagName: "span",
-      });
+      if (width.value > 767) {
+        new SplitType(".peoples-title", {
+          types: "chars",
+          tagName: "span",
+        });
 
-      app.$gsap.from(".peoples-title .char", {
-        y: 100,
-        opacity: 0,
-        duration: 2,
-        ease: "sine.out",
-        stagger: 0.075,
-        scrollTrigger: {
-          trigger: ".peoples-title",
-          scrub: true,
-        },
-      });
+        app.$gsap.from(".peoples-title .char", {
+          y: 100,
+          opacity: 0,
+          duration: 2,
+          ease: "sine.out",
+          stagger: 0.075,
+          scrollTrigger: {
+            trigger: ".peoples-title",
+            scrub: true,
+          },
+        });
+      }
 
       let revealContainers = document.querySelectorAll(".people-image");
       revealContainers.forEach((container) => {

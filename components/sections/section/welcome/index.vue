@@ -1,6 +1,6 @@
 <template>
   <client-only>
-    <div class="font-benzin md:px-10 px-2.5 md:pb-[11.25rem] pb-25 overflow-hidden">
+    <div class="font-benzin md:px-10 px-2.5 xl:pb-[11.25rem] md:pb-25 pb-10 overflow-hidden">
       <p class="flex justify-between text-white pt-2.5 md:pt-10 pb-5 text-sm tracking-[-0.03em] uppercase">
         <span class="welcome-char">результат</span>
         <span class="welcome-char">{</span>
@@ -29,42 +29,46 @@
 </template>
 
 <script setup>
+  import { useWindowSize } from "@vueuse/core";
   import SplitType from "split-type";
+  const { width } = useWindowSize();
 
   const { $gsap: gsap } = useNuxtApp();
   onMounted(() => {
     onNuxtReady(() => {
-      new SplitType(".welcome-char", {
-        types: "chars",
-        tagName: "span",
-      });
+      if (width.value > 767) {
+        new SplitType(".welcome-char", {
+          types: "chars",
+          tagName: "span",
+        });
 
-      gsap.from(".welcome-char .char", {
-        y: 50,
-        opacity: 0,
-        duration: 2,
-        ease: "sine.out",
-        stagger: 0.05,
-        scrollTrigger: {
-          trigger: ".welcome-char",
-          scrub: true,
-        },
-      });
+        gsap.from(".welcome-char .char", {
+          y: 50,
+          opacity: 0,
+          duration: 2,
+          ease: "sine.out",
+          stagger: 0.05,
+          scrollTrigger: {
+            trigger: ".welcome-char",
+            scrub: true,
+          },
+        });
 
-      gsap.from(".welcome-form", {
-        y: 50,
-        opacity: 0,
-        duration: 2,
-        ease: "sine.out",
-        stagger: 0.4,
+        gsap.from(".welcome-form", {
+          y: 50,
+          opacity: 0,
+          duration: 2,
+          ease: "sine.out",
+          stagger: 0.4,
 
-        scrollTrigger: {
-          trigger: ".welcome-form",
-          start: "top bottom",
-          end: "bottom +=400px",
-          scrub: true,
-        },
-      });
+          scrollTrigger: {
+            trigger: ".welcome-form",
+            start: "top bottom",
+            end: "bottom +=400px",
+            scrub: true,
+          },
+        });
+      }
     });
   });
 </script>
