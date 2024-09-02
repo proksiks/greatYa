@@ -2,7 +2,7 @@
   <client-only>
     <div class="points-block relative overflow-hidden" id="value">
       <div
-        class="font-benzin words md:pb-20 pb-6 md:px-0 px-2.5 md:flex md:flex-nowrap items-center md:absolute md:h-svh top-0 md:pt-0 pt-[2.8125rem] md:text-[21.3125rem] text-[2.125rem] text-orange uppercase will-change-transform"
+        class="font-benzin words md:pb-20 pb-6 md:px-0 px-2.5 md:flex md:flex-nowrap items-center md:absolute md:h-svh top-0 md:pt-0 pt-20 md:text-[21.3125rem] text-[2.125rem] text-orange uppercase will-change-transform"
         ref="scrollPointsWords"
       >
         <span class="word-1 md:block md:shrink-0 md:mr-0 will-change-transform md:pl-10">ха</span>
@@ -77,7 +77,7 @@
           </div>
         </div>
       </div>
-      <div class="font-benzin 2xl:pt-25 2xl:pb-26 sm:pb-25 pb-10 px-2.5">
+      <div class="font-benzin 2xl:pt-25 2xl:pb-26 sm:pb-25 pb-20 px-2.5">
         <div
           class="font-medium points-text max-w-[75rem] 2xl:text-[2.75rem] md:text-[1.5rem] md:leading-[125%] ml-auto min-h-[7.0625rem] md:min-h-[7.5rem] xl:min-h-[24.0625rem]"
         >
