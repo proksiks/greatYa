@@ -130,6 +130,23 @@
     isFormCorrect.value = await v$.value.$validate();
 
     if (!isFormCorrect.value) return;
+    
+    await $fetch("https://portal.gsbk.ru/rest/4780/ybfnxycfrf1tofll/crm.lead.add", {
+      method: "POST",
+      body: {
+        name: form.value.name,
+        phone: form.value.phone,
+        result: "",
+        time: {
+          start: "",
+          finish: "",
+          duration: "",
+          processing: "",
+          date_start: "",
+          date_finish: "",
+        },
+      },
+    });
 
     sucess.value = true;
   };
